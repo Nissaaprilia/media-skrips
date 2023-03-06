@@ -16,10 +16,31 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/konten.css">
+    <link rel="stylesheet" href="../css/konten.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+      @media screen and (min-width: 800px) {
+        #sidebar-1 {
+          display: block !important;
+        }
+
+        #sidebar-2 {
+          display: none !important;
+        }
+      }
+
+      @media screen and (max-width: 799px) {
+        #sidebar-1 {
+          display: none !important;
+        }
+
+        #sidebar-2 {
+          display: flex !important;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -47,19 +68,23 @@
       </nav>
     </header>
     <div class="row mt-4">
-      <div class="sidebar col ms-4">
-        <div class="flex-shrink-0 p-3 bg-primary text-white min-vh-100" style="width: 250px">
-          <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <div class="sidebar col-2 p-1" id="sidebar-1">
+        <div class="flex-shrink-0 p-3 bg-primary text-white min-vh-100">
+          <a href="#" class="d-flex align-items-center pb-2 mb-2 ps-0 link-light text-decoration-none border-bottom">
             <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            <!-- <span class="fs-5 fw-semibold">Bilangan Pecahan</span> -->
+            <span class="fs-5 fw-semibold"><i class="bi bi-columns-gap"></i> &nbsp; Bilangan Pecahan</span>
           </a>
           <ul class="list-unstyled ps-0">
             <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed active" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">Pendahuluan</button>
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed active" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                <i class="fas fa-chalkboard"></i> &nbsp;Pendahuluan
+              </button>
               <div class="collapse" id="home-collapse"></div>
             </li>
             <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">Penjumlahan Pecahan</button>
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
+                <i class="fa-sharp fa-solid fa-circle-plus"></i> &nbsp; Penjumlahan Pecahan <i class="fa-solid fa-angle-right"></i>
+              </button>
               <div class="collapse" id="dashboard-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                   <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Penjumlahan Pecahan Biasa</a></li>
@@ -69,60 +94,97 @@
               </div>
             </li>
             <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">Pengurangan Pecahan</button>
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+                <i class="fa-sharp fa-solid fa-circle-minus"></i> &nbsp;Pengurangan Pecahan <i class="fa-solid fa-angle-right"></i>
+              </button>
               <div class="collapse" id="orders-collapse">
                 <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                  <li><a href="#" class="link-warning d-inline-flex text-decoration-none rounded m-3 text-white">Pengurangan Pecahan Biasa</a></li>
+                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Pengurangan Pecahan Biasa</a></li>
                   <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Pengurangan Pecahan Campuran</a></li>
                   <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Kuis 2</a></li>
                 </ul>
               </div>
             </li>
             <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">Rangkuman</button>
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                <i class="fas fa-book-reader"></i>&nbsp;&nbsp;Rangkuman
+              </button>
               <div class="collapse" id="home-collapse"></div>
             </li>
             <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">Evaluasi</button>
+              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false">
+                <i class="fas fa-book-open"></i>&nbsp;&nbsp;Evaluasi
+              </button>
               <div class="collapse" id="home-collapse"></div>
             </li>
           </ul>
         </div>
       </div>
 
-      <!-- <div class="row m-6"> -->
+      <div id="sidebar-2" class="d-flex flex-column flex-shrink-0 bg-primary ms-2" style="width: 4.5rem">
+        <a href="/" class="d-block p-3 link-dark text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
+          <svg class="bi pe-none" width="40" height="32"><use xlink:href="#bootstrap" /></svg>
+          <span class="visually-hidden">Icon-only</span>
+        </a>
+        <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+          <li class="nav-item">
+            <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" title="Pendahuluan" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fas fa-chalkboard"></i>
+              <div class="collapse" id="dashboard-collapse">
+                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Penjumlahan Pecahan Biasa</a></li>
+                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Penjumlahan Pecahan Campuran</a></li>
+                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Kuis 1</a></li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link active py-3 border-bottom rounded-0" title="Penjumlahan Bilangan Pecahan" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fa-sharp fa-solid fa-circle-plus"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link active py-3 border-bottom rounded-0" title="Pengurangan Bilangan Pecahan" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fa-sharp fa-solid fa-circle-minus"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link active py-3 border-bottom rounded-0" title="Rangkuman" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fas fa-book-reader"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link active py-3 border-bottom rounded-0" title="Evaluasi" data-bs-toggle="tooltip" data-bs-placement="right">
+              <i class="fas fa-book-open"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="konten col-md-9 me-5 ms-1">
-
         <div class="card shadow-lg p-3 mb-5 bg-white rounded">
           <h5 class="card-header bg-warning">Pendahuluan</h5>
-          <div class="card-body">
-             <div class="card-body border border-primary ms-3 me-3">
+          <br />
+          <div class="card-body border border-primary ms-3 me-3">
             <h4 class="card-title">Pecahan</h4>
-                  <p class="card-text">Apa kamu ingat apa yang dimaksud dengan pecahan? di kelas IV, kamu 
-sudah mempelajari pecahan, untuk lebih mengingat simaklah penjelasan 
-berikut !
-Pecahan adalah bagian dari keseluruhan, terdiri dari pembilang dan 
-penyebut : 
-Secara umum, ditulis dalam bentuk </p> <p>  \( \frac{a}{b}\) </p>
-<p> Sebagai contoh pada bilangan \( \frac{1}{2}\) Angka 1 disebut pembilang, dan angka 
-2 disebut penyebut.
-</p>
-
-              </div>
-              <br>
-              
-         <br/>
-              <nav aria-label="Page navigation example">
-                <ul class="navigasi bawah pagination">
-                <li class="page-item"><a class="page-link" href="../index.html">Previous</a></li>
-                  <li class="page-item"><a class="page-link" href="./mulaibelajar.html">1</a></li>
-                  <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">2</a></li>
-                  <li class="page-item"><a class="page-link" href="./mulaibelajar3.html">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-              </nav>
-            </div>
+            <p class="card-text">
+              Apa kamu ingat apa yang dimaksud dengan pecahan? di kelas IV, kamu sudah mempelajari pecahan, untuk lebih mengingat simaklah penjelasan berikut ! Pecahan adalah bagian dari keseluruhan, terdiri dari pembilang dan penyebut :
+              Secara umum, ditulis dalam bentuk
+            </p>
+            <p>\( \frac{a}{b}\)</p>
+            <p>Sebagai contoh pada bilangan \( \frac{1}{2}\) Angka 1 disebut pembilang, dan angka 2 disebut penyebut.</p>
           </div>
+          <br />
+          <br />
+          <nav aria-label="Page navigation example ">
+            <ul class="navigasi bawah pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="./mulaibelajar.html">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="./mulaibelajar.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="./mulaibelajar3.html">3</a></li>
+              <li class="page-item"><a class="page-link" href="./mulaibelajar3.html">Next</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </div>
