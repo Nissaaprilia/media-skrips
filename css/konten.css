@@ -30,9 +30,13 @@
 }
 
 .row .sidebar .flex-shrink-0 {
-  background-color: #4b92ff !important;
+  background-color: #142d55 !important;
 }
 
 header nav.navbar {
-  background-color: #064851 !important;
+  background-color: #142d55 !important;
+}
+
+konten card.h5.card-header {
+  background-color: yellowgreen;
 }
