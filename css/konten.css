@@ -1,4 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  font-family: "Poppins", "Rubik";
+}
+
+@media screen and (min-width: 800px) {
+  #sidebar-1 {
+    display: block !important;
+  }
+
+  #sidebar-2 {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  #sidebar-1 {
+    display: none !important;
+  }
+
+  #sidebar-2 {
+    display: flex !important;
+  }
+}
+
 .img-fluid {
   margin-left: 380px;
   width: 30%;
+}
+
+.row .sidebar .flex-shrink-0 {
+  background-color: #4b92ff !important;
+}
+
+header nav.navbar {
+  background-color: #064851 !important;
 }
