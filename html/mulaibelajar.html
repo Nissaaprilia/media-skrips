@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Penjumlahan dan Pengurangan Bilangan Pecahan</title>
 
+   <!-- Boxiocns CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
     <!-- Matjax -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -17,295 +19,94 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/konten.css">
-    <link rel="stylesheet" href="../css/coba.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<style>
-  @media screen and (min-width: 800px) {
-  #sidebar-1 {
-    display: block !important;
-  }
 
-  #sidebar-2 {
-    display: none !important;
-  }
-}
-
-@media screen and (max-width: 799px) {
-  #sidebar-1 {
-    display: none !important;
-  }
-
-  #sidebar-2 {
-    display: flex !important;
-  }
-}
-
-</style>
   </head>
-
-    <!-- <header>
-      <nav class="navbar navbar-expand-lg text-white">
-        <div class="container-fluid ms-5 me-5">
-          <a class="navbar-brand text-white" href="../index.html">Bilangan Pecahan</a>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon "></span>
-          </button>
-          <div class="collapse navbar-collapse ms-10" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-2">
-              <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./petunjuk.html">Petunjuk</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="./about.html">About</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header> -->
-    
-    <body>
-    <div class="row mt-4">
-       
+   <body>
     <div class="sidebar open">
-      <div class="logo-details">
+       <div class="logo-details">
         <i class="bx bxl-c-plus-plus"></i>
-        <span class="logo_name">CodingLab</span>
+        <span class="logo_name">User</span>
       </div>
+        
       <ul class="nav-links">
         <li>
           <a href="#">
             <i class="bx bx-grid-alt"></i>
-            <span class="link_name">Dashboard</span>
+            <span class="link_name">Pendahuluan</span>
           </a>
           <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Category</a></li>
+            <li><a class="link_name" href="#">Penjumlahan Pecahan</a></li>
           </ul>
         </li>
         <li>
           <div class="iocn-link">
             <a href="#">
               <i class="bx bx-collection"></i>
-              <span class="link_name">Category</span>
+              <span class="link_name">Penjumlahan Pecahan</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
           </div>
           <ul class="sub-menu">
-            <li><a class="link_name" href="#">Category</a></li>
-            <li><a href="#">HTML & CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">PHP & MySQL</a></li>
+            <li><a class="link_name" href="#">Penjumlahan Pecahan</a></li>
+            <li><a href="#">Penjumlahan Pecahan Biasa</a></li>
+            <li><a href="#">Penjumlahan Pecahan Campuran</a></li>
+            <li><a href="#">Kuis</a></li>
           </ul>
         </li>
         <li>
           <div class="iocn-link">
             <a href="#">
               <i class="bx bx-book-alt"></i>
-              <span class="link_name">Posts</span>
+              <span class="link_name">Pengurangan Pecahan</span>
             </a>
             <i class="bx bxs-chevron-down arrow"></i>
           </div>
           <ul class="sub-menu">
-            <li><a class="link_name" href="#">Posts</a></li>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Login Form</a></li>
-            <li><a href="#">Card Design</a></li>
+            <li><a class="link_name" href="#">Pengurangan Pecahan</a></li>
+            <li><a href="#">Pengurangan Pecahan Biasa</a></li>
+            <li><a href="#">Pengurangan Pecahan Campuran</a></li>
+            <li><a href="#">Kuis</a></li>
           </ul>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-pie-chart-alt-2"></i>
-            <span class="link_name">Analytics</span>
+            <span class="link_name">Rangkuman</span>
           </a>
           <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Analytics</a></li>
+            <li><a class="link_name" href="#">Evaluasi</a></li>
           </ul>
         </li>
         <li>
           <a href="#">
             <i class="bx bx-line-chart"></i>
-            <span class="link_name">Chart</span>
+            <span class="link_name">Evaluasi</span>
           </a>
           <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Chart</a></li>
+            <li><a class="link_name" href="#">Evaluasi</a></li>
           </ul>
         </li>
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bx-plug"></i>
-              <span class="link_name">Plugins</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Plugins</a></li>
-            <li><a href="#">UI Face</a></li>
-            <li><a href="#">Pigments</a></li>
-            <li><a href="#">Box Icons</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-compass"></i>
-            <span class="link_name">Explore</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Explore</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-history"></i>
-            <span class="link_name">History</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">History</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-cog"></i>
-            <span class="link_name">Setting</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Setting</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="profile-details">
+      </ul>
+        <!--  <div class="profile-details">
             <div class="profile-content">
-              <!--<img src="image/profile.jpg" alt="profileImg">-->
+              <img src="image/profile.jpg" alt="profileImg">
             </div>
             <div class="name-job">
               <div class="profile_name">Prem Shahi</div>
               <div class="job">Web Desginer</div>
             </div>
             <i class="bx bx-log-out"></i>
-          </div>
-        </li>
-      </ul>
+          </div> -->
     </div>
-
-    <script>
-      let arrow = document.querySelectorAll(".arrow");
-      for (var i = 0; i < arrow.length; i++) {
-        arrow[i].addEventListener("click", (e) => {
-          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
-          arrowParent.classList.toggle("showMenu");
-        });
-      }
-      let sidebar = document.querySelector(".sidebar");
-      let sidebarBtn = document.querySelector(".bx-menu");
-      console.log(sidebarBtn);
-      sidebarBtn.addEventListener("click", () => {
-        sidebar.classList.toggle("close");
-      });
-    </script>
-
-      <!-- <div class="sidebar col-2 p-1" id="sidebar-1">
-        <div class="flex-shrink-0 p-3 bg-primary text-white min-vh-100">
-          <a href="#" class="d-flex align-items-center pb-2 mb-2 ps-0 link-light text-decoration-none border-bottom">
-              <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-             <span class="fs-5 fw-semibold"><i class="bi bi-columns-gap"></i> &nbsp; Bilangan Pecahan</span>
-          </a>
-          <ul class="list-unstyled ps-0">
-            <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed active" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false"> <i class="fas fa-chalkboard"></i> &nbsp;Pendahuluan </button>
-              <div class="collapse" id="home-collapse"></div>
-            </li>
-            <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light " data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false"> <i class="fa-sharp fa-solid fa-circle-plus"></i> &nbsp; Penjumlahan Pecahan <i class="fa-solid fa-angle-right"></i></button>
-              <div class="collapse" id="dashboard-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Penjumlahan Pecahan Biasa</a></li>
-                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Penjumlahan Pecahan Campuran</a></li>
-                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Kuis 1</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false"><i class="fa-sharp fa-solid fa-circle-minus"></i> &nbsp;Pengurangan Pecahan <i class="fa-solid fa-angle-right"></i></button>
-              <div class="collapse" id="orders-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small text-white">
-                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Pengurangan Pecahan Biasa</a></li>
-                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Pengurangan Pecahan Campuran</a></li>
-                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Kuis 2</a></li>
-                </ul>
-              </div>
-            </li>
-            <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false"><i class="fas fa-book-reader "></i>&nbsp;&nbsp;Rangkuman</button>
-              <div class="collapse" id="home-collapse"></div>
-            </li>
-            <li class="mb-2">
-              <button class="btn btn-toggle d-inline-flex align-items-center rounded border-4 collapsed link-light" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="false"><i class="fas fa-book-open"></i>&nbsp;&nbsp;Evaluasi</button>
-              <div class="collapse" id="home-collapse"></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div id="sidebar-2" class="d-flex flex-column flex-shrink-0 bg-primary ms-2" style="width: 4.5rem;">
-    <a href="/" class="d-block p-3 link-dark text-decoration-none" title="Icon-only" data-bs-toggle="tooltip" data-bs-placement="right">
-      <svg class="bi pe-none" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      <span class="visually-hidden">Icon-only</span>
-    </a> -->
-    <!-- <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-      <li class="nav-item">
-        <a href="#" class="nav-link active py-3 border-bottom rounded-0" aria-current="page" title="Pendahuluan" data-bs-toggle="tooltip" data-bs-placement="right">
-          <i class="fas fa-chalkboard"></i>
-           <div class="collapse" id="dashboard-collapse">
-                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Penjumlahan Pecahan Biasa</a></li>
-                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Penjumlahan Pecahan Campuran</a></li>
-                  <li><a href="#" class="link-white d-inline-flex text-decoration-none rounded m-3 text-white">Kuis 1</a></li>
-                </ul>
-              </div>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link active py-3 border-bottom rounded-0" title="Penjumlahan Bilangan Pecahan" data-bs-toggle="tooltip" data-bs-placement="right">
-          <i class="fa-sharp fa-solid fa-circle-plus"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link active py-3 border-bottom rounded-0" title="Pengurangan Bilangan Pecahan" data-bs-toggle="tooltip" data-bs-placement="right">
-         <i class="fa-sharp fa-solid fa-circle-minus"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link active py-3 border-bottom rounded-0" title="Rangkuman" data-bs-toggle="tooltip" data-bs-placement="right">
-          <i class="fas fa-book-reader "></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link active py-3 border-bottom rounded-0" title="Evaluasi" data-bs-toggle="tooltip" data-bs-placement="right">
-          <i class="fas fa-book-open"></i>
-        </a>
-      </li>
-    </ul> -->
-    <!-- <div class="dropdown border-top">
-      <a href="#" class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="https://github.com/mdo.png" alt="mdo" width="24" height="24" class="rounded-circle">
-      </a>
-      <ul class="dropdown-menu text-small shadow">
-        <li><a class="dropdown-item" href="#">New project...</a></li>
-        <li><a class="dropdown-item" href="#">Settings</a></li>
-        <li><a class="dropdown-item" href="#">Profile</a></li>
-        <li><hr class="dropdown-divider"></li>
-        <li><a class="dropdown-item" href="#">Sign out</a></li>
-      </ul>
-    </div> -->
-      </div>
-    
-      <div class="konten col-9 ms-5 me-5">
-        <div class="card lg p-3 mb-5 bg-white rounded">
+    <section class="home-section"> 
+      <p > <a href="../index.html"> 
+            <i class="bx bx-grid-alt"></i> </a></p>
+      <div class="home-content">
+            <div class="konten col-9-5 ms-2">
+         <div class="card lg p-3 mb-5 bg-white rounded">
       <h5 class="card-header text-white" style="background-color: #142d55 ;">Pendahuluan</h5>
           <div class="card-body">
             <div class="accordion accordion-flush border-info"  id="accordionFlushExample" >
@@ -330,7 +131,7 @@
                   <p class="card-text">Ibu mempunyai kue tampah, kue tampah tersebut terdiri dari 
             beberapa bagian macam kue tradisional, dapatkah kamu menyebutkan 
             berapa besaran kue yang berwarna merah?</p>
-            <img src="../img/kue.jpeg" class="img-fluid" alt="...">
+            <!-- <img src="../img/kue.jpeg" class="img-fluid" alt="..."> -->
     <p class="fst-italic text-center">1. Gambar Kue Tampah</p>
       <p class="fst-italic text-center border border-primary me-5 ms-5"> Kue yang berwarna merah terdapat 1 bagian dari 5 bagian maka ditulis \( \frac{1}{5}\)
 atau dibaca satu per lima</p>
@@ -347,9 +148,26 @@ atau dibaca satu per lima</p>
                 </ul>
               </nav>
             </div>
-          </div>
+            </div>
+        <!-- <i class="bx bx-menu"></i>
+        <span class="text">Drop Down Sidebar</span> -->
       </div>
       </div>
-    </div>
+    </section>
+    <script>
+      let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+    </script>
   </body>
 </html>

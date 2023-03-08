@@ -1,10 +1,15 @@
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
 /* ---------------------------------------------------
     style untuk halaman depan (index)
 ----------------------------------------------------- */
 .jumbotron {
   padding: 2rem;
-  background-color: #3598db;
-  background-image: url(../img/Tentukan_Waktu_Sendiri.webp);
+  background-color: #39609e;
+  /* background-image: url(../img/Tentukan_Waktu_Sendiri.webp); */
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 30%;
@@ -34,9 +39,9 @@ a {
   padding-top: 2rem;
 }
 
-section {
+/* section {
   padding-top: 5rem;
-}
+} */
 
 /* ---------------------------------------------------
     3 kotak petunjuk, materi dan latihan
@@ -53,8 +58,8 @@ section {
   font-size: 20px;
   text-align: center;
   border-radius: 20px;
-  background: rgb(146, 75, 75);
-  color: black;
+  background: rgb(10, 3, 69);
+  color: #142d55;
   margin-left: 4rem;
 }
 .grid-item i {
@@ -67,13 +72,13 @@ section {
   font-size: 20px;
   text-align: center;
   border-radius: 20px;
-  background: #212529;
+  background: #142d55;
   color: white;
   margin-left: 4rem;
 }
 
 .gridd-item:hover {
-  background: #3598db;
+  background: #39609e;
   color: white;
   cursor: pointer;
   position: relative;
