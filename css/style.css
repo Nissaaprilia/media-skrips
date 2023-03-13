@@ -8,7 +8,7 @@
 ----------------------------------------------------- */
 .jumbotron {
   padding: 2rem;
-  background-color: #0a043c;
+  background-color: #655dbb;
   /* background-image: url(../img/Tentukan_Waktu_Sendiri.webp); */
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -59,7 +59,7 @@ a {
   text-align: center;
   border-radius: 20px;
   background: rgb(81, 67, 205);
-  color: #03506f;
+  color: #655dbb;
   margin-left: 4rem;
 }
 .grid-item i {
@@ -72,13 +72,13 @@ a {
   font-size: 20px;
   text-align: center;
   border-radius: 20px;
-  background: #03506f;
+  background: #3e54ac;
   color: white;
   margin-left: 4rem;
 }
 
 .gridd-item:hover {
-  background: #0a043c;
+  background: #655dbb;
   color: white;
   cursor: pointer;
   position: relative;

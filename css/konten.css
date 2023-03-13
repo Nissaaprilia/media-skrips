@@ -9,7 +9,7 @@
   left: 0;
   height: 100%;
   width: 260px;
-  background: #03506f;
+  background: #3e54ac;
   z-index: 100;
   transition: all 0.5s ease;
 }
@@ -60,7 +60,7 @@
   transition: all 0.4s ease;
 }
 .sidebar .nav-links li:hover {
-  background: #0a043c;
+  background: #655dbb;
 }
 .sidebar .nav-links li .iocn-link {
   display: flex;
@@ -165,7 +165,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #0a043c;
+  background: #655dbb;
   padding: 12px 0;
   transition: all 0.5s ease;
 }
@@ -267,7 +267,7 @@
 } */
 
 header nav.navbar {
-  background-color: #03506f !important;
+  background-color: #3e54ac !important;
 }
 
 /* konten card.h5.card-header {
