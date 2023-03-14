@@ -1,204 +1,327 @@
 <!DOCTYPE html>
+    <html lang="en">
 
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="UTF-8" />
+    
+<!-- Mirrored from coderthemes.com/hyper/saas/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 08:03:31 GMT -->
+<head>
+        <meta charset="utf-8" />
+        <title>Bilangan Pecahan</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <!-- App favicon -->
+        <link rel="icon" type="image/ico" href="/assets/images/graph.png" />
 
-    <link rel="stylesheet" href="./css/coba.css" />
-    <!-- Boxiocns CDN Link -->
-    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- third party css -->
+        <link href="/assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
+        <link rel="stylesheet" href="/assets/css/style4.css">
+        <!-- App css -->
+        <link href="/assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="/assets/css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <style>
+          body[data-leftbar-compact-mode=condensed]:not(.authentication-bg) .wrapper .leftside-menu .logo{
+            background: #1d3075 !important; 
+          }
+          body[data-leftbar-theme=dark] .leftside-menu .logo{
+            background: #1d3075 !important;
+          }
 
-    <!-- Bootstrap Icon-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <div class="sidebar open">
-      <div class="logo-details">
-        <i class="bx bxl-c-plus-plus"></i>
-        <span class="logo_name">CodingLab</span>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">
-            <i class="bx bx-grid-alt"></i>
-            <span class="link_name">Dashboard</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Category</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bx-collection"></i>
-              <span class="link_name">Category</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Category</a></li>
-            <li><a href="#">HTML & CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">PHP & MySQL</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bx-book-alt"></i>
-              <span class="link_name">Posts</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Posts</a></li>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Login Form</a></li>
-            <li><a href="#">Card Design</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-pie-chart-alt-2"></i>
-            <span class="link_name">Analytics</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Analytics</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-line-chart"></i>
-            <span class="link_name">Chart</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Chart</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bx-plug"></i>
-              <span class="link_name">Plugins</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Plugins</a></li>
-            <li><a href="#">UI Face</a></li>
-            <li><a href="#">Pigments</a></li>
-            <li><a href="#">Box Icons</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-compass"></i>
-            <span class="link_name">Explore</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Explore</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-history"></i>
-            <span class="link_name">History</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">History</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-cog"></i>
-            <span class="link_name">Setting</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Setting</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="profile-details">
-            <div class="profile-content">
-              <!--<img src="image/profile.jpg" alt="profileImg">-->
-            </div>
-            <div class="name-job">
-              <div class="profile_name">Prem Shahi</div>
-              <div class="job">Web Desginer</div>
-            </div>
-            <i class="bx bx-log-out"></i>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <section class="home-section"> 
-      <div class="home-content">
-            <div class="konten col-9-5 ms-2">
-         <div class="card lg p-3 mb-5 bg-white rounded">
-      <h5 class="card-header text-white" style="background-color: #142d55 ;">Pendahuluan</h5>
-          <div class="card-body">
-            <div class="accordion accordion-flush border-info"  id="accordionFlushExample" >
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                  <button class="accordion-button collapsed p-2 text-white " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree" style="background-color: #39609e ;">
-                    Tujuan Pembelajaran
-                  </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse border border-info" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <p>
-                      1. Untuk memperdalam pemahaman pecahan, memahami arti penjumlahan dan pengurangan pecahan yang berbeda penyebut, serta mampu mengaplikasikannya. <br />
-                      2. Dapat memikirkan tentang cara menghitung penjumlahan dan pengurangan pecahan yang berbeda penyebut dan menghitungnya.
-                    </p>
-                  </div>
+          .accordion-button:not(.collapsed){
+            color: black;
+          }
+        </style>
+
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+    </head>
+
+    <body class="loading" style="background-color: grey; overflow-y: auto;" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <!-- Begin page -->
+        <div class="wrapper">
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="leftside-menu" style="background-color: #12266e;">
+    
+                <!-- LOGO -->
+                <a href="/index.html" class="logo text-center logo-light">
+                    <span class="logo-lg my-3">
+                      <h3 class="text-white">Bilangan Pecahan</h3>
+                    </span>
+                    <span class="logo-sm">
+                      <i class="uil-home text-white" style="font-size: 30px;"></i>
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar>
+
+                    <!--- Sidemenu -->
+                    <ul id="navbar-js" class="side-nav">
+                    </ul>
+                    <!-- end Help Box -->
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+
                 </div>
-              </div>
-            </div> <br>  </div>
-             <div class="card-body border border-info ms-3 me-3">
-            <h4 class="card-title">Ayo Mengamati</h4>
-                  <p class="card-text">Ibu mempunyai kue tampah, kue tampah tersebut terdiri dari 
-            beberapa bagian macam kue tradisional, dapatkah kamu menyebutkan 
-            berapa besaran kue yang berwarna merah?</p>
-            <!-- <img src="../img/kue.jpeg" class="img-fluid" alt="..."> -->
-    <p class="fst-italic text-center">1. Gambar Kue Tampah</p>
-      <p class="fst-italic text-center border border-primary me-5 ms-5"> Kue yang berwarna merah terdapat 1 bagian dari 5 bagian maka ditulis \( \frac{1}{5}\)
-atau dibaca satu per lima</p>
+                <!-- Sidebar -left -->
+
             </div>
-              <br>  
-         <br/>
-              <nav aria-label="Page navigation example ">
-                <ul class="navigasi bawah pagination justify-content-center">
-                  <li class="page-item"><a class="page-link" href="../index.html">Previous</a></li>
-                  <li class="page-item"><a class="page-link" href="./mulaibelajar.html">1</a></li>
-                  <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">2</a></li>
-                  <li class="page-item"><a class="page-link" href="./mulaibelajar3.html">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
-              </nav>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom" style="height: 74px;">
+                        <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                        <h4 class="mt-3 text-black">Pecahan / Pecahan Senilai / Gambar Berarsir</h4>
+                    </div>
+                    <!-- end Topbar -->
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid mb-3">
+
+                        <!-- start page title -->
+                        <div class="row text-black">
+                            <div class="col-xl-7">
+                                <div class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto; text-align: justify; ">
+                                        <h4>1. Gambar Berarsir</h4>
+                                        <hr>
+                                          <p style="font-size: large;">
+                                              Perhatikan gambar di bawah ini!
+                                              <br>
+                                              <img src="/assets/img/imgarsir1.png" width="500px" alt="">
+                                              Daerah berarsir pada gambar <strong>(a)</strong> bernilai \(\frac{1}{2}\) , sedangkan pada gambar <strong>(b)</strong> bernilai \(\frac{2}{4}\). Coba kamu perhatikan dengan cermat kedua gambar berarsir di atas! Pecahan \(\frac{1}{2}\) dan \(\frac{2}{4}\) masing-masing mewakili luas daerah yang sama. Dengan demikian, dapat dinyatakan \(\frac{1}{2}\) = \(\frac{2}{4}\) disebut dua <strong>pecahan yang senilai.</strong>
+                                          </p>
+                                          <center>
+                                            <div id="btnBerlatih" class="btn btn-success mt-2">Selesai Membaca</div>
+                                          </center>
+                                  </div>
+                                </div> <!-- end card -->
+                            </div>
+                            <div class="col-xl-5">
+                                <div id="berlatih" style="display: none;" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto;">
+                                        <h4><strong>Ayo Mencoba!</strong></h4>
+                                        <p>
+                                        Tentukan pecahan senilai pada gambar berarsir di bawah ini! Jawaban benar akan berwarna hijau, jika salah akan berwarna merah.
+                                        <table class="table table-borderless text-black text-center">
+                                          <tbody style="vertical-align: middle;"> 
+                                            <tr>
+                                              <td>
+                                                <h3>
+                                                  \( \frac {1}{3}\)
+                                                </h3>
+                                              </td>
+                                              <td>
+                                                <h4>
+                                                  =
+                                                </h4>
+                                              </td>
+                                              <td>
+                                                <input id="jwb11" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                <br>
+                                                <input id="jwb12" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                              </td>
+                                            </tr>                                 
+                                            <tr>
+                                              <th scope="row">
+                                                <img src="/assets/img/soal1latihan2.png" width="130px" alt="">
+                                              </th>
+                                              <td>
+                                                <h4>
+                                                  =
+                                                </h4>
+                                              </td>
+                                              <td>
+                                                <img src="/assets/img/soal2latihan2.gif" width="130px" alt="">
+                                              </td>                                                       
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <div id="alertHasil1"></div>
+                                          <center>
+                                          <div id="btnCek1" class="btn btn-info mt-2 text-white">Cek Jawaban
+                                          </div>
+                                          <div id="btnLanjut" class="btn btn-success mt-2" style="display: none;">Soal Berikutnya</div>
+                                          </center>
+                                        </p>
+                                  </div>
+                                </div>
+                                <div id="soal2" style="display: none;" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto;">
+                                        <h4><strong>Ayo Mencoba!</strong></h4>
+                                        <p>
+                                        Tentukan pecahan senilai pada gambar berarsir di bawah ini! Jawaban benar akan berwarna hijau, jika salah akan berwarna merah.
+                                        <table class="table table-borderless text-black text-center">
+                                          <tbody style="vertical-align: middle;"> 
+                                            <tr>
+                                              <td>
+                                                <input id="jwb21" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                <br>
+                                                <input id="jwb22" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                              </td>
+                                              <td>
+                                                <h4>
+                                                  =
+                                                </h4>
+                                              </td>
+                                              <td>
+                                                <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                <br>
+                                                <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                              </td>                                                     
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                <img src="/assets/img/soal3latihan2.png" width="130px" alt="">
+                                              </td>
+                                              <td>
+                                                <h4>
+                                                  =
+                                                </h4>
+                                              </td>
+                                              <td>
+                                                <img src="/assets/img/soal4latihan2.gif" width="130px" alt="">
+                                              </td>                                       
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      <div id="alertHasil2"></div>
+                                        <center>
+                                          <div id="btnCek2" class="btn btn-info mt-2 text-white">
+                                            Cek Jawaban
+                                          </div>
+                                          <div id="btnLanjut2" class="btn btn-success mt-2" style="display: none;">
+                                            Soal Berikutnya
+                                          </div>
+                                        </center>
+                                      </p>
+                                  </div>
+                                </div>
+                                <div id="soal3" style="display: none;" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto;">
+                                      <h4><strong>Ayo Mencoba!</strong></h4>
+                                      <p>
+                                      Tentukan pecahan senilai pada gambar berarsir di bawah ini! Jawaban benar akan berwarna hijau, jika salah akan berwarna merah.
+                                      <table class="table table-borderless text-black text-center">
+                                        <tbody style="vertical-align: middle;"> 
+                                          <tr>
+                                            <td>
+                                              <input id="jwb41" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                              <br>
+                                              <input id="jwb42" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                            </td>
+                                            <td>
+                                              <h4>
+                                                =
+                                              </h4>
+                                            </td>
+                                            <td>
+                                              <input id="jwb51" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                              <br>
+                                              <input id="jwb52" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <img src="/assets/img/soal5latihan2.png" width="130px" alt="">
+                                            </td>
+                                            <td>
+                                              <h4>
+                                                =
+                                              </h4>
+                                            </td>
+                                            <td>
+                                              <img src="/assets/img/soal6latihan2.gif" width="130px" alt="">
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <div id="alertHasil3"></div>
+                                        <center>
+                                          <div id="btnCek3" class="btn btn-info mt-2 text-white">
+                                            Cek Jawaban
+                                          </div>
+                                          <a href="materi22.html" id="halNext" type="button" class="btn btn-success mt-2 text-white" style="display: none;">
+                                            Materi Selanjutnya
+                                          </a>
+                                        </center>
+                                      </p>
+                                  </div>
+                                </div>
+                                <div id="berlatih2" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; display: flex; justify-content: center;">
+                                    <div>
+                                      <p>
+                                        <center>
+                                        <strong style="font-size: medium;">Baca materi terlebih dahulu
+                                          <br>Tekan selesai membaca untuk memulai latihan.
+                                        </strong>
+                                        <br>
+                                        <i class="uil uil-lock" style="font-size:300px; color: grey;"></i>
+                                        </center>
+                                    </p>  
+                                    </div>
+                                  </div>
+                                </div> <!-- end card -->
+                            </div>
+                            <center>
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                  <a href="materi2.html" type="button" class="btn btn-danger">Sebelumnya</a>
+                                  <a href="materi2.html" type="button" class="btn btn-success">1</a>
+                                  <a href="#" type="button" class="btn btn-success active">2</a>
+                                  <a href="materi22.html" type="button" class="btn btn-success">3</a>
+                                  <a href="materi23.html" type="button" class="btn btn-success">4</a>
+                                  <a href="materi22.html" type="button" class="btn btn-primary">Selanjutnya</a>
+                                </div>
+                            </center>
+                          </div>
+                        <!-- end page title -->
+
+
+                    </div>
+                    <!-- container -->
+
+                </div>
+                <!-- content -->
+
+               
+
             </div>
-            </div>
-        <!-- <i class="bx bx-menu"></i>
-        <span class="text">Drop Down Sidebar</span> -->
-      </div>
-      </div>
-    </section>
-    <script>
-      let arrow = document.querySelectorAll(".arrow");
-      for (var i = 0; i < arrow.length; i++) {
-        arrow[i].addEventListener("click", (e) => {
-          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
-          arrowParent.classList.toggle("showMenu");
-        });
-      }
-      let sidebar = document.querySelector(".sidebar");
-      let sidebarBtn = document.querySelector(".bx-menu");
-      console.log(sidebarBtn);
-      sidebarBtn.addEventListener("click", () => {
-        sidebar.classList.toggle("close");
-      });
-    </script>
-  </body>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <div class="rightbar-overlay"></div>
+        <!-- /End-bar -->
+        <script src="/assets/js/navbar.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+        <!-- bundle -->
+        <script src="/assets/js/vendor.min.js"></script>
+        <script src="/assets/js/app.min.js"></script>
+        
+        <script src="/materi/sub1/js/materi21.js"></script>
+
+
+        <!-- end demo js-->
+    </body>
+
+<!-- Mirrored from coderthemes.com/hyper/saas/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 07 Sep 2021 08:04:04 GMT -->
 </html>

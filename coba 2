@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Medan Magnetik || Materi</title>
+    <link href="IMG/favicon.png" rel="icon" />
+
+    <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Custom styles for this template-->
+    <link href="CSS/sb-admin.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/upload.css" rel="stylesheet" />
+  </head>
+
+  <body id="page-top">
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+      <!-- Sidebar Menu -->
+      <ul class="navbar-nav sidebar sidebar-dark accordion" style="background-color: #1a2c42" id="accordionSidebar">
+        <!-- Sidebar Toggler (Sidebar Menu Kecil) -->
+        <div class="text-center d-none d-md-inline">
+          <button class="fas fa-magnet border-0 float-left" style="background-color: #d48166" id="sidebarToggle"></button>
+        </div>
+
+        <!-- Sidebar - Brand -->
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" style="border:solid; border-radius:20px; background-color:#d48166" href="Beranda.html">Beranda</a><br>
+        <center>
+          <img src="img/profil.png" class="img-fluid" alt="..." style="width: 75px;"/>
+          <h1 style=" font-family:'Lucida Sans'; font-size: 20px;color:#fff" data-aos="fade-up"><span id="userlink"></span></h1>
+          </center>
+        <!-- Divider -->
+        <hr class="sidebar-divider my-0" />
+        <!-- Materi 1 -->
+        <li class="nav-item">
+          <a id="sub1" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#materi1" aria-expanded="true" aria-controls="materi1">
+            <i class="fas fa-fw fa-book"></i>
+            <span>Induksi Magnetik</span>
+          </a>
+          <div id="materi1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="py-2 collapse-inner rounded" style="background-color:#ffdead">
+              <h6 class="collapse-header" style="color:#1a2c42; font-size:12px;">Induksi Magnetik</h6>
+              <a class="collapse-item " href="MedanMagnetik.html">Pengantar</a>
+              <hr class="sidebar-divider my-0 bg-primary" />
+              <a class="collapse-item" href="kawatlurus.html">
+              Induksi Magnetik <br/> pada 
+              Penghantar <br/>Lurus Berarus</a>
+              
+              <hr class="sidebar-divider my-0 bg-primary" />
+              <a class="collapse-item" href="kawatmelingkar.html">
+              Induksi Magnetik <br>yang ditimbulkan 
+              <br> Penghantar Melingkar <br>Berarus</a>
+              <hr class="sidebar-divider my-0 bg-primary" />
+              <a class="collapse-item" href="solenoida.html"
+                >Induksi Magnetik pada<br />
+                Sumbu Solenoida</a
+              >
+              <hr class="sidebar-divider my-0 bg-primary" />
+              <a class="collapse-item" href="toroida.html"
+                >Induksi Magnetik pada<br />
+                Sumbu Toroida</a
+              >
+              <hr class="sidebar-divider my-0 bg-primary" />
+              <a class="collapse-item" href="Rangkuman.html">Rangkuman</a>
+              <hr class="sidebar-divider my-0 bg-primary" />
+              <a class="collapse-item" href="kuis/Kuis1.html">Kuis 1</a>
+            </div>
+          </div>
+        </li>
+ <!-- Divider -->
+ <hr class="sidebar-divider my-0" />
+ <!-- Materi 2 -->
+ <li class="nav-item active">
+   <a id="sub2" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#materi2" aria-expanded="true" aria-controls="materi2">
+     <i class="fas fa-fw fa-book"></i>
+     <span>Gaya Magnetik</span>
+   </a>
+   <div id="materi2" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+     <div class="py-2 collapse-inner rounded" style="background-color:#ffdead">
+       <h6 class="collapse-header" style="color:#1a2c42; font-size:12px;">Gaya Magnetik</h6>
+       <a class="collapse-item " href="gmlurus.html">Gaya Magnetik pada <br /> Penghantar Berarus <br /> di Medan Magnet </a>
+       <hr class="sidebar-divider my-0 bg-primary" />
+       <a class="collapse-item text-white ml-3 mr-3 active" style="background-color:#1a2c42"> Gaya Magnetik antara <br /> Dua Konduktor Lurus <br />Panjang dan Sejajar </a>
+       <hr class="sidebar-divider my-0 bg-primary" />
+       <a class="collapse-item " href="gmpartikel.html">Gaya Magnetik pada<br /> Partikel Bermuatan Listrik</a>
+       <hr class="sidebar-divider my-0 bg-primary" />
+       <a class="collapse-item " href="Rangkuman2.html"> Rangkuman</a>
+       <hr class="sidebar-divider my-0 bg-primary" />
+       <a class="collapse-item" href="kuis/Kuis2.html">Kuis 2</a>
+     </div>
+   </div>
+ </li>
+   <!-- Divider -->
+   <hr class="sidebar-divider my-0" />
+   <!-- Materi 3 -->
+   <li class="nav-item">
+     <a id="sub3" class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#materi3" aria-expanded="true" aria-controls="materi3">
+       <i class="fas fa-fw fa-book"></i>
+       <span>Penerapan Gaya Magnetik</span>
+
+     </a>
+     <div id="materi3" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+       <div class=" py-2 collapse-inner rounded" style="background-color:#ffdead">
+         <h6 class="collapse-header" style="color:#1a2c42; font-size:12px;">Penerapan Gaya <br> Magnetik</h6>
+         <a class="collapse-item " href="Galvanometer.html"> Galvanometer</a>
+         <hr class="sidebar-divider my-0 bg-primary" />
+         <a class="collapse-item " href="mtrlistrik.html"> Motor Listrik</a>
+   
+        
+       </div>
+     </div>
+   </li>
+
+   <hr class="sidebar-divider my-0" />
+   <!-- Evaluasi -->
+   <li class="nav-item">
+    <a class="nav-link" href="kuis/evaluasi.html">
+      <i class="fas fa-fw fa-file-signature"></i>
+      <span>Evaluasi</span>
+    </a>
+  </li>
+ <br>
+ <br>
+ 
+ <button class="bi bi-box-arrow-right btn text-light" style="border:solid; border-radius: 10px; background-color:#1a2c42; background-color: #d48166;" onclick="signout()" type="button"> Log Out</button>
+ </ul>
+      <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+      <div id="content-wrapper" class="d-flex flex-column">
+        <!-- Main Content -->
+        <div id="content">
+          <!-- Topbar -->
+          <nav class="navbar navbar-expand" style="background-color: #d48166">
+            <!-- Sidebar Toggle (Topbar) -->
+            <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between">
+              <img src="img/judul.png" class="img-fluid" />
+            </div>
+          </nav>
+          <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid" style="background-color: #ffdead">
+
+                    <!-- Content Row -->
+                    <div class="container text-black">
+                        <div class="row" style="height: 100%; width: 100%;">
+                            <div class="mt-2 col-sm border border-dark isicontent"  style="background-color: #fdefeb">
+                            <div class="h5 font-weight-bold">
+                                <div class="card text-white mb-3" style="background-color:#1a2c42">
+                                    <div class="card-body">
+                                      <h5 class="card-title" style="font-family: 'Times New Roman', Times, serif; font-size: 30px">
+                                          <div class="text-center">Gaya Magnetik antara Dua Konduktor Lurus Panjang dan Sejajar
+                                          </div>
+                                        </h5>
+                                    </div>
+                                  </div>
+                               
+                                    <div id="satu">
+                                      <div class="small mt-3" >
+                                    
+                                    <div class="card  mb-3" style="background-color: #1a2c42;">
+                                      <div class="card border-dark mb-10" style="background-color:#fdefeb; max-width: 100%">
+                                        <img src="img/infor.png" class="img-fluid" style="width:300px; height:100px">
+                                        <div class="card-body text-black" style="background-color: #fdefeb">
+                                          <p class="card-text" style="font-family: lucida sans; font-size: 18px; color:black;"> &nbsp; Gaya magnet juga dialami oleh dua buah kawat sejajar yang saling berdekatan yang beraliran arus listrik. Timbulnya gaya pada masing-masing kawat dapat dianggap bahwa kawat pertama berada dalam medan magnetik yang ditimbulkan oleh kawat kedua dan sebaliknya kawat kedua berada dalam medan magnetik yang ditimbulkan oleh kawat pertama</p>
+                                          <image>
+                                            <center>
+                                              <img src="img/duakwt.png" style="width:200px; height:200px; box-shadow: 7px 7px 5px grey; border-radius: 10px;"><br><br>
+                                              <button class="btn btn-primary" id="petkon" onclick="petkon()" style="font-family:lucida sans; border-color:#000">Perbesar Gambar</button>
+                                              <div id="myModal" class="modal">
+                                                  <div class="modal-content">
+                                                    <span class="close">&times;</span>
+                                                    <center><img src="img/duakwt.png" style="width:500px; height:500px"></center>
+                                                  </div>
+                                              </div></center>
+                                        </image> 
+                                        <br>
+
+                                          
+                                               <p style="font-family: lucida sans; font-size: 18px;color:black;">Berdasarkan gambar diatas, dapat disimpulkan bahwa pada dua penghantar lurus sejajar yang dialiri arus listrik akan terjadi gaya Tarik menarik jika arusnya memiliki arah yang sama dan gaya tolak menolak jika kedua arus yang mengalir berlawanan arah. </p>
+                                               <p style="font-family: lucida sans; font-size: 18px;color:black;"><b>Bagaimana menjelaskan kesimpulan di atas?</b></p>
+                                               <p style="font-family: lucida sans; font-size: 18px;color:black;">Penjelasan untuk kawat sejajar yang dialiri arus searah adalah sebagai berikut: Ketika kawat pertama dialiri arus ke atas maka akan menimbulkan induksi magnet di kawat kedua yang arahnya masuk bidang, sehingga dikawat kedua ada variabel kuat arus ke atas dan induksi magnet masuk bidang.</p>
+                                               <p style="font-family: lucida sans; font-size: 18px;color:black;">Besarnya gaya magnetik antara Dua Konduktor Lurus Panjang dan Sejajar dapat dinyatakan dalam persamaan berikut :</p>
+                                               <div class="row ms-5">
+                                                <div class="col-sm-3 mb-3">  
+                                                  <div class="rumus text-center"><i class="fas fa-thumb-tack"></i> <b> Rumus</b></div>
+                                                  <div class="isirumus text-center p-4">
+                                                    <span>\(\frac{F}{l}=\frac{&mu;_0i_1i_2}{2&pi;a}\) </span><br>
+                                                  </div> 
+                                               </div>        
+                                      
+                                               <div class="col-sm-5" style="border: 1px dashed #1a2c42;">
+                                                <b><span style="font-family: lucida sans; font-size: 18px;color:black">Keterangan:</span></b><br>
+                                                <span style="font-family: lucida sans; font-size: 18px;color:black"> \(F_L\) \(=\) Gaya Magnetik (N)</span><br>
+                                                <span style="font-family: lucida sans; font-size: 18px;color:black"> \(i_1\) \(=\) Besar arus listrik di kawat pertama (A)</span><br>
+                                                <span style="font-family: lucida sans; font-size: 18px;color:black">\(i_2\) \(=\) Besar arus listrik di kawat kedua (A)</span><br>
+                                                <span style="font-family: lucida sans; font-size: 18px;color:black"> <var>l</var> \(=\) Panjang kawat (m)</span><br>
+                                                <span style="font-family: lucida sans; font-size: 18px;color:black"> <var>a</var> \(=\) Jarak antara kedua kawat (m)</span><br>
+                                                <span style="font-family: lucida sans; font-size: 18px;color:black"> <var>&mu;<sub>0</sub></var> \(=\) Permeabilitas magnet \((4&pi;\times10^{-7})\) Wb/Am</span>
+                                              
+                                              </div>
+                                            </div> 
+                                              
+                                             
+    
+                                          </div>
+                                        </div>
+                                        </div>
+                                        <div class="small">
+                                          <div class="card border-dark mb-10" style="background-color:#fdefeb; max-width: 100%">
+                                            <div class="card  mb-3" style="background-color: #1a2c42;"></div>
+                                            <img src="img/mengamati.png" class="img-fluid" style="width:300px; height:100px">
+                                            <div class="card-body text-black" style="background-color: #fdefeb">
+                                              <p style="font-family: lucida sans; font-size: 18px;color:black;">video di bawah ini adalah demonstrasi percobaan gaya magnetik antara dua konduktor lurus panjang dan sejajar. <b>Simaklah dengan cermat agar kamu dapat mengerjakan Tabel Pengamatan dengan mudah !</b></p>
+                                              </p> 
+                                              <center>
+                                                <video id="vidrf" style="width: 80%" controls>
+                                                    <source src="VID/Dua Kawat Sejajar.mp4" type="video/mp4">
+                                                </video>
+                                                <br>
+                                              
+                                              <div class="d-grid gap-2 d-md-block">
+                                                <button class="controls_vid_button" onclick="setCurTime(1)" type="button">Pendahuluan</button>
+                                                <button class="controls_vid_button" onclick="setCurTime(2)" type="button">Tujuan Percobaan</button>
+                                                <button class="controls_vid_button" onclick="setCurTime(3)" type="button">Alat dan Bahan</button>
+                                                <button class="controls_vid_button" onclick="setCurTime(4)" type="button">Percobaan 1</button>
+                                                <button class="controls_vid_button" onclick="setCurTime(5)" type="button">Percobaan 2</button>
+                                              </div>
+                                              <br>
+                                              <p style="font-family: lucida sans; font-size: 15 px;color:black;">Video 5. Gaya Magnetik antara Dua Konduktor Lurus Panjang dan Sejajar</p><br><br>
+                                              </center>
+                                              <h3 id="penje"></h3>
+                                              <div class="penjelasanku hilang">
+                                                <div class="bord">
+                                              <center><h5 style="font-family: lucida sans;color:black">Setelah menyimak dan memperhatikan video di atas, selanjutnya kamu diminta untuk mengerjakan lembar kerja yang telah di sediakan dibawah ini !</h5>
+
+                                              <button id="petkon2" class="petkon2" onclick="petkon2()">Klik untuk Membuka Lembar Kerja </button></center>
+                                              <div id="myModal2" class="modal2">
+                                                  <div class="modal-content2">
+                                                      <span class="close2">&times;</span>
+                                                      <div id="download">
+                                                      <div class="card" style="padding: 20px; color:black; background-color: #d48166; font-family: lucida sans;">
+                                                      <center> <h4>Gaya Magnetik antara Dua Konduktor Lurus Panjang dan Sejajar</h4></center>
+                                                       
+                                                      </div>
+                                                      <br>
+                                                       <div class="border-double">
+                                          
+                                                  
+                                                      <br> 
+                                                      <center><button class="klik" onclick="myFunction()" style="font-family:lucida sans; font-size:18px">Langkah kerja (klik untuk menyembunyikan)</button></center>
+                                                      <div id="langkah" style="border:solid 3px black">
+                                                          <ol style="padding-left: 5px; padding-right: 30px; color:black; font-family: lucida sans; font-size: 18px;">
+                                                              <b>Petunjuk</b>
+                                                              <li style="margin-left: 30px; margin-right: 20px; color:black;">Setelah mengamati video di atas, selanjutnya kamu di minta untuk mengerjakan lembar kerja yang telah di sediakan. </li>
+                                                          
+                                                              <li style="margin-left: 30px; margin-right: 20px; color:black;">Tulis jawaban di tempat / kotak yang sudah disediakan</li>
+                                                              <li style="margin-left: 30px; margin-right: 20px; color:black;">pada Tabel Pengamatan jika jawaban benar akan muncul keterangan benar dan jika jawaban salah akan muncul keterangan salah </li>
+                                                              <li style="margin-left: 30px; margin-right: 20px; color:black;">berikan kesimpulan dari materi yang telah dipelajari pada kolom yang telah di sediakan</li>
+                                                                  <li style="margin-left: 30px; margin-right: 20px; color:black;">Cetak Hasil lembar kerja yang sudah kamu jawab dan beri nama <b>LK5_Nama siswa</b><br> </li>
+                                                                  <li style="margin-left: 30px; margin-right: 20px; color:black;">Klik <b>Pilih File</b> yang telah di buat tadi selanjutnya klik <b>Upload</b></li>
+                                                                  
+                                                              <li style="margin-left: 30px; margin-right: 20px;color:black;">Selesai</li>
+                                                          </ol>
+                                                      </div>
+                                                      <br>
+
+                                                      <center>
+                                                        <div class="kwtlurus">
+                                                          <p style="font-family:lucida sans; font-size:18px; color:black;">Nama: <span id="namalink"></span></p>
+                                                          <p style="font-family:lucida sans; font-size:18px; color:black;">NISN:  <span id="nislink"></span></p>
+                                                          <p style="font-family:lucida sans; font-size:18px; color:black;">Kelas: <td><span id="kelaslink"></span></td></p>
+                                                        </div>
+                                                        </center>
+                                                        <br>
+                                                        <br>
+                                                        <center><h2 style="font-family:lucida sans; font-size:18px; color:black;" >Tabel Pengamatan</h2></center>
+                                             
+                                                      <div style="overflow-x: auto">
+                                                        <table class="table" border="3px" >
+                                                        <thead class="thead" style="background-color:#d48166; color:#000;">
+                                                          <tr>
+                                                            <th scope="col" style="font-family: lucida sans; font-size: 15px;">Percobaan</th>
+                                                            <th scope="col" style="font-family: lucida sans; font-size: 15px;">Dua Kawat Sejajar Berarus</th>
+                                                            <th scope="col" style="font-family: lucida sans; font-size: 15px;">Hasil Pengamatan</th>
+                                                            <th scope="col" style="font-family: lucida sans; font-size: 15px;">Keterangan</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr style="background-color:#ffdead; color:#000">
+                                                            <th scope="row" style="font-family: lucida sans; font-size: 15px;">1</th>
+                                                            <td style="font-family: lucida sans; font-size: 15px;">Kedua kawat diberi arus searah</td>
+                                                            <td style="font-family: lucida sans; font-size: 15px;" class="text-center"><input type="checkbox" onclick="cekBtame1();" style="width: 20px; height: 20px;" name="tame" id="btame1">Tarik-Menarik<br><br><input type="checkbox" onclick="cekStome1();" style="width: 20px; height: 20px;" name="tome" id="stome1">Tolak-Menolak</td>
+                                                            <td><span class="cektame1" style="font-weight: bold; font-family:'Lucida Sans'; font-size:20px;"></span></td>
+                                                          </tr>
+                                                          <tr style="background-color:#ffdead; color:#000">
+                                                            <th scope="row" style="font-family: lucida sans; font-size: 15px;">2</th>
+                                                            <td style="font-family: lucida sans; font-size: 15px;">Kedua Kawat diberi arus berlawanan</td>
+                                                            <td style="font-family: lucida sans; font-size: 15px;" class="text-center"><input type="checkbox" onclick="cekStame2();" style="width: 20px; height: 20px;" name="tame" id="stame2">Tarik-Menarik<br><br><input type="checkbox" onclick="cekBtome2();" style="width: 20px; height: 20px;" name="tome" id="btome2">Tolak-Menolak</td>
+                                                            <td><span class="cektome2" style="font-weight: bold; font-family:'Lucida Sans'; font-size:20px;"></span></td>
+                                                          </tr>
+                                                         
+                                                        </tbody>
+                                                      </table>
+                                                      <br>
+                                                      <h2 style="font-family:lucida sans; font-size:16px; color:black;">Setelah selesai menjawab tabel pengamatan di atas, kemudian kamu diminta untuk memberikan kesimpulan, berikan kesimpulanmu pada kolom kosong dibawah ini !</h2>
+                                                      <center><h2 style="font-family:lucida sans; font-size:18px; color:black;" >Kesimpulan</h2></center>
+                                                      <textarea id="content2" cols="60" rows="8" name="isi" style="width: 100%; border:solid 3px black;"></textarea>
+                                      
+                                                  <div class="border-double">
+                                                    <center>
+                                                      <p style="margin-left: 20px; color: black; font-family: lucida sans; font-size:18px"> klik "Cetak Rancangan" untuk menyimpan tugas</p><br>
+                                      
+                                                      <button id="content2" style="margin-left: 20px; font-family: lucida sans; font-size:18px" onclick="window.print();" class="btn btn-info cetak">Cetak Rancangan </button>
+                                                      <div id="keterangan"></div>
+                                                      <br />
+                                                      <label>Nama File</label> <input type="text" style="font-family: lucida sans; font-size:15px;" id="namebox" /> <label id="extlab"></label>
+                                                     
+                                                      
+                                                      <span id="myimg"><label style="color:black; font-family:lucida sans; font-size:18px" id="upprogress"></label></span>     
+                                      
+                                                      <button id="selbtn" class="btnpilih" style="margin-left: 20px;">Pilih File</button> 
+                                      
+                                                      <button id="upbtn" class="btnupload" style="margin-left: 10px;">Upload</button>
+                                              
+                                              </center>
+                                                        
+                                                        
+                                             
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div>
+                                            </div></div></div></div></div></div></div></div>
+                               
+
+                                      <div id="dua">
+                                        <p style="font-family: lucida sans; font-size: 18px; color:black;"><i><b>*Perhatikan Contoh Soal berikut dan Silahkan baca "Petunjuk Kerja" untuk mengerjakan soal latihan dibawah ini</b></i></p>
+                                        <center>
+                                        <div class="small mt-3">
+                                        <!-- <button class="isimateri btn2 third" style="font-family: lucida sans; font-size: 18px">Klik untuk Melihat Petunjuk Kerja</button><br> -->
+                                        <div id="isimateri" style="font-family: lucida sans; font-size: 18px">
+                                        <center><p style="color:black">Petunjuk Pengerjaan Latihan</p></center>
+                                        <hr>
+                                        <ol>     
+                                        <li style="color:black">Isilah kolom yang kosong dibawah ini dengan benar</li>
+                                        <li style="color:black">jika jawaban kamu benar maka kotak akan berwarna  "<font style="color: green;font-weight: bold;">Hijau</font>" </li>
+                                        <li style="color:black">jika jawaban kamu salah maka kotak akan berwarna "<font style="color: red;font-weight: bold;">Merah</font>", silahkan coba lagi ! </li>       
+                                        </ol>
+                                        </div>
+                                        </center>                                                              
+                                      
+                                        <br>
+                                      <div class="card-text" style="background-color:#ffdead;">
+                                        <div class="card-header" style="background-color:#d48166;" >
+                                          <ul class="nav nav-tabs card-header-tabs">
+                                            <li class="nav-item">
+                                              <a class="nav-link active " data-toggle="tab" style="color:black; font-family: lucida sans; font-size: 18px;" href="#contoh">Contoh Soal</a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" data-toggle="tab" style="color:black;  font-family: lucida sans; font-size: 18px;" href="#lat1">Latihan</a>
+                                            </li>
+                                           
+            
+                                          </ul>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="contoh">
+                                                    <p class="card-text" style="font-family: lucida sans; font-size: 18px;color:black;">Dua kawat lurus yang panjangnya 2 m berjarak 1 m satu sama lain. Kedua kawat di aliri arus yang sama besar dan arahnya berlawanan. Jika gaya yang timbul pada kawat \(1,5\times 10^{-7}\) N/m, tentukan kuat arus yang mengalir pada kedua kawat tersebut !<br>
+                                                        <br>
+                                                       <i><b>Penyelesaian:</b></i>
+                                                        <br>
+                                                       
+                                                        <b>Diketahui:</b><var>l</var> = 2 m <br>
+                                                    
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<var>a</var> = 1 m <br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<var>F</var> = \(1,5\times 10^{-7}\) N/m <br>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\(i_1=i_2=i\)<br>
+                                                        <b>Ditanya: besarnya kuat arus yang mengalir pada kedua kawat, <var>i</var> =...?</b><br>
+                                                        <b>Jawab: </b><br>
+                                                        \(\frac{F}{l}=\frac{&mu;_0i_1i_2}{2&pi;a}\)<br>
+                                                        \(F =\frac{&mu;_0i_2}{2&pi;a}l\)<br>
+                                                        \(1,5\times10^{-7} = \frac{(2\times10^{-7})i_2}{1}(2)\)<br>
+                                                        \(i_2 = \frac{1,5\times10^{-7}}{4\times10^{-7}}\)<br>
+                                                        \(i_2 = 0,375\) A<br>
+                                                        \(i = 0,61\) A<br>
+                                                        Karena \(i=i_1=i_2\), maka \(i_1 = 0,61\) A dan \(i_2 = 0,61\) A.</p>
+                                                      
+                                                       
+                                                </div>
+                                                    <div class="tab-pane fade" id="lat1">
+                                                        <p class="card-text" style="font-family: lucida sans; font-size: 18px;color:black;">Dua bawah kawat Panjang sejajar  terpisah pada jarak 5 cm, masing-masing di aliri arus sebesar 5 A dan 10 A. tentukan besar  gaya magnetik persatuan Panjang yang bekerja pada kawat : <br>
+                                                            <br>
+                                                            <b><i>Penyelesaian:</i></b><br><br>
+                                                            <b>Diketahui:</b> <br>
+                                                             
+                                                            <form name="form">
+                                                              <p style="font-family: lucida sans; font-size: 18px;color:black;"> &nbsp;&nbsp;&nbsp;<var>a</var> = <input type="text" name="a1" size="2" class="jwbn" id="b1" onchange="cek1()"> \(=\) <input type="text" name="a2" size="2" class="jwbn" id="b2" onchange="cek2()"> \(\times\) <input type="text" name="a3" size="2" class="jwbn" id="b3" onchange="cek3()"> <sup><input type="text" name="a4" size="1" class="jwbn" id="b4" onchange="cek4()"></sup> m <br><br>
+                                                                &nbsp;&nbsp;\(i_1\) = <input type="text" name="a5" size="2" class="jwbn" id="b5" onchange="cek5()"> A<br><br>
+                                                                &nbsp;&nbsp;\(i_2\) = <input type="text" name="a6" size="2" class="jwbn" id="b6" onchange="cek6()"> A<br><br>
+                                                            
+                                                              <b>Ditanya: besar gaya magnetik yang di alami kedua kawat, \(\frac{F}{l}\) =...?</b><br><br>
+                                                            
+                                                              <b>Jawab:</b><br>
+                                                              \(\frac{F}{l}=\frac{&mu;_0i_1i_2}{2&pi;a}\)
+                                                              <table>
+                                                                <tr>
+                                                                  <td  rowspan="2" style="color:black;">\(\frac{F}{l}=\)</td>
+                                                                   <td style="border-bottom: 1px solid black; padding:3px; font-family: lucida sans; font-size: 18px;color:black;">
+                                                                    \(4&pi;\times10^{-7}\) Wb/Am \(\times\) <input type="text" name="a7" size="2" class="jwbn" id="b7" onchange="cek7()"> A \(\times\) <input type="text" name="a8" size="2" class="jwbn" id="b8" onchange="cek8()"> A
+                                                                    </td>
+                                                                    <tr><td style="font-family:Lucida Sans; font-size: 18px;color:black;">\(2&pi;\) \(\times\) <input type="text" name="a9" size="2" class="jwbn" id="b9" onchange="cek9()"> \(\times\) <input type="text" name="c1" size="2" class="jwbn" id="d1" onchange="ck1()"> <sup><input type="text" name="c2" size="1" class="jwbn" id="d2" onchange="ck2()"></sup> m 
+                                                                </tr></table><br>
+                                                             
+                                                              <p style="font-family:Lucida Sans; font-size: 18px;color:black;">\(\frac{F}{l}=\)<input type="text" name="c3" size="2" class="jwbn" id="d3" onchange="ck3()"> \(\times\) <input type="text" name="c4" size="2" class="jwbn" id="d4" onchange="ck4()"> <sup><input type="text" name="c5" size="1" class="jwbn" id="d5" onchange="ck5()"></sup> N<br><br></p>
+                                                          
+                                                             <p style="font-family: lucida sans; font-size: 18px;color:black;">Jadi besar gaya magnetik yang di alami kedua kawat, adalah <input type="text" name="c6" size="2" class="jwbn" id="d6" onchange="ck6()"> \(\times\) <input type="text" name="c7" size="2" class="jwbn" id="d7" onchange="ck7()"> <sup><input type="text" name="c8" size="1" class="jwbn" id="d8" onchange="ck8()"></sup> N </p>
+                                                           
+                                                            
+                                                          
+                                                           
+                                                    </div>
+                                                  
+                                            </div>
+                                        </div>
+                                      </div>
+                                      </div>
+                                    </div>
+                                    <br>
+
+                                    
+<nav aria-label="...">
+  <ul class="pagination" >
+  <li class="page-item disabled" id="btnprev"   >
+  <a class="btn btn-danger ml-2" style="font-family: lucida sans; font-size:20px;border-radius: 10px; color:black" id="mnext"  href="gmlurus.html"></i>Materi Sebelumnya</a></li>
+  <li class="page-item active text-white" style="font-family:lucida sans; font-size:20px" id="btnsatu"><a class="page-link" onclick="satu3();" style="cursor: pointer;">1</a></li>
+  <li class="page-item text-white" style="font-family:lucida sans; font-size:20px" id="btndua"><a class="page-link" onclick="dua3();" style="cursor: pointer;">2</a></li>
+  <li class="page-item" id="btnnext">
+    <a style="font-family:lucida sans; font-size:20px" id="next" class="page-link" onclick="dua3();" style="cursor: pointer;">Next</a>
+  </li>
+  <li><a class="btn btn-primary border-dark" style=" font-family: lucida sans; font-size:20px; ; border-radius: 10px; color:black" id="mnext" href="gmpartikel.html">Materi Selanjutnya</a></li>
+  
+  </ul>
+  </nav> 
+                                    
+                                  
+                                  
+                                 
+                                </div>
+                            </div>
+                          </div>
+                         </div>
+                         </div>
+                        
+
+
+        
+        <!-- End of Content Wrapper -->
+
+    
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    
+
+   
+    <!-- Bootstrap core JavaScript-->
+    <script src="JS/jquery.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="JS/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="JS/sbadmin2.js"></script>
+
+   
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js"></script>
+
+    <script src="JS/script.js"></script>
+    <script src="JS/GMdua.js"></script>
+    <script src="JS/profil.js"></script>
+    <script src="JS/upload.js"></script>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("langkah");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+      </script>
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBao_sbYCHawUpfWf1w7kpeCd-p658afBY",
+          authDomain: "medanmagnetik-a9cd4.firebaseapp.com",
+          databaseURL: "https://medanmagnetik-a9cd4-default-rtdb.firebaseio.com",
+          projectId: "medanmagnetik-a9cd4",
+          storageBucket: "medanmagnetik-a9cd4.appspot.com",
+          messagingSenderId: "285660468832",
+          appId: "1:285660468832:web:579d68ef9d6d73ab229505",
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      
+        import { getStorage, ref as sRef, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-storage.js";
+        // firebase realtime database
+        import { getDatabase, ref, set, child, get, update, remove } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-database.js";
+        const db = getDatabase();
+
+        //---------identitas diri--------------
+   let namalink = document.getElementById("namalink");
+      let nislink = document.getElementById("nislink");
+      let kelaslink = document.getElementById("kelaslink");
+
+      let linkNama = sessionStorage.getItem("name");
+      let linknis = sessionStorage.getItem("NIS");
+      let linkkelas = sessionStorage.getItem("kelas");
+      namalink.innerText = linkNama;
+      nislink.innerText = linknis;
+      kelaslink.innerText = linkkelas;
+
+      
+        //VARIABLES & REFERENCES
+      
+        var files = [];
+        var reader = new FileReader();
+      
+        var namebox = document.getElementById("namebox");
+        var extlab = document.getElementById("extlab");
+        var myimg = document.getElementById("myimg");
+        var proglab = document.getElementById("upprogress");
+        var SelBtn = document.getElementById("selbtn");
+        var UpBtn = document.getElementById("upbtn");
+        var DownBtn = document.getElementById("downbtn");
+      
+        var input = document.createElement("input");
+        input.type = "file";
+      
+        input.onchange = (e) => {
+          files = e.target.files;
+      
+          var extention = GetFileExt(files[0]);
+          var name = GetFileName(files[0]);
+      
+          namebox.value = name;
+          extlab.innerHTML = extention;
+      
+          reader.readAsDataURL(files[0]);
+        };
+        reader.onload = function () {
+          myimg.src = reader.result;
+        };
+      
+        //Selection
+        SelBtn.onclick = function () {
+          input.click();
+        };
+      
+        function GetFileExt(file) {
+          var temp = file.name.split(".");
+          var ext = temp.slice(temp.length - 1, temp.length);
+          return "." + ext[0];
+        }
+      
+        function GetFileName(file) {
+          var temp = file.name.split(".");
+          var fname = temp.slice(0, -1).join(".");
+          return fname;
+        }
+      
+        async function UploadProcess() {
+          // upload file
+      
+          var ImgToUpload = files[0];
+          var name = namebox.value;
+      
+          const metaData = {
+            contentType: ImgToUpload.type,
+          };
+      
+          const storage = getStorage();
+      
+          const storageRef = sRef(storage, "gmdua/" + name);
+      
+          const UploadTask = uploadBytesResumable(storageRef, ImgToUpload, metaData);
+      
+          UploadTask.on(
+            "state-changed",
+            (snapshot) => {
+              var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+              proglab.innerHTML = "Upload" + progress + "%";
+            },
+      
+            (error) => {
+              alert("error : File not uploaded");
+            },
+      
+            () => {
+              getDownloadURL(UploadTask.snapshot.ref).then((downloadURL) => {
+                const linkNama = sessionStorage.getItem("name");
+                const linknis = sessionStorage.getItem("NIS");
+                const linkkelas = sessionStorage.getItem("kelas")
+      
+                set(ref(db, "gmdua/" + name), {
+                  name: linkNama,
+                  NIS: linknis,
+                  kelas:linkkelas,
+                  nama: name,
+                  link: downloadURL,
+                });
+      
+                // $('#exampleModal').modal('hide');
+                alert("sukses");
+              });
+            }
+          );
+        }
+      
+        UpBtn.onclick = UploadProcess;
+       
+      </script>
+
+</body>
+
+</html>
