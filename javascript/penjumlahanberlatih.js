@@ -1,61 +1,30 @@
-// function cekJawaban() {
-//   //soal 1
-//   var lat1 = document.getElementById("lat1");
-//   var lat2 = document.getElementById("lat2");
-
-//   document.getElementById("btnCek1").addEventListener("click", function () {
-//     if (lat1.value == 18 && lat2.value == 20) {
-//       lat1.classList.add("jawabpecahanbenar");
-//       lat1.classList.remove("jawabpecahansalah");
-//       lat2.classList.add("jawabpecahanbenar");
-//       lat2.classList.remove("jawabpecahansalah");
-//       document.getElementById("btnLanjut").style.display = "block";
-//       document.getElementById("btnCek1").style.display = "none";
-//       document.getElementById("alertHasil1").innerHTML = `
-//         <div class="alert alert-info" role="alert">
-//             Jawaban benar. Klik soal berikutnya!
-//         </div>
-//       `;
-//     } else {
-//       lat1.classList.remove("jawabpecahanbenar");
-//       lat1.classList.add("jawabpecahansalah");
-//       lat2.classList.remove("jawabpecahanbenar");
-//       lat2.classList.add("jawabpecahansalah");
-//       document.getElementById("alertHasil1").innerHTML = `
-//         <div class="alert alert-danger" role="alert">
-//             Jawaban salah. Ayo coba lagi !!!
-//         </div>
-//       `;
-//     }
-//   });
-// }
 //cek jawaban isian
 function cekJawaban() {
   //isian 1
   // let tidak dapat di deklarasikan ulang
-  let isi1 = document.getElementById("isian1").value.toLowerCase();
+  let isi1 = document.getElementById("isian11").value.toLowerCase();
   let jawaban1 = new RegExp("18");
   let result1 = jawaban1.test(isi1);
 
   if (result1 == true) {
-    document.getElementById("cekIsian1").style.color = "green";
-    document.getElementById("isian1").style.border = "2px solid green";
+    document.getElementById("cekIsian11").style.color = "green";
+    document.getElementById("isian11").style.border = "2px solid green";
   } else {
-    document.getElementById("cekIsian1").style.color = "red";
-    document.getElementById("isian1").style.border = "2px solid red";
+    document.getElementById("cekIsian11").style.color = "red";
+    document.getElementById("isian11").style.border = "2px solid red";
   }
 
   //isian 2
-  let isi2 = document.getElementById("isian2").value.toLowerCase();
+  let isi2 = document.getElementById("isian12").value.toLowerCase();
   let jawaban2 = new RegExp("20");
   let result2 = jawaban2.test(isi2);
 
   if (result2 == true) {
-    document.getElementById("cekIsian2").style.color = "green";
-    document.getElementById("isian2").style.border = "2px solid green";
+    document.getElementById("cekIsian12").style.color = "green";
+    document.getElementById("isian12").style.border = "2px solid green";
   } else {
-    document.getElementById("cekIsian2").style.color = "red";
-    document.getElementById("isian2").style.border = "2px solid red";
+    document.getElementById("cekIsian12").style.color = "red";
+    document.getElementById("isian12").style.border = "2px solid red";
   }
 
   //isian 3
@@ -101,13 +70,13 @@ function cekJawaban() {
 //reset isian
 function reset() {
   // document.getElementsByClassName('ini')[0].value = "";
-  document.getElementById("isian1").value = "";
-  document.getElementById("isian2").value = "";
+  document.getElementById("isian11").value = "";
+  document.getElementById("isian12").value = "";
   // document.getElementById("isian3").value = "";
   // document.getElementById("isian4").value = "";
   // document.getElementById("isian5").value = "";
-  document.getElementById("isian1").style.border = "1px solid black";
-  document.getElementById("isian2").style.border = "1px solid black";
+  document.getElementById("isian11").style.border = "1px solid black";
+  document.getElementById("isian12").style.border = "1px solid black";
   document.getElementById("isian3").style.border = "1px solid black";
   document.getElementById("isian4").style.border = "1px solid black";
   document.getElementById("isian5").style.border = "1px solid black";
