@@ -283,3 +283,68 @@ header nav.navbar {
   font-size: 20px;
   color: black;
 } */
+/* Drag And drop bumi*/
+/* .tabb {
+  margin-left: 38%; 
+} */
+
+.kotak {
+  background-color: #655dbb;
+  border: 1px solid #cecece;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: 2px 2px 6px black;
+  width: 150px;
+  /* height: fit-content; */
+  display: inline-block !important;
+  text-align: center;
+  height: 380px;
+}
+.soal {
+  width: 70%;
+  border: 1px solid #eadca6;
+  border-radius: 10px;
+  color: white;
+  text-align: justify;
+  box-shadow: 2px 2px 6px black;
+  padding: 20px;
+}
+
+.draggable {
+  color: black;
+  width: fit-content;
+  display: inline-block !important;
+  text-align: center;
+  padding: 5px;
+  height: 50px;
+  cursor: move;
+  border: 1px dashed black;
+}
+
+.draggable:hover {
+  background-color: white;
+}
+
+.droppable {
+  background-color: #f4f4f4;
+  border: 1px solid #cecece;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px 0;
+  box-shadow: 2px 2px 6px black;
+  color: black;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  height: 50px;
+}
+
+.cekjwb {
+  background-color: #398ab9;
+  border: 1px solid #cecece;
+  border-radius: 5px;
+  padding: 3px 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+}
