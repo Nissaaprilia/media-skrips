@@ -136,6 +136,36 @@
             <div class="card-body border border-primary ms-3 me-3">
               <h4 class="card-title"><img src="../img/berlatih.png" alt="" style="width: 220px" /></h4>
               <div class="card-body border border-primary ms-3 me-3">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
+                  <i class="bi bi-search"></i>
+                  Petunjuk Soal (Klik disini)
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk Pengerjaan</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        1. Kerjakan pertanyaan di bawah ini <br />
+                        2. Jawablah hasil penjumlahan pada kolom yang sudah di sediakan <br />
+                        3 Jika jawaban benar maka kolom akan berwarna "hijau" <br />
+                        4. Jika jawaban salah maka kolom akan berwarna "merah" <br />
+                        5. Untuk memeriksa jawaban bisa klik tombol "cek jawaban"<br />
+                        6. Untuk mengulangi pertanyaan bisa klik tombol "coba lagi"
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Akhir modal -->
+                <br />
                 <table class="table table-bordered border-primary" style="width: px" ;>
                   <tr>
                     <td scope="row">No</td>
@@ -144,100 +174,100 @@
                   </tr>
                   <tr>
                     <td scope="row">1</td>
-                    <td colspan="2"><h3>\( \frac{1}{2} + \frac{4}{3} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{1}{2} + \frac{4}{3} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian11"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian12"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">2</td>
-                    <td colspan="2"><h3>\( \frac{2}{3} + \frac{3}{6} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{2}{3} + \frac{8}{6} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian2" placeholder="..." type="text" size="1" /><span id="cekIsian2"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">3</td>
-                    <td colspan="2"><h3>\( \frac{5}{2} + \frac{3}{4} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{5}{2} + \frac{3}{4} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian2" placeholder="..." type="text" size="1" /><span id="cekIsian2"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">4</td>
-                    <td colspan="2"><h3>\( \frac{5}{10} + \frac{8}{5} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{5}{10} + \frac{8}{5} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian2" placeholder="..." type="text" size="1" /><span id="cekIsian2"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">5</td>
-                    <td colspan="2"><h3>\( \frac{3}{4} + \frac{5}{8} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{3}{4} + \frac{5}{8} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian2" placeholder="..." type="text" size="1" /><span id="cekIsian2"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">6</td>
-                    <td colspan="2"><h3>\( \frac{1}{4} + \frac{3}{20} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{1}{4} + \frac{3}{20} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian2" placeholder="..." type="text" size="1" /><span id="cekIsian2"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">7</td>
-                    <td colspan="2"><h3>\( \frac{3}{10} + \frac{1}{6} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{3}{10} + \frac{1}{6} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian2" placeholder="..." type="text" size="1" /><span id="cekIsian2"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">8</td>
-                    <td colspan="2"><h3>\( \frac{3}{5} + \frac{2}{6} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{3}{5} + \frac{2}{6} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian2" placeholder="..." type="text" size="1" /><span id="cekIsian2"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">9</td>
-                    <td colspan="2"><h3>\( \frac{1}{2} + \frac{1}{5} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{1}{2} + \frac{1}{5} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian2" placeholder="..." type="text" size="1" /><span id="cekIsian2"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">10</td>
-                    <td colspan="2"><h3>\( \frac{6}{12} + \frac{2}{3} =\)</h3></td>
+                    <td colspan="2"><h2>\( \frac{6}{12} + \frac{2}{3} =\)</h2></td>
                     <td>
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian1"></span>
+                      <input id="isian16" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <br />
                 </table>
               </div>
               <br />
-              <button class="btn btn-outline-primary" onclick="cekJawaban()">Cek Jawaban</button>
-              <button onclick="reset()" class="btn btn-outline-success">Coba Lagi</button>
+              <button class="btn btn-outline-success" onclick="cekJawaban()">Cek Jawaban</button>
+              <button onclick="reset()" class="btn btn-outline-danger">Coba Lagi</button>
             </div>
           </div>
           <br />
@@ -272,6 +302,6 @@
 
     <!-- Javascript -->
     <!-- <link rel="stylesheet" href="../javascript/penjumlahanberlatih.js" -->
-    <script src="../javascript/penjumlahanberlatih.js"></script>
+    <script src="../javascript/mencobadanberlatih.js"></script>
   </body>
 </html>

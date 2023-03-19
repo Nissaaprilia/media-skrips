@@ -136,8 +136,37 @@
             <div class="card-body border border-primary ms-3 me-3">
               <h4 class="card-title"><img src="../img/mencoba.png" alt="" style="width: 220px" /></h4>
               <div class="card-body border border-primary ms-3 me-3">
-                <p>Kerjakan penjumlahan pecahan di bawah ini !</p>
+                <!-- Modal -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
+                  <i class="bi bi-search"></i>
+                  Petunjuk Soal (Klik disini)
+                </button>
 
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk Pengerjaan</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        1. Kerjakan pertanyaan di bawah ini <br />
+                        2. Jawablah hasil penjumlahan pada kolom yang sudah di sediakan <br />
+                        3 Jika jawaban benar maka kolom akan berwarna "hijau" <br />
+                        4. Jika jawaban salah maka kolom akan berwarna "merah" <br />
+                        5. Untuk memeriksa jawaban bisa klik tombol "cek jawaban"<br />
+                        6. Untuk mengulangi pertanyaan bisa klik tombol "coba lagi"
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Akhir modal -->
+                <br />
                 <table class="table table-bordered border-primary" style="width: 150px" ;>
                   <tr>
                     <td scope="row">No</td>
@@ -146,53 +175,53 @@
                   </tr>
                   <tr>
                     <td scope="row">1</td>
-                    <td colspan="2">\( \frac{5}{10} + \frac{6}{20} \)</td>
+                    <td colspan="2"><h2>\( \frac{5}{10} + \frac{6}{20} = \)</h2></td>
                     <td>
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">2</td>
-                    <td colspan="2">\( \frac{1}{16} + \frac{4}{8} \)</td>
+                    <td colspan="2"><h2>\( \frac{1}{16} + \frac{4}{8} = \)</h2></td>
                     <td>
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">3</td>
-                    <td colspan="2">\( \frac{3}{5} + \frac{2}{2} \)</td>
+                    <td colspan="2"><h2>\( \frac{3}{5} + \frac{2}{2} =\)</h2></td>
                     <td>
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">4</td>
-                    <td colspan="2">\( \frac{2}{15} + \frac{4}{10} \)</td>
+                    <td colspan="2"><h2>\( \frac{2}{15} + \frac{4}{10} = \)</h2></td>
                     <td>
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <tr>
                     <td scope="row">5</td>
-                    <td colspan="2">\( \frac{2}{5} + \frac{6}{20} = \)</td>
+                    <td colspan="2"><h2>\( \frac{2}{5} + \frac{6}{20} = \)</h2></td>
                     <td>
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                       <br />
-                      <input id="#" placeholder="..." type="text" size="1" /><span id="#"></span>
+                      <input id="isian15" placeholder="..." type="text" size="1" />
                     </td>
                   </tr>
                   <br />
                 </table>
-                <button type="button" class="btn btn-outline-primary">Cek Jawaban</button>
-                <button type="button" class="btn btn-outline-success">Coba Lagi</button>
+                <button class="btn btn-outline-success" onclick="cekJawaban()">Cek Jawaban</button>
+                <button onclick="reset()" class="btn btn-outline-danger">Coba Lagi</button>
               </div>
             </div>
             <br />
@@ -227,5 +256,6 @@
         sidebar.classList.toggle("close");
       });
     </script>
+    <script src="../javascript/mencobadanberlatih.js"></script>
   </body>
 </html>

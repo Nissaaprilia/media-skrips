@@ -138,8 +138,8 @@
               <div class="card-body border border-primary ms-3 me-3">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
-                  <img src="../img/user.png" width="40px" alt="" />
-                  Petunjuk Soal
+                  <i class="bi bi-search"></i>
+                  Petunjuk Soal (Klik disini)
                 </button>
 
                 <!-- Modal -->
@@ -147,20 +147,26 @@
                   <div class="modal-dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk</h1>
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk Pengerjaan</h1>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                       </div>
-                      <div class="modal-body">...haiii</div>
+                      <div class="modal-body">
+                        1. Kerjakan pertanyaan di bawah ini <br />
+                        2. Jawablah hasil penjumlahan pada kolom yang sudah di sediakan <br />
+                        3 Jika jawaban benar maka kolom akan berwarna "hijau" <br />
+                        4. Jika jawaban salah maka kolom akan berwarna "merah" <br />
+                        5. Untuk memeriksa jawaban bisa klik tombol "cek jawaban"<br />
+                        6. Untuk mengulangi pertanyaan bisa klik tombol "coba lagi"
+                      </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Understood</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <br>
                 <!-- Akhir modal -->
-                    <table class="table table-bordered border-primary text-center" style="border : 2px" ;>
+                <br />
+                <table class="table table-bordered border-primary text-center" style="border: 2px" ;>
                   <tr>
                     <td scope="row">No</td>
                     <td colspan="2">Soal</td>
@@ -168,7 +174,7 @@
                   </tr>
                   <tr>
                     <td scope="row">1</td>
-                    <td colspan="2"> <h2>\( {1} \frac {2}{3}= \)</h2></td>
+                    <td colspan="2"><h2>\( {1} \frac {2}{3}= \)</h2></td>
                     <td>
                       <input id="isian1" placeholder="..." type="text" size="1" /><span id="cekIsian11"></span>
                       <br />
@@ -262,21 +268,20 @@
               <br />
               <button class="btn btn-outline-primary" onclick="cekJawaban()">Cek Jawaban</button>
               <button onclick="reset()" class="btn btn-outline-success">Coba Lagi</button>
-                <br />
-              </div>
+              <br />
             </div>
-            <br />
-            <br />
-            <nav aria-label="Page navigation example ">
-              <ul class="navigasi bawah pagination justify-content-center">
-                <li class="page-item"><a class="page-link" href="../index.html">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="./materi11.html">1</a></li>
-                <li class="page-item"><a class="page-link" href="./materi12.html">2</a></li>
-                <li class="page-item"><a class="page-link" href="./materi13.html">3</a></li>
-                <li class="page-item"><a class="page-link" href="./materi12.html">Next</a></li>
-              </ul>
-            </nav>
           </div>
+          <br />
+          <br />
+          <nav aria-label="Page navigation example ">
+            <ul class="navigasi bawah pagination justify-content-center">
+              <li class="page-item"><a class="page-link" href="../index.html">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="./materi11.html">1</a></li>
+              <li class="page-item"><a class="page-link" href="./materi12.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="./materi13.html">3</a></li>
+              <li class="page-item"><a class="page-link" href="./materi12.html">Next</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
