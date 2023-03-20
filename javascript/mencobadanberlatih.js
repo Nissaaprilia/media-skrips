@@ -81,3 +81,30 @@ function reset() {
     jawabanmateri16[i].ariaPlaceholder = ". . .";
   }
 }
+//cek jawaban materi 24
+function cekJawaban() {
+  let jawabanmateri24 = document.querySelectorAll("#isian24");
+  let jawabanbenar = ["3", "1", "3", "3", "2", "3", "4", "1", "12", "7", "7", "15", "5", "5", "6", "7", "1", "12", "10", "2", "15", "7", "5", "12", "3", "5", "6", "3", "3", "4"];
+
+  for (let i = 0; i < jawabanmateri24.length; i++) {
+    //length ada 12 jawaban
+    if (jawabanmateri24[i].value.toLowerCase() == jawabanbenar[i]) {
+      jawabanmateri24[i].style.border = "2px solid green";
+      // hasilJawaban[i].innerHTML = "Benar";
+      // hasilJawaban[i].style.color = "green";
+    } else {
+      jawabanmateri24[i].style.border = "2px solid red";
+      // hasilJawaban[i].innerHTML = "Salah";
+      // hasilJawaban[i].style.color = "green";
+    }
+  }
+}
+//reset jawaban materi 24
+function reset() {
+  let jawabanmateri24 = document.querySelectorAll("#isian24");
+  for (let i = 0; i < jawabanmateri24.length; i++) {
+    jawabanmateri24[i].value = "";
+    jawabanmateri24[i].style.border = "0.5px solid black";
+    jawabanmateri24[i].ariaPlaceholder = ". . .";
+  }
+}
