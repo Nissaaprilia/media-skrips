@@ -20,6 +20,10 @@ function cekJawaban() {
   let jawabanmateri24 = document.querySelectorAll("#isian24");
   let jawabanbenar24 = ["3", "1", "3", "3", "2", "3", "4", "1", "12", "7", "7", "15", "5", "5", "6", "7", "1", "12", "10", "2", "15", "7", "5", "12", "3", "5", "6", "3", "3", "4"];
 
+  // jawaban materi 32
+  let jawabanmateri32 = document.querySelectorAll("#isian32");
+  let jawabanbenar32 = ["4", "8", "12", "18", "7", "12", "10", "11", "6", "17"];
+
   //fungsi kolom jawaban materi 12
   for (let i = 0; i < jawabanmateri12.length; i++) {
     if (jawabanmateri12[i].value.toLowerCase() == jawabanbenar12[i]) {
@@ -63,6 +67,15 @@ function cekJawaban() {
       jawabanmateri24[i].style.border = "2px solid red";
     }
   }
+
+  //fungsi kolom jawaban materi 32
+  for (let i = 0; i < jawabanmateri32.length; i++) {
+    if (jawabanmateri32[i].value.toLowerCase() == jawabanbenar32[i]) {
+      jawabanmateri32[i].style.border = "2px solid green";
+    } else {
+      jawabanmateri32[i].style.border = "2px solid red";
+    }
+  }
 }
 //reset jawaban materi
 function reset() {
@@ -71,6 +84,7 @@ function reset() {
   let jawabanmateri15 = document.querySelectorAll("#isian15");
   let jawabanmateri16 = document.querySelectorAll("#isian16");
   let jawabanmateri24 = document.querySelectorAll("#isian24");
+  let jawabanmateri32 = document.querySelectorAll("#isian32");
 
   //materi 12
   for (let i = 0; i < jawabanmateri12.length; i++) {
@@ -105,5 +119,11 @@ function reset() {
     jawabanmateri24[i].value = "";
     jawabanmateri24[i].style.border = "0.5px solid black";
     jawabanmateri24[i].ariaPlaceholder = ". . .";
+  }
+
+  //materi32
+  for (let i = 0; i < jawabanmateri32.length; i++) {
+    jawabanmateri32[i].value = "";
+    jawabanmateri32[i].style.border = "0.5px solid black";
   }
 }
