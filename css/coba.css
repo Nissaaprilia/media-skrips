@@ -1,6 +1,5 @@
-Google Fonts Import Link {
-  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
-}
+/* Google Fonts Import Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -13,12 +12,12 @@ Google Fonts Import Link {
   left: 0;
   height: 100%;
   width: 260px;
-  background: #142d55;
+  background: #11101d;
   z-index: 100;
   transition: all 0.5s ease;
 }
 .sidebar.close {
-  width: 8px;
+  width: 78px;
 }
 .sidebar .logo-details {
   height: 60px;
@@ -211,21 +210,21 @@ Google Fonts Import Link {
 }
 .home-section {
   position: relative;
+  background: #e4e9f7;
   height: 100vh;
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
-  margin-top: 25px;
 }
 .sidebar.close ~ .home-section {
   left: 78px;
   width: calc(100% - 78px);
 }
-/* .home-section .home-content {
+.home-section .home-content {
   height: 60px;
   display: flex;
   align-items: center;
-} */
+}
 .home-section .home-content .bx-menu,
 .home-section .home-content .text {
   color: #11101d;
@@ -239,7 +238,7 @@ Google Fonts Import Link {
   font-size: 26px;
   font-weight: 600;
 }
-@media (max-width: 799px) {
+@media (max-width: 400px) {
   .sidebar.close .nav-links li .sub-menu {
     display: none;
   }

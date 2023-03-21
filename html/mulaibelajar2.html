@@ -28,10 +28,6 @@
     <header>
       <nav class="navbar navbar-expand-lg text-white">
         <div class="container-fluid ms-5 me-5">
-          <!-- <a class="navbar-brand text-white" href="../index.html">Bilangan Pecahan</a> -->
-          <!-- <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
           <div class="collapse navbar-collapse ms-10" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto me-2">
               <li class="nav-item">
@@ -48,13 +44,11 @@
         </div>
       </nav>
     </header>
-    <div class="sidebar open">
+    <div class="sidebar close">
       <div class="logo-details">
         <i class="bx bx-user-circle"></i>
-
         <span class="logo_name">Bilangan Pecahan</span>
       </div>
-
       <ul class="nav-links">
         <li>
           <a href="mulaibelajar.html">
@@ -101,7 +95,7 @@
             <span class="link_name">Rangkuman</span>
           </a>
           <ul class="sub-menu blank">
-            <li><a class="link_name" href="./evaluasi.html">Evaluasi</a></li>
+            <li><a class="link_name" href="./rangkuman.html">Rangkuman</a></li>
           </ul>
         </li>
         <li>
@@ -113,94 +107,97 @@
             <li><a class="link_name" href="./evaluasi.html">Evaluasi</a></li>
           </ul>
         </li>
+
+        <li>
+          <div class="profile-details">
+            <div class="profile-content">
+              <a href="../html/evaluasi.html"><img src="../img/user.png" alt="profileImg" /> </a>
+            </div>
+            <div class="name-job">
+              <div class="profile_name">Nissa</div>
+              <div class="job">Web Desginer</div>
+            </div>
+            <i class="bx bx-log-out"></i>
+          </div>
+        </li>
       </ul>
-      <div class="profile-details">
-        <div class="profile-content">
-          <img src="../img/user.png" alt="profileImg" />
-        </div>
-        <div class="name-job">
-          <div class="profile_name">Annisa April</div>
-          <div class="job">Peserta Didik</div>
-        </div>
-        <i class="bx bx-log-out"></i>
-      </div>
     </div>
     <section class="home-section">
       <div class="home-content">
-        <div class="konten col-9-5 ms-2">
-          <div class="card lg p-3 mb-5 bg-white rounded">
-            <h5 class="card-header text-white text-center" style="background-color: #3e54ac">Pendahuluan</h5>
-            <div class="card-body"></div>
-            <div class="card-body border border-primary ms-3 me-3">
-              <h4 class="card-title">Pecahan</h4>
-              <!-- <h4 class="card-title"><img src="../img/1.png" alt="" style="width: 220px" /></h4> -->
-              <p class="card-text">
-                Untuk lebih memahami pecahan, lengkapilah keterangan yang menyatakan bagian yang berwarna biru pada gambar kotak berikut ! : <br />
-                <br />
-                Secara umum, ditulis dalam bentuk :
-              </p>
-              <table class="table table-bordered border-primary" style="width: 50%" ;>
-                <tr>
-                  <td scope="row">No</td>
-                  <td colspan="2">Gambar</td>
-                  <td>Jawaban</td>
-                </tr>
-                <tr>
-                  <td scope="row">1</td>
-                  <td colspan="2"><img src="../img/pendahuluan/soal1.png" style="width: 100%" /></td>
-                  <td>
-                    <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
-                    <br />
-                    <input class="form-control" type="text" value="3" aria-label="Disabled input example" disabled readonly />
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">2</td>
-                  <td colspan="2"><img src="../img/pendahuluan/soal2.png" style="width: 100%" /></td>
-                  <td>
-                    <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
-                    <br />
-                    <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">3</td>
-                  <td colspan="2"><img src="../img/pendahuluan/soal3.png" style="width: 100%" /></td>
-                  <td>
-                    <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
-                    <br />
-                    <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
-                  </td>
-                </tr>
-                <tr>
-                  <td scope="row">4</td>
-                  <td colspan="2"><img src="../img/pendahuluan/soal4.png" style="width: 100%" /></td>
-                  <td>
-                    <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
-                    <br />
-                    <input class="form-control" type="text" value="5" aria-label="Disabled input example" disabled readonly />
-                  </td>
-                </tr>
-              </table>
-              <button class="btn btn-outline-success" onclick="cekJawaban()">Cek Jawaban</button>
-              <button onclick="reset()" class="btn btn-outline-danger">Coba Lagi</button>
-            </div>
-
-            <br />
-            <br />
-            <nav aria-label="Page navigation example ">
-              <ul class="navigasi bawah pagination justify-content-center">
-                <li class="page-item"><a class="page-link" href="../index.html">Previous</a></li>
-                <li class="page-item"><a class="page-link" href="./mulaibelajar.html">1</a></li>
-                <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">2</a></li>
-                <li class="page-item"><a class="page-link" href="./materi11.html">Next</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <!-- <i class="bx bx-menu"></i>
-        <span class="text">Drop Down Sidebar</span> -->
+        <i class="bx bx-menu"></i>
+        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Pendahuluan</div>
       </div>
+      <div class="konten col-9-5 ms-2">
+        <div class="card lg p-3 mb-5 bg-white rounded">
+          <div class="card-body"></div>
+          <div class="card-body border border-primary ms-3 me-3">
+            <h4 class="card-title">Pecahan</h4>
+            <!-- <h4 class="card-title"><img src="../img/1.png" alt="" style="width: 220px" /></h4> -->
+            <p class="card-text">
+              Untuk lebih memahami pecahan, lengkapilah keterangan yang menyatakan bagian yang berwarna biru pada gambar kotak berikut ! : <br />
+              <br />
+              Secara umum, ditulis dalam bentuk :
+            </p>
+            <table class="table table-bordered border-primary" style="width: 50%" ;>
+              <tr>
+                <td scope="row">No</td>
+                <td colspan="2">Gambar</td>
+                <td>Jawaban</td>
+              </tr>
+              <tr>
+                <td scope="row">1</td>
+                <td colspan="2"><img src="../img/pendahuluan/soal1.png" style="width: 100%" /></td>
+                <td>
+                  <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                  <br />
+                  <input class="form-control" type="text" value="3" aria-label="Disabled input example" disabled readonly />
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">2</td>
+                <td colspan="2"><img src="../img/pendahuluan/soal2.png" style="width: 100%" /></td>
+                <td>
+                  <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                  <br />
+                  <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">3</td>
+                <td colspan="2"><img src="../img/pendahuluan/soal3.png" style="width: 100%" /></td>
+                <td>
+                  <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                  <br />
+                  <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
+                </td>
+              </tr>
+              <tr>
+                <td scope="row">4</td>
+                <td colspan="2"><img src="../img/pendahuluan/soal4.png" style="width: 100%" /></td>
+                <td>
+                  <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                  <br />
+                  <input class="form-control" type="text" value="5" aria-label="Disabled input example" disabled readonly />
+                </td>
+              </tr>
+            </table>
+            <button class="btn btn-outline-success" onclick="cekJawaban()">Cek Jawaban</button>
+            <button onclick="reset()" class="btn btn-outline-danger">Coba Lagi</button>
+          </div>
+          <br />
+          <br />
+          <nav aria-label="Page navigation example ">
+            <ul class="navigasi bawah pagination justify-content-center fixed-bottom">
+              <li class="page-item"><a class="page-link" href="./mulaibelajar.html">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="./mulaibelajar.html">1</a></li>
+              <li class="page-item active"><a class="page-link" href="./mulaibelajar2.html">2</a></li>
+              <li class="page-item"><a class="page-link" href="./materi11.html">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- <i class="bx bx-menu"></i>
+        <span class="text">Drop Down Sidebar</span> -->
     </section>
     <script>
       let arrow = document.querySelectorAll(".arrow");

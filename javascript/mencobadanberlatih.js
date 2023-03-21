@@ -99,6 +99,12 @@ function reset() {
   let jawabanmateri24 = document.querySelectorAll("#isian24");
   let jawabanmateri32 = document.querySelectorAll("#isian32");
 
+  //mulaibelajar2
+  for (let i = 0; i < jawabanbelajar2.length; i++) {
+    jawabanbelajar2[i].value = "";
+    jawabanbelajar2[i].style.border = "0.5px solid black";
+    jawabanbelajar2[i].ariaPlaceholder = ". . .";
+  }
   //materi 12
   for (let i = 0; i < jawabanmateri12.length; i++) {
     jawabanmateri12[i].value = "";
