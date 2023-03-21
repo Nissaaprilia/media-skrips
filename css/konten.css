@@ -365,8 +365,8 @@ header nav.navbar {
   background-color: yellow;
   /* height: 10%; */
   width: 100%;
-  min-height: 500px;
-  max-height: 400px;
+  min-height: 400px;
+  max-height: 550px;
   overflow-x: hidden;
   overflow-y: auto;
 }
