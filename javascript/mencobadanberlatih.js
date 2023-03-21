@@ -1,5 +1,8 @@
 //cek jawaban materi
 function cekJawaban() {
+  //jawaban mulaibelajar2
+  let jawabanbelajar2 = document.querySelectorAll("#mulaibelajar2");
+  let jawabanbenarbe2 = ["1", "2", "1", "1"];
   //jawaban materi 12
   let jawabanmateri12 = document.querySelectorAll("#isian12");
   let jawabanbenar12 = ["3", "3", "5", "4", "3", "4", "4", "4"];
@@ -23,6 +26,15 @@ function cekJawaban() {
   // jawaban materi 32
   let jawabanmateri32 = document.querySelectorAll("#isian32");
   let jawabanbenar32 = ["4", "8", "12", "18", "7", "12", "10", "11", "6", "17"];
+
+  //fungsi kolom jawaban mulaibelajar2
+  for (let i = 0; i < jawabanbelajar2.length; i++) {
+    if (jawabanbelajar2[i].value.toLowerCase() == jawabanbenarbe2[i]) {
+      jawabanbelajar2[i].style.border = "2px solid green";
+    } else {
+      jawabanbelajar2[i].style.border = "2px solid red";
+    }
+  }
 
   //fungsi kolom jawaban materi 12
   for (let i = 0; i < jawabanmateri12.length; i++) {
@@ -79,6 +91,7 @@ function cekJawaban() {
 }
 //reset jawaban materi
 function reset() {
+  let jawabanbelajar2 = document.querySelectorAll("#mulaibelajar2");
   let jawabanmateri12 = document.querySelectorAll("#isian12");
   let jawabanmateri13 = document.querySelectorAll("#isian13");
   let jawabanmateri15 = document.querySelectorAll("#isian15");

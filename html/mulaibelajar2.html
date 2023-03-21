@@ -139,7 +139,7 @@
                 <br />
                 Secara umum, ditulis dalam bentuk :
               </p>
-              <table class="table table-bordered border-primary" style="width: 150px" ;>
+              <table class="table table-bordered border-primary" style="width: 50%" ;>
                 <tr>
                   <td scope="row">No</td>
                   <td colspan="2">Gambar</td>
@@ -147,26 +147,45 @@
                 </tr>
                 <tr>
                   <td scope="row">1</td>
-                  <td colspan="2"><img src="../img/pendahuluan/soal1.png" alt="" /></td>
-                  <td><h1>\( \frac{}{3}\)</h1></td>
+                  <td colspan="2"><img src="../img/pendahuluan/soal1.png" style="width: 100%" /></td>
+                  <td>
+                    <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                    <br />
+                    <input class="form-control" type="text" value="3" aria-label="Disabled input example" disabled readonly />
+                  </td>
                 </tr>
                 <tr>
                   <td scope="row">2</td>
-                  <td colspan="2"><img src="../img/pendahuluan/soal2.png" alt="" /></td>
-                  <td>\( \frac{}{4}\)</td>
+                  <td colspan="2"><img src="../img/pendahuluan/soal2.png" style="width: 100%" /></td>
+                  <td>
+                    <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                    <br />
+                    <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
+                  </td>
                 </tr>
                 <tr>
                   <td scope="row">3</td>
-                  <td colspan="2"><img src="../img/pendahuluan/soal3.png" alt="" /></td>
-                  <td>\( \frac{}{4}\)</td>
+                  <td colspan="2"><img src="../img/pendahuluan/soal3.png" style="width: 100%" /></td>
+                  <td>
+                    <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                    <br />
+                    <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
+                  </td>
                 </tr>
                 <tr>
                   <td scope="row">4</td>
-                  <td colspan="2"><img src="../img/pendahuluan/soal4.png" alt="" /></td>
-                  <td>\( \frac{}{5}\)</td>
+                  <td colspan="2"><img src="../img/pendahuluan/soal4.png" style="width: 100%" /></td>
+                  <td>
+                    <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                    <br />
+                    <input class="form-control" type="text" value="5" aria-label="Disabled input example" disabled readonly />
+                  </td>
                 </tr>
               </table>
+              <button class="btn btn-outline-success" onclick="cekJawaban()">Cek Jawaban</button>
+              <button onclick="reset()" class="btn btn-outline-danger">Coba Lagi</button>
             </div>
+
             <br />
             <br />
             <nav aria-label="Page navigation example ">
@@ -198,5 +217,6 @@
         sidebar.classList.toggle("close");
       });
     </script>
+    <script src="../javascript/mencobadanberlatih.js"></script>
   </body>
 </html>
