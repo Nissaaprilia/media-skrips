@@ -19,6 +19,9 @@ function cekJawaban() {
   let jawabanmateri16 = document.querySelectorAll("#isian16");
   let jawabanbenar16 = ["11", "6", "2", "1", "13", "4", "21", "10", "11", "8", "2", "5", "7", "15", "14", "15", "7", "10", "7", "6"];
 
+  //jawaban materi 22
+  // let jawabanmateri22 = document.querySelectorAll("#isian22");
+  // let jawabanbenar22 = ["5", "3", "5", "4", "11", "4", "17", "5", "29", "6", "23", "6", ""];
   //jawaban materi 24
   let jawabanmateri24 = document.querySelectorAll("#isian24");
   let jawabanbenar24 = ["3", "1", "3", "3", "2", "3", "4", "1", "12", "7", "7", "15", "5", "5", "6", "7", "1", "12", "10", "2", "15", "7", "5", "12", "3", "5", "6", "3", "3", "4"];
