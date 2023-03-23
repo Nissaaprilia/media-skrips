@@ -370,3 +370,76 @@ header nav.navbar {
   overflow-x: hidden;
   overflow-y: auto;
 }
+
+/* konten contoh */
+.langkah {
+  display: inline-block;
+  background-color: pink;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid black;
+}
+
+.ke {
+  display: inline-block;
+  background-color: yellow;
+  font-weight: bold;
+  padding: 5px;
+  padding-right: 10px;
+  border-radius: 0 15px 0 0;
+  text-align: center;
+  border: 2px solid palevioletred;
+}
+
+.ke_aktif {
+  background-color: wheat;
+  padding-top: 10px;
+}
+
+.ke:hover {
+  cursor: pointer;
+  background-color: green;
+  padding-top: 10px;
+}
+
+.langkahnya {
+  width: 100%;
+  background-color: white;
+
+  /* margin-top: -2px;
+  padding: 5px; */
+  box-sizing: border-box;
+}
+
+.masuk {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.aau {
+  margin-left: 25px !important;
+}
+.next_pensil {
+  background-color: blue;
+  padding: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  border: 1px solid purple;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.next_pensil:hover {
+  background-color: pink;
+  color: wheat;
+}
+
+.jarak_atas {
+  margin-top: 10px;
+}
+
+.hilang,
+.hilang1 {
+  display: none !important;
+}

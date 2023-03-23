@@ -19,6 +19,7 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/konten.css" />
+    <link rel="stylesheet" href="../css/coba.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -128,38 +129,89 @@
     <section class="home-section">
       <div class="home-content">
         <i class="bx bx-menu"></i>
-        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Pengurangan Pecahan Campuran</div>
+        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Penjumlahan Pecahan Campuran</div>
       </div>
       <div class="konten col-9-5 ms-2">
         <div class="card lg p-3 mb-5 bg-white rounded">
           <div class="card-body border border-primary ms-3 me-3">
             <h4 class="card-title"><img src="../img/mengamati.png" alt="" style="width: 220px" /></h4>
             <div class="card-body border border-primary ms-5 me-5">
-              <div class="p-1 mb-2 bg-light fw-bold text-center">Pengurangan Pecahan Campuran</div>
-              <div class="container text-start">
+              <div class="inti-konten">
+                <div class="kiri">
+                  <nav class="judul-materi jarak_bawah">
+                    <p>Contoh Soal</p>
+                  </nav>
+                  <br />
+
+                  <div class="ke ke_aktif vv">Contoh 1</div>
+                  <div class="ke vv">Contoh 2</div>
+
+                  <div class="langkahnya vv">
+                    <ol type="1" class="jarak_atas ckck">
+                      <li>
+                        <p>Tambahkan \[(2r^2+5r+3)\] dengan \[(2r^2+7r)\].</p>
+                      </li>
+                    </ol>
+                    <br />
+                    <p class="masuk aau">Jawab :</p>
+                    <p class="masuk marginnn">\[=(2r^2+5r+3)+(2r^2+7r)\]</p>
+                    <p class="masuk marginnn hilang1 pjm">\[=2r^2+5r+3+2r^2+7r\]</p>
+                    <p class="masuk marginnn hilang1 pjm">\[=(2r^2+2r^2)+(5r+7r)+3\]</p>
+                    <p class="masuk marginnn hilang1 pjm">\[=(4r^2)+(12r)+3\]</p>
+                    <p class="masuk marginnn hilang1 pjm">\[=4r^2+12r+3\]</p>
+                    <br />
+                    <p class="masuk aau hilang1">Jadi hasil penjumlahan \[(2r^2+5r+3)\] dengan \[(2r^2+7r)\] adalah \[4r^2+12r+3\].</p>
+
+                    <center>
+                      <div class="next_pensil tmb_pnjumlahan">
+                        <p>Jabarkan</p>
+                      </div>
+                    </center>
+                  </div>
+                  <div class="langkahnya hilang vv">
+                    <ol type="1" start="2" class="jarak_atas ckck">
+                      <li>
+                        <p>Kurangkan \[4(3a+5)\] oleh \[(10a+3)\].</p>
+                      </li>
+                    </ol>
+                    <br />
+                    <p class="masuk aau">Jawab :</p>
+                    <p class="masuk marginnn">\[=4(3a+5)-(10a+3)\]</p>
+                    <p class="masuk marginnn hilang1 krng">\[=12a+20-10a-3\]</p>
+                    <p class="masuk marginnn hilang1 krng">\[=(12a-10a)+(20-3)\]</p>
+                    <p class="masuk marginnn hilang1 krng">\[=(2a)+(17)\]</p>
+                    <p class="masuk marginnn hilang1 krng">\[=2a+17\]</p>
+                    <br />
+                    <p class="masuk aau hilang1">Jadi hasil pengurangan \[4(3a+5)\] oleh \[(10a+3)\] adalah \[2a+17\].</p>
+                    <br />
+
+                    <center>
+                      <div class="next_pensil tmb_pngrangan">
+                        <p>Jabarkan</p>
+                      </div>
+                    </center>
+                  </div>
+                </div>
+              </div>
+
+              <!-- <div class="container text-start">
                 <div class="row align-items-center">
                   <div class="col-6 bg-light overflow-auto">
                     <div class="p-1 mb-2 text-white text-center fw-bold" style="background-color: #655dbb" ;>Perhatikan contoh berikut !</div>
-                    \( {3} \frac {4}{5} - {2} \frac{1}{2} = ... \)
+                    \( {2} \frac {1}{3} + \frac{2}{5} = ... \)
                     <p>
                       <button class="btn text-white" style="background-color: #3e54ac" type="button" data-bs-toggle="collapse" data-bs-target="#contoh1" aria-expanded="false" aria-controls="contoh1">Penyelesaian (klik disini)</button>
                     </p>
                     <div style="min-height: 120px">
                       <div class="collapse collapse-horizontal mb-5" id="contoh1">
-                        <div class="card card-body" style="width: 260px">
-                          \( {3} \frac {4}{5} - {2}\frac{1}{2} = ( {3} + \frac {4}{5} ) - ( {2} + \frac{1}{2})\)
+                        <div class="card card-body" style="width: 230px">
+                          \( {2} \frac {1}{3} + \frac{2}{5} = {2} \frac {1}{3} + \frac{2}{5}\)
                           <br />
-                          \( {3} \frac {4}{5} - {2}\frac{1}{2} = {3} - \frac {4}{5} - {2} + \frac{1}{2} \)
+                          \( {2} \frac {1}{3} + \frac{2}{5} = {2} + (\frac {1}{3} + \frac{2}{5})\)
                           <br />
-                          \( {3} \frac {4}{5} - {2}\frac{1}{2} = ( {3 - 2}) + \frac {4}{5} - \frac{1}{2} \)
+                          \( {2} \frac {1}{3} + \frac{2}{5} = {2} + (\frac {11}{15} ) \)
                           <br />
-
-                          \( {3} \frac {4}{5} - {2}\frac{1}{2} = {1} + (\frac {8}{10} - \frac{5}{10} ) \)
-                          <br />
-                          \( {3} \frac {4}{5} - {2}\frac{1}{2} = {1} + \frac {3}{10} = {1} \frac{3}{10}\)
-                          <br />
-
-                          Jadi, \( {3} \frac {4}{5} - {2} \frac{1}{2} = {1} \frac{3}{10}\)
+                          \( {2} \frac {1}{3} + \frac{2}{5} = {2} \frac{11}{15}\) Jadi, \( {2} \frac {1}{3} + \frac{2}{5} = {2} \frac{11}{15}\)
                           <br />
                         </div>
                       </div>
@@ -167,37 +219,36 @@
                   </div>
                   <div class="col-6 bg-light">
                     <div class="p-1 mb-2 text-white text-center fw-bold" style="background-color: #655dbb" ;>Perhatikan contoh berikut !</div>
-                    \( {3} \frac {3}{4} - {1}\frac{1}{6} = ... \)
+                    \( {2} \frac {5}{7} + {1}\frac{1}{3} = ... \)
                     <p>
                       <button class="btn text-white" style="background-color: #3e54ac" type="button" data-bs-toggle="collapse" data-bs-target="#contoh2" aria-expanded="false" aria-controls="contoh2">Penyelesaian (klik disini)</button>
                     </p>
                     <div style="min-height: 120px">
                       <div class="collapse collapse-horizontal mb-5" id="contoh2">
-                        <div class="card card-body" style="width: 290px">
-                          \( {3} \frac {3}{4} - {1}\frac{1}{6} = ({3} + \frac {3}{4}) - ({1} + \frac{1}{6}) \) \( {3} \frac {3}{4} - {1}\frac{1}{6} = {3} - (\frac {3}{4} - {1} - \frac{1}{6})\) \( {3} \frac {3}{4} - {1}\frac{1}{6} = {3-1} +
-                          (\frac {3}{4} - \frac{1}{6}) \) \( {3} \frac {3}{4} - {1}\frac{1}{6} = 2 + (\frac {9}{12} - \frac{1}{12}) \) \( {3} \frac {3}{4} - {1}\frac{1}{6} = {2} + \frac {8}{12} : \frac {4}{4} = \frac {2}{3} \)
-                          <br />
-                          Jadi , \( {3} \frac {3}{4} - {1}\frac{1}{6} = {2} \frac {2}{3} \)
+                        <div class="card card-body" style="width: 260px">
+                          \( {2} \frac {5}{7} + {1}\frac{1}{3} = ({2 + 1}) + (\frac {5}{7} + \frac{1}{3})\) \( {2} \frac {5}{7} + {1}\frac{1}{3} = {3} + (\frac {15}{21} + \frac{7}{21})\)
                           <div class="infocontoh text-white">
                             <i class="bi bi-exclamation-triangle-fill fa-2x"></i>
-                            <p>Jika jawaban dapat di sederhanakan, kamu harus menyederhanakan menjadi pecahan paling sederhana</p>
+                            <p>Jika pembilang lebih besar daripada penyebut maka harus disederhanakan</p>
                           </div>
+                          \( {2} \frac {5}{7} + {1}\frac{1}{3} = {3} + \frac {22}{21} \) \( {2} \frac {5}{7} + {1}\frac{1}{3} = {3} + 1 \frac {1}{21} \) \( {2} \frac {5}{7} + {1}\frac{1}{3} = {4}\frac {1}{21} \)
                           <br />
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
+          <br />
         </div>
         <nav aria-label="Page navigation example ">
           <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
-            <li class="page-item"><a class="page-link" href="./materi3.5.html">Previous</a></li>
-            <li class="page-item active"><a class="page-link" href="./materi4.1.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="./materi4.2.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="./materi4.2.html">Next</a></li>
+            <li class="page-item"><a class="page-link" href="./materi2.2.html">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="./materi2.3.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="./materi2.4.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="./materi2.4.html">Next</a></li>
           </ul>
         </nav>
       </div>
@@ -219,6 +270,6 @@
     </script>
     <!-- Javascript -->
     <!-- <link rel="stylesheet" href="../javascript/penjumlahanberlatih.js" -->
-    <script src="../javascript/materi21.js"></script>
+    <script src="../javascript/materi23.js"></script>
   </body>
 </html>
