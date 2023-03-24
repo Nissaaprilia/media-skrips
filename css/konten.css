@@ -351,14 +351,15 @@ header nav.navbar {
 }
 
 .infocontoh {
-  background-color: #655dbb;
   text-align: center;
-  width: 250px;
-  margin-left: 15px;
-  border-radius: 5px;
-  /* border: 2px dashed white; */
+  width: 400px;
+  border: 1px dashed #655dbb;
+  border-radius: 50px;
+  box-shadow: -5px -5px 4px rgba(197, 197, 218, 0.8);
+  padding: 10px;
   font-size: 12px;
-  height: 100px;
+  height: 60px;
+  margin-left: 20px;
 }
 
 .konten .card {
@@ -374,7 +375,7 @@ header nav.navbar {
 /* konten contoh */
 .langkah {
   display: inline-block;
-  background-color: pink;
+  background-color: #655dbb;
   font-weight: bold;
   padding: 5px;
   text-align: center;
@@ -383,23 +384,24 @@ header nav.navbar {
 
 .ke {
   display: inline-block;
-  background-color: yellow;
+  background-color: #655dbb;
   font-weight: bold;
-  padding: 5px;
+  padding: 10px;
   padding-right: 10px;
-  border-radius: 0 15px 0 0;
+  border-radius: 10px;
   text-align: center;
-  border: 2px solid palevioletred;
+  border: 2px solid #3e54ac;
+  color: white;
 }
 
 .ke_aktif {
-  background-color: wheat;
+  background-color: #655dbb;
   padding-top: 10px;
 }
 
 .ke:hover {
   cursor: pointer;
-  background-color: green;
+  background-color: #8191d3;
   padding-top: 10px;
 }
 
@@ -420,19 +422,32 @@ header nav.navbar {
 .aau {
   margin-left: 25px !important;
 }
+
+.borderhasil {
+  text-align: center;
+  width: 400px;
+  border: 1px dashed #655dbb;
+  border-radius: 50px;
+  box-shadow: -5px -5px 4px rgba(197, 197, 218, 0.8);
+  padding: 10px;
+  font-size: 15px;
+  height: 60px;
+  margin-left: 20px;
+}
 .next_pensil {
-  background-color: blue;
-  padding: 5px;
+  background-color: #655dbb;
+  padding: 10px;
   display: inline-block;
-  margin-top: 10px;
-  border: 1px solid purple;
+  /* margin-top: 5px; */
+  border: 1px solid #3e54ac;
   border-radius: 5px;
   cursor: pointer;
+  color: white;
 }
 
 .next_pensil:hover {
-  background-color: pink;
-  color: wheat;
+  background-color: #8191d3;
+  color: white;
 }
 
 .jarak_atas {
@@ -443,3 +458,56 @@ header nav.navbar {
 .hilang1 {
   display: none !important;
 }
+
+.pertanyaan {
+  border: 4px solid bisque;
+  padding: 5px 8px;
+  margin-left: 3px;
+  margin-top: -5px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* .sebelumnya,
+.cek_jawaban,
+.selanjutnya {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 5px;
+  background-color: pink;
+  border: 1px solid wheat;
+  margin-top: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.sebelumnya:hover,
+.cek_jawaban:hover,
+.selanjutnya:hover {
+  background-color: red;
+  color: yellow;
+} */
+/* 
+.disable {
+  background-color: gray !important;
+  border: 2px solid var(--color-3) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.disable:hover {
+  background-color: gray !important;
+  border: 2px solid var(--color-3) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  cursor: default;
+}
+
+.button {
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  padding: 2px 6px;
+  background-color: blueviolet;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid wheat;
+} */

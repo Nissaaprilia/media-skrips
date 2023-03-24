@@ -18,12 +18,633 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="./css/coba.css" />
-    <!-- <link rel="stylesheet" href="../css/konten.css" /> -->
+    <link rel="stylesheet" href="./pecahan.css" />
     -->
     <!--  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     -->
   </head>
-  <body></body>
+  <body>
+  <body class="loading" style=" overflow-y: auto; background-color: grey;" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <!-- Begin page -->
+        <div class="wrapper">
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="leftside-menu" style="background-color: #12266e;">
+    
+                <!-- LOGO -->
+                <a href="/index.html" class="logo text-center logo-light">
+                    <span class="logo-lg my-3">
+                      <h3 class="text-white">Bilangan Pecahan</h3>
+                    </span>
+                    <span class="logo-sm">
+                      <i class="uil-home text-white" style="font-size: 30px;"></i>
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar>
+
+                    <!--- Sidemenu -->
+                    <ul id="navbar-js" class="side-nav">
+                    </ul>
+                    <!-- end Help Box -->
+                    <!-- End Sidebar -->
+
+                    <div class="clearfix"></div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom" style="height: 74px;">
+                        <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                        <h4 class="mt-3 text-black">Bentuk Pecahan / Pecahan Campuran</h4>
+                    </div>
+                    <!-- end Topbar -->
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row text-black">
+                            <div class="col-xl-7">
+                                <div class="card mt-3">
+                                    <div class="card-body" style="height: 530px; overflow-y: auto; overflow-x: hidden; text-align: justify; ">        
+                                        <div class="card">
+                                          <div id="card1" class="card-body">
+                                              <div class="accordion mb-2" id="accordionExample">
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header" id="headingOne" style="margin: 0;">
+                                                    <button style="height: 40px; background: rgb(92, 226, 219);" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                      <h5><strong>Tujuan Pembelajaran</strong></h5>
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        <ul>
+                                                            <li>
+                                                                Siswa dapat menyederhanakan pecahan campuran dengan tepat.
+                                                            </li>
+                                                            <li>
+                                                                Siswa dapat mengubah pecahan biasa ke pecahan campuran dan pecahan campuran ke pecahan biasa dengan benar.
+                                                            </li>
+                                                            <li>
+                                                                Siswa dapat menyelesaikan masalah yang berkaitan dengan pecahan biasa dan pecahan campuran dengan benar.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                              <h3>Pecahan Campuran</h3>
+                                              <hr>
+                                              <p style="font-size: medium;">
+                                                <strong>
+                                                  Pecahan campuran adalah campuran antara bilangan bulat dan bilangan pecahan.
+                                                </strong>
+                                                <br>
+                                                Pecahan campuran dapat dituliskan:
+                                                <h3>
+                                                  \( a\frac{b}{c}\)
+                                                </h3> 
+                                                dengan <strong>(a)</strong> adalah bilangan bulat dan <strong>\((\frac{b}{c})\)</strong> adalah bilangan pecahan.
+                                                Untuk memahami pecahan campuran, amatilah gambar dan simaklah penjelasan berikut ini! <br> <br>
+                                                <i>*Perhatikan penjelasan video pecahan campuran dibawah ini!</i>
+                                                <br>
+                                                <iframe width="480" height="315" src="https://www.youtube.com/embed/uyoQnJ4VvBc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                <br>
+                                                <center><i>Sumber (https://scratchgarden.com/)</i></center>
+                                                <hr>
+                                                <h4>Ayo Amati!</h4>
+                                                <table class="table table-borderless text-black">                                            
+                                                  <tbody style="vertical-align: middle;">
+                                                    <tr>
+                                                      <td>
+                                                        <img src="/assets/img/biskuit.png" width="100px" alt="">
+                                                        <center>1</center>
+                                                      </td>
+                                                      <td>
+                                                        <img src="/assets/img/biskuit.png" width="100px" alt="">
+                                                        <center>1</center>
+                                                      </td>
+                                                      <td>
+                                                        <p style="font-size: medium;">
+                                                          Banyaknya biskuit ada 2 buah.
+                                                        </p>
+                                                      </td>
+                                                    </tr>                              
+                                                  </tbody>
+                                                </table>
+                                              </p>
+                                                <center>
+                                                  <button id="cardBtn1" class="btn btn-primary">
+                                                    Lanjut
+                                                  </button>
+                                                </center>
+                                          </div>
+                                          <div id="card2" class="card-body" style="display: none; margin-top: -100px;" >
+                                                <table class="table table-borderless text-black">
+                                                  <tbody style="vertical-align: middle;">
+                                                    <tr class="text-center">
+                                                      <td >
+                                                        <img src="/assets/img/biskuit.png" width="100px" alt="">
+                                                        <br>1
+                                                      </td>
+                                                      <td>
+                                                        <img src="/assets/img/biskuit.png" width="100px" alt="">
+                                                        <br>1
+                                                      </td>
+                                                      <td>
+                                                        <img src="/assets/img/biskuitsetengah.png" width="100px" alt="">
+                                                        <br>
+                                                        <h4>
+                                                            \(\frac{1}{2}\)
+                                                        </h4>
+                                                      </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td colspan="2" style="font-size: medium;">
+                                                          Sekarang, berapa banyaknya biskuit di atas?
+                                                      </td>
+                                                      <td>    
+                                                        <table>
+                                                          <tr>
+                                                            <td>
+                                                              <input id="jwb1" placeholder="..." type="text" size="1" class="jwbpecahan">
+                                                            </td>
+                                                            <td>
+                                                              <input id="jwb11" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                              <br>
+                                                              <input id="jwb12" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                                            </td>
+                                                          </tr>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                                <center>
+                                                  <button id="btnCek" type="button" class="btn btn-info">Cek Jawaban</button>
+                                                  <div id="hasilcek" class="mt-2">
+                                                  </div>                                            
+                                                </center>
+                                          </div>                        
+                                          <div id="card3" class="card-body" style="display: none;">
+                                                <h3>Pecahan Campuran ke Pecahan Biasa</h3>
+                                                <hr>
+                                                <p>
+                                                  Pecahan campuran \( 2\frac{1}{2}\) bisa kita sederhanakan menjadi pecahan biasa.                                                          <br>Langkah-langkah mengubah atau menyederhanakan pecahan campuran menjadi pecahan biasa sebagai berikut:
+                                                  <table class="table table-borderless text-black">
+                                                    <tbody style="vertical-align: middle;">
+                                                      <tr>
+                                                        <th>
+                                                          1.
+                                                        </th>
+                                                        <td>
+                                                          Pisahkan bilangan bulat dengan bilangan pecahan.
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td colspan="2">
+                                                          <h3>
+                                                            \(2\frac{1}{2} = 2  + \frac{1}{2}\)
+
+                                                          </h3>
+                                                        </td> 
+                                                      </tr>
+                                                      <tr>
+                                                        <th>2.</th>
+                                                        <td>
+                                                          Ubahlah angka bilangan bulat 2 menjadi bilangan pecahan yang berpenyebut 2.
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td colspan="2">
+                                                          <h3>
+                                                            \(2\frac{1}{2} = \frac{4}{2} + \frac{1}{2}\)
+                                                          </h3>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <th>3.</th>
+                                                        <td>
+                                                          Jumlahkan dua bilangan pecahan tersebut.
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td colspan="2">
+                                                          <h3>
+                                                            \(2\frac{1}{2} = \frac{4 + 1}{2} = \frac{5}{2} \)
+                                                          </h3>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                  Maka didapatkan pecahan campuran \( 2\frac{1}{2}\) senilai dengan pecahan biasa \(\frac{5}{2}\).
+                                                  <br>
+                                                  Mengubah pecahan campuran ke pecahan biasa juga dapat dilakukan dengan cara:
+                                                  <h4>
+                                                    \(2 \frac{1}{2} = \frac{(2 (bilangan bulat) \times 2 (penyebut) ) + 1 (pembilang)}{2 (penyebut)} = \frac{5}{2} \)
+                                                  </h4>
+                                                 
+                                                </p>
+                                          </div>
+                                          <div id="card4" class="card-body" style="display: none;">
+                                                <h3>Pecahan Biasa ke Pecahan Campuran</h3>
+                                                <hr>
+                                                <p>
+                                                  Lalu, bagaimana cara merubah pecahan biasa menjadi pecahan campuran? Apabila kita ingin merubah pecahan biasa ke pecahan campuran, pastikan pembilang lebih besar dari penyebut.
+                                                  <table class="table table-borderless text-black">
+                                                    <tbody style="vertical-align: middle;">
+                                                      <tr>
+                                                        <td>
+                                                          1.
+                                                        </td>
+                                                        <td>
+                                                          Tulislah pecahan biasa \(\frac{5}{2}\) itu sebagai soal pembagian. Selalu tuliskan pembilang dibagi dengan penyebutnya. Contoh \(5\div2\)
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td colspan="2">
+                                                          <center>
+                                                            <img src="/assets/img/pcbiasa.png" width="150px" alt="">
+                                                          </center>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>
+                                                          2.
+                                                        </td>
+                                                        <td>
+                                                          Mulailah menyelesaikan soal pembagiannya.
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td colspan="2">
+                                                          <center>
+                                                            <img src="/assets/img/pcbiasa2.png" width="150px" alt="">
+                                                          </center>
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>
+                                                          3.
+                                                        </td>
+                                                        <td>
+                                                          Tulislah pecahan campurannya menggunakan hasil dari pembagian.
+                                                        </td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td colspan="2">
+                                                          <center>
+                                                            <img src="/assets/img/pcbiasa3.png" width="150px" alt="">
+                                                          </center>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                                  Setelah menyelesaikan soal pembagian, kita dapat kesimpulan:
+                                                  <ul>
+                                                    <li>
+                                                      Bilangan bulatnya adalah jawaban dari pembagian di atas yaitu 2.
+                                                    </li>
+                                                    <li>
+                                                      Pembilang dari pecahannya adalah sisa dari pembagian di atas yaitu 1.
+                                                    </li>
+                                                    <li>
+                                                      Penyebut dari pecahannya sama seperti penyebut pada pecahan awal yaitu 2.
+                                                    </li>
+                                                  </ul>
+                                                  Jadi, dapat ditulis <h3>\(\frac{5}{2} = 2\frac{1}{2} \) </h3>
+                                                </p>
+                                                <center>
+                                                  <div id="btnBerlatih" class="btn btn-success mt-1">
+                                                    Selesai Membaca
+                                                  </div>
+                                                </center>
+                                          </div>
+                                        </div>
+                                          
+                                    </div>
+                                </div> <!-- end card -->
+                            </div>
+                            <div class="col-xl-5">
+                                <div id="berlatih" style="display: none;" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto;">
+                                      <p>
+                                        <h4><strong>Ayo Mencoba!</strong></h4>
+                                          Isilah titik di bawah ini dengan jawaban yang benar!
+                                          <br>
+                                          Jawaban akan berwarna hijau jika jawaban benar, dan jawaban akan berwarna merah jika jawaban salah.                                     
+                                      </p>  
+                                        <table class="table table-borderless text-black" style="border: black;">
+                                          <tbody style="vertical-align: middle">                                  
+                                              <tr>
+                                                <th>
+                                                  1.
+                                               </th>
+                                               <td>
+                                                 Tentukan nilai pecahan biasa pada gambar di bawah!
+                                               </td>
+                                              </tr>
+                                              <tr>                                                 
+                                                <td colspan="2">
+                                                  <img src="/assets/img/soalpc2.png" width="80px" alt="">
+                                                  <img src="/assets/img/soalpc2.png" width="80px" alt="">
+                                                  <img src="/assets/img/soalpc2.png" width="80px" alt="">
+                                                  <img src="/assets/img/soalpc21.png" width="80px" alt="">  
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                      </table>
+                                      <table class="table table-bordered text-black text-center" style="border: black;">
+                                        <tbody style="vertical-align: middle">                                  
+                                            <tr>
+                                              <td>
+                                                Pecahan Campuran
+                                             </td>
+                                             <td>
+                                               Pecahan Biasa
+                                             </td>
+                                            </tr>
+                                            <tr>                                                 
+                                              <td>
+                                                <h3>
+                                                  \(3 \frac{3}{8}\)
+                                                </h3>
+                                              </td>
+                                              <td>
+                                                <input id="jwb21" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                <br>
+                                                <input id="jwb22" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
+                                    <div id="alertHasil1"></div>
+                                      <center>
+                                        <div id="btnCek1" class="btn btn-info mt-2 text-white">
+                                          Cek Jawaban
+                                        </div>
+                                        <div id="btnLanjut" class="btn btn-success mt-2" style="display: none;">Soal Berikutnya</div>
+                                  </div>
+                                </div>
+                                <div id="soal2" style="display: none;" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto;">
+                                    <p>
+                                      <h4><strong>Ayo Mencoba!</strong></h4>
+                                        Isilah titik di bawah ini dengan jawaban yang benar!
+                                        <br>
+                                        Jawaban akan berwarna hijau jika jawaban benar, dan jawaban akan berwarna merah jika jawaban salah.                                     
+                                    </p>  
+                                      <table class="table table-borderless text-black" style="border: black;">
+                                        <tbody style="vertical-align: middle">                                  
+                                            <tr>
+                                              <th>
+                                                2.
+                                             </th>
+                                             <td>
+                                               Tentukan nilai pecahan campuran pada gambar di bawah!
+                                             </td>
+                                            </tr>
+                                            <tr>                                                 
+                                              <td colspan="2">
+                                                <img src="/assets/img/soalpc1.png" width="80px" alt="">
+                                                <img src="/assets/img/soalpc1.png" width="80px" alt="">
+                                                <img src="/assets/img/soalpc1.png" width="80px" alt="">
+                                                <img src="/assets/img/soalpc11.png" width="80px" alt="">  
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
+                                    <table class="table table-bordered text-black text-center" style="border: black;">
+                                      <tbody style="vertical-align: middle">                                  
+                                          <tr>
+                                            <td>
+                                              Pecahan Campuran
+                                           </td>
+                                           <td>
+                                             Pecahan Biasa
+                                           </td>
+                                          </tr>
+                                          <tr>                                                 
+                                            <td>
+                                              <table>
+                                                <tr>
+                                                  <td>
+                                                    <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan">
+                                                  </td>
+                                                  <td>
+                                                    <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                  <br>
+                                                    <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                            <td>
+                                              <h3>
+                                                \(\frac{7}{2}\)
+                                              </h3>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                  </table>
+                                  <div id="alertHasil2"></div>
+                                  <center>
+                                  <div id="btnCek2" class="btn btn-info mt-2 text-white">Cek Jawaban</div>
+                                  <div id="btnLanjut2" class="btn btn-success mt-2" style="display: none;">
+                                    Soal Berikutnya</div>
+                                  </center>
+                                  </p>
+                                  </div>
+                                </div>
+                                <div id="soal3" style="display: none;" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto;">
+                                    <p>
+                                      <h4><strong>Ayo Mencoba!</strong></h4>
+                                        Isilah titik di bawah ini dengan jawaban yang benar!
+                                        <br>
+                                        Jawaban akan berwarna hijau jika jawaban benar, dan jawaban akan berwarna merah jika jawaban salah.                                     
+                                    </p>  
+                                    <table class="table table-borderless text-black" style="border: black;">
+                                        <tbody style="vertical-align: middle">                                  
+                                            <tr>
+                                              <th>
+                                                3.
+                                             </th>
+                                             <td>
+                                               Tentukan nilai pecahan campuran dan nilai pecahan biasa pada gambar di bawah!
+                                             </td>
+                                            </tr>
+                                            <tr>                                                 
+                                              <td colspan="2">
+                                                <img src="/assets/img/soalpc3.png" width="120px" alt="">
+                                                <img src="/assets/img/soalpc31.png" width="120px" alt=""> 
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                    </table>
+                                    <table class="table table-bordered text-black text-center" style="border: black;">
+                                      <tbody style="vertical-align: middle">                                  
+                                          <tr>
+                                            <td>
+                                              Pecahan Campuran
+                                           </td>
+                                           <td>
+                                             Pecahan Biasa
+                                           </td>
+                                          </tr>
+                                          <tr>                                                 
+                                            <td>
+                                              <table>
+                                                <tr>
+                                                  <td>
+                                                    <input id="jwb4" placeholder="..." type="text" size="1" class="jwbpecahan">
+                                                  </td>
+                                                  <td>
+                                                    <input id="jwb41" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                  <br>
+                                                    <input id="jwb42" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                                  </td>
+                                                </tr>
+                                              </table>
+                                            </td>
+                                            <td>
+                                              <input id="jwb43" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                              <br>
+                                              <input id="jwb44" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                    </table>
+                                  <div id="alertHasil3"></div>
+                                  <center>
+                                    <div id="btnCek3" class="btn btn-info mt-2 text-white">
+                                      Cek Jawaban
+                                    </div>
+                                    <a href="#" id="halNext" type="button" class="btn btn-success mt-2 text-white" style="display: none;">
+                                      Materi Selanjutnya
+                                    </a>
+                                  </center>
+                                  </p>
+                                  </div>
+                                </div>
+                                <div id="lihat" style="display: none;" class="card mt-3">
+                                  <div class="card-body" style="height: 530px;">
+                                    <h4><strong>Amati penjelesan di bawah ini!</strong></h4>
+                                    <p style="font-size: medium; text-align: justify;">
+                                      Agar lebih mudah kamu memahaminya, lihat model pecahan yang mewakili biskuit tersebut. Misalnya dengan lingkaran.
+                                    </p>
+                                      <table class="table table-bordered text-black text-center" style="border: black;">
+                                        <tbody style="vertical-align: middle;">
+                                          <tr>
+                                            <td>
+                                              <img src="/assets/img/lgkcampuran.png" width="80px" alt="">
+                                            </td>
+                                            <td>
+                                              <img src="/assets/img/lgkcampuran.png" width="80px" alt="">
+                                            </td>
+                                            <td>
+                                              <img src="/assets/img/lgkcampuran2.png" width="80px" alt="">
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              1
+                                            </td>
+                                            <td>
+                                              1
+                                            </td>
+                                            <td>
+                                              \(\frac{1}{2}\)
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <p style="font-size: medium; text-align: justify;">
+                                      Banyaknya lingkaran yang utuh ada 2 dan lingkaran tidak utuh ada 1 yang bernilai \(\frac{1}{2}\). Lalu, tambahkan bilangan bulat 2 dengan bilangan pecahan (\(\frac{1}{2}\)).
+                                      <br>
+                                      Jadi, dapat dituliskan:
+                                        <h4>
+                                        \( 1 + 1 + \frac{1}{2} = 2 \frac{1}{2}\)
+                                        </h4>
+                                      </p>
+                                  </div>
+                                </div>
+                                <div id="berlatih2" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; display: flex; justify-content: center;">
+                                  <div>
+                                    <p>
+                                      <center>
+                                      <strong>Baca materi terlebih dahulu.
+                                      <br>
+                                      Tekan lihat gambar untuk melihat contoh lain atau tekan selesai membaca untuk memulai latihan.
+                                      </strong>
+                                      <i class="uil uil-lock" style="font-size:300px; color: grey;"></i>
+                                      </center>
+                                    </p>
+                                  </div>
+                                  </div>
+                                </div> <!-- end card -->
+                            </div>
+                            <center>
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                <button id="btnPrev" type="button" class="btn btn-danger" style="display: none;">
+                                  Sebelumnya
+                                </button>
+                                <button id="btnHal1" type="button" class="btn btn-success active">1</button>
+                                <button id="btnHal2" type="button" class="btn btn-success">2</button>
+                                <button id="btnHal3" type="button" class="btn btn-success">3</button>
+                                <button id="btnNext" type="button" class="btn btn-primary">
+                                  Selanjutnya
+                                </button>
+                              </div>
+                              </center>
+                        </div>
+                        <!-- end page title -->
+                    </div>
+                    <!-- container -->
+                </div>
+                <!-- content -->
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
+        </div>
+        <!-- END wrapper -->
+
+
+        <div class="rightbar-overlay"></div>
+        <!-- /End-bar -->
+        <script src="/assets/js/navbar.js"></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+                        <!-- BATAS KONTEN BAWAH -->
+
+                    </div>
+                    <!-- BATAS BADAN KONTEN -->
+
+
+                </div>
+                <!-- BATAS KONTEN -->
+                
+  <script src="./pecahan.js"></script>
+  <script src="./cp.js"></script>
 </html>

@@ -1,0 +1,35 @@
+.jwbpecahan1 {
+  border: none;
+  text-align: center;
+  width: 35px;
+}
+
+.jwbpecahan {
+  border: none;
+  text-align: center;
+  width: 35px;
+}
+
+.jawabpecahan {
+  border: none;
+  border-bottom: solid 1px black;
+  text-align: center;
+  width: 35px;
+}
+
+.jawabpecahan1 {
+  border: none;
+  text-align: center;
+  width: 35px;
+}
+.jawabpecahanbenar {
+  border: solid 2px green;
+  text-align: center;
+  width: 35px;
+}
+
+.jawabpecahansalah {
+  border: solid 2px red;
+  text-align: center;
+  width: 35px;
+}

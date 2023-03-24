@@ -1,3 +1,7 @@
+document.getElementById("cardBtn1").addEventListener("click", function () {
+  document.getElementById("card2").style.display = "block";
+  document.getElementById("cardBtn1").style.display = "none";
+});
 //Contoh Soal
 let kenya = document.querySelectorAll(".ke");
 let langkahnya = document.querySelectorAll(".langkahnya");
@@ -28,14 +32,13 @@ tmblnya.addEventListener("click", function () {
   if (kondisi1 == 0) {
     kondisi1 += 1;
     bgnya[0].className = bgnya[0].className.replace("hilang1", "");
-    tmblnya.innerText = "Ubahlah menjadi pecahan senilai";
+    tmblnya.innerText = "Mengubah kedua pecahan menjadi pecahan senilai";
   } else if (kondisi1 == 1) {
     kondisi1 += 1;
     bgnya[1].className = bgnya[1].className.replace("hilang1", "");
-    bgnya[2].className = bgnya[2].className.replace("hilang1", "");
     tmblnya.innerText = "hasil";
   } else if (kondisi1 == 2) {
-    bgnya[3].className = bgnya[3].className.replace("hilang1", "");
+    bgnya[2].className = bgnya[2].className.replace("hilang1", "");
     tmblnya.className += " hilang1";
     jadi[1].className = jadi[1].className.replace("hilang1", "");
   }
@@ -45,11 +48,11 @@ tmblnya1.addEventListener("click", function () {
   if (kondisi2 == 0) {
     kondisi2 += 1;
     bgnya1[0].className = bgnya1[0].className.replace("hilang1", "");
-    tmblnya1.innerText = "Ubah menjadi pecahan senilai";
+    tmblnya1.innerText = "Mengubah kedua pecahan menjadi pecahan senilai";
   } else if (kondisi2 == 1) {
     kondisi2 += 1;
     bgnya1[1].className = bgnya1[1].className.replace("hilang1", "");
-    tmblnya1.innerText = "Hasil";
+    tmblnya1.innerText = "Menyederhanakan pecahan";
   } else if (kondisi2 == 2) {
     bgnya1[2].className = bgnya1[2].className.replace("hilang1", "");
     bgnya1[3].className = bgnya1[3].className.replace("hilang1", "");
