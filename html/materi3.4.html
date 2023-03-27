@@ -202,6 +202,10 @@
                       <p>Penyelesaian</p>
                     </div>
                   </center>
+                  <br />
+                  <center>
+                    <button id="cardBtn12 " class="btn btn-success hilang1 cardBtn12" style="background-color: #655dbb">Selesai Membaca</button>
+                  </center>
                 </div>
               </div>
               <!-- <div class="container text-start">
@@ -236,97 +240,84 @@
             </div>
           </div>
           <div class="card-body border border-primary ms-3 me-3">
-            <h4 class="card-title"><img src="../img/mencoba.png" alt="" style="width: 220px" /></h4>
-            <!-- Modal -->
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
-              <img src="../img/user.png" width="40px" alt="" />
-              Petunjuk Soal
-            </button>
+            <!-- <div class="card-body card22 hilang1"> -->
 
-            <!-- Modal -->
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">...haiii</div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
+            <h4 class="card-title"><img src="../img/mencoba.png" alt="" style="width: 220px" /></h4>
+            <div class="card-body border border-primary ms-3 me-3">
+              <!-- Modal -->
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
+                <img src="../img/user.png" width="40px" alt="" />
+                Petunjuk Soal
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">...haiii</div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- Akhir modal -->
+              <!-- Akhir modal -->
 
-            Mengubah pecahan campuran dan pecahan biasa menjadi pecahan senilai<br /><br />
-            <center>
-              Identifikasikanlah bagian-bagian gunung api! <br /><br />
-              <div class="kotak">
-                <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag1">Abu Gunung Api</div>
-                <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag2">Lava/Magma</div>
-                <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag3">Lelehan Lava</div>
-                <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag4">Pipa Vulkanik</div>
-                <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag5">Ruang Magma</div>
-                <br /><br />
-              </div>
-            </center>
+              <p>Mengubah pecahan campuran dan pecahan biasa menjadi pecahan senilai<br /><br /></p>
 
-            <!-- <br /> -->
-            <center>
+              <center>
+                Identifikasikanlah bagian-bagian gunung api! <br /><br />
+                <div class="kotak">
+                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag1"><img src="../img/mencoba.png" width="20%" />a</div>
+                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag2">\( \frac{21}{28} \)</div>
+                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag3">\( \frac{1}{6} \)</div>
+                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag4">\( \frac{11}{24} \)</div>
+                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag5">\( \frac{1}{20} \)</div>
+                  <br /><br />
+                </div>
+              </center>
+
+              <br />
               <table class="tabb">
                 <thead>
                   <tr style="text-align: center">
-                    <th scope="col">Gambar</th>
-                    <th scope="col">Keterangan</th>
+                    <th scope="col">Soal</th>
+                    <th scope="col">Jawaban</th>
                   </tr>
                   <tr>
-                    <td rowspan="5">
-                      <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#gambargunungapi">
-                        <img src="/gambar/gunungapi.png" width="500px" alt="" />
-                      </button>
-                    </td>
-                    <td>
-                      &nbsp;A.
-                      <div class="droppable" id="drop1" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                    </td>
+                    <td>1. \( \frac{5}{7} - \frac{1}{4} =\)</td>
+                    <td><div class="droppable" id="drop1" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
                   </tr>
                   <tr>
-                    <td>
-                      &nbsp;B.
-                      <div class="droppable" id="drop2" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                    </td>
+                    <td>2. \( \frac{5}{8} - \frac{1}{6} =\)</td>
+                    <td><div class="droppable" id="drop2" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
                   </tr>
                   <tr>
-                    <td>
-                      &nbsp;C.
-                      <div class="droppable" id="drop3" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                    </td>
+                    <td>3. \( \frac{4}{6} - \frac{2}{4} =\)</td>
+                    <td><div class="droppable" id="drop3" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
                   </tr>
                   <tr>
-                    <td>
-                      &nbsp;D.
-                      <div class="droppable" id="drop4" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                    </td>
+                    <td>4. \( \frac{5}{8} - \frac{1}{24} =\)</td>
+                    <td><div class="droppable" id="drop4" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
                   </tr>
                   <tr>
-                    <td>
-                      &nbsp;E.
-                      <div class="droppable" id="drop5" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-                    </td>
+                    <td>5. \( \frac{4}{5} - \frac{3}{4} =\)</td>
+                    <td><div class="droppable" id="drop5" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
                   </tr>
                 </thead>
               </table>
+
               <br />
               <!-- <button onclick="cekJawabandrop()" type="button" class="btn btn-primary">Cek Jawaban</button> -->
               <button onclick="cekJawabandropkesimpulan()" class="cekjwb">Cek Jawaban</button> <br />
               <br />
-            </center>
-            <br />
-            <br />
+            </div>
           </div>
         </div>
         <nav aria-label="Page navigation example ">
@@ -339,6 +330,12 @@
         </nav>
       </div>
     </section>
+    <script>
+      document.getElementById("cardBtn1").addEventListener("click", function () {
+        document.getElementById("card2").style.display = "block";
+        document.getElementById("cardBtn1").style.display = "none";
+      });
+    </script>
     <script>
       let arrow = document.querySelectorAll(".arrow");
       for (var i = 0; i < arrow.length; i++) {

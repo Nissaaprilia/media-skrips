@@ -285,30 +285,19 @@ header nav.navbar {
   color: black;
 } */
 /* Drag And drop bumi*/
-/* .tabb {
-  margin-left: 38%; 
-} */
+.tabb {
+  margin-left: 38%;
+}
 
 .kotak {
-  background-color: #655dbb;
+  background-color: #adbdff;
   border: 1px solid #cecece;
   border-radius: 3px;
-  padding: 10px;
   box-shadow: 2px 2px 6px black;
-  width: 150px;
-  /* height: fit-content; */
+  width: 400px;
   display: inline-block !important;
   text-align: center;
-  height: 380px;
-}
-.soal {
-  width: 70%;
-  border: 1px solid #eadca6;
-  border-radius: 10px;
-  color: white;
-  text-align: justify;
-  box-shadow: 2px 2px 6px black;
-  padding: 20px;
+  height: 70px;
 }
 
 .draggable {
@@ -316,8 +305,8 @@ header nav.navbar {
   width: fit-content;
   display: inline-block !important;
   text-align: center;
-  padding: 5px;
-  height: 50px;
+  padding: 8px;
+  margin: 10px;
   cursor: move;
   border: 1px dashed black;
 }
@@ -330,14 +319,14 @@ header nav.navbar {
   background-color: #f4f4f4;
   border: 1px solid #cecece;
   border-radius: 3px;
-  padding: 10px;
+  /* padding: 20px; */
   margin: 5px 0;
   box-shadow: 2px 2px 6px black;
   color: black;
   width: 200px;
   display: inline-block;
   text-align: center;
-  height: 50px;
+  height: 70px;
 }
 
 .cekjwb {

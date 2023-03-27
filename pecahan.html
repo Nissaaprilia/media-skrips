@@ -1,25 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
- 
-     <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>MATERI: Memahami Konsep Persamaan Linear Dua Variabel</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
-	<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-    });
-	</script>
-	<script type="text/javascript" async src="MathJax-2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-   </script>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" async src="MathJax-2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-	
 
     <!-- Boxiocns CDN Link -->
     <!-- <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" /> -->
@@ -39,211 +36,221 @@
     <!--  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    -->
   </head>
   <body>
-<div class="wrapper">
-        <!-- Sidebar  -->
-        
-		<nav id="sidebar">
-            <ul class="list-unstyled components">
-				<li>
-                    <a href="pretest_masuk.html"><i class="fa fa-clipboard-check"></i>&nbsp;Pretest</a>
-                </li>
-                <li>
-                    <div class="aktif"><a href="#">A. Memahami Konsep Persamaan Linear Dua Variabel</a></div>
-                </li>
-                <li>
-                    <a href="home2.html">B. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Menggambar Grafik</a>
-                </li>
-                <li>
-                    <a href="home3.html">C. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Substitusi</a>
-                </li>
-                <li>
-                    <a href="home4.html">D. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Eliminasi</a>
-                </li>
-				<li>
-                    <a href="home5.html">E. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Metode Gabungan</a>
-                </li>
-				<li>
-                    <a href="evaluasi_masuk.html"><i class="fa fa-clipboard-check"></i>&nbsp;Evaluasi</a>
-                </li>
-            </ul>
-        </nav>
-		
-        <!-- Page Content  -->
-        <div id="content">
-		<section class="header">
-            <div class="container-fluid">	
-				<button type="button" id="sidebarCollapse" class="btn btn-dark" style="margin-left: -15px;">
-                    <i class="fa fa-bars"></i>
-                        <span>Daftar Isi</span>
-                </button>
-                <button type="button" class="btn btn-dark">
-                    <a href="index.html"><i class="fa fa-home"></i>Beranda</a>
-                </button>
-                <div class="navbar-collapse" id="navbarSupportedContent">	
-                    <div class="mouseover"><center>Sistem Persamaan Linear Dua Variabel</center></div>
-                </div>
+    <div class="wrapper">
+      <!-- Sidebar  -->
+
+      <nav id="sidebar">
+        <ul class="list-unstyled components">
+          <li>
+            <a href="pretest_masuk.html"><i class="fa fa-clipboard-check"></i>&nbsp;Pretest</a>
+          </li>
+          <li>
+            <div class="aktif"><a href="#">A. Memahami Konsep Persamaan Linear Dua Variabel</a></div>
+          </li>
+          <li>
+            <a href="home2.html">B. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Menggambar Grafik</a>
+          </li>
+          <li>
+            <a href="home3.html">C. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Substitusi</a>
+          </li>
+          <li>
+            <a href="home4.html">D. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Eliminasi</a>
+          </li>
+          <li>
+            <a href="home5.html">E. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Metode Gabungan</a>
+          </li>
+          <li>
+            <a href="evaluasi_masuk.html"><i class="fa fa-clipboard-check"></i>&nbsp;Evaluasi</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content">
+        <section class="header">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn btn-dark" style="margin-left: -15px">
+              <i class="fa fa-bars"></i>
+              <span>Daftar Isi</span>
+            </button>
+            <button type="button" class="btn btn-dark">
+              <a href="index.html"><i class="fa fa-home"></i>Beranda</a>
+            </button>
+            <div class="navbar-collapse" id="navbarSupportedContent">
+              <div class="mouseover"><center>Sistem Persamaan Linear Dua Variabel</center></div>
             </div>
-		</section>
-		<div class="konten">
-			 <div class="konten1">
-					<h3 class="p-0 ml-1">A. Memahami Konsep Persamaan Linear Dua Variabel</h3>
-					<div class="card-body1">
-						<p>Berdo'a sebelum dan sesudah mengakhiri pelajaran<br>
-						Perilaku jujur dan disiplin dalam mengerjakan latihan</p>
-						<ol class="p-0 ml-3"><b>Tujuan Pembelajaran:</b>
-						<li>Melalui diskusi kelompok, peserta didik dapat menjelaskan pengertian dan konsep SPLDV dengan benar</li>
-						<li>Melalui tanya jawab, peserta didik dapat menyebutkan paling sedikit tiga contoh SPLDV dengan benar</li>
-						</ol>	
-					</div>
-					<p><img src="image/definisi.png" style="float:left; height: 300px; width: 300px;"/>Persamaan linear adalah persamaan dengan variabel berpangkat satu. Satu koefisien hanya boleh mempunyai satu variabel. Persamaan linear dapat mempunyai satu, dua, tiga, hingga $n$ variabel. Dalam pembelajaran ini hanya akan dibahas persamaan linear dua variabel saja.</p>
-    				<img src="image/2.png" class="contoh">
-					<p style="text-indent: 45px; border: 2px dashed dodgerblue;">Misalkan: banyaknya uang sepuluh ribuan $=x$ lembar dan banyaknya uang dua puluh ribuan $=y$ lembar, maka diperoleh persamaan: $10.000x+20.000y=230.000$. Kedua ruas dibagi $10.000$, persamaannya menjadi: $x+2y=23$ ...(1). Diketahui jumlah uang sepuluh ribu dan dua puluh ribu ada 15 lembar, ditulis $x+y=15$ ...(2), maka kedua persamaan disebut sistem persamaan linear dua variabel (SPLDV).</p>
-					<div class="card bg-success" style="width:23rem;"><h4>SPLDV dalam Berbagai Bentuk dan Variabel</h4></div>
-					<p style="text-indent: 45px; border: 2px dashed dodgerblue;">Pada umumnya dalam persamaan linear dua variabel terdapat himpunan penyelesaian yang merupakan pasangan berurutan. Jika ditemukan dua buah persamaan linear dua variabel $ax$ + $by$ = $c$ dan $px$ + $qy$ = $r$, maka persamaan tersebut dinamakan sistem persamaan linear dua variabel. Terdapat bentuk umum yang biasa ditemukan:</p>
-					<div class="card bg-success text-white" style="width: 10rem;">
-					<div class="card-body">$\begin{cases} ax + by = c & \\ px + qy = r \end{cases}$</div>
-					</div>
-					<div style="border: 2px solid palegreen; height: 120px; overflow: auto; padding: 10px; text-align: justify; width: 210px;">
-						Keterangan:<br>$x$ dan $y$ disebut variabel<br>$a, b, p,$ dan $q$ disebut koefisien<br>$c$ dan $r$ disebut konstanta
-					</div>
-					<p style="text-indent: 45px; border: 2px dashed dodgerblue;">Sistem persamaan linear dua variabel selanjutnya disingkat (SPLDV) di atas, $a$, $b$, $p$, dan $q$ disebut koefisien, $x$ dan $y$ adalah variabel, serta $c$ dan $r$ disebut konstanta. Nilai $x$ dan $y$ yang memenuhi kedua persamaan tersebut dinamakan penyelesaian sistem persamaan linear dua variabel. Semua variabel, koefisien dan konstanta dalam SPLDV merupakan bilangan real. Namun, masalah atau situasi bagaimana yang dapat dinyatakan dengan persamaan linear dua variabel? Lalu bagaimana cara menuliskannya dengan persamaan? Untuk mengetahuinya, mari mengikuti pembelajaran berikut.</p>
-   					<p>Di bawah ini beberapa contoh persamaan linear  dua variabel:</p>
-				<div class="card bg-success text-white" style="width: 15rem;">
-					<ol>
-						<li>$y=2x$</li>
-						<li>$y=4x-3$</li>
-						<li>$a+2b=4$</li>
-						<li>$3m+6n=9$</li>
-						<li>$0,3m-0,6n=2,1$</li>
-					</ol>	
-				</div>
-				<p>Di bawah ini beberapa contoh yang bukan persamaan linear dua variabel:</p>
-				<div class="card bg-success text-white" style="width: 15rem;">
-					<ol>
-						<li>$y^2=5x$</li>
-						<li>$3xy-6y=18$</li>
-						<li>$2+3=5$</li>
-						<li>$14z+6x+8$</li>
-						<li>$3x-3=7+x$</li>
-					</ol>	
-				</div>
-			 </div>
-			<div class="konten2">
-				<div class="container" style="margin-left: -20px;">
-					<!-- Nav tabs -->
-						<ul class="nav nav-tabs" role="tablist">
-							<li class="nav-item">
-							<a class="nav-link active" data-toggle="tab" href="#demo" style="background-color: cadetblue;">Contoh</a>
-							</li>
-							<li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#demo1" style="background-color: cadetblue;">Latihan</a>
-							</li>
-						</ul>
-					<!-- Tab panes -->
-					<div class="tab-content">
-						<div id="demo" class="container tab-pane active">
-							<p>Tentukan apakah pasangan berurutan berikut adalah salah satu selesaian dari persamaan yang diberikan.</p>
-							<p style="margin-left: 30px;">$y=2x; (3, 6)$</p>
-							<input type="number" id="ans1" class="angka">&nbsp;$=2$&nbsp;<input type="number" id="ans2" class="angka">
-							<p style="margin-left: 30px;">$6=6$ (benar)</p>
-							Jadi, $(3, 6)$ adalah salah satu selesaian dari $y=2x$<br><br>
-							<p style="margin-left: 30px;">$y=4x-3; (4, 12)$</p>
-							<input type="number" id="ans3" class="angka">&nbsp;$=4$&nbsp;(<input type="number" id="ans4" class="angka">)&nbsp;$-$ $3$
-							<p style="margin-left: 20px;">$12\neq13$ (salah)</p>
-							Jadi, $(4, 12)$ bukan selesaian dari $y=4x-3$<br>
-							<input type="button" onclick="hasilC()" class="btn btn-info" value="Cek Jawaban" style="float: left;" />
-							<b id="checkA"></b>
-						</div>
-						<div id="demo1" class="container tab-pane fade">
-							<p>Lengkapi pasangan berurutan berikut sehingga menjadi selesaian dari persamaan.</p>
-							<p id="show-soal1"></p>
-							<span id="jawab1" style="display: none">
-							</span>
-							<form name="form">
-							<input type="text" class="kotak" id="angka1" size="2%">
-							</form><br>
-							<p id="tanggap1"></p>
-						<input type="button" class="btn btn-info" id="dihapus" value="Hapus" />
-						<input type="button" class="btn btn-info" id="btnperiksa1" value="Periksa" />
-						<input type="button" class="btn btn-info" id="btnnext1" value="Selanjutnya" />
-						
-							<p>Tentukan apakah pasangan berurutan berikut merupakan salah satu selesaian dari persamaan yang diberikan atau tidak. (Jawaban berupa "Ya" atau "Tidak")</p>
-							<p id="show-soal11"></p>
-							<span id="jawab11" style="display: none">
-							</span>
-							<form name="form">
-							<input type="text" class="kotak" id="angka11" size="4%">
-							</form><br>
-							<p id="tanggap11"></p>
-						<input type="button" class="btn btn-info" id="dihapus11" value="Hapus" />
-						<input type="button" class="btn btn-info" id="btnperiksa11"value="Periksa" />
-						<input type="button" class="btn btn-info" id="btnnext11"value="Selanjutnya" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
-			</div>
-		</div>
-	
-    <!-- jQuery CDN - Slim version (=without AJAX) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-	<!-- Jquery JS -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
-
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
-            });
-        });
-    </script>
-
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-	
-        <!-- END wrapper -->
-
-
-        <div class="rightbar-overlay"></div>
-        <!-- /End-bar -->
-        <script src="/assets/js/navbar.js"></script>
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
-
-                        <!-- BATAS KONTEN BAWAH -->
-
-                    </div>
-                    <!-- BATAS BADAN KONTEN -->
-
-
+          </div>
+        </section>
+        <div class="konten">
+          <div class="konten1">
+            <h3 class="p-0 ml-1">A. Memahami Konsep Persamaan Linear Dua Variabel</h3>
+            <div class="card-body1">
+              <p>
+                Berdo'a sebelum dan sesudah mengakhiri pelajaran<br />
+                Perilaku jujur dan disiplin dalam mengerjakan latihan
+              </p>
+              <ol class="p-0 ml-3">
+                <b>Tujuan Pembelajaran:</b>
+                <li>Melalui diskusi kelompok, peserta didik dapat menjelaskan pengertian dan konsep SPLDV dengan benar</li>
+                <li>Melalui tanya jawab, peserta didik dapat menyebutkan paling sedikit tiga contoh SPLDV dengan benar</li>
+              </ol>
+            </div>
+            <p>
+              <img src="image/definisi.png" style="float: left; height: 300px; width: 300px" />Persamaan linear adalah persamaan dengan variabel berpangkat satu. Satu koefisien hanya boleh mempunyai satu variabel. Persamaan linear dapat
+              mempunyai satu, dua, tiga, hingga $n$ variabel. Dalam pembelajaran ini hanya akan dibahas persamaan linear dua variabel saja.
+            </p>
+            <img src="image/2.png" class="contoh" />
+            <p style="text-indent: 45px; border: 2px dashed dodgerblue">
+              Misalkan: banyaknya uang sepuluh ribuan $=x$ lembar dan banyaknya uang dua puluh ribuan $=y$ lembar, maka diperoleh persamaan: $10.000x+20.000y=230.000$. Kedua ruas dibagi $10.000$, persamaannya menjadi: $x+2y=23$ ...(1).
+              Diketahui jumlah uang sepuluh ribu dan dua puluh ribu ada 15 lembar, ditulis $x+y=15$ ...(2), maka kedua persamaan disebut sistem persamaan linear dua variabel (SPLDV).
+            </p>
+            <div class="card bg-success" style="width: 23rem"><h4>SPLDV dalam Berbagai Bentuk dan Variabel</h4></div>
+            <p style="text-indent: 45px; border: 2px dashed dodgerblue">
+              Pada umumnya dalam persamaan linear dua variabel terdapat himpunan penyelesaian yang merupakan pasangan berurutan. Jika ditemukan dua buah persamaan linear dua variabel $ax$ + $by$ = $c$ dan $px$ + $qy$ = $r$, maka persamaan
+              tersebut dinamakan sistem persamaan linear dua variabel. Terdapat bentuk umum yang biasa ditemukan:
+            </p>
+            <div class="card bg-success text-white" style="width: 10rem">
+              <div class="card-body">$\begin{cases} ax + by = c & \\ px + qy = r \end{cases}$</div>
+            </div>
+            <div style="border: 2px solid palegreen; height: 120px; overflow: auto; padding: 10px; text-align: justify; width: 210px">
+              Keterangan:<br />$x$ dan $y$ disebut variabel<br />$a, b, p,$ dan $q$ disebut koefisien<br />$c$ dan $r$ disebut konstanta
+            </div>
+            <p style="text-indent: 45px; border: 2px dashed dodgerblue">
+              Sistem persamaan linear dua variabel selanjutnya disingkat (SPLDV) di atas, $a$, $b$, $p$, dan $q$ disebut koefisien, $x$ dan $y$ adalah variabel, serta $c$ dan $r$ disebut konstanta. Nilai $x$ dan $y$ yang memenuhi kedua
+              persamaan tersebut dinamakan penyelesaian sistem persamaan linear dua variabel. Semua variabel, koefisien dan konstanta dalam SPLDV merupakan bilangan real. Namun, masalah atau situasi bagaimana yang dapat dinyatakan dengan
+              persamaan linear dua variabel? Lalu bagaimana cara menuliskannya dengan persamaan? Untuk mengetahuinya, mari mengikuti pembelajaran berikut.
+            </p>
+            <p>Di bawah ini beberapa contoh persamaan linear dua variabel:</p>
+            <div class="card bg-success text-white" style="width: 15rem">
+              <ol>
+                <li>$y=2x$</li>
+                <li>$y=4x-3$</li>
+                <li>$a+2b=4$</li>
+                <li>$3m+6n=9$</li>
+                <li>$0,3m-0,6n=2,1$</li>
+              </ol>
+            </div>
+            <p>Di bawah ini beberapa contoh yang bukan persamaan linear dua variabel:</p>
+            <div class="card bg-success text-white" style="width: 15rem">
+              <ol>
+                <li>$y^2=5x$</li>
+                <li>$3xy-6y=18$</li>
+                <li>$2+3=5$</li>
+                <li>$14z+6x+8$</li>
+                <li>$3x-3=7+x$</li>
+              </ol>
+            </div>
+          </div>
+          <div class="konten2">
+            <div class="container" style="margin-left: -20px">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" data-toggle="tab" href="#demo" style="background-color: cadetblue">Contoh</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="tab" href="#demo1" style="background-color: cadetblue">Latihan</a>
+                </li>
+              </ul>
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div id="demo" class="container tab-pane active">
+                  <p>Tentukan apakah pasangan berurutan berikut adalah salah satu selesaian dari persamaan yang diberikan.</p>
+                  <p style="margin-left: 30px">$y=2x; (3, 6)$</p>
+                  <input type="number" id="ans1" class="angka" />&nbsp;$=2$&nbsp;<input type="number" id="ans2" class="angka" />
+                  <p style="margin-left: 30px">$6=6$ (benar)</p>
+                  Jadi, $(3, 6)$ adalah salah satu selesaian dari $y=2x$<br /><br />
+                  <p style="margin-left: 30px">$y=4x-3; (4, 12)$</p>
+                  <input type="number" id="ans3" class="angka" />&nbsp;$=4$&nbsp;(<input type="number" id="ans4" class="angka" />)&nbsp;$-$ $3$
+                  <p style="margin-left: 20px">$12\neq13$ (salah)</p>
+                  Jadi, $(4, 12)$ bukan selesaian dari $y=4x-3$<br />
+                  <input type="button" onclick="hasilC()" class="btn btn-info" value="Cek Jawaban" style="float: left" />
+                  <b id="checkA"></b>
                 </div>
-                <!-- BATAS KONTEN -->
-                
+                <div id="demo1" class="container tab-pane fade">
+                  <p>Lengkapi pasangan berurutan berikut sehingga menjadi selesaian dari persamaan.</p>
+                  <p id="show-soal1"></p>
+                  <span id="jawab1" style="display: none"> </span>
+                  <form name="form">
+                    <input type="text" class="kotak" id="angka1" size="2%" />
+                  </form>
+                  <br />
+                  <p id="tanggap1"></p>
+                  <input type="button" class="btn btn-info" id="dihapus" value="Hapus" />
+                  <input type="button" class="btn btn-info" id="btnperiksa1" value="Periksa" />
+                  <input type="button" class="btn btn-info" id="btnnext1" value="Selanjutnya" />
+
+                  <p>Tentukan apakah pasangan berurutan berikut merupakan salah satu selesaian dari persamaan yang diberikan atau tidak. (Jawaban berupa "Ya" atau "Tidak")</p>
+                  <p id="show-soal11"></p>
+                  <span id="jawab11" style="display: none"> </span>
+                  <form name="form">
+                    <input type="text" class="kotak" id="angka11" size="4%" />
+                  </form>
+                  <br />
+                  <p id="tanggap11"></p>
+                  <input type="button" class="btn btn-info" id="dihapus11" value="Hapus" />
+                  <input type="button" class="btn btn-info" id="btnperiksa11" value="Periksa" />
+                  <input type="button" class="btn btn-info" id="btnnext11" value="Selanjutnya" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- jQuery CDN - Slim version (=without AJAX) -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <!-- Popper.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+  <!-- Jquery JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#sidebarCollapse").on("click", function () {
+        $("#sidebar").toggleClass("active");
+      });
+    });
+  </script>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+  <!-- END wrapper -->
+
+  <div class="rightbar-overlay"></div>
+  <!-- /End-bar -->
+  <script src="/assets/js/navbar.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- BATAS KONTEN BAWAH -->
+
+  <!-- BATAS BADAN KONTEN -->
+
+  <!-- BATAS KONTEN -->
+
   <script src="./pecahan.js"></script>
-  <script src="./cp.js"></script>
+  <script src="./pec2.js"></script>
+  <script src="./pecahancon2.js"></script>
 </html>
