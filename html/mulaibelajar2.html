@@ -133,11 +133,39 @@
           <div class="card-body border border-primary ms-3 me-3">
             <h4 class="card-title">Pecahan</h4>
             <p class="card-text">
-              Untuk lebih memahami pecahan, lengkapilah keterangan yang menyatakan bagian yang berwarna biru pada gambar kotak berikut ! : <br />
-              <br />
-              Secara umum, ditulis dalam bentuk :
+              Untuk lebih memahami pecahan, lengkapilah keterangan yang menyatakan bagian yang berasir pada gambar berikut ! : <br />
+          
+               <!-- Button trigger modal -->
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
+                <i class="bi bi-search"></i>
+                Petunjuk Soal (Klik disini)
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk Pengerjaan</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      1. Lengkapilah keterangan yang menyatakan bagian yang berasir pada gambar <br />
+                      2. Jawablah pada kolom yang sudah di sediakan <br />
+                      3 Jika jawaban benar maka kolom akan berwarna "hijau" <br />
+                      4. Jika jawaban salah maka kolom akan berwarna "merah" <br />
+                      5. Untuk memeriksa jawaban bisa klik tombol "cek jawaban"<br />
+                      6. Untuk mengulangi pertanyaan bisa klik tombol "coba lagi"
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Akhir modal -->
             </p>
-            <table class="table table-bordered border-primary" style="width: 50%" ;>
+            <table class="table table-bordered border-primary text-center" style="width: 30%" ;>
               <tr>
                 <td scope="row">No</td>
                 <td colspan="2">Gambar</td>
@@ -145,16 +173,16 @@
               </tr>
               <tr>
                 <td scope="row">1</td>
-                <td colspan="2"><img src="../img/pendahuluan/soal1.png" style="width: 100%" /></td>
+                <td colspan="2"><img src="../img/pendahuluan/1.4.png" style="width: 50%" /></td>
                 <td>
                   <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
                   <br />
-                  <input class="form-control" type="text" value="3" aria-label="Disabled input example" disabled readonly />
+                  <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
                 </td>
               </tr>
               <tr>
                 <td scope="row">2</td>
-                <td colspan="2"><img src="../img/pendahuluan/soal2.png" style="width: 100%" /></td>
+                <td colspan="2"><img src="../img/pendahuluan/2.22.png" style="width: 55%" /></td>
                 <td>
                   <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
                   <br />
@@ -163,7 +191,7 @@
               </tr>
               <tr>
                 <td scope="row">3</td>
-                <td colspan="2"><img src="../img/pendahuluan/soal3.png" style="width: 100%" /></td>
+                <td colspan="2"><img src="../img/pendahuluan/3.2.png" style="width: 55%" /></td>
                 <td>
                   <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
                   <br />
@@ -172,11 +200,11 @@
               </tr>
               <tr>
                 <td scope="row">4</td>
-                <td colspan="2"><img src="../img/pendahuluan/soal4.png" style="width: 100%" /></td>
+                <td colspan="2"><img src="../img/pendahuluan/2.2.png" style="width: 55%" /></td>
                 <td>
                   <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
                   <br />
-                  <input class="form-control" type="text" value="5" aria-label="Disabled input example" disabled readonly />
+                  <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
                 </td>
               </tr>
             </table>

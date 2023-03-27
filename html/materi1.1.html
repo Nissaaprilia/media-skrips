@@ -133,27 +133,99 @@
       <div class="konten col-9-5 ms-2">
         <div class="card lg p-3 mb-5 bg-white rounded">
           <div class="card-body border border-primary ms-3 me-3">
+            <div class="accordion accordion-flush border-primary" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed p-2 text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                    style="background-color: #655dbb"
+                  >
+                    Tujuan Pembelajaran
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse border border-primary" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <p>
+                      1. Peserta didik dapat memahami cara menghitung penjumlahan pecahan senilai<br />
+                      2. Peserta didik dapat menyelesaikan pertanyaan penjumlahan pecahan senilai <br />
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
             <h4 class="card-title"><img src="../img/mengamati.png" alt="" style="width: 220px" /></h4>
             <div class="card-body border border-primary ms-3 me-3">
-              <p>Ibu membeli semangka kemudian nissa memakan semangka \(\frac{1}{5}\) bagian. Sedangkan tri memakan semangka \( \frac{3}{5}\) bagian. Berapa bagian semangka yang dimakan nissa dan tri?</p>
-              <img src="../img/semangka.webp" class="rounded mx-auto d-block" style="width: 250px" />
-              \( \frac{1}{5} + \frac{3}{5} = \)
+              <table class="table table-bordered text-black text-center">
+                <tbody style="vertical-align: middle; text-align: justify">
+                  <tr>
+                    <th scope="row">
+                      <img src="../img/semongko6.png" class="rounded mx-auto d-block" width="150px" alt="" />
+                    </th>
+                    <td colspan="2">Ibu membeli sebuah semangka, kemudian di potong menjadi 6 bagian.</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <img src="../img/semongko22.png" class="rounded mx-auto d-block" width="150px" alt="" />
+                    </th>
+                    <td colspan="2">Nissa memakan semangka \(\frac{2}{6}\) bagian.</td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">
+                      <img src="../img/semongko3.png" class="rounded mx-auto d-block" width="150px" alt="" />
+                    </th>
+                    <td colspan="2">Sedangkan tri memakan semangka \( \frac{3}{6}\) bagian.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="../img/semongko22.png" class="rounded mx-auto d-block" width="150px" /> Semangka di makan nissa</th>
+                    <th scope="row"><img src="../img/semongko3.png" class="rounded mx-auto d-block" width="150px" /> Semangka di makan tri</th>
+                    <td>Berapa bagian semangka yang dimakan nissa dan tri?<br /></td>
+                  </tr>
+                </tbody>
+              </table>
+              <center>
+                <button id="btnselesai" class="btn btn-success" style="background-color: #655dbb">Lanjut</button>
+              </center>
             </div>
             <div class="card-body border border-primary ms-3 me-3">
-              <div class="container text-start">
-                <div class="row align-items-center">
-                  <div class="col">
-                    <img src="../img/penjumlahanmengamati.png" class="rounded float-start" style="width: 220px" />
-                  </div>
-                  <div class="col bg-light">
-                    <div class="p-1 mb-2 bg-primary text-white text-center fw-bold">Perhatikan contoh berikut !</div>
-                    \( \frac {2}{7} + \frac{4}{7} = ...\)
-                    <br />
-                    Penyelesaian :<br />
-                    <i> Karena pecahan berpenyebut sama, maka langsung dijumlahkan pembilangnya</i> <br />
-                    \( \frac {2}{7} + \frac{4}{7}= \) \( \frac{2 + 4} 7 = \frac{6}{7}\)
-                    <br />
-                    Jadi, \( \frac {2}{7} + \frac{4}{7} = \frac{6}{7}\)
+              <div id="card2lanjut" class="card-body" style="display: none">
+                <div class="container text-start">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <table>
+                        <tr>
+                          <th scope="row"><img src="../img/semongko22.png" class="rounded mx-auto d-block" width="110px" /> Semangka di makan nissa</th>
+                          <th scope="row"><img src="../img/semongko3.png" class="rounded mx-auto d-block" width="110px" /> Semangka di makan tri</th>
+                          <td>
+                            Bagian yang dimakan nissa \( \frac{2}{6} \) dan tri \( \frac{3}{6} \) <br />
+                            <br />
+                            <!-- \( \frac{2}{6} + \frac{3}{6} = ... \) -->
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="col bg-light">
+                      <div class="p-1 mb-2 text-white text-center fw-bold" style="background-color: #655dbb">Penyelesaian</div>
+                      \( \frac{2}{6} + \frac{3}{6} = ... \)
+                      <br />
+                      <br />
+                      Jawab :<br />
+                      <br />
+                      <p class="borderhasil">
+                        <i> Karena pecahan berpenyebut sama, maka langsung dijumlahkan pembilangnya</i>
+                      </p>
+
+                      <br />
+                      <p>= \( \frac{2 + 3} 6 = \frac{5}{6}\)</p>
+                      <br />
+                      <p class="borderhasil">Jadi, \( \frac{2}{6} + \frac{3}{6} = \frac{5}{6} \)</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -172,6 +244,11 @@
       </div>
     </section>
     <script>
+      document.getElementById("btnselesai").addEventListener("click", function () {
+        document.getElementById("card2lanjut").style.display = "block";
+        document.getElementById("btnselesai").style.display = "none";
+      });
+
       let arrow = document.querySelectorAll(".arrow");
       for (var i = 0; i < arrow.length; i++) {
         arrow[i].addEventListener("click", (e) => {

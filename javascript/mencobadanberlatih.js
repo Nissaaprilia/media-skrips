@@ -2,7 +2,7 @@
 function cekJawaban() {
   //jawaban mulaibelajar2
   let jawabanbelajar2 = document.querySelectorAll("#mulaibelajar2");
-  let jawabanbenarbe2 = ["1", "2", "1", "1"];
+  let jawabanbenarbe2 = ["1", "2", "3", "2"];
   //jawaban materi 12
   let jawabanmateri12 = document.querySelectorAll("#isian12");
   let jawabanbenar12 = ["3", "3", "5", "4", "3", "4", "4", "4"];
