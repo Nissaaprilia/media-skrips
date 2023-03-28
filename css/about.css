@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  width: 30%;
+  float: left;
+  padding: 5vw;
+}
+
+.home {
+  width: 20%;
+  margin: 1vw;
+}
+
+.isi {
+  width: 65%;
+  float: left;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+/* #isi3 {
+  height: 120px;
+} */
+
+.pilih button {
+  font-family: "Poppins", sans-serif;
+  background-color: #3e54ac;
+  border: 5px double;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  height: 28%;
+  transition: 0.3s;
+  font-size: 23px;
+  border-radius: 10px 10px 10px 10px;
+  color: white;
+  text-align: left;
+}
+
+.pilih button:hover {
+  background-color: #655dbb;
+  color: #fff;
+}
+.pilih .tmblAktif {
+  background-color: #655dbb;
+  color: #fff;
+}
+.pilihan {
+  width: 95%;
+  height: 50%;
+  margin-left: 10%;
+  margin: 2%;
+}
+
+.isian {
+  width: 100%;
+  height: 540px;
+  min-height: 23vw;
+  background-color: #655dbb;
+  border: 5px double #fff;
+  color: white;
+  border-radius: 10px;
+  padding: 2%;
+  display: none;
+  overflow: auto;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.isian li {
+  margin: 0% 2% 0% 4%;
+}
+
+.kd {
+  margin: 4vw;
+}
+
+.isiAktif {
+  display: block;
+}
+
+.petkon {
+  font-family: "Times New Roman";
+  background-color: #655dbb;
+  cursor: pointer;
+  color: black;
+  border: 3px double #000;
+  width: 20%;
+  font-size: 18px;
+  padding: 3px;
+}
+
+.petkon:hover {
+  background-color: #1a2a42;
+  border: 3px double black;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 20px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  background-color: #655dbb;
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border: 1px solid #888;
+  width: 58%;
+}
+footer {
+  background-color: #655dbb;
+  font-family: Baskerville, "Baskerville Old Face", serif;
+  padding: 10px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  header {
+    height: 20%;
+    padding: 5px 0 5px 0;
+  }
+  .himpimg {
+    width: 40%;
+  }
+  .home {
+    width: 45%;
+  }
+  .nav {
+    width: 92%;
+  }
+  .pilih {
+    margin: 0 3vw 0 3vw;
+  }
+  .pilih button {
+    font-size: 14px;
+    padding: 2vw 2vw;
+  }
+  .pilihan {
+    width: 100%;
+    margin-left: 75%;
+  }
+  .isi {
+    width: 92%;
+    margin: 0 2vw 0 2vw;
+  }
+  .isian {
+    font-size: 14px;
+  }
+  .modal-content {
+    width: 90%;
+  }
+  .petkon {
+    font-size: 14px;
+    width: 25%;
+  }
+}

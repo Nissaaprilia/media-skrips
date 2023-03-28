@@ -31,7 +31,7 @@ var jwb52 = document.getElementById("jwb52");
 var a = [];
 
 document.getElementById("btnCek1")?.addEventListener("click", function () {
-  if (jwb11.value == 2 && jwb12.value == 6) {
+  if (jwb11.value == 18 && jwb12.value == 20) {
     jwb11.classList.add("jawabpecahanbenar");
     jwb11.classList.remove("jawabpecahansalah");
     jwb12.classList.add("jawabpecahanbenar");
@@ -57,36 +57,11 @@ document.getElementById("btnCek1")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek2")?.addEventListener("click", function () {
-  //   if (jwb21?.value == 2 && jwb22?.value == 3) {
-  //     jwb21.classList.add("jawabpecahanbenar");
-  //     jwb21.classList.remove("jawabpecahansalah");
-  //     jwb22.classList.add("jawabpecahanbenar");
-  //     jwb22.classList.remove("jawabpecahansalah");
-  //     a[1] = true;
-  //   } else {
-  //     jwb21.classList.remove("jawabpecahanbenar");
-  //     jwb21.classList.add("jawabpecahansalah");
-  //     jwb22.classList.remove("jawabpecahanbenar");
-  //     jwb22.classList.add("jawabpecahansalah");
-  //     a[1] = false;
-  //   }
-
-  if (jwb31?.value == 6 && jwb32?.value == 9) {
-    jwb31.classList.add("jawabpecahanbenar");
-    jwb31.classList.remove("jawabpecahansalah");
-    jwb32.classList.add("jawabpecahanbenar");
-    jwb32.classList.remove("jawabpecahansalah");
-    a[2] = true;
-  } else {
-    jwb31.classList.remove("jawabpecahanbenar");
-    jwb31.classList.add("jawabpecahansalah");
-    jwb32.classList.remove("jawabpecahanbenar");
-    jwb32.classList.add("jawabpecahansalah");
-    a[2] = false;
-    console.log(a);
-  }
-
-  if (a[2] == true) {
+  if (jwb21.value == 1 && jwb22.value == 2) {
+    jwb21.classList.add("jawabpecahanbenar");
+    jwb21.classList.remove("jawabpecahansalah");
+    jwb22.classList.add("jawabpecahanbenar");
+    jwb22.classList.remove("jawabpecahansalah");
     document.getElementById("btnLanjut2").style.display = "block";
     document.getElementById("btnCek2").style.display = "none";
     document.getElementById("alertHasil2").innerHTML = `
@@ -95,56 +70,105 @@ document.getElementById("btnCek2")?.addEventListener("click", function () {
         </div>
       `;
   } else {
+    jwb21.classList.remove("jawabpecahanbenar");
+    jwb21.classList.add("jawabpecahansalah");
+    jwb22.classList.remove("jawabpecahanbenar");
+    jwb22.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil2").innerHTML = `
         <div class="alert alert-danger" role="alert">
-            Jawaban salah. Ayo coba lagi !!!
+            Jawaban salah. Ayo coba lagi !!! 
         </div>
       `;
   }
 });
 
-document.getElementById("btnCek3")?.addEventListener("click", function () {
-  if (jwb41.value == 3 && jwb42.value == 5) {
-    jwb41.classList.add("jawabpecahanbenar");
-    jwb41.classList.remove("jawabpecahansalah");
-    jwb42.classList.add("jawabpecahanbenar");
-    jwb42.classList.remove("jawabpecahansalah");
-    a[3] = true;
-  } else {
-    jwb41.classList.remove("jawabpecahanbenar");
-    jwb41.classList.add("jawabpecahansalah");
-    jwb42.classList.remove("jawabpecahanbenar");
-    jwb42.classList.add("jawabpecahansalah");
-    a[3] = false;
-  }
+// document.getElementById("btnCek2")?.addEventListener("click", function () {
+//   if (jwb21?.value == 2 && jwb22?.value == 3) {
+//     jwb21.classList.add("jawabpecahanbenar");
+//     jwb21.classList.remove("jawabpecahansalah");
+//     jwb22.classList.add("jawabpecahanbenar");
+//     jwb22.classList.remove("jawabpecahansalah");
+//     a[1] = true;
+//   } else {
+//     jwb21.classList.remove("jawabpecahanbenar");
+//     jwb21.classList.add("jawabpecahansalah");
+//     jwb22.classList.remove("jawabpecahanbenar");
+//     jwb22.classList.add("jawabpecahansalah");
+//     a[1] = false;
+//   }
 
-  if (jwb51.value == 6 && jwb52.value == 10) {
-    jwb51.classList.add("jawabpecahanbenar");
-    jwb51.classList.remove("jawabpecahansalah");
-    jwb52.classList.add("jawabpecahanbenar");
-    jwb52.classList.remove("jawabpecahansalah");
-    a[4] = true;
-  } else {
-    jwb51.classList.remove("jawabpecahanbenar");
-    jwb51.classList.add("jawabpecahansalah");
-    jwb52.classList.remove("jawabpecahanbenar");
-    jwb52.classList.add("jawabpecahansalah");
-    a[4] = false;
-  }
+//   if (jwb31?.value == 6 && jwb32?.value == 9) {
+//     jwb31.classList.add("jawabpecahanbenar");
+//     jwb31.classList.remove("jawabpecahansalah");
+//     jwb32.classList.add("jawabpecahanbenar");
+//     jwb32.classList.remove("jawabpecahansalah");
+//     a[2] = true;
+//   } else {
+//     jwb31.classList.remove("jawabpecahanbenar");
+//     jwb31.classList.add("jawabpecahansalah");
+//     jwb32.classList.remove("jawabpecahanbenar");
+//     jwb32.classList.add("jawabpecahansalah");
+//     a[2] = false;
+//     console.log(a);
+//   }
 
-  if (a[3] == true && a[4] == true) {
-    document.getElementById("halNext").style.display = "block";
-    document.getElementById("btnCek3").style.display = "none";
-    document.getElementById("alertHasil3").innerHTML = `
-        <div class="alert alert-info" role="alert">
-            Jawaban benar. Ayo baca materi selanjutnya!
-        </div>
-      `;
-  } else {
-    document.getElementById("alertHasil3").innerHTML = `
-        <div class="alert alert-danger" role="alert">
-            Jawaban salah. Ayo coba lagi !!!
-        </div>
-      `;
-  }
-});
+//   if (a[2] == true) {
+//     document.getElementById("btnLanjut2").style.display = "block";
+//     document.getElementById("btnCek2").style.display = "none";
+//     document.getElementById("alertHasil2").innerHTML = `
+
+//       `;
+//   } else {
+//     document.getElementById("alertHasil2").innerHTML = `
+//         <div class="alert alert-danger" role="alert">
+//             Jawaban salah. Ayo coba lagi !!!
+//         </div>
+//       `;
+//   }
+// });
+
+// document.getElementById("btnCek3")?.addEventListener("click", function () {
+//   if (jwb41.value == 3 && jwb42.value == 5) {
+//     jwb41.classList.add("jawabpecahanbenar");
+//     jwb41.classList.remove("jawabpecahansalah");
+//     jwb42.classList.add("jawabpecahanbenar");
+//     jwb42.classList.remove("jawabpecahansalah");
+//     a[3] = true;
+//   } else {
+//     jwb41.classList.remove("jawabpecahanbenar");
+//     jwb41.classList.add("jawabpecahansalah");
+//     jwb42.classList.remove("jawabpecahanbenar");
+//     jwb42.classList.add("jawabpecahansalah");
+//     a[3] = false;
+//   }
+
+//   if (jwb51.value == 6 && jwb52.value == 10) {
+//     jwb51.classList.add("jawabpecahanbenar");
+//     jwb51.classList.remove("jawabpecahansalah");
+//     jwb52.classList.add("jawabpecahanbenar");
+//     jwb52.classList.remove("jawabpecahansalah");
+//     a[4] = true;
+//   } else {
+//     jwb51.classList.remove("jawabpecahanbenar");
+//     jwb51.classList.add("jawabpecahansalah");
+//     jwb52.classList.remove("jawabpecahanbenar");
+//     jwb52.classList.add("jawabpecahansalah");
+//     a[4] = false;
+//   }
+
+//   if (a[3] == true && a[4] == true) {
+//     document.getElementById("halNext").style.display = "block";
+//     document.getElementById("btnCek3").style.display = "none";
+//     document.getElementById("alertHasil3").innerHTML = `
+//         <div class="alert alert-info" role="alert">
+//             Jawaban benar. Ayo baca materi selanjutnya!
+//         </div>
+//       `;
+//   } else {
+//     document.getElementById("alertHasil3").innerHTML = `
+//         <div class="alert alert-danger" role="alert">
+//             Jawaban salah. Ayo coba lagi !!!
+// //         </div>
+// //       `;
+//    }
+// });
