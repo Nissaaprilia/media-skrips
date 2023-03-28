@@ -299,6 +299,16 @@ header nav.navbar {
   text-align: center;
   height: 380px;
 }
+.kotak2 {
+  background-color: #adbdff;
+  border: 1px solid #cecece;
+  border-radius: 3px;
+  box-shadow: 2px 2px 6px black;
+  width: 500px;
+  display: inline-block !important;
+  text-align: center;
+  height: 380px;
+}
 
 .draggable {
   color: black;
@@ -330,7 +340,19 @@ header nav.navbar {
   text-align: center;
   height: 70px;
 }
-
+.droppable2 {
+  background-color: #f4f4f4;
+  border: 1px solid #cecece;
+  border-radius: 3px;
+  /* padding: 20px; */
+  margin: 5px 0;
+  box-shadow: 2px 2px 6px black;
+  color: black;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  height: 70px;
+}
 .cekjwb {
   background-color: #3e54ac;
   border: 1px solid #cecece;
@@ -355,7 +377,7 @@ header nav.navbar {
 }
 
 .konten .card {
-  background-color: yellow;
+  background-color: #655dbb;
   /* height: 10%; */
   width: 100%;
   min-height: 400px;

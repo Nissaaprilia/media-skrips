@@ -37,169 +37,271 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
-  <body>
-    <div class="wrapper">
-      <!-- Sidebar  -->
+   <body class="loading" style="background-color: grey; overflow-y: auto;" data-layout-config='{"leftSideBarTheme":"dark","layoutBoxed":false, "leftSidebarCondensed":false, "leftSidebarScrollable":false,"darkMode":false, "showRightSidebarOnStart": true}'>
+        <!-- Begin page -->
+        <div class="wrapper">
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="leftside-menu" style="background-color: #12266e;">
+    
+                <!-- LOGO -->
+                <a href="/index.html" class="logo text-center logo-light">
+                    <span class="logo-lg my-3">
+                      <h3 class="text-white">Bilangan Pecahan</h3>
+                    </span>
+                    <span class="logo-sm">
+                      <i class="uil-home text-white" style="font-size: 30px;"></i>
+                    </span>
+                </a>
+    
+                <div class="h-100" id="leftside-menu-container" data-simplebar>
 
-      <nav id="sidebar">
-        <ul class="list-unstyled components">
-          <li>
-            <a href="pretest_masuk.html"><i class="fa fa-clipboard-check"></i>&nbsp;Pretest</a>
-          </li>
-          <li>
-            <div class="aktif"><a href="#">A. Memahami Konsep Persamaan Linear Dua Variabel</a></div>
-          </li>
-          <li>
-            <a href="home2.html">B. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Menggambar Grafik</a>
-          </li>
-          <li>
-            <a href="home3.html">C. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Substitusi</a>
-          </li>
-          <li>
-            <a href="home4.html">D. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Eliminasi</a>
-          </li>
-          <li>
-            <a href="home5.html">E. Menyelesaikan Sistem Persamaan Linear Dua Variabel dengan Metode Gabungan</a>
-          </li>
-          <li>
-            <a href="evaluasi_masuk.html"><i class="fa fa-clipboard-check"></i>&nbsp;Evaluasi</a>
-          </li>
-        </ul>
-      </nav>
+                    <!--- Sidemenu -->
+                    <ul id="navbar-js" class="side-nav">
+                    </ul>
+                    <!-- end Help Box -->
+                    <!-- End Sidebar -->
 
-      <!-- Page Content  -->
-      <div id="content">
-        <section class="header">
-          <div class="container-fluid">
-            <button type="button" id="sidebarCollapse" class="btn btn-dark" style="margin-left: -15px">
-              <i class="fa fa-bars"></i>
-              <span>Daftar Isi</span>
-            </button>
-            <button type="button" class="btn btn-dark">
-              <a href="index.html"><i class="fa fa-home"></i>Beranda</a>
-            </button>
-            <div class="navbar-collapse" id="navbarSupportedContent">
-              <div class="mouseover"><center>Sistem Persamaan Linear Dua Variabel</center></div>
-            </div>
-          </div>
-        </section>
-        <div class="konten">
-          <div class="konten1">
-            <h3 class="p-0 ml-1">A. Memahami Konsep Persamaan Linear Dua Variabel</h3>
-            <div class="card-body1">
-              <p>
-                Berdo'a sebelum dan sesudah mengakhiri pelajaran<br />
-                Perilaku jujur dan disiplin dalam mengerjakan latihan
-              </p>
-              <ol class="p-0 ml-3">
-                <b>Tujuan Pembelajaran:</b>
-                <li>Melalui diskusi kelompok, peserta didik dapat menjelaskan pengertian dan konsep SPLDV dengan benar</li>
-                <li>Melalui tanya jawab, peserta didik dapat menyebutkan paling sedikit tiga contoh SPLDV dengan benar</li>
-              </ol>
-            </div>
-            <p>
-              <img src="image/definisi.png" style="float: left; height: 300px; width: 300px" />Persamaan linear adalah persamaan dengan variabel berpangkat satu. Satu koefisien hanya boleh mempunyai satu variabel. Persamaan linear dapat
-              mempunyai satu, dua, tiga, hingga $n$ variabel. Dalam pembelajaran ini hanya akan dibahas persamaan linear dua variabel saja.
-            </p>
-            <img src="image/2.png" class="contoh" />
-            <p style="text-indent: 45px; border: 2px dashed dodgerblue">
-              Misalkan: banyaknya uang sepuluh ribuan $=x$ lembar dan banyaknya uang dua puluh ribuan $=y$ lembar, maka diperoleh persamaan: $10.000x+20.000y=230.000$. Kedua ruas dibagi $10.000$, persamaannya menjadi: $x+2y=23$ ...(1).
-              Diketahui jumlah uang sepuluh ribu dan dua puluh ribu ada 15 lembar, ditulis $x+y=15$ ...(2), maka kedua persamaan disebut sistem persamaan linear dua variabel (SPLDV).
-            </p>
-            <div class="card bg-success" style="width: 23rem"><h4>SPLDV dalam Berbagai Bentuk dan Variabel</h4></div>
-            <p style="text-indent: 45px; border: 2px dashed dodgerblue">
-              Pada umumnya dalam persamaan linear dua variabel terdapat himpunan penyelesaian yang merupakan pasangan berurutan. Jika ditemukan dua buah persamaan linear dua variabel $ax$ + $by$ = $c$ dan $px$ + $qy$ = $r$, maka persamaan
-              tersebut dinamakan sistem persamaan linear dua variabel. Terdapat bentuk umum yang biasa ditemukan:
-            </p>
-            <div class="card bg-success text-white" style="width: 10rem">
-              <div class="card-body">$\begin{cases} ax + by = c & \\ px + qy = r \end{cases}$</div>
-            </div>
-            <div style="border: 2px solid palegreen; height: 120px; overflow: auto; padding: 10px; text-align: justify; width: 210px">
-              Keterangan:<br />$x$ dan $y$ disebut variabel<br />$a, b, p,$ dan $q$ disebut koefisien<br />$c$ dan $r$ disebut konstanta
-            </div>
-            <p style="text-indent: 45px; border: 2px dashed dodgerblue">
-              Sistem persamaan linear dua variabel selanjutnya disingkat (SPLDV) di atas, $a$, $b$, $p$, dan $q$ disebut koefisien, $x$ dan $y$ adalah variabel, serta $c$ dan $r$ disebut konstanta. Nilai $x$ dan $y$ yang memenuhi kedua
-              persamaan tersebut dinamakan penyelesaian sistem persamaan linear dua variabel. Semua variabel, koefisien dan konstanta dalam SPLDV merupakan bilangan real. Namun, masalah atau situasi bagaimana yang dapat dinyatakan dengan
-              persamaan linear dua variabel? Lalu bagaimana cara menuliskannya dengan persamaan? Untuk mengetahuinya, mari mengikuti pembelajaran berikut.
-            </p>
-            <p>Di bawah ini beberapa contoh persamaan linear dua variabel:</p>
-            <div class="card bg-success text-white" style="width: 15rem">
-              <ol>
-                <li>$y=2x$</li>
-                <li>$y=4x-3$</li>
-                <li>$a+2b=4$</li>
-                <li>$3m+6n=9$</li>
-                <li>$0,3m-0,6n=2,1$</li>
-              </ol>
-            </div>
-            <p>Di bawah ini beberapa contoh yang bukan persamaan linear dua variabel:</p>
-            <div class="card bg-success text-white" style="width: 15rem">
-              <ol>
-                <li>$y^2=5x$</li>
-                <li>$3xy-6y=18$</li>
-                <li>$2+3=5$</li>
-                <li>$14z+6x+8$</li>
-                <li>$3x-3=7+x$</li>
-              </ol>
-            </div>
-          </div>
-          <div class="konten2">
-            <div class="container" style="margin-left: -20px">
-              <!-- Nav tabs -->
-              <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                  <a class="nav-link active" data-toggle="tab" href="#demo" style="background-color: cadetblue">Contoh</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" data-toggle="tab" href="#demo1" style="background-color: cadetblue">Latihan</a>
-                </li>
-              </ul>
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div id="demo" class="container tab-pane active">
-                  <p>Tentukan apakah pasangan berurutan berikut adalah salah satu selesaian dari persamaan yang diberikan.</p>
-                  <p style="margin-left: 30px">$y=2x; (3, 6)$</p>
-                  <input type="number" id="ans1" class="angka" />&nbsp;$=2$&nbsp;<input type="number" id="ans2" class="angka" />
-                  <p style="margin-left: 30px">$6=6$ (benar)</p>
-                  Jadi, $(3, 6)$ adalah salah satu selesaian dari $y=2x$<br /><br />
-                  <p style="margin-left: 30px">$y=4x-3; (4, 12)$</p>
-                  <input type="number" id="ans3" class="angka" />&nbsp;$=4$&nbsp;(<input type="number" id="ans4" class="angka" />)&nbsp;$-$ $3$
-                  <p style="margin-left: 20px">$12\neq13$ (salah)</p>
-                  Jadi, $(4, 12)$ bukan selesaian dari $y=4x-3$<br />
-                  <input type="button" onclick="hasilC()" class="btn btn-info" value="Cek Jawaban" style="float: left" />
-                  <b id="checkA"></b>
+                    <div class="clearfix"></div>
+
                 </div>
-                <div id="demo1" class="container tab-pane fade">
-                  <p>Lengkapi pasangan berurutan berikut sehingga menjadi selesaian dari persamaan.</p>
-                  <p id="show-soal1"></p>
-                  <span id="jawab1" style="display: none"> </span>
-                  <form name="form">
-                    <input type="text" class="kotak" id="angka1" size="2%" />
-                  </form>
-                  <br />
-                  <p id="tanggap1"></p>
-                  <input type="button" class="btn btn-info" id="dihapus" value="Hapus" />
-                  <input type="button" class="btn btn-info" id="btnperiksa1" value="Periksa" />
-                  <input type="button" class="btn btn-info" id="btnnext1" value="Selanjutnya" />
+                <!-- Sidebar -left -->
 
-                  <p>Tentukan apakah pasangan berurutan berikut merupakan salah satu selesaian dari persamaan yang diberikan atau tidak. (Jawaban berupa "Ya" atau "Tidak")</p>
-                  <p id="show-soal11"></p>
-                  <span id="jawab11" style="display: none"> </span>
-                  <form name="form">
-                    <input type="text" class="kotak" id="angka11" size="4%" />
-                  </form>
-                  <br />
-                  <p id="tanggap11"></p>
-                  <input type="button" class="btn btn-info" id="dihapus11" value="Hapus" />
-                  <input type="button" class="btn btn-info" id="btnperiksa11" value="Periksa" />
-                  <input type="button" class="btn btn-info" id="btnnext11" value="Selanjutnya" />
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+            <!-- Left Sidebar End -->
+
+            <!-- ============================================================== -->
+            <!-- Start Page Content here -->
+            <!-- ============================================================== -->
+
+            <div class="content-page">
+                <div class="content">
+                    <!-- Topbar Start -->
+                    <div class="navbar-custom" style="height: 74px;">
+                        <button class="button-menu-mobile open-left">
+                            <i class="mdi mdi-menu"></i>
+                        </button>
+                        <h4 class="mt-3 text-black">Pecahan / Pecahan Senilai / Gambar Berarsir</h4>
+                    </div>
+                    <!-- end Topbar -->
+                    
+                    <!-- Start Content-->
+                    <div class="container-fluid mb-3">
+
+                        <!-- start page title -->
+                        <div class="row text-black">
+                            <div class="col-xl-7">
+                                <div class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto; text-align: justify; ">
+                                        <h4>1. Gambar Berarsir</h4>
+                                        <hr>
+                                          <p style="font-size: large;">
+                                              Perhatikan gambar di bawah ini!
+                                              <br>
+                                              <img src="/assets/img/imgarsir1.png" width="500px" alt="">
+                                              Daerah berarsir pada gambar <strong>(a)</strong> bernilai \(\frac{1}{2}\) , sedangkan pada gambar <strong>(b)</strong> bernilai \(\frac{2}{4}\). Coba kamu perhatikan dengan cermat kedua gambar berarsir di atas! Pecahan \(\frac{1}{2}\) dan \(\frac{2}{4}\) masing-masing mewakili luas daerah yang sama. Dengan demikian, dapat dinyatakan \(\frac{1}{2}\) = \(\frac{2}{4}\) disebut dua <strong>pecahan yang senilai.</strong>
+                                          </p>
+                                          <center>
+                                            <div id="btnBerlatih" class="btn btn-success mt-2">Selesai Membaca</div>
+                                          </center>
+                                  </div>
+                                </div> <!-- end card -->
+                            </div>
+                            <div class="col-xl-5">
+                                <div id="berlatih" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto;">
+                                        <h4><strong>Ayo Mencoba!</strong></h4>
+                                        <p>
+                                        Tentukan pecahan senilai pada gambar berarsir di bawah ini! Jawaban benar akan berwarna hijau, jika salah akan berwarna merah.
+                                        <table class="table table-borderless text-black text-center">
+                                          <tbody style="vertical-align: middle;"> 
+                                            <tr>
+                                              <td>
+                                                <h3>
+                                                  \( \frac {1}{3}\)
+                                                </h3>
+                                              </td>
+                                              <td>
+                                                <h4>
+                                                  =
+                                                </h4>
+                                              </td>
+                                              <td>
+                                                <input id="jwb11" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                <br>
+                                                <input id="jwb12" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                              </td>
+                                            </tr>                                 
+                                            <tr>
+                                              <th scope="row">
+                                                <img src="/assets/img/soal1latihan2.png" width="130px" alt="">
+                                              </th>
+                                              <td>
+                                                <h4>
+                                                  =
+                                                </h4>
+                                              </td>
+                                              <td>
+                                                <img src="/assets/img/soal2latihan2.gif" width="130px" alt="">
+                                              </td>                                                       
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                        <div id="alertHasil1"></div>
+                                          <center>
+                                          <div id="btnCek1" class="btn btn-info mt-2 text-white">Cek Jawaban
+                                          </div>
+                                          <div id="btnLanjut" class="btn btn-success mt-2" style="display: none;">Soal Berikutnya</div>
+                                          </center>
+                                        </p>
+                                  </div>
+                                </div>
+                                <div id="soal2" style="display: none;" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto;">
+                                        <h4><strong>Ayo Mencoba!</strong></h4>
+                                        <p>
+                                        Tentukan pecahan senilai pada gambar berarsir di bawah ini! Jawaban benar akan berwarna hijau, jika salah akan berwarna merah.
+                                        <table class="table table-borderless text-black text-center">
+                                          <tbody style="vertical-align: middle;"> 
+                                            <tr>
+                                              <td>
+                                                <input id="jwb21" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                <br>
+                                                <input id="jwb22" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                              </td>
+                                              <td>
+                                                <h4>
+                                                  =
+                                                </h4>
+                                              </td>
+                                              <td>
+                                                <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                                <br>
+                                                <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                              </td>                                                     
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                <img src="/assets/img/soal3latihan2.png" width="130px" alt="">
+                                              </td>
+                                              <td>
+                                                <h4>
+                                                  =
+                                                </h4>
+                                              </td>
+                                              <td>
+                                                <img src="/assets/img/soal4latihan2.gif" width="130px" alt="">
+                                              </td>                                       
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      <div id="alertHasil2"></div>
+                                        <center>
+                                          <div id="btnCek2" class="btn btn-info mt-2 text-white">
+                                            Cek Jawaban
+                                          </div>
+                                          <div id="btnLanjut2" class="btn btn-success mt-2" style="display: none;">
+                                            Soal Berikutnya
+                                          </div>
+                                        </center>
+                                      </p>
+                                  </div>
+                                </div>
+                                <div id="soal3" style="display: none;" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; overflow-y: auto;">
+                                      <h4><strong>Ayo Mencoba!</strong></h4>
+                                      <p>
+                                      Tentukan pecahan senilai pada gambar berarsir di bawah ini! Jawaban benar akan berwarna hijau, jika salah akan berwarna merah.
+                                      <table class="table table-borderless text-black text-center">
+                                        <tbody style="vertical-align: middle;"> 
+                                          <tr>
+                                            <td>
+                                              <input id="jwb41" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                              <br>
+                                              <input id="jwb42" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                            </td>
+                                            <td>
+                                              <h4>
+                                                =
+                                              </h4>
+                                            </td>
+                                            <td>
+                                              <input id="jwb51" placeholder="..." type="text" size="1" class="jawabpecahan">
+                                              <br>
+                                              <input id="jwb52" placeholder="..." type="text" size="1" class="jawabpecahan1">
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td>
+                                              <img src="/assets/img/soal5latihan2.png" width="130px" alt="">
+                                            </td>
+                                            <td>
+                                              <h4>
+                                                =
+                                              </h4>
+                                            </td>
+                                            <td>
+                                              <img src="/assets/img/soal6latihan2.gif" width="130px" alt="">
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <div id="alertHasil3"></div>
+                                        <center>
+                                          <div id="btnCek3" class="btn btn-info mt-2 text-white">
+                                            Cek Jawaban
+                                          </div>
+                                          <a href="materi22.html" id="halNext" type="button" class="btn btn-success mt-2 text-white" style="display: none;">
+                                            Materi Selanjutnya
+                                          </a>
+                                        </center>
+                                      </p>
+                                  </div>
+                                </div>
+                                <div id="berlatih2" class="card mt-3">
+                                  <div class="card-body" style="height: 530px; display: flex; justify-content: center;">
+                                    <div>
+                                      <p>
+                                        <center>
+                                        <strong style="font-size: medium;">Baca materi terlebih dahulu
+                                          <br>Tekan selesai membaca untuk memulai latihan.
+                                        </strong>
+                                        <br>
+                                        <i class="uil uil-lock" style="font-size:300px; color: grey;"></i>
+                                        </center>
+                                    </p>  
+                                    </div>
+                                  </div>
+                                </div> <!-- end card -->
+                            </div>
+                            <center>
+                              <div class="btn-group" role="group" aria-label="Basic example">
+                                  <a href="materi2.html" type="button" class="btn btn-danger">Sebelumnya</a>
+                                  <a href="materi2.html" type="button" class="btn btn-success">1</a>
+                                  <a href="#" type="button" class="btn btn-success active">2</a>
+                                  <a href="materi22.html" type="button" class="btn btn-success">3</a>
+                                  <a href="materi23.html" type="button" class="btn btn-success">4</a>
+                                  <a href="materi22.html" type="button" class="btn btn-primary">Selanjutnya</a>
+                                </div>
+                            </center>
+                          </div>
+                        <!-- end page title -->
+
+
+                    </div>
+                    <!-- container -->
+
+                </div>
+                <!-- content -->
+
+               
+
+            </div>
+
+            <!-- ============================================================== -->
+            <!-- End Page content -->
+            <!-- ============================================================== -->
+
+
   </body>
   <!-- jQuery CDN - Slim version (=without AJAX) -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,4 +1,4 @@
-// Darg and Drop Gunung Api
+// Drag and drop ayo mencoba
 function allowDrop(ev) {
   ev.preventDefault();
 }
@@ -14,7 +14,7 @@ function drop(ev) {
 }
 
 let hslJwb = document.getElementById("hasil");
-let benarDrop = 0;
+// let benarDrop = 0;
 
 function cekJawabandropkesimpulan() {
   let drop1 = document.getElementById("drop1");
@@ -34,8 +34,8 @@ function cekJawabandropkesimpulan() {
     // document.getElementById('ket').hidden = true;
 
     //   drop kedalaman
-    if (drop1.innerText == "Abu Gunung Api") {
-      benarDrop = benarDrop + 1;
+    if (drop1.innerText == "C.") {
+      // benarDrop = benarDrop + 1;
       document.getElementById("drop1").style.background = "green";
       document.getElementById("drop1").style.color = "white";
       document.getElementById("drop1").disabled = true;
@@ -44,8 +44,8 @@ function cekJawabandropkesimpulan() {
       document.getElementById("drop1").style.color = "white";
       document.getElementById("drop1").disabled = true;
     }
-    if (drop2.innerText == "Lava/Magma") {
-      benarDrop = benarDrop + 1;
+    if (drop2.innerText == "E.") {
+      // benarDrop = benarDrop + 1;
       document.getElementById("drop2").style.background = "green";
       document.getElementById("drop2").style.color = "white";
       document.getElementById("drop2").disabled = true;
@@ -54,8 +54,8 @@ function cekJawabandropkesimpulan() {
       document.getElementById("drop2").style.color = "white";
       document.getElementById("drop2").disabled = true;
     }
-    if (drop3.innerText == "Lelehan Lava") {
-      benarDrop = benarDrop + 1;
+    if (drop3.innerText == "A.") {
+      // benarDrop = benarDrop + 1;
       document.getElementById("drop3").style.background = "green";
       document.getElementById("drop3").style.color = "white";
       document.getElementById("drop3").disabled = true;
@@ -64,8 +64,8 @@ function cekJawabandropkesimpulan() {
       document.getElementById("drop3").style.color = "white";
       document.getElementById("drop3").disabled = true;
     }
-    if (drop4.innerText == "Pipa Vulkanik") {
-      benarDrop = benarDrop + 1;
+    if (drop4.innerText == "D.") {
+      // benarDrop = benarDrop + 1;
       document.getElementById("drop4").style.background = "green";
       document.getElementById("drop4").style.color = "white";
       document.getElementById("drop4").disabled = true;
@@ -74,8 +74,8 @@ function cekJawabandropkesimpulan() {
       document.getElementById("drop4").style.color = "white";
       document.getElementById("drop4").disabled = true;
     }
-    if (drop5.innerText == "Ruang Magma") {
-      benarDrop = +1;
+    if (drop5.innerText == "B.") {
+      // benarDrop = +1;
       document.getElementById("drop5").style.background = "green";
       document.getElementById("drop5").style.color = "white";
       document.getElementById("drop5").draggable = true;
