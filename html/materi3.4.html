@@ -208,126 +208,102 @@
                   </center>
                 </div>
               </div>
-              <!-- <div class="container text-start">
-                <div class="row align-items-start">
-                  <div class="col">
-                    Perhatikan contoh berikut <br />
-                    \( \frac {3}{2} - \frac{3}{4} = ... \)<br />
-                    Penyelesaian :<br />
-                    <i>Karena pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama </i>
-                    <br />
-
-                    \( \frac {3}{2} = \frac{3 \times 2 } {2 \times 2} = \frac {6}{4} \) <br />
-                    \( \frac {3}{4} = \frac{3 \times 1 } {4 \times 1} = \frac {1}{4} \) <br />
-                    \( \frac {3}{2} - \frac{1}{4} = \frac {6}{4} - \frac{1}{4} = \frac{3}{4}\) <br />
-
-                    Jadi, \( \frac {3}{2} - \frac{3}{4} = \frac{3}{4}\)
-                  </div>
-                  <div class="col text-start border-start border-primary p-2 mb-2">
-                    Perhatikan contoh berikut <br />
-                    \( \frac {9}{15} - \frac{4}{10} = ... \) <br />
-                    Penyelesaian :<br />
-                    <i>Jika jawaban dapat di sederhanakan, kamu harus menyederhanakan menjadi pecahan paling sederhana </i>
-                    <br />
-
-                    \( \frac {9}{15} = \frac{9 \times 2 } {15 \times 2} = \frac {18}{30} \) <br />
-                    \( \frac {4}{10} = \frac{4 \times 3 } {10 \times 3} = \frac {12}{30} \) <br />
-                    \( \frac {9}{15} - \frac{4}{10} = \frac {18}{30} - \frac{12}{30} = \frac{6}{30} (\frac{6}{30} : \frac{6}{6} = \frac{1}{5})\) <br />
-
-                    Jadi, \( \frac {3}{15} - \frac{4}{10} = \frac{1}{5}\)
-                  </div>
-                </div> -->
             </div>
           </div>
           <div class="card-body border border-primary ms-3 me-3">
-            <!-- <div class="card-body card22 hilang1"> -->
+            <div class="card-body card22 hilang1">
+              <h4 class="card-title"><img src="../img/mencoba.png" alt="" style="width: 220px" /></h4>
+              <div class="card-body border border-primary ms-3 me-3">
+                <!-- Modal -->
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
+                  <i class="bi bi-search"></i>
+                  Petunjuk Soal (Klik disini)
+                </button>
 
-            <h4 class="card-title"><img src="../img/mencoba.png" alt="" style="width: 220px" /></h4>
-            <div class="card-body border border-primary ms-3 me-3">
-              <!-- Modal -->
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
-                <img src="../img/user.png" width="40px" alt="" />
-                Petunjuk Soal
-              </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        1. Perhatikan pertanyaan, jawablah dengan hasil yang paling sederhana<br />
+                        2. Pasangkan hasil pengurangan pada pada kotak sebelah kiri <br />
+                        3 Jika jawaban benar maka kolom akan berwarna "hijau" <br />
+                        4. Jika jawaban salah maka kolom akan berwarna "merah" <br />
+                        5. Untuk memeriksa jawaban bisa klik tombol "cek jawaban"<br />
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+                      </div>
                     </div>
-                    <div class="modal-body">...haiii</div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Understood</button>
+                  </div>
+                </div>
+                <br />
+                <br />
+                <!-- Akhir modal -->
+                <div class="container text-start">
+                  <div class="row align-items-center">
+                    <div class="col">
+                      <table class="tabb">
+                        <thead>
+                          <tr style="text-align: center">
+                            <th scope="col">Soal</th>
+                            <th scope="col">Jawaban</th>
+                          </tr>
+                          <tr>
+                            <td>1. \( \frac{5}{7} - \frac{1}{4} =\)</td>
+                            <td><div class="droppable" id="drop1" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                          </tr>
+                          <tr>
+                            <td>2. \( \frac{5}{8} - \frac{1}{6} =\)</td>
+                            <td><div class="droppable" id="drop2" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                          </tr>
+                          <tr>
+                            <td>3. \( \frac{4}{6} - \frac{2}{4} =\)</td>
+                            <td><div class="droppable" id="drop3" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                          </tr>
+                          <tr>
+                            <td>4. \( \frac{5}{8} - \frac{1}{24} =\)</td>
+                            <td><div class="droppable" id="drop4" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                          </tr>
+                          <tr>
+                            <td>5. \( \frac{4}{5} - \frac{3}{4} =\)</td>
+                            <td><div class="droppable" id="drop5" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
+                          </tr>
+                        </thead>
+                      </table>
+                      <br />
+                      <button onclick="cekJawabandropkesimpulan()" class="cekjwb">Cek Jawaban</button>
+                    </div>
+                    <div class="col">
+                      <p>Pasangkan hasil pengurangan pada kotak jawaban di samping</p>
+                      <div class="kotak">
+                        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag1">A.<img src="../img/soalpengu/asoal.png" width="20%" /></div>
+                        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag2">B.<img src="../img/soalpengu/bsoal.png" width="20%" /></div>
+                        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag3">C.<img src="../img/soalpengu/csoal.png" width="20%" /></div>
+                        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag4">D.<img src="../img/soalpengu/dsoal.png" width="20%" /></div>
+                        <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag5">E.<img src="../img/soalpengu/esoal.png" width="20%" /></div>
+                        <br />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <!-- Akhir modal -->
-
-              <p>Mengubah pecahan campuran dan pecahan biasa menjadi pecahan senilai<br /><br /></p>
-
-              <center>
-                Identifikasikanlah bagian-bagian gunung api! <br /><br />
-                <div class="kotak">
-                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag1"><img src="../img/mencoba.png" width="20%" />a</div>
-                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag2">\( \frac{21}{28} \)</div>
-                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag3">\( \frac{1}{6} \)</div>
-                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag4">\( \frac{11}{24} \)</div>
-                  <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true" ondragstart="drag(event)" id="drag5">\( \frac{1}{20} \)</div>
-                  <br /><br />
-                </div>
-              </center>
-
-              <br />
-              <table class="tabb">
-                <thead>
-                  <tr style="text-align: center">
-                    <th scope="col">Soal</th>
-                    <th scope="col">Jawaban</th>
-                  </tr>
-                  <tr>
-                    <td>1. \( \frac{5}{7} - \frac{1}{4} =\)</td>
-                    <td><div class="droppable" id="drop1" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                  </tr>
-                  <tr>
-                    <td>2. \( \frac{5}{8} - \frac{1}{6} =\)</td>
-                    <td><div class="droppable" id="drop2" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                  </tr>
-                  <tr>
-                    <td>3. \( \frac{4}{6} - \frac{2}{4} =\)</td>
-                    <td><div class="droppable" id="drop3" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                  </tr>
-                  <tr>
-                    <td>4. \( \frac{5}{8} - \frac{1}{24} =\)</td>
-                    <td><div class="droppable" id="drop4" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                  </tr>
-                  <tr>
-                    <td>5. \( \frac{4}{5} - \frac{3}{4} =\)</td>
-                    <td><div class="droppable" id="drop5" value="kosong" ondrop="drop(event)" ondragover="allowDrop(event)"></div></td>
-                  </tr>
-                </thead>
-              </table>
-
-              <br />
-              <!-- <button onclick="cekJawabandrop()" type="button" class="btn btn-primary">Cek Jawaban</button> -->
-              <button onclick="cekJawabandropkesimpulan()" class="cekjwb">Cek Jawaban</button> <br />
-              <br />
             </div>
+            <nav aria-label="Page navigation example ">
+              <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
+                <li class="page-item"><a class="page-link" href="./materi3.3.html">Previous</a></li>
+                <li class="page-item active"><a class="page-link" href="./materi3.4.html">1</a></li>
+                <li class="page-item"><a class="page-link" href="./materi3.5.html">2</a></li>
+                <li class="page-item"><a class="page-link" href="./materi3.5.html">Next</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
-        <nav aria-label="Page navigation example ">
-          <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
-            <li class="page-item"><a class="page-link" href="./materi3.3.html">Previous</a></li>
-            <li class="page-item active"><a class="page-link" href="./materi3.4.html">1</a></li>
-            <li class="page-item"><a class="page-link" href="./materi3.5.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="./materi3.5.html">Next</a></li>
-          </ul>
-        </nav>
       </div>
     </section>
     <script>

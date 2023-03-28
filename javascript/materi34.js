@@ -83,7 +83,7 @@ function drop(ev) {
 }
 
 let hslJwb = document.getElementById("hasil");
-let benarDrop = 0;
+// let benarDrop = 0;
 
 function cekJawabandropkesimpulan() {
   let drop1 = document.getElementById("drop1");
@@ -103,8 +103,8 @@ function cekJawabandropkesimpulan() {
     // document.getElementById('ket').hidden = true;
 
     //   drop kedalaman
-    if (drop1.innerText == "1") {
-      benarDrop = benarDrop + 1;
+    if (drop1.innerText == "B.") {
+      // benarDrop = benarDrop + 1;
       document.getElementById("drop1").style.background = "green";
       document.getElementById("drop1").style.color = "white";
       document.getElementById("drop1").disabled = true;
@@ -113,8 +113,8 @@ function cekJawabandropkesimpulan() {
       document.getElementById("drop1").style.color = "white";
       document.getElementById("drop1").disabled = true;
     }
-    if (drop2.innerText == "( \frac{7}{12} )") {
-      benarDrop = benarDrop + 1;
+    if (drop2.innerText == "D.") {
+      // benarDrop = benarDrop + 1;
       document.getElementById("drop2").style.background = "green";
       document.getElementById("drop2").style.color = "white";
       document.getElementById("drop2").disabled = true;
@@ -123,8 +123,8 @@ function cekJawabandropkesimpulan() {
       document.getElementById("drop2").style.color = "white";
       document.getElementById("drop2").disabled = true;
     }
-    if (drop3.innerText == "( \frac{7}{12} )") {
-      benarDrop = benarDrop + 1;
+    if (drop3.innerText == "C.") {
+      // benarDrop = benarDrop + 1;
       document.getElementById("drop3").style.background = "green";
       document.getElementById("drop3").style.color = "white";
       document.getElementById("drop3").disabled = true;
@@ -133,8 +133,8 @@ function cekJawabandropkesimpulan() {
       document.getElementById("drop3").style.color = "white";
       document.getElementById("drop3").disabled = true;
     }
-    if (drop4.innerText == "( \frac{7}{12} )") {
-      benarDrop = benarDrop + 1;
+    if (drop4.innerText == "A.") {
+      // benarDrop = benarDrop + 1;
       document.getElementById("drop4").style.background = "green";
       document.getElementById("drop4").style.color = "white";
       document.getElementById("drop4").disabled = true;
@@ -143,8 +143,8 @@ function cekJawabandropkesimpulan() {
       document.getElementById("drop4").style.color = "white";
       document.getElementById("drop4").disabled = true;
     }
-    if (drop5.innerText == "( \frac{7}{12} )") {
-      benarDrop = +1;
+    if (drop5.innerText == "E.") {
+      // benarDrop = +1;
       document.getElementById("drop5").style.background = "green";
       document.getElementById("drop5").style.color = "white";
       document.getElementById("drop5").draggable = true;
