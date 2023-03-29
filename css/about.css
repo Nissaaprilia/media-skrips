@@ -14,11 +14,19 @@
   margin: 1vw;
 }
 
+.kembali {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 50px;
+  height: 50px;
+}
+
 .isi {
   width: 65%;
   float: left;
   font-family: "Poppins", sans-serif;
   font-size: 18px;
+  padding-top: 40px;
 }
 
 /* #isi3 {
