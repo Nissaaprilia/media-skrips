@@ -134,15 +134,15 @@
             <h4 class="card-title">Pecahan</h4>
             <p class="card-text">
               Untuk lebih memahami pecahan, lengkapilah keterangan yang menyatakan bagian yang berasir pada gambar berikut ! : <br />
-          
-               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
+
+              <!-- Button trigger modal -->
+              <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
                 <i class="bi bi-search"></i>
                 Petunjuk Soal (Klik disini)
-              </button>
+              </button> -->
 
               <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <!-- <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -162,68 +162,74 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
               <!-- Akhir modal -->
             </p>
-            <table class="table table-bordered border-primary text-center" style="width: 30%" ;>
-              <tr>
-                <td scope="row">No</td>
-                <td colspan="2">Gambar</td>
-                <td>Jawaban</td>
-              </tr>
-              <tr>
-                <td scope="row">1</td>
-                <td colspan="2"><img src="../img/pendahuluan/1.4.png" style="width: 50%" /></td>
-                <td>
-                  <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
-                  <br />
-                  <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">2</td>
-                <td colspan="2"><img src="../img/pendahuluan/2.22.png" style="width: 55%" /></td>
-                <td>
-                  <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
-                  <br />
-                  <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">3</td>
-                <td colspan="2"><img src="../img/pendahuluan/3.2.png" style="width: 55%" /></td>
-                <td>
-                  <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
-                  <br />
-                  <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
-                </td>
-              </tr>
-              <tr>
-                <td scope="row">4</td>
-                <td colspan="2"><img src="../img/pendahuluan/2.2.png" style="width: 55%"; /></td>
-                <td>
-                  <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
-                  <br />
-                  <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
-                </td>
-              </tr>
-            </table>
-            <button class="btn btn-outline-success" onclick="cekJawaban()">Cek Jawaban</button>
-            <button onclick="reset()" class="btn btn-outline-danger">Coba Lagi</button>
+
+            <div class="container text-start">
+              <div class="row align-self-start">
+                <div class="col text-justify p-3">
+                  <img src="../img/petunjuk/petunjuk2.png" style="width: 100%" />
+                </div>
+                <div class="col bg-light">
+                  <table class="table table-bordered border-primary text-center" style="width: 70%" ;>
+                    <tr>
+                      <td scope="row">No</td>
+                      <td colspan="2">Gambar</td>
+                      <td>Jawaban</td>
+                    </tr>
+                    <tr>
+                      <td scope="row">1</td>
+                      <td colspan="2"><img src="../img/pendahuluan/1.4.png" style="width: 50%" /></td>
+                      <td>
+                        <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                        <br />
+                        <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">2</td>
+                      <td colspan="2"><img src="../img/pendahuluan/2.22.png" style="width: 55%" /></td>
+                      <td>
+                        <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                        <br />
+                        <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">3</td>
+                      <td colspan="2"><img src="../img/pendahuluan/3.2.png" style="width: 55%" /></td>
+                      <td>
+                        <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                        <br />
+                        <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">4</td>
+                      <td colspan="2"><img src="../img/pendahuluan/2.2.png" style="width: 55%" ; /></td>
+                      <td>
+                        <input id="mulaibelajar2" placeholder="..." type="text" size="1" />
+                        <br />
+                        <input class="form-control" type="text" value="4" aria-label="Disabled input example" disabled readonly />
+                      </td>
+                    </tr>
+                  </table>
+                  <button class="btn btn-outline-success" onclick="cekJawaban()">Cek Jawaban</button>
+                  <button onclick="reset()" class="btn btn-outline-danger">Coba Lagi</button>
+                </div>
+              </div>
+            </div>
           </div>
           <nav aria-label="Page navigation example ">
             <ul class="navigasi bawah pagination justify-content-center fixed-bottom">
               <li class="page-item"><a class="page-link" href="./mulaibelajar.html">Previous</a></li>
               <li class="page-item"><a class="page-link" href="./mulaibelajar.html">1</a></li>
               <li class="page-item active"><a class="page-link" href="./mulaibelajar2.html">2</a></li>
-              <li class="page-item" ><a class="page-link" href="./materi1.1.html">Materi Selanjutnya</a></li>
-              
+              <li class="page-item"><a class="page-link" href="./materi1.1.html">Materi Selanjutnya</a></li>
             </ul>
-            
           </nav>
-          
         </div>
-     
       </div>
       <!-- <i class="bx bx-menu"></i>
         <span class="text">Drop Down Sidebar</span> -->

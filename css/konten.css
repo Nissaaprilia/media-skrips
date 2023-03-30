@@ -389,7 +389,7 @@ header nav.navbar {
 /* konten contoh */
 .langkah {
   display: inline-block;
-  background-color: #655dbb;
+  background-color: #3e54ac;
   font-weight: bold;
   padding: 5px;
   text-align: center;
@@ -398,7 +398,7 @@ header nav.navbar {
 
 .ke {
   display: inline-block;
-  background-color: #655dbb;
+  background-color: #3e54ac;
   font-weight: bold;
   padding: 10px;
   padding-right: 10px;
@@ -409,13 +409,13 @@ header nav.navbar {
 }
 
 .ke_aktif {
-  background-color: #655dbb;
+  background-color: #3e54ac;
   padding-top: 10px;
 }
 
 .ke:hover {
   cursor: pointer;
-  background-color: #8191d3;
+  background-color: #2a3e90;
   padding-top: 10px;
 }
 
@@ -440,7 +440,7 @@ header nav.navbar {
 .borderhasil {
   text-align: center;
   width: 400px;
-  border: 1px dashed #655dbb;
+  border: 1px dashed;
   border-radius: 50px;
   box-shadow: -5px -5px 4px rgba(197, 197, 218, 0.8);
   padding: 10px;
@@ -449,7 +449,7 @@ header nav.navbar {
   margin-left: 20px;
 }
 .next_pensil {
-  background-color: #655dbb;
+  background-color: #3e54ac;
   padding: 10px;
   display: inline-block;
   /* margin-top: 5px; */
@@ -457,10 +457,11 @@ header nav.navbar {
   border-radius: 5px;
   cursor: pointer;
   color: white;
+  font-weight: bold;
 }
 
 .next_pensil:hover {
-  background-color: #8191d3;
+  background-color: #2a3e90;
   color: white;
 }
 
