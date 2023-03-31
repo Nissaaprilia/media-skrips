@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 260px;
+  width: 300px;
   background: #3e54ac;
   z-index: 100;
   transition: all 0.5s ease;
@@ -94,7 +94,7 @@
   text-decoration: none;
 }
 .sidebar .nav-links li a .link_name {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 400;
   color: #fff;
   transition: all 0.4s ease;
@@ -106,7 +106,7 @@
 .sidebar .nav-links li .sub-menu {
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
-  background: #1d1b31;
+  background: #3e54ac;
   display: none;
 }
 .sidebar .nav-links li.showMenu .sub-menu {
@@ -114,11 +114,14 @@
 }
 .sidebar .nav-links li .sub-menu a {
   color: #fff;
-  font-size: 15px;
+  font-size: 12px;
   padding: 5px 0;
   white-space: nowrap;
-  opacity: 0.6;
+  opacity: 1;
   transition: all 0.3s ease;
+  height: 50px;
+  /* width: 50px; */
+  text-decoration: none;
 }
 .sidebar .nav-links li .sub-menu a:hover {
   opacity: 1;
@@ -163,7 +166,7 @@
 .sidebar .profile-details {
   position: fixed;
   bottom: 0;
-  width: 260px;
+  width: 300px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -212,8 +215,8 @@
   position: relative;
   background: white;
   height: 80vh;
-  left: 260px;
-  width: calc(100% - 260px);
+  left: 300px;
+  width: calc(100% - 300px);
   transition: all 0.5s ease;
 }
 .sidebar.close ~ .home-section {

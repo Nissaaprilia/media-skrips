@@ -10,7 +10,7 @@
 .jumbotron {
   padding: 2rem;
   background-color: #655dbb;
-  background-image: url(../img/jum.png);
+  /* background-image: url(../img/jum.png); */
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 30%;
@@ -88,4 +88,10 @@ a {
 
 .gridd-item i {
   margin-bottom: 20px;
+}
+
+.aktif {
+  background-color: #2c266b;
+  color: black !important;
+  cursor: pointer;
 }
