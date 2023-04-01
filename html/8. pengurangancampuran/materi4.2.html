@@ -17,8 +17,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
     <!-- My CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/konten.css" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/konten.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -130,7 +130,7 @@
     <section class="home-section">
       <div class="home-content">
         <i class="bx bx-menu"></i>
-        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Penjumlahan Pecahan Campuran</div>
+        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Pengurangan Pecahan Campuran</div>
       </div>
       <div class="konten col-9-5 ms-2">
         <div class="card lg p-3 mb-5 bg-white rounded">
@@ -139,8 +139,8 @@
             <div class="card-body border border-primary ms-3 me-3">
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="background-color: #655dbb">
-                <i class="bi bi-search"></i>
-                Petunjuk Soal (Klik disini)
+                <img src="../img/user.png" width="40px" alt="" />
+                Petunjuk Soal
               </button>
 
               <!-- Modal -->
@@ -148,19 +148,12 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk Pengerjaan</h1>
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Petunjuk</h1>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                      1. Kerjakan pertanyaan di bawah ini <br />
-                      2. Jawablah hasil penjumlahan pada kolom yang sudah di sediakan <br />
-                      3 Jika jawaban benar maka kolom akan berwarna "hijau" <br />
-                      4. Jika jawaban salah maka kolom akan berwarna "merah" <br />
-                      5. Untuk memeriksa jawaban bisa klik tombol "cek jawaban"<br />
-                      6. Untuk mengulangi pertanyaan bisa klik tombol "coba lagi"
-                    </div>
+                    <div class="modal-body">...haiii</div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     </div>
                   </div>
                 </div>
@@ -168,7 +161,7 @@
               <br />
               <br />
               <!-- Akhir modal -->
-              <table class="table table-bordered text-center border-primary" style="width: 40%">
+              <table class="table table-bordered text-center" style="border: #3e54ac">
                 <tbody style="vertical-align: middle">
                   <tr>
                     <td scope="row">No</td>
@@ -177,17 +170,17 @@
                   </tr>
                   <tr>
                     <td scope="row">1</td>
-                    <td colspan="1">\( {1} \frac {5}{6} + {1}\frac{1}{2} = ... \)</td>
+                    <td colspan="1">\( {7} \frac {3}{4} - {2}\frac{1}{6} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -196,17 +189,17 @@
 
                   <tr>
                     <td scope="row">2</td>
-                    <td colspan="1">\( {2} \frac {1}{6} + {1}\frac{1}{2} = ... \)</td>
+                    <td colspan="1">\( {5} \frac {2}{3} - {2}\frac{1}{6} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -215,17 +208,17 @@
 
                   <tr>
                     <td scope="row">3</td>
-                    <td colspan="1">\( {1} \frac {1}{3} + {2}\frac{3}{4} = ... \)</td>
+                    <td colspan="1">\( {4} \frac {7}{8} - {1}\frac{1}{7} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -234,17 +227,17 @@
 
                   <tr>
                     <td scope="row">4</td>
-                    <td colspan="1">\( {2} \frac {2}{3} + {4}\frac{4}{5} = ... \)</td>
+                    <td colspan="1">\( {4} \frac {3}{4} - {1}\frac{1}{2} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -253,17 +246,17 @@
 
                   <tr>
                     <td scope="row">5</td>
-                    <td colspan="1">\( {4} \frac {1}{2} + {1}\frac{1}{3} = ... \)</td>
+                    <td colspan="1">\( {6} \frac {1}{2} - {4}\frac{2}{10} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -272,17 +265,17 @@
 
                   <tr>
                     <td scope="row">6</td>
-                    <td colspan="1">\( {4} \frac {5}{6} + {2}\frac{1}{4} = ... \)</td>
+                    <td colspan="1">\( {2} \frac {1}{2} - {1}\frac{1}{6} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -291,17 +284,17 @@
 
                   <tr>
                     <td scope="row">7</td>
-                    <td colspan="1">\( {6} \frac {1}{3} + {3}\frac{4}{5} = ... \)</td>
+                    <td colspan="1">\( {5} \frac {9}{10} - {3}\frac{33}{40} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -310,17 +303,17 @@
 
                   <tr>
                     <td scope="row">8</td>
-                    <td colspan="1">\( {5} \frac {2}{3} + {1}\frac{3}{4} = ... \)</td>
+                    <td colspan="1">\( {6} \frac {5}{7} - {2}\frac{2}{5} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -329,17 +322,17 @@
 
                   <tr>
                     <td scope="row">9</td>
-                    <td colspan="1">\( {1} \frac {1}{2} + {2}\frac{1}{3} = ... \)</td>
+                    <td colspan="1">\( {4} \frac {4}{5} - {3}\frac{1}{3} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -348,17 +341,17 @@
 
                   <tr>
                     <td scope="row">10</td>
-                    <td colspan="1">\( {1} \frac {1}{2} + {2}\frac{1}{4} = ... \)</td>
+                    <td colspan="1">\( {6} \frac {4}{5} - {3}\frac{1}{3} = ... \)</td>
                     <td>
                       <table>
                         <tr>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
                           </td>
                           <td>
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
                             <br />
-                            <input id="isian24" placeholder="..." type="text" size="1" />
+                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
                           </td>
                         </tr>
                       </table>
@@ -368,19 +361,20 @@
               </table>
             </div>
             <br />
-            <button class="btn btn-outline-success" onclick="cekJawaban()">Cek Jawaban</button>
-            <button onclick="reset()" class="btn btn-outline-danger">Coba Lagi</button>
+            <button class="btn btn-outline-primary" onclick="cekJawaban()">Cek Jawaban</button>
+            <button onclick="reset()" class="btn btn-outline-success">Coba Lagi</button>
           </div>
         </div>
+
+        <nav aria-label="Page navigation example ">
+          <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
+            <li class="page-item"><a class="page-link" href="./materi4.1.html">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="./materi4.1.html">1</a></li>
+            <li class="page-item active"><a class="page-link" href="./materi4.2.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="./kuis2.html">Materi Selanjutnya</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav aria-label="Page navigation example ">
-        <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
-          <li class="page-item"><a class="page-link" href="./materi2.2.html">Previous</a></li>
-          <li class="page-item"><a class="page-link" href="./materi2.3.html">1</a></li>
-          <li class="page-item active"><a class="page-link" href="./materi2.4.html">2</a></li>
-          <li class="page-item"><a class="page-link" href="./materi3.1.html">Materi Selanjutnya</a></li>
-        </ul>
-      </nav>
     </section>
     <script>
       let arrow = document.querySelectorAll(".arrow");
@@ -400,6 +394,6 @@
 
     <!-- Javascript -->
     <!-- <link rel="stylesheet" href="../javascript/penjumlahanberlatih.js" -->
-    <script src="../javascript/mencobadanberlatih.js"></script>
+    <script src="../javascript/penjumlahanberlatih.js"></script>
   </body>
 </html>

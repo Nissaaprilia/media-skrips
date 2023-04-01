@@ -104,7 +104,7 @@
   pointer-events: none;
 }
 .sidebar .nav-links li .sub-menu {
-  padding: 6px 6px 14px 80px;
+  padding: 8px;
   margin-top: -10px;
   background: #3e54ac;
   display: none;
@@ -115,7 +115,7 @@
 .sidebar .nav-links li .sub-menu a {
   color: #fff;
   font-size: 12px;
-  padding: 5px 0;
+  /* padding: px 0; */
   white-space: nowrap;
   opacity: 1;
   transition: all 0.3s ease;
@@ -529,3 +529,15 @@ header nav.navbar {
   display: inline-block;
   border: 2px solid wheat;
 } */
+.jawabpecahan {
+  border: none;
+  border-bottom: solid 1px black;
+  text-align: center;
+  width: 28px;
+}
+
+.jawabpecahan1 {
+  border: none;
+  text-align: center;
+  width: 28px;
+}

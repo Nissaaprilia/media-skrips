@@ -95,3 +95,8 @@ a {
   color: black !important;
   cursor: pointer;
 }
+
+.disabel {
+  pointer-events: none;
+  cursor: not-allowed;
+}
