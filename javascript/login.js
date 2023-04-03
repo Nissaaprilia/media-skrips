@@ -1,22 +1,47 @@
-let namelogin = document.getElementById("namelogin");
-let nislogin = document.getElementById("nislogin");
-let nama = sessionStorage.getItem("nama");
-var curretUser = null;
+// let namelogin = document.getElementById("namelogin");
+// let nislogin = document.getElementById("nislogin");
+// let nama = sessionStorage.getItem("nama");
+// var curretUser = null;
 
-//function
-function getName() {
-  if ((nama = null)) {
-    window.location = "../../loginsiswa.html";
+// //function
+// function getName() {
+//   if ((nama = null)) {
+//     window.location = "../../loginsiswa.html";
+//   } else {
+//     namelogin.innerText = nama;
+//   }
+// }
+
+// getName();
+
+// window.onload = function () {
+//   getName();
+//   if ((curretUser = null)) {
+//     signoutlink;
+//   }
+// };
+
+let userlink = document.getElementById("userlink");
+let usernis = document.getElementById("usernis");
+
+let nameUser = sessionStorage.getItem("name");
+let nisUser = sessionStorage.getItem("nis");
+
+function getname() {
+  if (nameUser == null) {
+    alert("Maaf, kamu harus login terlebih dahulu");
+    window.location = "index.html";
   } else {
-    namelogin.innerText = nama;
+    userlink.innerText = nameUser;
   }
 }
 
-getName();
+getname();
 
-window.onload = function () {
-  getName();
-  if ((curretUser = null)) {
-    signoutlink;
-  }
-};
+function signout() {
+  sessionStorage.removeItem("name");
+  sessionStorage.removeItem("NIS");
+  window.location = "index.html";
+}
+
+console.log(localStorage);
