@@ -31,13 +31,15 @@
         height: 40vw;
         width: 100vw;
         margin: 0px;
+        margin-top: 50px;
+        background-color: yellowgreen;
       }
     </style>
   </head>
 
   <body>
-    <div class="mb-5">
-      <h3 class="mb-3">Login Siswa</h3>
+    <div class="mb-7">
+      <h3 class="mb-7">Login Siswa</h3>
       <input type="text" placeholder="Nisn" id="nisnInp" class="form-control mb-3" />
       <input type="password" placeholder="Password" id="passInp" class="form-control mb-3" />
       <!-- <div class="form-check form-switch">
@@ -84,13 +86,13 @@
           if (snapshot.exists()) {
             let dbnama = snapshot.val().fullnama;
             let dbnisn = snapshot.val().nisn;
-            let dbsekolah = snapshot.val().sekolah;
+
             let dbpass = snapshot.val().pass;
 
             if (dbnisn == nisn.value && dbpass == pass.value) {
               sessionStorage.setItem("nama", dbnama);
               sessionStorage.setItem("nisn", dbnisn);
-              sessionStorage.setItem("sekolah", dbsekolah);
+
               window.location = "./html/index.html";
             } else {
               alert("NIS atau Password yang anda masukkan salah");
