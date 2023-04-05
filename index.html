@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Penjumlahan dan Pengurangan Bilangan Pecahan</title>
+    <title>Login</title>
 
     <!-- AOS -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -16,97 +16,104 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <!-- My CSS -->
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/konten.css" />
+    <!-- <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/konten.css" /> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vw;
+        width: 100vw;
+        margin: 0px;
+      }
+    </style>
   </head>
 
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg text-white">
-        <div class="container-fluid ms-5 me-5">
-          <a class="navbar-brand text-white" href="../index.html">Bilangan Pecahan</a>
-          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse ms-10" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-2">
-              <li class="nav-item">
-                <a class="nav-link text-white" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../html/petunjuk.html">Petunjuk</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="../html/about.html">About</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-    <div class="row">
-      <section id="jumbotron" class="jumbotron" data-aos="zoom-out" data-aos-duration="1000">
-        <br />
-        <h1>Penjumlahan dan Pengurangan Bilangan Pecahan</h1>
-        <a href="../html/1. pendahuluan/mulaibelajar.html" button type="submit" class="btn btn-light">Mulai Belajar </a>
-        <br />
-        <br />
-      </section>
-
-      <section id="projects">
-        <div class="container" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="row text-center">
-            <div class="shadow-none p-3 mb-5 bg-light rounded">
-              <div class="col">
-                <h5>3 Fitur Utama Aplikasi ini</h5>
-                <h5>Berikut ini 3 fitur utama yang disediakan untuk belajar pada media pembelajaran</h5>
-              </div>
-
-              <div class="kotak-container">
-                <a href="../html/petunjuk.html">
-                  <div class="gridd-item">
-                    <i class="bi bi-info-circle-fill fa-3x"></i>
-                    <br />
-                    PETUNJUK
-                  </div>
-                </a>
-
-                <a href="../html/1. pendahuluan/mulaibelajar.html">
-                  <div class="gridd-item">
-                    <i class="bi bi-book fa-3x"></i>
-                    <br />
-                    MATERI
-                  </div>
-                </a>
-
-                <a href="../html/about.html">
-                  <div class="gridd-item">
-                    <i class="bi bi-person fa-3x"></i>
-                    <br />
-                    INFORMASI
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- footer - -->
-      <footer class="text-white text-center pb-1" style="background-color: #3e54ac">
-        <p class="text-white fw-bold"> Pendidikan Komputer 2023</a></p>
-      </footer>
-      <!-- Akhir Footer-->
+    <div class="mb-5">
+      <h3 class="mb-3">Login Siswa</h3>
+      <input type="text" placeholder="Nisn" id="nisnInp" class="form-control mb-3" />
+      <input type="password" placeholder="Password" id="passInp" class="form-control mb-3" />
+      <!-- <div class="form-check form-switch">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+        <label class="form-check-label" for="flexSwitchCheckDefault">Keep me Logged en</label>
+      </div> -->
+      <button type="text" id="sub_btn" class="btn btn-outline-primary">Login Siswa</button>
+      <span class="badge badge-dark py-1 w-100"><a href="register.html">Belum Memiliki Akun?</a></span>
+      <span class="badge badge-dark py-1 w-100"><a href="loginguru.html">Login Guru</a></span>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyD3ePhZv8xSqO_waYpONtzxWW3cKYKWdYQ",
+        authDomain: "register-816dd.firebaseapp.com",
+        databaseURL: "https://register-816dd-default-rtdb.firebaseio.com",
+        projectId: "register-816dd",
+        storageBucket: "register-816dd.appspot.com",
+        messagingSenderId: "823212877497",
+        appId: "1:823212877497:web:676370d0e7d17ba7489d68",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      import { getDatabase, ref, set, child, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+
+      const db = getDatabase();
+      // Login Siswa// References
+      const nisn = document.getElementById("nisnInp");
+      const pass = document.getElementById("passInp");
+      const submit = document.getElementById("sub_btn");
+
+      // Auntentifikasi
+      function AunthenticateUser() {
+        const dbref = ref(db);
+
+        get(child(dbref, "DataSiswa/" + nisn.value)).then((snapshot) => {
+          if (snapshot.exists()) {
+            let dbnama = snapshot.val().fullnama;
+            let dbnisn = snapshot.val().nisn;
+            let dbsekolah = snapshot.val().sekolah;
+            let dbpass = snapshot.val().pass;
+
+            if (dbnisn == nisn.value && dbpass == pass.value) {
+              sessionStorage.setItem("nama", dbnama);
+              sessionStorage.setItem("nisn", dbnisn);
+              sessionStorage.setItem("sekolah", dbsekolah);
+              window.location = "../index.html";
+            } else {
+              alert("NIS atau Password yang anda masukkan salah");
+            }
+          } else {
+            alert("Anda belum terdaftar");
+          }
+        });
+      }
+
+      // Decript process
+      // function decPass(dbpass) {
+      //   var pass12 = CryptoJS.AES.decrypt(dbpass, pass.value);
+      //   return pass12.toString(CryptoJS.enc.Utf8);
+      // }
+
+      // Assign in events
+      submit.addEventListener("click", AunthenticateUser);
+
+      // function masuksiswa() {
+      //   window.location = "./materi_a.html";
+      // }
     </script>
+    <script src="/js/home.js"></script>
   </body>
 </html>
