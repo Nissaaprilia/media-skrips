@@ -49,15 +49,14 @@ document.getElementById("btnCek1")?.addEventListener("click", function () {
     jwb12.classList.remove("jawabpecahanbenar");
     jwb12.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil1").innerHTML = `
-        <div class="alert alert-danger" role="alert">
-            Jawaban salah. Ayo coba lagi !!! 
-        </div>
+      <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
+      Karena pecahan berpenyebut sama, maka langsung di jumlahkan pembilang nya</div>
       `;
   }
 });
 
 document.getElementById("btnCek2")?.addEventListener("click", function () {
-  if (jwb21.value == 1 && jwb22.value == 2) {
+  if (jwb21.value == 3 && jwb22.value == 8) {
     jwb21.classList.add("jawabpecahanbenar");
     jwb21.classList.remove("jawabpecahansalah");
     jwb22.classList.add("jawabpecahanbenar");
@@ -75,13 +74,36 @@ document.getElementById("btnCek2")?.addEventListener("click", function () {
     jwb22.classList.remove("jawabpecahanbenar");
     jwb22.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil2").innerHTML = `
-        <div class="alert alert-danger" role="alert">
-            Jawaban salah. Ayo coba lagi !!! 
-        </div>
+      <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
+      Karena pecahan berpenyebut sama, maka langsung di jumlahkan pembilang nya</div>
       `;
   }
 });
 
+document.getElementById("btnCek3")?.addEventListener("click", function () {
+  if (jwb31.value == 6 && jwb32.value == 7) {
+    jwb31.classList.add("jawabpecahanbenar");
+    jwb31.classList.remove("jawabpecahansalah");
+    jwb32.classList.add("jawabpecahanbenar");
+    jwb32.classList.remove("jawabpecahansalah");
+    document.getElementById("btnLanjut3").style.display = "block";
+    document.getElementById("btnCek3").style.display = "none";
+    document.getElementById("alertHasil3").innerHTML = `
+        <div class="alert alert-info" role="alert">
+            Jawaban benar. Klik soal berikutnya!
+        </div>
+      `;
+  } else {
+    jwb31.classList.remove("jawabpecahanbenar");
+    jwb31.classList.add("jawabpecahansalah");
+    jwb32.classList.remove("jawabpecahanbenar");
+    jwb32.classList.add("jawabpecahansalah");
+    document.getElementById("alertHasil3").innerHTML = `
+      <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
+      Karena pecahan berpenyebut sama, maka langsung di jumlahkan pembilang nya</div>
+      `;
+  }
+});
 // document.getElementById("btnCek2")?.addEventListener("click", function () {
 //   if (jwb21?.value == 2 && jwb22?.value == 3) {
 //     jwb21.classList.add("jawabpecahanbenar");

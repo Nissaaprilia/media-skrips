@@ -157,6 +157,13 @@
       </div>
       <div class="konten col-9-5 ms-2">
         <div class="card lg p-3 mb-5 bg-white rounded">
+          <!-- <div id="userlink">
+            <a href=""></a>
+          </div>
+
+          <div id="signoutlink">
+            <a href="" onclick="LogOut()"><img src="../image/logout.png" width="30" /></a>
+          </div> -->
           <!-- <h5 class="card-header text-white text-center" style="background-color: #3e54ac">Pendahuluan</h5> -->
           <div class="card-body">
             <div class="accordion" id="accordionExample">
@@ -202,6 +209,28 @@
       </div>
     </section>
     <script>
+      //reference
+      //let userlink = document.getElementById("userlink");
+      //let signoutlink = document.getElementById("signoutlink");
+      //let nama = sessionStorage.getItem("nama");
+
+      //function
+      // function getNama() {
+      //  if (nama == null) {
+      //  window.location = "../../index.html";
+      //} else {
+      //userlink.innerText = nama;
+      // }
+      // }
+
+      // getNama();
+
+      //  function LogOut() {
+      // sessionStorage.removeItem("nama");
+      // sessionStorage.removeItem("nim");
+      // window.location = "../../index.html";
+      // }
+
       let arrow = document.querySelectorAll(".arrow");
       for (var i = 0; i < arrow.length; i++) {
         arrow[i].addEventListener("click", (e) => {
