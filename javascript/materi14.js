@@ -1,6 +1,11 @@
 document.getElementById("cardBtn1").addEventListener("click", function () {
-  document.getElementById("card2").style.display = "block";
+  document.getElementById("card2lanjut").style.display = "block";
   document.getElementById("cardBtn1").style.display = "none";
+});
+
+document.getElementById("cardBtn2").addEventListener("click", function () {
+  document.getElementById("card2").style.display = "block";
+  document.getElementById("cardBtn2").style.display = "none";
 });
 //Contoh Soal
 let kenya = document.querySelectorAll(".ke");
