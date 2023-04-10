@@ -13,7 +13,7 @@ function cekJawaban() {
 
   // jawaban materi 15
   let jawabanmateri15 = document.querySelectorAll("#isian15");
-  let jawabanbenar15 = ["2", "3", "2", "3", "5", "6", "2", "3", "3", "4"];
+  let jawabanbenar15 = ["3", "2", "5", "6", "3", "4", "7", "6", "2", "3"];
 
   //jawaban materi 16
   let jawabanmateri16 = document.querySelectorAll("#isian16");

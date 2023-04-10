@@ -575,9 +575,8 @@ header nav.navbar {
 }
 
 .klikdiketahui {
-  background-color: white;
-  border: 2px solid #3e54ac;
-
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
@@ -587,8 +586,7 @@ header nav.navbar {
 }
 
 .klikdiketahui:hover {
-  background-color: #8f9edc;
-  color: black;
+  background-color: #252f67;
 }
 
 .ditanya {
@@ -606,8 +604,8 @@ header nav.navbar {
 }
 
 .klikditanya {
-  background-color: white;
-  border: 2px solid #3e54ac;
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
@@ -617,7 +615,7 @@ header nav.navbar {
 }
 
 .klikditanya:hover {
-  background-color: #8f9edc;
+  background-color: #252f67;
 }
 
 .rumus {
@@ -635,8 +633,8 @@ header nav.navbar {
 }
 
 .klikrumus {
-  background-color: white;
-  border: 2px solid #3e54ac;
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
@@ -646,14 +644,14 @@ header nav.navbar {
 }
 
 .klikrumus:hover {
-  background-color: #8f9edc;
+  background-color: #252f67;
 }
 
 .jarak {
   margin-left: 330px;
   padding: 10px;
   margin-top: 40px;
-  background-color: #3e54ac;
+  background-color: #18724b;
   border-radius: 5px;
   width: 30%;
   height: fit-content;
@@ -664,7 +662,7 @@ header nav.navbar {
   padding: 10px;
   margin-top: -60px;
   margin-bottom: 25px;
-  background-color: #3e54ac;
+  background-color: #18724b;
   border-radius: 5px;
   width: 30%;
   height: fit-content;
@@ -676,7 +674,7 @@ header nav.navbar {
   padding: 10px;
   margin-top: -60px;
   margin-bottom: 25px;
-  background-color: #3e54ac;
+  background-color: #d87e18;
   border-radius: 5px;
   width: 60%;
   height: fit-content;
@@ -706,9 +704,8 @@ header nav.navbar {
 }
 
 .klikdiketahui2 {
-  background-color: white;
-  border: 2px solid #3e54ac;
-
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
@@ -718,8 +715,7 @@ header nav.navbar {
 }
 
 .klikdiketahui2:hover {
-  background-color: #8f9edc;
-  color: black;
+  background-color: #252f67;
 }
 
 .ditanya2 {
@@ -737,8 +733,8 @@ header nav.navbar {
 }
 
 .klikditanya2 {
-  background-color: white;
-  border: 2px solid #3e54ac;
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
@@ -748,7 +744,7 @@ header nav.navbar {
 }
 
 .klikditanya2:hover {
-  background-color: #8f9edc;
+  background-color: #252f67;
 }
 
 .rumus2 {
@@ -766,8 +762,8 @@ header nav.navbar {
 }
 
 .klikrumus2 {
-  background-color: white;
-  border: 2px solid #3e54ac;
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
@@ -777,7 +773,7 @@ header nav.navbar {
 }
 
 .klikrumus2:hover {
-  background-color: #8f9edc;
+  background-color: #252f67;
 }
 
 .rumus22 {
@@ -795,8 +791,8 @@ header nav.navbar {
 }
 
 .klikrumus22 {
-  background-color: white;
-  border: 2px solid #3e54ac;
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
@@ -806,14 +802,14 @@ header nav.navbar {
 }
 
 .klikrumus22:hover {
-  background-color: #8f9edc;
+  background-color: #252f67;
 }
 
 .jarak21 {
   margin-left: 330px;
   padding: 10px;
   margin-top: 40px;
-  background-color: #3e54ac;
+  background-color: #18724b;
   border-radius: 5px;
   width: 30%;
   height: fit-content;
@@ -824,7 +820,7 @@ header nav.navbar {
   padding: 10px;
   margin-top: -60px;
   margin-bottom: 25px;
-  background-color: #3e54ac;
+  background-color: #18724b;
   border-radius: 5px;
   width: 30%;
   height: fit-content;
@@ -836,7 +832,7 @@ header nav.navbar {
   padding: 10px;
   margin-top: -60px;
   margin-bottom: 25px;
-  background-color: #3e54ac;
+  background-color: #18724b;
   border-radius: 5px;
   width: 60%;
   height: fit-content;
@@ -848,7 +844,7 @@ header nav.navbar {
   padding: 10px;
   margin-top: -60px;
   margin-bottom: 25px;
-  background-color: #3e54ac;
+  background-color: #d87e18;
   border-radius: 5px;
   width: 60%;
   height: fit-content;
