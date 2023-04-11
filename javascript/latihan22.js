@@ -66,7 +66,7 @@ var jwb102 = document.getElementById("jwb102");
 var a = [];
 
 document.getElementById("btnCek1")?.addEventListener("click", function () {
-  if (jwb11.value == 11 && jwb12.value == 6) {
+  if (jwb11.value == 5 && jwb12.value == 3) {
     jwb11.classList.add("jawabpecahanbenar");
     jwb11.classList.remove("jawabpecahansalah");
     jwb12.classList.add("jawabpecahanbenar");
@@ -92,7 +92,7 @@ document.getElementById("btnCek1")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek2")?.addEventListener("click", function () {
-  if (jwb21.value == 2 && jwb22.value == 1) {
+  if (jwb21.value == 5 && jwb22.value == 4) {
     jwb21.classList.add("jawabpecahanbenar");
     jwb21.classList.remove("jawabpecahansalah");
     jwb22.classList.add("jawabpecahanbenar");
@@ -117,7 +117,7 @@ document.getElementById("btnCek2")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek3")?.addEventListener("click", function () {
-  if (jwb31.value == 13 && jwb32.value == 4) {
+  if (jwb31.value == 11 && jwb32.value == 4) {
     jwb31.classList.add("jawabpecahanbenar");
     jwb31.classList.remove("jawabpecahansalah");
     jwb32.classList.add("jawabpecahanbenar");
@@ -142,7 +142,7 @@ document.getElementById("btnCek3")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek4")?.addEventListener("click", function () {
-  if (jwb41.value == 21 && jwb42.value == 10) {
+  if (jwb41.value == 17 && jwb42.value == 5) {
     jwb41.classList.add("jawabpecahanbenar");
     jwb41.classList.remove("jawabpecahansalah");
     jwb42.classList.add("jawabpecahanbenar");
@@ -167,7 +167,7 @@ document.getElementById("btnCek4")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek5")?.addEventListener("click", function () {
-  if (jwb51.value == 11 && jwb52.value == 8) {
+  if (jwb51.value == 29 && jwb52.value == 6) {
     jwb51.classList.add("jawabpecahanbenar");
     jwb51.classList.remove("jawabpecahansalah");
     jwb52.classList.add("jawabpecahanbenar");
@@ -192,7 +192,7 @@ document.getElementById("btnCek5")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek6")?.addEventListener("click", function () {
-  if (jwb61.value == 2 && jwb62.value == 5) {
+  if (jwb61.value == 23 && jwb62.value == 6) {
     jwb61.classList.add("jawabpecahanbenar");
     jwb61.classList.remove("jawabpecahansalah");
     jwb62.classList.add("jawabpecahanbenar");
@@ -217,7 +217,7 @@ document.getElementById("btnCek6")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek7")?.addEventListener("click", function () {
-  if (jwb71.value == 7 && jwb72.value == 15) {
+  if (jwb71.value == 45 && jwb72.value == 7) {
     jwb71.classList.add("jawabpecahanbenar");
     jwb71.classList.remove("jawabpecahansalah");
     jwb72.classList.add("jawabpecahanbenar");
@@ -242,7 +242,7 @@ document.getElementById("btnCek7")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek8")?.addEventListener("click", function () {
-  if (jwb81.value == 14 && jwb82.value == 15) {
+  if (jwb81.value == 77 && jwb82.value == 8) {
     jwb81.classList.add("jawabpecahanbenar");
     jwb81.classList.remove("jawabpecahansalah");
     jwb82.classList.add("jawabpecahanbenar");
@@ -267,7 +267,7 @@ document.getElementById("btnCek8")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek9")?.addEventListener("click", function () {
-  if (jwb91.value == 7 && jwb92.value == 10) {
+  if (jwb91.value == 93 && jwb92.value == 8) {
     jwb91.classList.add("jawabpecahanbenar");
     jwb91.classList.remove("jawabpecahansalah");
     jwb92.classList.add("jawabpecahanbenar");
@@ -292,7 +292,7 @@ document.getElementById("btnCek9")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek10")?.addEventListener("click", function () {
-  if (jwb101.value == 7 && jwb102.value == 6) {
+  if (jwb101.value == 21 && jwb102.value == 4) {
     jwb101.classList.add("jawabpecahanbenar");
     jwb101.classList.remove("jawabpecahansalah");
     jwb102.classList.add("jawabpecahanbenar");
