@@ -19,13 +19,12 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/konten.css" />
-    
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
-     <header>
+    <header>
       <nav class="navbar navbar-expand-lg text-white">
         <div class="container-fluid ms-5 me-5">
           <!-- <a class="navbar-brand text-white" href="../index.html">Bilangan Pecahan</a> -->
@@ -75,7 +74,7 @@
             <li><a class="link_name" href="#">Penjumlahan Pecahan</a></li>
             <li><a href="../2. penjumlahansenilai/materi1.1.html">Penjumlahan Senilai</a></li>
             <li><a href="../3. penjumlahanbedapenyebut/materi1.4.html">Penjumlahan Beda Penyebut</a></li>
-            <li ><a href="../4. pecahancampuran/materi2.1.html">Pecahan Campuran</a></li>
+            <li><a href="../4. pecahancampuran/materi2.1.html">Pecahan Campuran</a></li>
             <li class="aktif"><a href="../5. penjumlahancampuran/materi2.3.html">Penjumlahan Campuran</a></li>
             <li><a href="../kuis/kuis1.html">Kuis 1</a></li>
           </ul>
@@ -137,7 +136,7 @@
       <div class="konten col-9-5 ms-2">
         <div class="card lg p-3 mb-5 bg-white rounded">
           <div class="card-body border border-primary ms-3 me-3">
-             <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #3e54ac">
@@ -155,33 +154,123 @@
               </div>
             </div>
             <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
-            <p> Amati lah beberapa contoh penjumlahan campuran di bawah ini !</p>
-            <div class="card-body border border-primary ms-5 me-5">
-              <div class="ke ke_aktif vv">Contoh 1</div>
-              <div class="ke vv">Contoh 2</div>
-              <div class="langkahnya vv">
-                <ol type="1" class="jarak_atas ckck">
-                  <li>
-                    <p>Hasil penjumlahan dari \( {2} \frac {1}{3} + \frac{2}{5} = ... \)</p>
-                  </li>
-                </ol>
-                <br />
-                <p class="masuk aau">Jawab :</p>
-                <p class="masuk marginnn">\( = {2} \frac {1}{3} + \frac{2}{5}\)</p>
-                <p class="masuk marginnn hilang1 pjm">\( = {2} + (\frac {1}{3} + \frac{2}{5})\)</p>
-       
-                <p class="masuk marginnn hilang1 pjm">\( =  \frac {1 \times 5}{3 \times 5} + \frac{2 \times 3}{5 \times3}  \)</p>
-                <p class="masuk marginnn hilang1 pjm">\( = \frac{5}{15} + \frac {6}{15} \)</p>
-                <p class="masuk marginnn hilang1 pjm">\( =  \frac{11}{15}  \)</p>
-                <br />
-                <p class="masuk aau hilang1 borderhasil">Jadi hasil penjumlahan dari \( {2} \frac {1}{3} + \frac{2}{5} \) adalah \({2} \frac{11}{15} \).</p>
-                <center>
-                  <div class="next_pensil tmb_pnjumlahan">
-                    <p>Penyelesaian</p>
+            <p>Amati lah beberapa contoh penjumlahan campuran di bawah ini !</p>
+              <div class="card-body border border-primary ms-3 me-3 bg-light">
+                <div id="card2" class="card-body">
+                  <div class="ke ke_aktif vv">Contoh 1 (Klik disini)</div>
+                  <div class="ke vv">Contoh 2 (Klik disini)</div>
+                   <div class="ke vv">Contoh 3 (Klik disini)</div>
+                    <div class="ke vv">Contoh 4 (Klik disini)</div>
+                  <div class="langkahnya vv">
+                    <ol type="1" class="jarak_atas ckck">
+                      <li>
+                        <p>Hasil penjumlahan dari \( {2} \frac {1}{3} + \frac{2}{5} = \)</p>
+                      </li>
+                    </ol>
+                    <!-- <div class="infocontoh">
+                      <p>
+                        <b><i>Karena pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama </i></b>
+                      </p>
+                    </div> -->
+                    <br />
+                    <p class="fst-italic ms-4">Untuk melihat penyelesaian, silahkan klik tombol di bawah secara berurutan !</p>
+
+                    <br />
+                    <div class="klikdiketahui">
+                      <a href="#diketahui" onclick="diketahui('diketahui')">
+                        <h6 style="color: #fff">Ubah menjadi pecahan biasa</h6>
+                      </a>
+                    </div>
+                    <div class="diketahui" id="diketahui">
+                      <p class="pjarak"></p>
+                      <p class="jarak">\( =  {2} + ( \frac  {1 \times 5}{3 \times 5} + \frac{2 \times 3}{5 \times3} )  \) </p>
+                    </div>
+
+                    <div class="klikditanya">
+                      <a href="#ditanya" onclick="ditanya('ditanya')">
+                        <h6 style="color: #fff">Jumlahkan kedua pecahan</h6>
+                      </a>
+                    </div>
+                    <div class="ditanya" id="ditanya">
+                      <p class="jarak2">\( = {2} + ( \frac{5}{15} + \frac {6}{15}) \)</p>
+                    </div>
+
+                    <div class="klikrumus">
+                      <a href="#rumus" onclick="rumus('rumus')">
+                        <h6 style="color: #fff">Hasil Penjumlahan</h6>
+                      </a>
+                    </div>
+                    <div class="rumus" id="rumus">
+                      <p class="jarak3">
+                        \(  = {2} \frac{11}{15}  \) <br />
+                        Jadi hasil penjumlahan dari \( {2} \frac {1}{3} + \frac{2}{5} = \) adalah  \(  = {2} \frac{11}{15}  \)
+                      </p>
+                      <br /><br />
+
+                      <br />
+                    </div>
                   </div>
-                </center>
-              </div>
-              <div class="langkahnya hilang vv">
+
+                  <div class="langkahnya hilang vv">
+                    <ol type="1" start="2" class="jarak_atas ckck">
+                      <li>
+                        <p>Hasil penjumlahan dari\( {2} \frac {5}{7} + {1}\frac{1}{3} = ... \)</p>
+                      </li>
+                    </ol>
+                    <br />
+                    <div class="infocontoh">
+                      <p>
+                          <b> <i>Jika pembilang lebih besar daripada penyebut maka harus disederhanakan</b></i>
+                      </p>
+                    </div>
+                    <br />
+                    <div class="klikdiketahui2">
+                      <a href="#diketahui2" onclick="diketahui2('diketahui2')">
+                        <h6 style="color: #fff">Ubah menjadi pecahan biasa</h6>
+                      </a>
+                    </div>
+                    <div class="diketahui2" id="diketahui2">
+                      <p class="pjarak2"></p>
+                      <p class="jarak21">\( = ({2 + 1}) + (\frac{5 \times 3} {7 \times 3}) + (\frac{1 \times3} {3 \times3}\))</p>
+                    </div>
+
+                    <div class="klikditanya2">
+                      <a href="#ditanya2" onclick="ditanya2('ditanya2')">
+                        <h6 style="color: #fff">Jumlahkan kedua pecahan</h6>
+                      </a>
+                    </div>
+                    <div class="ditanya2" id="ditanya2">
+                      <p class="jarak22"> \( = {3} + (\frac {15}{21} + \frac{7}{21} \)) <br><br> \( = {3} + \frac {22}{21} \)</p>
+                    </div>
+
+                    <div class="klikrumus2">
+                      <a href="#rumus2" onclick="rumus2('rumus2')">
+                        <h6 style="color: #fff">Sederhanakan Pecahan</h6>
+                      </a>
+                    </div>
+                    <div class="rumus2" id="rumus2">
+                      <p class="jarak23"> \( = {3} + {1} \frac {1}{21}  \)  </p>
+                    </div>
+
+                    <div class="klikrumus22">
+                      <a href="#rumus22" onclick="rumus22('rumus22')">
+                        <h6 style="color: #fff">Hasil Penjumlahan</h6>
+                      </a>
+                    </div>
+                    <div class="rumus22" id="rumus22">
+                      <p class="jarak233">\(= {4} \frac {1}{21}\) 
+                      <br />
+                        Jadi hasil penjumlahan dari \( {2} \frac {5}{7} + {1}\frac{1}{3} \) adalah \( {4} \frac {1}{21}\) 
+                      </p>
+                      <br /><br />
+
+                      <br />
+                    </div>
+                  </div>
+
+              
+
+              <!-- <div class="langkahnya hilang vv">
                 <ol type="1" start="2" class="jarak_atas ckck">
                   <li>
                     <p>Hasil penjumlahan dari \( {2} \frac {5}{7} + {1}\frac{1}{3} = ... \)</p>
@@ -208,7 +297,7 @@
                     <p>Penyelesaian</p>
                   </div>
                 </center>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
