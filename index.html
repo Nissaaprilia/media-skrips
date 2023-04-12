@@ -106,7 +106,7 @@
 
         get(child(dbref, "DataSiswa/" + nisn.value)).then((snapshot) => {
           if (snapshot.exists()) {
-            let dbnama = snapshot.val().fullnama;
+            let dbnama = snapshot.val().fullname;
             let dbnisn = snapshot.val().nisn;
 
             let dbpass = snapshot.val().pass;
@@ -115,7 +115,7 @@
               sessionStorage.setItem("nama", dbnama);
               sessionStorage.setItem("nisn", dbnisn);
 
-              window.location = "./html/index.html";
+              window.location = "./html/home.html";
             } else {
               alert("NIS atau Password yang anda masukkan salah");
             }
@@ -138,6 +138,6 @@
       //   window.location = "./materi_a.html";
       // }
     </script>
-    <script src="/js/home.js"></script>
+    <!-- <script src="/js/home.js"></script> -->
   </body>
 </html>

@@ -76,8 +76,6 @@
     </header>
     <div class="row">
       <section id="jumbotron" class="jumbotron" data-aos="zoom-out" data-aos-duration="1000">
-        <br />
-
         <h1>Penjumlahan dan Pengurangan Bilangan Pecahan</h1>
         <a href="../html/1. pendahuluan/mulaibelajar.html" button type="submit" class="btn btn-light">Mulai Belajar </a>
         <br />
@@ -89,6 +87,13 @@
           <div class="row text-center">
             <div class="shadow-none p-3 mb-5 bg-light rounded">
               <div class="col">
+                <div id="userlink">
+                  <a href=""></a>
+                </div>
+
+                <div id="signoutlink">
+                  <a href="" onclick="LogOut()"><img src="#" width="30%" /></a>
+                </div>
                 <h5>3 Fitur Utama Aplikasi ini</h5>
                 <h5>Berikut ini 3 fitur utama yang disediakan untuk belajar pada media pembelajaran</h5>
               </div>
@@ -133,6 +138,40 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+
+      let userlink = document.getElementById("userlink");
+      let signoutlink = document.getElementById("signoutlink");
+      let nama = sessionStorage.getItem("nama");
+      var currentUser = null;
+
+      // Function;
+      function getName() {
+        if (nama == null) {
+          window.location = "../index.html";
+        } else {
+          userlink.innerText = nama;
+        }
+      }
+
+      getName();
+
+      function Signout() {
+        // signoutlink.href = '../index.html';
+        sessionStorage.removeItem("nama");
+        window.location = "../index.html";
+      }
+
+      // window Load
+
+      window.onload = function () {
+        getName();
+        if (currentUser == null) {
+          signoutlink.href = "../index.html";
+        } else {
+          userlink.innerText = currentUser.nama;
+          signoutlink.innerText = "Sign Out";
+        }
+      };
     </script>
   </body>
 </html>
