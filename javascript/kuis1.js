@@ -358,8 +358,18 @@ dat.onreadystatechange = function () {
   }
 };
 //pemanggilan soal json
-dat.open("GET", "./kuis1.json", true);
-dat.send();
+const xhr = new XMLHttpRequest();
+xhr.open("GET", "./kuis1.json");
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4 && xhr.status === 200) {
+    const data = JSON.parse(xhr.responseText);
+    console.log(data);
+  }
+};
+xhr.send();
+
+// dat.open("GET", "./kuis1.json", true);
+// dat.send();
 
 //FUNGSI WAKTU DAN HARI
 var d = new Date();
@@ -367,13 +377,13 @@ var t = d.getTime();
 var counter = t;
 
 // ambil jamnya
-window.setTimeout("waktu()", 1000);
+// window.setTimeout("waktu()", 1000);
 
-function waktu() {
-  var tanggal = new Date();
-  setTimeout("waktu()", 1000);
-  return tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds();
-}
+// function waktu() {
+//   var tanggal = new Date();
+//   setTimeout("waktu()", 1000);
+//   return tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds();
+// }
 
 // harinya
 function hari() {

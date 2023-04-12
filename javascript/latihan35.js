@@ -66,7 +66,7 @@ var jwb102 = document.getElementById("jwb102");
 var a = [];
 
 document.getElementById("btnCek1")?.addEventListener("click", function () {
-  if (jwb11.value == 3 && jwb12.value == 7) {
+  if (jwb11.value == 11 && jwb12.value == 20) {
     jwb11.classList.add("jawabpecahanbenar");
     jwb11.classList.remove("jawabpecahansalah");
     jwb12.classList.add("jawabpecahanbenar");
@@ -85,14 +85,14 @@ document.getElementById("btnCek1")?.addEventListener("click", function () {
     jwb12.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil1").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-      Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya
+        Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.
 </div>
       `;
   }
 });
 
 document.getElementById("btnCek2")?.addEventListener("click", function () {
-  if (jwb21.value == 3 && jwb22.value == 13) {
+  if (jwb21.value == 8 && jwb22.value == 15) {
     jwb21.classList.add("jawabpecahanbenar");
     jwb21.classList.remove("jawabpecahansalah");
     jwb22.classList.add("jawabpecahanbenar");
@@ -111,13 +111,13 @@ document.getElementById("btnCek2")?.addEventListener("click", function () {
     jwb22.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil2").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-        Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya</div>
+         Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.</div>
       `;
   }
 });
 
 document.getElementById("btnCek3")?.addEventListener("click", function () {
-  if (jwb31.value == 1 && jwb32.value == 2) {
+  if (jwb31.value == 1 && jwb32.value == 8) {
     jwb31.classList.add("jawabpecahanbenar");
     jwb31.classList.remove("jawabpecahansalah");
     jwb32.classList.add("jawabpecahanbenar");
@@ -136,13 +136,13 @@ document.getElementById("btnCek3")?.addEventListener("click", function () {
     jwb32.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil3").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-        Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya</div>
+         Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.</div>
       `;
   }
 });
 
 document.getElementById("btnCek4")?.addEventListener("click", function () {
-  if (jwb41.value == 1 && jwb42.value == 3) {
+  if (jwb41.value == 2 && jwb42.value == 15) {
     jwb41.classList.add("jawabpecahanbenar");
     jwb41.classList.remove("jawabpecahansalah");
     jwb42.classList.add("jawabpecahanbenar");
@@ -161,13 +161,13 @@ document.getElementById("btnCek4")?.addEventListener("click", function () {
     jwb42.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil4").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-      Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya</div>
+       Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.</div>
       `;
   }
 });
 
 document.getElementById("btnCek5")?.addEventListener("click", function () {
-  if (jwb51.value == 41 && jwb52.value == 15) {
+  if (jwb51.value == 2 && jwb52.value == 3) {
     jwb51.classList.add("jawabpecahanbenar");
     jwb51.classList.remove("jawabpecahansalah");
     jwb52.classList.add("jawabpecahanbenar");
@@ -186,13 +186,13 @@ document.getElementById("btnCek5")?.addEventListener("click", function () {
     jwb52.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil5").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-       Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya</div>
+         Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.</div>
       `;
   }
 });
 
 document.getElementById("btnCek6")?.addEventListener("click", function () {
-  if (jwb61.value == 1 && jwb62.value == 4) {
+  if (jwb61.value == 4 && jwb62.value == 15) {
     jwb61.classList.add("jawabpecahanbenar");
     jwb61.classList.remove("jawabpecahansalah");
     jwb62.classList.add("jawabpecahanbenar");
@@ -211,13 +211,13 @@ document.getElementById("btnCek6")?.addEventListener("click", function () {
     jwb62.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil6").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-       Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya</div>
+         Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.</div>
       `;
   }
 });
 
 document.getElementById("btnCek7")?.addEventListener("click", function () {
-  if (jwb71.value == 1 && jwb72.value == 6) {
+  if (jwb71.value == 1 && jwb72.value == 30) {
     jwb71.classList.add("jawabpecahanbenar");
     jwb71.classList.remove("jawabpecahansalah");
     jwb72.classList.add("jawabpecahanbenar");
@@ -236,13 +236,13 @@ document.getElementById("btnCek7")?.addEventListener("click", function () {
     jwb72.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil7").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-       Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya.</div>
+         Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.</div>
       `;
   }
 });
 
 document.getElementById("btnCek8")?.addEventListener("click", function () {
-  if (jwb81.value == 3 && jwb82.value == 8) {
+  if (jwb81.value == 7 && jwb82.value == 8) {
     jwb81.classList.add("jawabpecahanbenar");
     jwb81.classList.remove("jawabpecahansalah");
     jwb82.classList.add("jawabpecahanbenar");
@@ -261,13 +261,13 @@ document.getElementById("btnCek8")?.addEventListener("click", function () {
     jwb82.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil8").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-       Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya</div>
+         Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.</div>
       `;
   }
 });
 
 document.getElementById("btnCek9")?.addEventListener("click", function () {
-  if (jwb91.value == 1 && jwb92.value == 6) {
+  if (jwb91.value == 1 && jwb92.value == 8) {
     jwb91.classList.add("jawabpecahanbenar");
     jwb91.classList.remove("jawabpecahansalah");
     jwb92.classList.add("jawabpecahanbenar");
@@ -286,13 +286,13 @@ document.getElementById("btnCek9")?.addEventListener("click", function () {
     jwb92.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil9").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-     Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya</div>
+       Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.</div>
       `;
   }
 });
 
 document.getElementById("btnCek10")?.addEventListener("click", function () {
-  if (jwb101.value == 3 && jwb102.value == 5) {
+  if (jwb101.value == 13 && jwb102.value == 56) {
     jwb101.classList.add("jawabpecahanbenar");
     jwb101.classList.remove("jawabpecahansalah");
     jwb102.classList.add("jawabpecahanbenar");
@@ -311,7 +311,7 @@ document.getElementById("btnCek10")?.addEventListener("click", function () {
     jwb102.classList.add("jawabpecahansalah");
     document.getElementById("alertHasil10").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
-      Karena pecahan berpenyebut sama, maka langsung di kurangkan pembilang nya.</div>
+        Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.</div>
       `;
   }
 });
