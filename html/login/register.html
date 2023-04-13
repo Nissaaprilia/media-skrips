@@ -20,9 +20,8 @@
     <!-- My CSS -->
     <!-- <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/konten.css" /> -->
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <style>
       body {
         display: flex;
@@ -49,6 +48,7 @@
       <!-- <input type="text" placeholder="sekolah" id="sekolahInp" class="form-control mb-3" /> -->
       <br />
       <input type="password" placeholder="Password" id="passInp" class="form-control mb-3" />
+      <button id="toggle-password" type="button" class="d-none" aria-label="Show password as plain text. Warning: this will display your password on the screen."></button>
       <button type="text" id="sub_btn" class="btn btn-outline-primary">Register</button>
       <span class="badge badge-dark py-1 w-100"><a href="../../index.html">Sudah Memiliki Akun</a></span>
     </div>
@@ -90,7 +90,7 @@
 
       function Validation() {
         let namaregex = /^[a-zA-Z\s]+$/;
-        let nisnregex = /^[0-9\s]+$/;
+        let nisnregex = /^[0-9\s]{10,}$/;
 
         if (isEmptyOrSpaces(nama.value) || isEmptyOrSpaces(nisn.value) || isEmptyOrSpaces(kelas.value) || isEmptyOrSpaces(pass.value)) {
           alert("Isi Semua Data");
@@ -103,7 +103,7 @@
         }
 
         if (!nisnregex.test(nisn.value)) {
-          alert("NIS hanya boleh angka");
+          alert("NIS terdiri 10 Angka");
           return false;
         }
 
@@ -127,7 +127,7 @@
               nisn: nisn.value,
 
               kelas: kelas.value,
-              pass: pass.value,
+              pass: encPass(),
             })
               .then(() => {
                 alert("Akun Berhasil Dibuat");
@@ -142,10 +142,10 @@
       }
 
       //password disembunyikan encription;
-      // function encPass() {
-      //   var pass12 = CryptoJS.AES.encrypt(pass.value, pass.value);
-      //   return pass12.toString();
-      // }
+      function encPass() {
+        var pass12 = CryptoJS.AES.encrypt(pass.value, pass.value);
+        return pass12.toString();
+      }
 
       // Assign in events
       submit.addEventListener("click", RegisterUser);
