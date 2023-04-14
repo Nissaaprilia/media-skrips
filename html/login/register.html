@@ -47,124 +47,127 @@
       <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
         <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
         <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
-        <div class="card bg-glass mb-5">
-          <div class="card-body px-4 py-5 px-md-5">
-            <h3 class=" text-center">Register Siswa</h3>
-            <input type="text" placeholder="Nama Lengkap" id="namaInp" class="form-control mb-3 " />
-            <input type="text" placeholder="Nisn" id="nisnInp" class="form-control mb-3" />
+        <center>
+          <div class="card bg-glass mb-5">
+            <div class="card-body px-4 py-5 px-md-5">
+              <h3 class=" text-center">Register Siswa</h3>
+              <input type="text" placeholder="Nama Lengkap" id="namaInp" class="form-control mb-3 w-50" />
+              <input type="text" placeholder="Nisn" id="nisnInp" class="form-control mb-3 w-50" />
 
-            <select class="form-select" id="kelasInp">
-              <option selected>Kelas</option>
-              <option value="V (A)">V (A)</option>
-              <option value="V (B)">V (B)</option>
-            </select>
-            <!-- <input type="text" placeholder="sekolah" id="sekolahInp" class="form-control mb-3" /> -->
-            <br />
-            <input type="password" placeholder="Password" id="passInp" class="form-control mb-3" />
-            <!-- <button id="toggle-password" type="button" class="d-none" aria-label="Show password as plain text. Warning: this will display your password on the screen."></button> -->
-            <div class="d-grid gap-2 col-3 mx-auto">
-              <button type="text" id="sub_btn" class="btn btn-outline-primary ">Register</button>
-              <span class="badge badge-dark py-1 w-100"><a href="../../index.html">Sudah Memiliki Akun</a></span>
+              <select class="form-select w-50" id="kelasInp" >
+                <option selected>Kelas</option>
+                <option value="V (A)">V (A)</option>
+                <option value="V (B)">V (B)</option>
+              </select>
+              <!-- <input type="text" placeholder="sekolah" id="sekolahInp" class="form-control mb-3" /> -->
+              <br />
+              <input type="password" placeholder="Password" id="passInp" class="form-control mb-3 w-50" />
+              <!-- <button id="toggle-password" type="button" class="d-none" aria-label="Show password as plain text. Warning: this will display your password on the screen."></button> -->
+              <div class="d-grid gap-2 col-3 mx-auto">
+                <button type="text" id="sub_btn" class="btn btn-outline-primary ">Register</button>
+                <span class="badge badge-dark py-1 w-100"><a href="../../index.html">Sudah Memiliki Akun</a></span>
+              </div>
             </div>
           </div>
-          <script type="module">
-            // Import the functions you need from the SDKs you need
-            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
-            // TODO: Add SDKs for Firebase products that you want to use
-            // https://firebase.google.com/docs/web/setup#available-libraries
+        </center>
+        <script type="module">
+          // Import the functions you need from the SDKs you need
+          import { initializeApp } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-app.js";
+          // TODO: Add SDKs for Firebase products that you want to use
+          // https://firebase.google.com/docs/web/setup#available-libraries
 
-            // Your web app's Firebase configuration
-            const firebaseConfig = {
-              apiKey: "AIzaSyD3ePhZv8xSqO_waYpONtzxWW3cKYKWdYQ",
-              authDomain: "register-816dd.firebaseapp.com",
-              databaseURL: "https://register-816dd-default-rtdb.firebaseio.com",
-              projectId: "register-816dd",
-              storageBucket: "register-816dd.appspot.com",
-              messagingSenderId: "823212877497",
-              appId: "1:823212877497:web:676370d0e7d17ba7489d68",
-            };
+          // Your web app's Firebase configuration
+          const firebaseConfig = {
+            apiKey: "AIzaSyD3ePhZv8xSqO_waYpONtzxWW3cKYKWdYQ",
+            authDomain: "register-816dd.firebaseapp.com",
+            databaseURL: "https://register-816dd-default-rtdb.firebaseio.com",
+            projectId: "register-816dd",
+            storageBucket: "register-816dd.appspot.com",
+            messagingSenderId: "823212877497",
+            appId: "1:823212877497:web:676370d0e7d17ba7489d68",
+          };
 
-            // Initialize Firebase
-            const app = initializeApp(firebaseConfig);
+          // Initialize Firebase
+          const app = initializeApp(firebaseConfig);
 
-            import { getDatabase, ref, set, child, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+          import { getDatabase, ref, set, child, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
-            const db = getDatabase();
+          const db = getDatabase();
 
-            // Register
-            const nama = document.getElementById("namaInp");
-            const nisn = document.getElementById("nisnInp");
-            const kelas = document.getElementById("kelasInp");
-            const pass = document.getElementById("passInp");
-            const submit = document.getElementById("sub_btn");
+          // Register
+          const nama = document.getElementById("namaInp");
+          const nisn = document.getElementById("nisnInp");
+          const kelas = document.getElementById("kelasInp");
+          const pass = document.getElementById("passInp");
+          const submit = document.getElementById("sub_btn");
 
-            // Validation
-            function isEmptyOrSpaces(str) {
-              return str === null || str.match(/^ *$/) !== null;
+          // Validation
+          function isEmptyOrSpaces(str) {
+            return str === null || str.match(/^ *$/) !== null;
+          }
+
+          function Validation() {
+            let namaregex = /^[a-zA-Z\s]+$/;
+            let nisnregex = /^[0-9\s]{10,}$/;
+
+            if (isEmptyOrSpaces(nama.value) || isEmptyOrSpaces(nisn.value) || isEmptyOrSpaces(kelas.value) || isEmptyOrSpaces(pass.value)) {
+              alert("Isi Semua Data");
+              return false;
             }
 
-            function Validation() {
-              let namaregex = /^[a-zA-Z\s]+$/;
-              let nisnregex = /^[0-9\s]{10,}$/;
-
-              if (isEmptyOrSpaces(nama.value) || isEmptyOrSpaces(nisn.value) || isEmptyOrSpaces(kelas.value) || isEmptyOrSpaces(pass.value)) {
-                alert("Isi Semua Data");
-                return false;
-              }
-
-              if (!namaregex.test(nama.value)) {
-                alert("Nama hanya boleh huruf alphabet!");
-                return false;
-              }
-
-              if (!nisnregex.test(nisn.value)) {
-                alert("NIS terdiri 10 Angka");
-                return false;
-              }
-
-              return true;
+            if (!namaregex.test(nama.value)) {
+              alert("Nama hanya boleh huruf alphabet!");
+              return false;
             }
 
-            // regis to user firebase
-            function RegisterUser() {
-              if (!Validation()) {
-                return;
-              }
+            if (!nisnregex.test(nisn.value)) {
+              alert("NIS terdiri 10 Angka");
+              return false;
+            }
 
-              const dbRef = ref(db);
+            return true;
+          }
 
-              get(child(dbRef, "DataSiswa/" + nisn.value)).then((snapshot) => {
-                if (snapshot.exists()) {
-                  alert("Akun sudah terdaftar!");
-                } else {
-                  set(ref(db, "DataSiswa/" + nisn.value), {
-                    fullname: nama.value,
-                    nisn: nisn.value,
+          // regis to user firebase
+          function RegisterUser() {
+            if (!Validation()) {
+              return;
+            }
 
-                    kelas: kelas.value,
-                    pass: encPass(),
+            const dbRef = ref(db);
+
+            get(child(dbRef, "DataSiswa/" + nisn.value)).then((snapshot) => {
+              if (snapshot.exists()) {
+                alert("Akun sudah terdaftar!");
+              } else {
+                set(ref(db, "DataSiswa/" + nisn.value), {
+                  fullname: nama.value,
+                  nisn: nisn.value,
+
+                  kelas: kelas.value,
+                  pass: encPass(),
+                })
+                  .then(() => {
+                    alert("Akun Berhasil Dibuat");
+                    window.location = "../../index.html";
                   })
-                    .then(() => {
-                      alert("Akun Berhasil Dibuat");
-                      window.location = "../../index.html";
-                    })
 
-                    .catch((error) => {
-                      alert("Gagal" + error);
-                    });
-                }
-              });
-            }
+                  .catch((error) => {
+                    alert("Gagal" + error);
+                  });
+              }
+            });
+          }
 
-            //password disembunyikan encription;
-            function encPass() {
-              var pass12 = CryptoJS.AES.encrypt(pass.value, pass.value);
-              return pass12.toString();
-            }
+          //password disembunyikan encription;
+          function encPass() {
+            var pass12 = CryptoJS.AES.encrypt(pass.value, pass.value);
+            return pass12.toString();
+          }
 
-            // Assign in events
-            submit.addEventListener("click", RegisterUser);
-          </script>
+          // Assign in events
+          submit.addEventListener("click", RegisterUser);
+        </script>
 </body>
 
 </html>
