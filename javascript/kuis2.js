@@ -28,12 +28,12 @@ let kelaslink = document.getElementById("kelaslink");
 let sekolahlink = document.getElementById("sekolahlink");
 
 let nama = sessionStorage.getItem("nama");
-let nis = sessionStorage.getItem("nis");
+let nisn = sessionStorage.getItem("nisn");
 let kelas = sessionStorage.getItem("kelas");
 let sekolah = sessionStorage.getItem("sekolah");
 
 userlink.innerText = nama;
-nislink.innerText = nis;
+nislink.innerText = nisn;
 kelaslink.innerText = kelas;
 sekolahlink.innerText = sekolah;
 
@@ -43,7 +43,7 @@ let datasiswa = document.querySelector("#k1");
 
 selanjutnya.addEventListener("click", function () {
   let nama = sessionStorage.getItem("nama");
-  let nis = sessionStorage.getItem("nis");
+  let nisn = sessionStorage.getItem("nisn");
   let kelas = sessionStorage.getItem("kelas");
   let sekolah = sessionStorage.getItem("sekolah");
 
@@ -291,20 +291,20 @@ dat.onreadystatechange = function () {
 
         // simpan kedatabase----------
         console.log(nama);
-        console.log(nis);
+        console.log(nisn);
         console.log(kelas);
         console.log(sekolah);
         console.log(hasilakhir);
         let waktunya = waktu();
         let harinya = hari();
 
-        createTask(nama, nis, kelas, hasilakhir, waktunya, harinya, new_jwb_urut);
+        createTask(nama, nisn, kelas, hasilakhir, waktunya, harinya, new_jwb_urut);
 
         let namaget = document.querySelector(".nama");
         namaget.innerText = nama;
 
         let nisnget = document.querySelector(".nis");
-        nisnget.innerText = nis;
+        nisnget.innerText = nisn;
 
         let kelasget = document.querySelector(".kelas");
         kelasget.innerText = kelas;
@@ -357,7 +357,7 @@ dat.onreadystatechange = function () {
   }
 };
 //pemanggilan soal json
-dat.open("GET", "kuis1.json", true);
+dat.open("GET", "kuis2.json", true);
 dat.send();
 
 // $(document).ready(function () {
@@ -401,13 +401,13 @@ function hari() {
 }
 
 // Firebase
-function createTask(nama, nis, kelas, nilai, waktunya, hari, jwb) {
+function createTask(nama, nisn, kelas, nilai, waktunya, hari, jwb) {
   counter += 1;
   const db = getDatabase();
   set(ref(db, "kuis1/" + counter), {
     id: counter,
     nama: nama,
-    nis: nis,
+    nisn: nisn,
     kelas: kelas,
 
     nilai: nilai,
