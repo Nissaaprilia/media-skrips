@@ -22,29 +22,6 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <style>
-      #userlink {
-        margin-left: 0px;
-        font-family: "Berkshire Swash", cursive;
-        font-weight: bold;
-        font-size: 1.2rem;
-      }
-
-      #signoutlink {
-        margin-left: 1%;
-      }
-      #signoutlink a {
-        text-decoration: none;
-        color: #9da993;
-        font-weight: bold;
-        font-family: "Berkshire Swash", cursive;
-        font-size: 1.2rem;
-      }
-
-      #signoutlink a:hover {
-        color: red;
-      }
-    </style>
   </head>
   <body>
     <header>
@@ -141,8 +118,7 @@
               <a href="../html/evaluasi.html"><img src="../../img/user.png" alt="profileImg" /> </a>
             </div>
             <div class="name-job">
-              <div class="profile_name"></div>
-              <div class="job"></div>
+           
             </div>
             <i class="bx bx-log-out"></i>
           </div>
@@ -157,13 +133,6 @@
       </div>
       <div class="konten col-9-5 ms-2">
         <div class="card lg p-3 mb-5 bg-white rounded">
-          <!-- <div id="userlink">
-            <a href=""></a>
-          </div>
-
-          <div id="signoutlink">
-            <a href="" onclick="LogOut()"><img src="../image/logout.png" width="30" /></a>
-          </div> -->
           <!-- <h5 class="card-header text-white text-center" style="background-color: #3e54ac">Pendahuluan</h5> -->
           <div class="card-body">
             <div class="accordion" id="accordionExample">
@@ -187,6 +156,14 @@
           <div class="card-body border border-primary ms-3 me-3">
             <h4 class="card-title">Pecahan</h4>
             <p class="card-text">
+                   <div id="userlink">
+            <a href=""></a>
+          </div>
+
+          <div id="signoutlink">
+            <a href="" onclick="LogOut()"><img src="../img/user.png" /></a>
+          </div>
+          
               Apa kamu ingat apa yang dimaksud dengan pecahan? di kelas IV, kamu sudah mempelajari pecahan, untuk lebih mengingat simaklah penjelasan berikut !<br />
               Pecahan adalah bagian dari keseluruhan, terdiri dari pembilang dan penyebut : <br />
               <br />
@@ -196,6 +173,7 @@
               \( \frac{1}{2}\) Sebagai contoh pada bilangan \( \frac{1}{2}\). Angka 1 disebut <b> pembilang </b> , dan angka 2 disebut <b> penyebut.</b>
             </p>
           </div>
+        </div>
         </div>
         <nav aria-label="Page navigation example ">
           <ul class="navigasi bawah pagination justify-content-center fixed-bottom">
@@ -209,28 +187,7 @@
       </div>
     </section>
     <script>
-      //reference
-      //let userlink = document.getElementById("userlink");
-      //let signoutlink = document.getElementById("signoutlink");
-      //let nama = sessionStorage.getItem("nama");
-
-      //function
-      // function getNama() {
-      //  if (nama == null) {
-      //  window.location = "../../index.html";
-      //} else {
-      //userlink.innerText = nama;
-      // }
-      // }
-
-      // getNama();
-
-      //  function LogOut() {
-      // sessionStorage.removeItem("nama");
-      // sessionStorage.removeItem("nim");
-      // window.location = "../../index.html";
-      // }
-
+    
       let arrow = document.querySelectorAll(".arrow");
       for (var i = 0; i < arrow.length; i++) {
         arrow[i].addEventListener("click", (e) => {
@@ -245,6 +202,6 @@
         sidebar.classList.toggle("close");
       });
     </script>
-    <!-- <script type="module" src="../../javascript/login.js"></script> -->
+    <!-- <script type="module" src="../../javascript/userlink.js"></script> -->
   </body>
 </html>

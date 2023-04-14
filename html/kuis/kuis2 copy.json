@@ -1,7 +1,7 @@
 [
   {
-    "soal0": {
-      "soal": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}…",
+    "soal1": {
+      "soal": "Hasil dari \\frac{8}{10} - frac{3}{10}$ adalah …",
       "a": "$frac{3}{20}$",
       "b": "$frac{5}{5}$",
       "c": "$frac{5}{10}$",
@@ -10,8 +10,8 @@
     }
   },
   {
-    "soal1": {
-      "soal": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "soal2": {
+      "soal": "Hasil dari $frac{10}{15} - frac{5}{15}$ adalah …",
       "a": "$frac{15}{15}$",
       "b": "$frac{10}{15}$",
       "c": "$frac{20}{30}$",
@@ -20,8 +20,8 @@
     }
   },
   {
-    "soal2": {
-      "soal": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}…",
+    "soal3": {
+      "soal": "Pengurangan berikut yang hasilnya $frac{2}{21}$ adalah …",
       "a": "$frac{5}{12}$ - $frac{5}{15}$",
       "b": "$frac{1}{21}$ - $frac{5}{21}$",
       "c": "$frac{4}{21}$ - $frac{2}{21}$",
@@ -30,7 +30,7 @@
     }
   },
   {
-    "soal3": {
+    "soal4": {
       "soal": "Hasil dari $frac{3}{4} - frac{1}{2}$ adalah…",
       "a": "$frac{2}{4}$",
       "b": "$frac{1}{8}$",
@@ -40,8 +40,8 @@
     }
   },
   {
-    "soal4": {
-      "soal": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "soal5": {
+      "soal": "Hasil dari $frac{5}{8} - frac{1}{6}$ adalah…",
       "a": "$frac{11}{24}$",
       "b": "$frac{22}{35}$",
       "c": "$frac{12}{28}$",
@@ -50,8 +50,8 @@
     }
   },
   {
-    "soal5": {
-      "soal": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "soal6": {
+      "soal": "Hasil dari  ${4} frac{3}{4}$ - ${1} frac{1}{2}$ = ..",
       "a": "${2} frac{1}{3}$",
       "b": "${2} frac{1}{6}$",
       "c": "${3} frac{1}{4}$",
@@ -60,8 +60,8 @@
     }
   },
   {
-    "soal6": {
-      "soal": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "soal7": {
+      "soal": "Persediaan gula ibu ${2} frac{1}{4}$ kg. Gula tersebut digunakan untuk membuat kue ${1} frac{1}{5}$ kg. Sisa gula yang dimiliki ibu adalah…",
       "a": "${2} frac{1}{24}$",
       "b": "${1} frac{1}{16}$",
       "c": "${2} frac{1}{18}$",
@@ -70,8 +70,8 @@
     }
   },
   {
-    "soal7": {
-      "soal": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "soal8": {
+      "soal": "Hasil dari  ${2} frac{2}{3}$ - ${1} frac{1}{6}$",
       "a": "${1} frac{1}{4}$",
       "b": "${1} frac{3}{6}$",
       "c": "${1} frac{1}{2}$",
@@ -80,8 +80,8 @@
     }
   },
   {
-    "soal8": {
-      "soal": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "soal9": {
+      "soal": "Hasil dari ${3} frac{4}{6}$ - ${1} frac{3}{4}$ = …",
       "a": " ${2} frac{5}{12}$",
       "b": " ${2} frac{2}{12}$",
       "c": " ${1} frac{2}{15}$",
@@ -90,8 +90,8 @@
     }
   },
   {
-    "soal9": {
-      "soal": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "soal10": {
+      "soal": "Ibu membawa ${6} frac{3}{4}$ kg cabe yang dipetik dari kebun. Ada ${4} frac{1}{2}$ kg cabe yang diberikan ke tetangga. Berapa kg sisa cabe tersebut?",
       "a": "${1} frac{1}{4}$",
       "b": "${1} frac{2}{2}$",
       "c": "${2} frac{1}{4}$",
