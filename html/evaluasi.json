@@ -1,0 +1,202 @@
+[
+  {
+    "soal0": {
+      "soal": "Hasil dari $\\frac{1}{15}$ + $\\frac{8}{15}$ = ...",
+      "a": "$\\frac{8}{15}$",
+      "b": "$\\frac{9}{15}$",
+      "c": "$\\frac{9}{10}$",
+      "d": "$\\frac{8}{15}$",
+      "benar": "b"
+    }
+  },
+  {
+    "soal1": {
+      "soal": "Pak yanto memiliki luas tanah di bagikan untuk nisa $\\frac{2}{8}$ hektare dan yanti $\\frac{5}{8}$ hektare. Berapa jumlah tanah yang dibagikan pak yanto kepada nisa dan yanti?",
+      "a": "$\\frac{1}{4}$",
+      "b": "$\\frac{2}{7}$",
+      "c": "$\\frac{7}{8}$",
+      "d": "$\\frac{3}{4}$",
+      "benar": "c"
+    }
+  },
+  {
+    "soal2": {
+      "soal": "Hasil dari $\\frac{2}{9}$ + $\\frac{1}{2}$ = ...",
+      "a": "$\\frac{17}{15}$",
+      "b": "$\\frac{7}{18}$",
+      "c": "$\\frac{5}{15}$",
+      "d": " $\\frac{13}{18}$",
+      "benar": "a"
+    }
+  },
+  {
+    "soal3": {
+      "soal": "Hasil dari $\\frac{1}{10}$ + $\\frac{7}{2}$ = …",
+      "a": "$\\frac{24}{40}$",
+      "b": "$\\frac{10}{20}$",
+      "c": "$\\frac{19}{30}$",
+      "d": "$\\frac{36}{10}$",
+      "benar": "b"
+    }
+  },
+  {
+    "soal4": {
+      "soal": "Populasi penduduk suku jawa adalah  $\\frac{2}{5}$ dari penduduk Indonesia dan penduduk dari suku Sunda $\\frac{3}{20}$ dari penduduk Indonesia Berapa bagian populasi dari penduduk suku Jawa dan suku Sunda di Indonesia...",
+      "a": "$\\frac{13}{20}$",
+      "b": "$\\frac{11}{20}$",
+      "c": "$\\frac{5}{20}$",
+      "d": "$\\frac{8}{20}$",
+      "benar": "b"
+    }
+  },
+  {
+    "soal5": {
+      "soal": "Hasil paling sederhana dari $\\frac{5}{10}$ + $\\frac{6}{20}$ = … ",
+      "a": "$\\frac{11}{20}$",
+      "b": "$\\frac{4}{5}$",
+      "c": "$\\frac{3}{2}$",
+      "d": "$\\frac{16}{20}$",
+      "benar": "b"
+    }
+  },
+  {
+    "soal6": {
+      "soal": "Berapakah hasil pecahan campuran $6\\frac{1}{4}$ jika diubah menjadi pecahan biasa?",
+      "a": "$\\frac{16}{5}$",
+      "b": "$\\frac{23}{4}$",
+      "c": "$\\frac{25}{4}$",
+      "d": "$\\frac{10}{2}$",
+      "benar": "c"
+    }
+  },
+  {
+    "soal7": {
+      "soal": "Berapakah hasil pecahan campuran $\\8\\frac{2}{7}$ jika diubah menjadi pecahan biasa?",
+      "a": "$\\frac{58}{7}$",
+      "b": "$\\frac{35}{5}$",
+      "c": "$\\frac{15}{4}$",
+      "d": "$\\frac{10}{2}$",
+      "benar": "a"
+    }
+  },
+  {
+    "soal8": {
+      "soal": "Dina memiliki sebuah benang layang layang. Digunakan pulo  $4\\frac{1}{2}$  dan marko $2\\frac{1}{3}$ , berapakah jumlah benang yang digunakan marko dan pulo?",
+      "a": " $6\\frac{4}{2}$",
+      "b": " $4\\frac{1}{4}$",
+      "c": " $6\\frac{5}{6}$",
+      "d": "$5\\frac{3}{6}$",
+      "benar": "c"
+    }
+  },
+  {
+    "soal9": {
+      "soal": "Hasil dari $2\\frac{1}{2}$ + $\\frac{2}{5}$ = …",
+      "a": "$2\\frac{1}{14}$",
+      "b": "$4\\frac{1}{14}$",
+      "c": "$2\\frac{1}{14}$",
+      "d": "$2\\frac{1}{14}$",
+      "benar": "a"
+    }
+  },
+  {
+    "soal10": {
+      "soal": "Pengurangan berikut yang hasilnya $\\frac{6}{15}$ adalah …",
+      "a": "$\\frac{8}{15}$ - $\\frac{5}{15}$",
+      "b": "$\\frac{10}{15}$ - $\\frac{5}{15}$",
+      "c": "$\\frac{10}{15}$ - $\\frac{4}{15}$",
+      "d": "$\\frac{8}{15}$ - $\\frac{4}{15}$",
+      "benar": "c"
+    }
+  },
+  {
+    "soal11": {
+      "soal": "Hasil pengurangan dari $\\frac{10}{12}$ - $\\frac{5}{12}$ adalah …",
+      "a": "$\\frac{3}{12}$",
+      "b": "$\\frac{5}{10}$",
+      "c": "$\\frac{5}{15}$",
+      "d": "$\\frac{5}{12}$",
+      "benar": "d"
+    }
+  },
+  {
+    "soal12": {
+      "soal": "Hasil pengurangan dari $\\frac{3}{4}$ - $\\frac{3}{6}$ adalah …",
+      "a": "$\\frac{5}{12}$",
+      "b": "$\\frac{3}{10}$",
+      "c": "$\\frac{1}{12}$",
+      "d": "$\\frac{2}{12}$",
+      "benar": "a"
+    }
+  },
+  {
+    "soal13": {
+      "soal": "Hasil pengurangan dari $\\frac{5}{6}$ - $\\frac{1}{5}$ adalah…",
+      "a": "$\\frac{29}{30}$",
+      "b": "$\\frac{25}{35}$",
+      "c": "$\\frac{19}{30}$",
+      "d": "$\\frac{15}{30}$",
+      "benar": "c"
+    }
+  },
+  {
+    "soal14": {
+      "soal": "Ibu membeli minyak goreng $2\\frac{1}{4}$ Kemudian digunakan ibu untuk menggoreng ikan $\\frac{1}{4}$ Berapa liter minyak goreng yang sekarang ibu miliki ?",
+      "a": "$2\\frac{1}{4}$",
+      "b": "$2\\frac{3}{4}$",
+      "c": "$3\\frac{1}{4}$",
+      "d": "$3\\frac{3}{4}$",
+      "benar": "b"
+    }
+  },
+  {
+    "soal15": {
+      "soal": "Hasil pengurangan dari  $2\\frac{1}{2}$ - $1\\frac{1}{6}$ = ..",
+      "a": "$1\\frac{2}{6}$",
+      "b": "$1\\frac{1}{6}$",
+      "c": "$1\\frac{1}{2}$",
+      "d": "$1\\frac{1}{6}$",
+      "benar": "a"
+    }
+  },
+  {
+    "soal16": {
+      "soal": "Pak Yanto mempunyai kayu $9\\frac{3}{4}$ m.kayu tersebut digunakan untuk membuat kurs $7\\frac{5}{5}$ kg. Sisa kayu yang dimiliki Pak Yanto adalah…",
+      "a": "$2\\frac{3}{15}$",
+      "b": "$1\\frac{1}{15}$",
+      "c": "$2\\frac{3}{20}$",
+      "d": "$1\\frac{1}{20}$",
+      "benar": "c"
+    }
+  },
+  {
+    "soal17": {
+      "soal": "Hasil pengurangan dari  $2\\frac{2}{3}$ - $1\\frac{1}{6}$",
+      "a": "$1\\frac{1}{4}$",
+      "b": "$1\\frac{1}{2}$",
+      "c": "$1\\frac{3}{2}$",
+      "d": "$1\\frac{5}{6}$",
+      "benar": "d"
+    }
+  },
+  {
+    "soal18": {
+      "soal": "Hasil dari $3\\frac{4}{6}$ - $1\\frac{3}{4}$ = …",
+      "a": " $2\\frac{5}{12}$",
+      "b": " $2\\frac{2}{12}$",
+      "c": " $2\\frac{2}{12}$",
+      "d": "$1\\frac{5}{12}$",
+      "benar": "c"
+    }
+  },
+  {
+    "soal19": {
+      "soal": "Ayah membawa  $6\\frac{3}{4}$ kg terong yang dipetik dari kebun. Ada $4\\frac{1}{2}$ kg terong yang diberikan ke tetangga. Berapa kg sisa terong tersebut?",
+      "a": "$2\\frac{1}{4}$",
+      "b": "$2\\frac{1}{3}$",
+      "c": "$1\\frac{2}{2}$",
+      "d": "$2\\frac{5}{2}$",
+      "benar": "a"
+    }
+  }
+]
