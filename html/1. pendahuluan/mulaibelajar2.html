@@ -22,6 +22,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- ALert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
 
   <body>
@@ -115,14 +118,25 @@
 
         <li>
           <div class="profile-details">
-            <div class="profile-content">
-              <a href="../html/evaluasi.html"><img src="../../img/user.png" alt="profileImg" /> </a>
+            <!-- <div class="profile-content">
+             
+            </div> -->
+
+            <div id="signoutlink">
+              <a href="#" onclick="LogOut()"> <img src="../../img/user.png" /></a></a>
             </div>
             <div class="name-job">
-              <div class="profile_name">Nissa</div>
-              <div class="job">Web Desginer</div>
+              <div class="profile_name">
+                <div id="userlink">
+                  <a href=""></a>
+                </div>
+              </div>
+              <div class="job">
+                <div id="nisnlink">
+                  <a href=""></a>
+                </div>
+              </div>
             </div>
-            <i class="bx bx-log-out"></i>
           </div>
         </li>
       </ul>
@@ -207,6 +221,7 @@
           </nav>
         </div>
       </div>
+
       <!-- <i class="bx bx-menu"></i>
         <span class="text">Drop Down Sidebar</span> -->
     </section>
@@ -225,6 +240,6 @@
         sidebar.classList.toggle("close");
       });
     </script>
-    <script src="../../javascript/mencobadanberlatih.js"></script>
   </body>
+  <script src="../../javascript/mencobadanberlatih.js"></script>
 </html>
