@@ -65,12 +65,12 @@ document.getElementById("btnCek1")?.addEventListener("click", function () {
         </div>
       `;
   } else {
-    jwb1.classList.add("jawabpecahanbenar");
-    jwb1.classList.remove("jawabpecahansalah");
-    jwb11.classList.add("jawabpecahanbenar");
-    jwb11.classList.remove("jawabpecahansalah");
-    jwb12.classList.add("jawabpecahanbenar");
-    jwb12.classList.remove("jawabpecahansalah");
+    jwb1.classList.add("jawabpecahansalah");
+    jwb1.classList.remove("jawabpecahanbenar");
+    jwb11.classList.add("jawabpecahansalah");
+    jwb11.classList.remove("jawabpecahanbenar");
+    jwb12.classList.add("jawabpecahansalah");
+    jwb12.classList.remove("jawabpecahanbenar");
     document.getElementById("alertHasil1").innerHTML = `
       <div class="alert alert-danger" role="alert">Jawaban salah. <br> 
      Pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya sama.

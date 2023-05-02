@@ -669,6 +669,21 @@ header nav.navbar {
   color: white;
 }
 
+.jarak0 {
+  margin-left: 330px;
+  padding: 10px;
+  margin-top: -60px;
+  margin-bottom: 25px;
+  background-color: #d87e18;
+  border-radius: 5px;
+  width: 60%;
+  height: fit-content;
+  color: white;
+}
+.pjarak0 {
+  margin-top: -100px;
+}
+
 .jarak3 {
   margin-left: 330px;
   padding: 10px;
@@ -851,5 +866,298 @@ header nav.navbar {
   color: white;
 }
 .pjarak2 {
+  margin-top: -100px;
+}
+
+/* materi 2.3 */
+.diketahui0 {
+  display: none !important;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.lost {
+  display: block !important;
+}
+
+.klikdiketahui0 {
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  width: 30%;
+  color: white;
+}
+
+.klikdiketahui0:hover {
+  background-color: #252f67;
+}
+
+.ditanya0 {
+  display: none !important;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.lost {
+  display: block !important;
+}
+
+.klikditanya0 {
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  width: 30%;
+  color: white;
+}
+
+.klikditanya0:hover {
+  background-color: #252f67;
+}
+
+.rumus0 {
+  display: none !important;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.lost {
+  display: block !important;
+}
+
+.klikrumus0 {
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  width: 30%;
+  color: white;
+}
+
+.klikrumus0:hover {
+  background-color: #252f67;
+}
+
+.jarak0 {
+  margin-left: 330px;
+  padding: 10px;
+  margin-top: -6px;
+  margin-bottom: 25px;
+  background-color: #40a527;
+  border-radius: 5px;
+  width: 60%;
+  height: fit-content;
+  color: white;
+}
+
+.jarak02 {
+  margin-left: 330px;
+  padding: 10px;
+  margin-top: -60px;
+  margin-bottom: 25px;
+  background-color: #40a527;
+  border-radius: 5px;
+  width: 60%;
+  height: fit-content;
+  color: white;
+}
+
+.jarak03 {
+  margin-left: 330px;
+  padding: 10px;
+  margin-top: -60px;
+  margin-bottom: 25px;
+  background-color: #d87e18;
+  border-radius: 5px;
+  width: 60%;
+  height: fit-content;
+  color: white;
+}
+
+.pjarak0 {
+  margin-top: -100px;
+}
+
+/* materi 2.3 contoh 2 */
+.diketahui4 {
+  display: none !important;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.lost {
+  display: block !important;
+}
+
+.klikdiketahui4 {
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  width: 30%;
+  color: white;
+}
+
+.klikdiketahui4:hover {
+  background-color: #252f67;
+}
+
+.ditanya4 {
+  display: none !important;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.lost {
+  display: block !important;
+}
+
+.klikditanya4 {
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  width: 30%;
+  color: white;
+}
+
+.klikditanya4:hover {
+  background-color: #252f67;
+}
+
+.rumus4 {
+  display: none !important;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.lost {
+  display: block !important;
+}
+
+.klikrumus4 {
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  width: 30%;
+  color: white;
+}
+
+.klikrumus4:hover {
+  background-color: #252f67;
+}
+
+.rumus41 {
+  display: none !important;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.lost {
+  display: block !important;
+}
+
+.klikrumus41 {
+  background-color: #33b2ed;
+  border: 2px solid #949ab2;
+  padding: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+  width: 30%;
+  color: white;
+}
+
+.klikrumus41:hover {
+  background-color: #252f67;
+}
+
+.jarak41 {
+  margin-left: 330px;
+  padding: 10px;
+  margin-top: 40px;
+  background-color: #18724b;
+  border-radius: 5px;
+  width: 45%;
+  height: fit-content;
+  color: white;
+}
+.jarak42 {
+  margin-left: 330px;
+  padding: 10px;
+  margin-top: -60px;
+  margin-bottom: 25px;
+  background-color: #18724b;
+  border-radius: 5px;
+  width: 45%;
+  height: fit-content;
+  color: white;
+}
+
+.jarak43 {
+  margin-left: 330px;
+  padding: 10px;
+  margin-top: -60px;
+  margin-bottom: 25px;
+  background-color: #18724b;
+  border-radius: 5px;
+  width: 60%;
+  height: fit-content;
+  color: white;
+}
+
+.jarak44 {
+  margin-left: 330px;
+  padding: 10px;
+  margin-top: -60px;
+  margin-bottom: 25px;
+  background-color: #d87e18;
+  border-radius: 5px;
+  width: 60%;
+  height: fit-content;
+  color: white;
+}
+.pjarak4 {
   margin-top: -100px;
 }
