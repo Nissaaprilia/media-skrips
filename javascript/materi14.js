@@ -1,3 +1,36 @@
+let userlink = document.getElementById("userlink");
+let nisnlink = document.getElementById("nisnlink");
+let signoutlink = document.getElementById("signoutlink");
+let nama = sessionStorage.getItem("nama");
+let nisn = sessionStorage.getItem("nisn");
+var currentUser = null;
+
+// Function;
+function getNama() {
+  if (nama == null) {
+    window.location = "/index.html";
+  } else {
+    userlink.innerText = nama;
+  }
+}
+
+function getNisn() {
+  if (nisn == null) {
+    window.location = "/index.html";
+  } else {
+    nisnlink.innerText = nisn;
+  }
+}
+
+getNama();
+getNisn();
+
+function LogOut() {
+  sessionStorage.removeItem("nama");
+
+  window.location = "/index.html";
+}
+
 document.getElementById("cardBtn1").addEventListener("click", function () {
   document.getElementById("card2lanjut").style.display = "block";
   document.getElementById("cardBtn1").style.display = "none";

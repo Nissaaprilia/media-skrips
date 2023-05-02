@@ -119,15 +119,26 @@
       </li>
 
       <li>
-        <div class="profile-details">
-          <div class="profile-content">
-            <a href="../html/evaluasi.html"><img src="../../img/user.png" alt="profileImg" /> </a>
+       <div class="profile-details">
+            <div class="profile-content">
+            <div id="signoutlink">
+              <a href="#" onclick="LogOut()"> <img src="../../img/user.png" /></a>
+            </div>
+            <div class="name-job">
+              <div class="profile_name">
+                <div id="userlink">
+                  <a href="#"></a>
+                </div>
+              </div>
+              <div class="job">
+                <div id="nisnlink">
+                  <a href="#"></a>
+                </div>
+                 <!-- <i class="bx bx-log-out"></i> -->
+              </div>
+            </div>
           </div>
-          <div class="name-job">
-
-          </div>
-          <i class="bx bx-log-out"></i>
-        </div>
+           </div> 
       </li>
     </ul>
   </div>
@@ -218,26 +229,38 @@
   <!-- <script type="module" src="../../javascript/userlink.js"></script> -->
 </body>
  <script>
-    let userlink = document.getElementById("userlink");
-   
-    let nama = sessionStorage.getItem("nama");
-    var currentUser = null;
+   let userlink = document.getElementById("userlink");
+let nisnlink = document.getElementById("nisnlink");
+let signoutlink = document.getElementById("signoutlink");
+let nama = sessionStorage.getItem("nama");
+let nisn = sessionStorage.getItem("nisn");
+var currentUser = null;
 
-    // Function;
-    function getName() {
-      if (nama == null) {
-        window.location = "../index.html";
-      } else {
-        userlink.innerText = nama;
-      }
-    }
+// Function;
+function getNama() {
+  if (nama == null) {
+    window.location = "/index.html";
+  } else {
+    userlink.innerText = nama;
+  }
+}
 
-    getName();
+function getNisn() {
+  if (nisn == null) {
+    window.location = "/index.html";
+  } else {
+    nisnlink.innerText = nisn;
+  }
+}
 
-    function LogOut() {
-      sessionStorage.removeItem("nama");
+getNama();
+getNisn();
 
-      window.location = "../../index.html";
-    }
+function LogOut() {
+  sessionStorage.removeItem("nama");
+
+  window.location = "/index.html";
+}
+
   </script>
 </html>

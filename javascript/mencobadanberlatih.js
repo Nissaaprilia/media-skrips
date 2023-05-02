@@ -8,7 +8,7 @@ var currentUser = null;
 // Function;
 function getNama() {
   if (nama == null) {
-    window.location = "../index.html";
+    window.location = "/index.html";
   } else {
     userlink.innerText = nama;
   }
@@ -16,7 +16,7 @@ function getNama() {
 
 function getNisn() {
   if (nisn == null) {
-    window.location = "../index.html";
+    window.location = "/index.html";
   } else {
     nisnlink.innerText = nisn;
   }

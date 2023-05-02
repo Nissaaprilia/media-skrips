@@ -169,7 +169,7 @@
   width: 300px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background: #655dbb;
   padding: 12px 0;
   transition: all 0.5s ease;
@@ -198,19 +198,16 @@
 }
 .sidebar .profile-details #userlink,
 .sidebar .profile-details #nisnlink {
-  color: #fff;
+  color: #e5dede;
   font-size: 18px;
   font-weight: 500;
-  white-space: nowrap;
 }
 .sidebar.close .profile-details i,
 .sidebar.close .profile-details #userlink,
 .sidebar.close .profile-details #nisnlink {
   display: none;
 }
-.sidebar .profile-details #nisnlink {
-  font-size: 12px;
-}
+
 .home-section {
   position: relative;
   background: white;

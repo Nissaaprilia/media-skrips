@@ -24,6 +24,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
   </head>
 
   <body>
@@ -140,12 +142,26 @@
               sessionStorage.setItem("nama", dbnama);
               sessionStorage.setItem("nisn", dbnisn);
 
-              window.location = "./html/home.html";
+              Swal.fire({
+                icon: "success",
+                title: "Login berhasil !",
+                text: "Anda masuk sebagai siswa",
+              }).then(() => {
+                window.location = "./html/home.html";
+              });
             } else {
-              alert("NIS atau Password yang anda masukkan salah");
+              Swal.fire({
+                icon: "warning",
+                title: "Login Gagal !",
+                text: "NISN atau Password yang anda masukkan salah",
+              });
             }
           } else {
-            alert("Anda belum terdaftar");
+            Swal.fire({
+              icon: "error",
+              title: "Login Gagal !",
+              text: "Anda belum terdaftar",
+            });
           }
         });
       }
@@ -163,6 +179,14 @@
       //   window.location = "./materi_a.html";
       // }
     </script>
-    <!-- <script src="/js/home.js"></script> -->
+    <!-- <script>
+      const sub_btn = document.getElementById("sub_btn");
+      sub_btn.addEventListener("click", function () {
+        Swal.fire({
+          icon: "success",
+          title: "Berhasil Login",
+        });
+      });
+    </script> -->
   </body>
 </html>
