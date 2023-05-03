@@ -591,7 +591,7 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  background-color: white;
+
   border-radius: 5px;
   width: fit-content;
 }
@@ -620,7 +620,7 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  background-color: white;
+
   border-radius: 5px;
   width: fit-content;
 }
@@ -706,7 +706,7 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
-
+  margin-left: 60px;
   border-radius: 5px;
   width: fit-content;
 }
@@ -735,9 +735,10 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  background-color: white;
+
   border-radius: 5px;
   width: fit-content;
+  margin-left: 60px;
 }
 
 .lost {
@@ -764,9 +765,9 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  background-color: white;
   border-radius: 5px;
   width: fit-content;
+  margin-left: 60px;
 }
 
 .lost {
@@ -793,9 +794,10 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  background-color: white;
+
   border-radius: 5px;
   width: fit-content;
+  margin-left: 60px;
 }
 
 .lost {
@@ -874,6 +876,7 @@ header nav.navbar {
   border-radius: 10px;
   border-radius: 5px;
   width: fit-content;
+  margin-left: 40px;
 }
 
 .lost {
@@ -900,9 +903,9 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  background-color: white;
   border-radius: 5px;
   width: fit-content;
+  margin-left: 40px;
 }
 
 .lost {
@@ -929,9 +932,9 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
-  background-color: white;
   border-radius: 5px;
   width: fit-content;
+  margin-left: 40px;
 }
 
 .lost {
@@ -999,7 +1002,7 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
-
+  margin-left: 80px;
   border-radius: 5px;
   width: fit-content;
 }
@@ -1016,7 +1019,6 @@ header nav.navbar {
   border-radius: 10px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   width: 30%;
-  color: white;
 }
 
 .klikdiketahui4:hover {
@@ -1031,6 +1033,7 @@ header nav.navbar {
   background-color: white;
   border-radius: 5px;
   width: fit-content;
+  margin-left: 80px;
 }
 
 .lost {
@@ -1060,6 +1063,7 @@ header nav.navbar {
   background-color: white;
   border-radius: 5px;
   width: fit-content;
+  margin-left: 80px;
 }
 
 .lost {
@@ -1089,6 +1093,7 @@ header nav.navbar {
   background-color: white;
   border-radius: 5px;
   width: fit-content;
+  margin-left: 60px;
 }
 
 .lost {
