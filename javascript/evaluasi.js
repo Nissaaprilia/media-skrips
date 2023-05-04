@@ -37,46 +37,50 @@ nislink.innerText = nisn;
 kelaslink.innerText = kelas;
 sekolahlink.innerText = sekolah;
 
-let selanjutnya = document.querySelector(".button");
-let datasiswa = document.querySelector("#isi1");
+// Mulai Kuis
+let selanjutnya = document.querySelector("#masuk");
+let datasiswa = document.querySelector("#k1");
 
 selanjutnya.addEventListener("click", function () {
   let nama = sessionStorage.getItem("nama");
-  let nis = sessionStorage.getItem("nis");
+  let nisn = sessionStorage.getItem("nisn");
   let kelas = sessionStorage.getItem("kelas");
   let sekolah = sessionStorage.getItem("sekolah");
 
   if (nama == null) {
-    alert("silahkan login terlebih dahulu");
-    window.location = "../index.html";
+    Swal.fire({
+      icon: "info",
+      title: "Silahkan Login Terlebih Dahulu",
+    }).then(() => {
+      window.location = "../../index.html";
+    });
+
+    // alert('silahkan login terlebih dahulu');
+    // window.location = '../index.html';
   } else {
-    document.getElementById("isi1").className += " hilang";
+    document.getElementById("k1").className += " hilang";
     datasiswa.className += " hilang";
-    document.getElementById("kiri").className = document.getElementById("kiri").className.replace("hilang", "");
-    document.getElementById("kanan").className = document.getElementById("kanan").className.replace("hilang", "");
+    document.getElementById("k2").className = document.getElementById("k2").className.replace("hilang", "");
   }
 });
 
 window.onload = () => {
-  document.getElementById("kiri").className += " hilang";
-  document.getElementById("kanan").className += " hilang";
-
-  // readlah();
+  document.getElementById("k2").className += " hilang";
 };
 
+// WAKTUUUU
 let wktu = document.querySelector("time");
-// let nilaiwktu = 0;
+let nilaiwktu = 0;
 // countDown();
 
 let countDownDate = new Date().getTime();
-//1 detik = 1000
 //waktu 30 menit
-// countDownDate += 1801000;
-// waktu 45 menit
-countDownDate += 2700000;
+countDownDate += 1801000;
+// //waktu 45 menit
+// countDownDate += 2700000;
 // countDownDate += 12000;
-//10 detik
-// countDownDate += 10000;
+//15 detik
+// countDownDate += 17000;
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -87,107 +91,14 @@ var x = setInterval(function () {
 
   document.getElementById("time").innerHTML = minutes + ":" + seconds;
 
-  if (minutes == 0 && seconds == 0) {
+  if (distance < 0) {
     clearInterval(x);
-
-    let cek = [];
-    let jwbs = [];
-    let hasilakhir = 0;
-    let benarr = 0;
-    let salahh = 0;
-
-    let pil_user = [];
-    let new_jwb_urut = [];
-    let new_jwb_urut_no = [];
-
-    let waktunya = waktu();
-    let harinya = hari();
-
-    let sarat = 0;
-
-    for (let t = 0; t < jwbs.length; t++) {
-      if (soal_nav[t].className.indexOf("belum") == -1) {
-        sarat = sarat + 1;
-      }
-    }
-    // console.log(sarat);
-
-    if (sarat == jwbs.length) {
-      // array kunci
-      // console.log(jwbs);
-      hasilakhir = 0;
-      benarr = 0;
-      salahh = jwbs.length;
-
-      for (let i = 0; i < jwbs.length; i++) {
-        let a = i + 1;
-        let namaradio = document.getElementsByName("radio" + a);
-        let checked = false;
-        for (let j = 0; j < namaradio.length; j++) {
-          if (namaradio[j].checked) {
-            checked = true;
-            pil_user.push(namaradio[j].value);
-            if (namaradio[j].value == jwbs[i]) {
-              hasilakhir = hasilakhir + 5;
-              benarr = benarr + 1;
-            } else {
-              hasilakhir = hasilakhir;
-            }
-          }
-        }
-      }
-
-      for (let i = 0; i < cek.length; i++) {
-        for (let j = 0; j < cek.length; j++) {
-          if (i == cek[j]) {
-            new_jwb_urut.push(pil_user[j]);
-            new_jwb_urut_no.push(cek[j]);
-          }
-        }
-      }
-
-      createTask(nama, nis, kelas, sekolah, hasilakhir, waktunya, harinya, new_jwb_urut);
-
-      let namaget = document.querySelector(".nama");
-      namaget.innerText = nama;
-
-      let nisget = document.querySelector(".nis");
-      nisget.innerText = nis;
-
-      let kelasget = document.querySelector(".kelas");
-      kelasget.innerText = kelas;
-
-      let sekolahget = document.querySelector(".sekolah");
-      sekolahget.innerText = sekolah;
-
-      let hariget = document.querySelector(".hari");
-      hariget.innerText = harinya;
-
-      let waktuget = document.querySelector(".waktu");
-      waktuget.innerText = waktunya;
-
-      let hasillget = document.querySelector(".hasill");
-      hasillget.innerText = hasilakhir;
-
-      let kirihilang = document.querySelector(".kiri");
-      kirihilang.className += " hilang";
-
-      let kananhilang = document.querySelector(".kanan");
-      kananhilang.className += " hilang";
-
-      let datanya = document.querySelector(".dataaa");
-      datanya.className = datanya.className.replace("hilang", "");
-    }
-    //nilai disimpan ke local storage
-    localStorage.setItem("skevaluasi", hasilakhir);
-    sessionStorage.setItem("skevaluasi", hasilakhir);
-    // console.log(localStorage);
+    document.getElementById("time").innerHTML = "Waktu Selesai";
+    nilaiwktu = 1;
   }
 }, 1000);
 
-// -----------------------------------------------------------------------------------------
-// mengambil data dan menampilkanya
-
+// DATA dan tampil data
 let dat = new XMLHttpRequest();
 dat.onreadystatechange = function () {
   let cek = [];
@@ -204,7 +115,7 @@ dat.onreadystatechange = function () {
 
     // ---------------------------------
     // acak urutan soal
-    //random urutan
+    //RANDOM URUTAN SOAL
     for (let x = 0; x < 100; x++) {
       // acak angka dengan batas length.data dan minimum 0
       let angka = Math.floor(Math.random() * data.length) + 0;
@@ -224,65 +135,67 @@ dat.onreadystatechange = function () {
       let jwb1 = data[nilai]["soal" + nilai]["b"];
       let jwb2 = data[nilai]["soal" + nilai]["c"];
       let jwb3 = data[nilai]["soal" + nilai]["d"];
-      let jwb4 = data[nilai]["soal" + nilai]["e"];
 
       let bnr = data[nilai]["soal" + nilai]["benar"];
 
-      let jwb = [jwb0, jwb1, jwb2, jwb3, jwb4];
+      let jwb = [jwb0, jwb1, jwb2, jwb3];
 
       jwbs.push(bnr);
+
+      // ---------------------------------
+      // // rangkai konten soal;
+      // let bg_pertanyaan = document.getElementById('bg_pertanyaan');
+      // if (i != 0) {
+      //     bg_pertanyaan.className += " hilang";
+      // }
 
       //nomor ke-
       let nomor = document.querySelectorAll(".soal #nomornya");
       nomor[i].innerHTML = i + 1;
 
       //soal
-      let soal = document.querySelectorAll(".bg_pertanyaan #soalnya");
+      let soal = document.querySelectorAll(".bg_soal #soalnya");
       soal[i].innerHTML = soaldata;
 
       //pilihan a
-      let piliha = document.querySelectorAll(".textnya #pilihannya0");
+      let piliha = document.querySelectorAll(".textnya #pil0");
       piliha[i].innerHTML = jwb0;
 
       //pilihan b
-      let pilihb = document.querySelectorAll(".textnya #pilihannya1");
+      let pilihb = document.querySelectorAll(".textnya #pil1");
       pilihb[i].innerHTML = jwb1;
 
       //pilihan c
-      let pilihc = document.querySelectorAll(".textnya #pilihannya2");
+      let pilihc = document.querySelectorAll(".textnya #pil2");
       pilihc[i].innerHTML = jwb2;
 
       //pilihan d
-      let pilihd = document.querySelectorAll(".textnya #pilihannya3");
+      let pilihd = document.querySelectorAll(".textnya #pil3");
       pilihd[i].innerHTML = jwb3;
 
-      //pilihan e
-      let pilihe = document.querySelectorAll(".textnya #pilihannya4");
-      pilihe[i].innerHTML = jwb4;
+      let bg_soal = document.getElementsByClassName("bg_soal");
 
-      let bg_pertanyaan = document.getElementsByClassName("bg_pertanyaan");
-
-      for (let u = 0; u < bg_pertanyaan.length; u++) {
+      for (let u = 0; u < bg_soal.length; u++) {
         if (u != 0) {
-          if (bg_pertanyaan[u].className.indexOf("hilang") == -1) {
-            bg_pertanyaan[u].className += " hilang";
+          if (bg_soal[u].className.indexOf("hilang") == -1) {
+            bg_soal[u].className += " hilang";
           }
         }
       }
     }
 
-    let bg_pertanyaan = document.getElementsByClassName("bg_pertanyaan");
+    let bg_soal = document.getElementsByClassName("bg_soal");
 
     //fungsi tombol lanjut
     let lanjut = document.querySelectorAll(".nav_selanjut");
     for (let y = 0; y < lanjut.length; y++) {
       lanjut[y].addEventListener("click", function () {
         if (lanjut[y].className.indexOf("disable") == -1) {
-          if (bg_pertanyaan[y].className.indexOf("hilang") == -1) {
-            bg_pertanyaan[y + 1].className = bg_pertanyaan[y + 1].className.replace("hilang", "");
-            bg_pertanyaan[y].className += " hilang";
+          if (bg_soal[y].className.indexOf("hilang") == -1) {
+            bg_soal[y + 1].className = bg_soal[y + 1].className.replace("hilang", "");
+            bg_soal[y].className += " hilang";
           }
-          // console.log(bg_pertanyaan[y+1]);
+          // console.log(bg_soal[y + 1]);
         }
       });
     }
@@ -292,35 +205,35 @@ dat.onreadystatechange = function () {
     for (let y = 0; y < sebelum.length; y++) {
       sebelum[y].addEventListener("click", function () {
         if (sebelum[y].className.indexOf("disable") == -1) {
-          if (bg_pertanyaan[y].className.indexOf("hilang") == -1) {
-            bg_pertanyaan[y - 1].className = bg_pertanyaan[y - 1].className.replace("hilang", "");
-            bg_pertanyaan[y].className += " hilang";
+          if (bg_soal[y].className.indexOf("hilang") == -1) {
+            bg_soal[y - 1].className = bg_soal[y - 1].className.replace("hilang", "");
+            bg_soal[y].className += " hilang";
           }
         }
       });
     }
 
     //navigasi soal
-    let soal_nav = document.querySelectorAll(".soal_nav");
-    for (let y = 0; y < soal_nav.length; y++) {
-      soal_nav[y].addEventListener("click", function () {
-        for (let u = 0; u < bg_pertanyaan.length; u++) {
-          if (bg_pertanyaan[u].className.indexOf("hilang") == -1) {
-            bg_pertanyaan[u].className += " hilang";
+    let no_soal = document.querySelectorAll(".no_soal");
+    for (let y = 0; y < no_soal.length; y++) {
+      no_soal[y].addEventListener("click", function () {
+        for (let u = 0; u < bg_soal.length; u++) {
+          if (bg_soal[u].className.indexOf("hilang") == -1) {
+            bg_soal[u].className += " hilang";
           }
         }
-        bg_pertanyaan[y].className = bg_pertanyaan[y].className.replace("hilang", "");
+        bg_soal[y].className = bg_soal[y].className.replace("hilang", "");
       });
     }
 
     //mewarnai soal yang sdh dijawab
-    let soall = document.querySelectorAll(".soall");
-    for (let y = 0; y < soall.length; y++) {
-      soall[y].addEventListener("click", function () {
-        let pilih = document.querySelectorAll(".bg_pilihan input");
+    let pilsoal = document.querySelectorAll(".pilsoal");
+    for (let y = 0; y < pilsoal.length; y++) {
+      pilsoal[y].addEventListener("click", function () {
+        let pilih = document.querySelectorAll(".bg_pil input");
         for (let j = 0; j < pilih.length; j++) {
           pilih[j].addEventListener("click", function () {
-            soal_nav[y].className = soal_nav[y].className.replace("belum", "sudah");
+            no_soal[y].className = no_soal[y].className.replace("belum", "sudah");
           });
         }
       });
@@ -336,7 +249,7 @@ dat.onreadystatechange = function () {
       let sarat = 0;
 
       for (let t = 0; t < jwbs.length; t++) {
-        if (soal_nav[t].className.indexOf("belum") == -1) {
+        if (no_soal[t].className.indexOf("belum") == -1) {
           sarat = sarat + 1;
         }
       }
@@ -378,23 +291,20 @@ dat.onreadystatechange = function () {
 
         // simpan kedatabase----------
         console.log(nama);
-        console.log(nis);
+        console.log(nisn);
         console.log(kelas);
         console.log(sekolah);
         console.log(hasilakhir);
         let waktunya = waktu();
         let harinya = hari();
 
-        // if (hasilakhir>=70){
-        //     localStorage.setItem('bab2',1)
-        // }
-        createTask(nama, nis, kelas, sekolah, hasilakhir, waktunya, harinya, new_jwb_urut);
+        createTask(nama, nisn, kelas, hasilakhir, waktunya, harinya, new_jwb_urut);
 
         let namaget = document.querySelector(".nama");
         namaget.innerText = nama;
 
-        let nisget = document.querySelector(".nis");
-        nisget.innerText = nis;
+        let nisnget = document.querySelector(".nis");
+        nisnget.innerText = nisn;
 
         let kelasget = document.querySelector(".kelas");
         kelasget.innerText = kelas;
@@ -411,27 +321,54 @@ dat.onreadystatechange = function () {
         let hasillget = document.querySelector(".hasill");
         hasillget.innerText = hasilakhir;
 
-        let kirihilang = document.querySelector(".kiri");
-        kirihilang.className += " hilang";
+        let k2hilang = document.querySelector(".k2");
+        k2hilang.className += " hilang";
 
-        let kananhilang = document.querySelector(".kanan");
-        kananhilang.className += " hilang";
+        // let kananhilang = document.querySelector('.kanan');
+        // kananhilang.className += ' hilang';
 
         let datanya = document.querySelector(".dataaa");
         datanya.className = datanya.className.replace("hilang", "");
+
+        if (hasilakhir < 60) {
+          let ulang = document.getElementById("ulang");
+          ulang.className = ulang.className.replace("hilang", "");
+        } else {
+          let materi = document.getElementById("materi");
+          materi.className = materi.className.replace("hilang", "");
+        }
       } else {
-        alert("Masih Ada Soal Yang Belum Dijawab, Periksa Kembali . . . !");
+        Swal.fire({
+          icon: "error",
+          title: "Mohon Maaf!",
+          text: "Jawablah semua soal terlebih dahulu!",
+        });
+        // alert(' Jawablah Semua Soal Terlebih Dahulu!');
       }
 
       //nilai disimpan ke local storage
-      localStorage.setItem("skevaluasi", hasilakhir);
-      sessionStorage.setItem("skevaluasi", hasilakhir);
+      localStorage.setItem("skkuis1", hasilakhir);
+      sessionStorage.setItem("skkuis1", hasilakhir);
       // console.log(localStorage);
     });
+    if (hassilakhir > 60) {
+      localStorage.setItem("skkuis1", 1);
+    }
   }
 };
+//pemanggilan soal json
 dat.open("GET", "evaluasi.json", true);
 dat.send();
+
+// $(document).ready(function () {
+//   // mengambil data JSON
+//   var data = '{"equation": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}"}';
+//   var equation = JSON.parse(data).equation;
+
+//   // menampilkan persamaan Matematika menggunakan MathJax
+//   $("#equation").html("\\(" + equation + "\\)");
+//   MathJax.typeset();
+// });
 
 //FUNGSI WAKTU DAN HARI
 var d = new Date();
@@ -463,15 +400,16 @@ function hari() {
   return tanggallengkap;
 }
 
-function createTask(nama, nis, kelas, sekolah, nilai, waktunya, hari, jwb) {
+// Firebase
+function createTask(nama, nisn, kelas, nilai, waktunya, hari, jwb) {
   counter += 1;
-
-  set(ref(db, "evaluasi/" + counter), {
+  const db = getDatabase();
+  set(ref(db, "kuis1/" + counter), {
     id: counter,
     nama: nama,
-    nis: nis,
+    nisn: nisn,
     kelas: kelas,
-    sekolah: sekolah,
+
     nilai: nilai,
     waktu: waktunya,
     hari: hari,
