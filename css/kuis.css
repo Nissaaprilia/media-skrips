@@ -10,7 +10,7 @@ body {
   height: 100vh;
   width: 100vw;
   margin: 0px;
-  background-color: #c8dbbe;
+  background-color: #3e54ac;
 }
 
 #k1 {
@@ -63,7 +63,7 @@ body {
   margin-top: 20px;
   width: fit-content;
   padding: 10px 20px;
-  background-color: #ca9f5e;
+  background-color: #3e54ac;
   color: white;
   font-weight: bold;
   border: none;
@@ -155,7 +155,7 @@ body {
   left: 50%;
   width: 16px;
   height: 16px;
-  background: #ca9f5e;
+  background: #3e54ac;
   transform: translateX(-50%) translateY(-50%);
 }
 
@@ -176,7 +176,7 @@ input[type="radio"]:checked + span .nav_pil:after {
   width: 100%;
   height: 50%;
   padding: 10px 0;
-  background-color: #ffc4c4;
+  background-color: #3e54ac;
 }
 
 .no_soal {
@@ -189,7 +189,7 @@ input[type="radio"]:checked + span .nav_pil:after {
 
 .no_soal:hover {
   cursor: pointer;
-  background-color: #ca9f5e;
+  background-color: #3e54ac;
   color: white;
 }
 
@@ -199,7 +199,7 @@ input[type="radio"]:checked + span .nav_pil:after {
 }
 
 .sudah {
-  background-color: #ca9f5e;
+  background-color: #3e54ac;
   color: white;
 }
 
@@ -213,7 +213,7 @@ input[type="radio"]:checked + span .nav_pil:after {
 }
 
 .csudah {
-  background-color: #ca9f5e;
+  background-color: #3e54ac;
   color: white;
   margin-left: 5px;
   padding: 0 10px;
@@ -224,7 +224,8 @@ input[type="radio"]:checked + span .nav_pil:after {
 .tsoal {
   margin-bottom: 20px;
   padding: 10px 20px;
-  background-color: #ca9f5e;
+  background-color: #3e54ac;
+  color: white;
 }
 
 /* Tampilan K3 */

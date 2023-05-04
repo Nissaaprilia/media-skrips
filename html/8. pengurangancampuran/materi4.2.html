@@ -148,7 +148,7 @@
         <div class="card lg p-3 mb-5 bg-white rounded">
           <div class="card-body border border-primary ms-3 me-3">
             <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
-            <p>Kerjakan pengurangan di bawah ini!</p>
+            <p>Jawablah pertanyaan-pertanyaan berikut!</p>
             <div class="card-body border border-primary ms-3 me-3">
               <div class="container text-start">
                 <div class="row align-self-start">
@@ -158,18 +158,16 @@
                   <div class="col bg-light">
                     <div id="berlatih" class="card mt-3">
                       <div class="card-body bg-white" style="height: 330px; overflow-y: auto">
-                        <!-- <h4><strong>Ayo Mencoba!</strong></h4>
-                  <p>
-                    Tentukan pecahan senilai pada gambar berarsir di bawah ini! Jawaban benar akan berwarna hijau, jika
-                    salah akan berwarna merah. -->
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
                           <tbody style="vertical-align: middle">
                             <tr>
                               <td>
-                                <h3>\( \frac{15}{20} + \frac{3}{20} \)</h3>
+                                <h4>\( {7} \frac {3}{4} - {2}\frac{1}{6} = \)</h4>
                               </td>
                               <td>
-                                <h4>=</h4>
+                                <input id="jwb1" placeholder="..." type="text" size="1" class="jwbpecahan" />
                               </td>
                               <td>
                                 <input id="jwb11" placeholder="..." type="text" size="1" class="jawabpecahan" />
@@ -184,217 +182,271 @@
                           <div id="btnCek1" class="btn btn-outline-success">Cek Jawaban</div>
                           <div id="btnLanjut" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
                         </center>
-                        <!-- </p> -->
-
-                        <div id="soal2" style="display: none" class="card mt-3">
-                          <div class="card-body" style="height: 330px; overflow-y: auto">
-                            <!-- Akhir modal -->
-                            <!-- <table class="table table-bordered text-center" style="border: #3e54ac">
-                <tbody style="vertical-align: middle">
-                  <tr>
-                    <td scope="row">No</td>
-                    <td colspan="1">Soal</td>
-                    <td>Jawaban</td>
-                  </tr>
-                  <tr>
-                    <td scope="row">1</td>
-                    <td colspan="1">\( {7} \frac {3}{4} - {2}\frac{1}{6} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row">2</td>
-                    <td colspan="1">\( {5} \frac {2}{3} - {2}\frac{1}{6} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row">3</td>
-                    <td colspan="1">\( {4} \frac {7}{8} - {1}\frac{1}{7} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row">4</td>
-                    <td colspan="1">\( {4} \frac {3}{4} - {1}\frac{1}{2} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row">5</td>
-                    <td colspan="1">\( {6} \frac {1}{2} - {4}\frac{2}{10} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row">6</td>
-                    <td colspan="1">\( {2} \frac {1}{2} - {1}\frac{1}{6} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row">7</td>
-                    <td colspan="1">\( {5} \frac {9}{10} - {3}\frac{33}{40} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row">8</td>
-                    <td colspan="1">\( {6} \frac {5}{7} - {2}\frac{2}{5} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row">9</td>
-                    <td colspan="1">\( {4} \frac {4}{5} - {3}\frac{1}{3} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-
-                  <tr>
-                    <td scope="row">10</td>
-                    <td colspan="1">\( {6} \frac {4}{5} - {3}\frac{1}{3} = ... \)</td>
-                    <td>
-                      <table>
-                        <tr>
-                          <td>
-                            <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
-                          </td>
-                          <td>
-                            <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
-                            <br />
-                            <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </tbody>
-              </table> -->
-                          </div>
-                          <br />
-                          <button class="btn btn-outline-primary" onclick="cekJawaban()">Cek Jawaban</button>
-                          <button onclick="reset()" class="btn btn-outline-success">Coba Lagi</button>
-                        </div>
+                      </div>
+                    </div>
+                    <div id="soal2" style="display: none" class="card mt-3">
+                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
+                        <table class="table table-borderless text-black text-center">
+                          <tbody style="vertical-align: middle">
+                            <tr>
+                              <td>
+                                <h4>\( {5} \frac {2}{3} - {2}\frac{1}{6} = \)</h4>
+                              </td>
+                              <td>
+                                <input id="jwb2" placeholder="..." type="text" size="1" class="jwbpecahan" />
+                              </td>
+                              <td>
+                                <input id="jwb21" placeholder="..." type="text" size="1" class="jawabpecahan" />
+                                <br />
+                                <input id="jwb22" placeholder="..." type="text" size="1" class="jawabpecahan1" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil2"></div>
+                        <center>
+                          <div id="btnCek2" class="btn btn-outline-success">Cek Jawaban</div>
+                          <div id="btnLanjut2" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                        </center>
+                        <br />
+                      </div>
+                    </div>
+                    <div id="soal3" style="display: none" class="card mt-3">
+                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
+                        <table class="table table-borderless text-black text-center">
+                          <tbody style="vertical-align: middle">
+                            <tr>
+                              <td>
+                                <h4>\( {4} \frac {7}{8} - {1}\frac{1}{7} = \)</h4>
+                              </td>
+                              <td>
+                                <input id="jwb3" placeholder="..." type="text" size="1" class="jwbpecahan" />
+                              </td>
+                              <td>
+                                <input id="jwb31" placeholder="..." type="text" size="1" class="jawabpecahan" />
+                                <br />
+                                <input id="jwb32" placeholder="..." type="text" size="1" class="jawabpecahan1" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil3"></div>
+                        <center>
+                          <div id="btnCek3" class="btn btn-outline-success">Cek Jawaban</div>
+                          <div id="btnLanjut3" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                        </center>
+                        <br />
+                      </div>
+                    </div>
+                    <div id="soal4" style="display: none" class="card mt-3">
+                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
+                        <table class="table table-borderless text-black text-center">
+                          <tbody style="vertical-align: middle">
+                            <tr>
+                              <td>
+                                <h4>\( {4} \frac {3}{4} - {1}\frac{1}{2} = \)</h4>
+                              </td>
+                              <td>
+                                <input id="jwb4" placeholder="..." type="text" size="1" class="jwbpecahan" />
+                              </td>
+                              <td>
+                                <input id="jwb41" placeholder="..." type="text" size="1" class="jawabpecahan" />
+                                <br />
+                                <input id="jwb42" placeholder="..." type="text" size="1" class="jawabpecahan1" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil4"></div>
+                        <center>
+                          <div id="btnCek4" class="btn btn-outline-success">Cek Jawaban</div>
+                          <div id="btnLanjut4" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                        </center>
+                        <br />
+                      </div>
+                    </div>
+                    <div id="soal5" style="display: none" class="card mt-3">
+                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
+                        <table class="table table-borderless text-black text-center">
+                          <tbody style="vertical-align: middle">
+                            <tr>
+                              <td>
+                                <h4>\( {6} \frac {1}{2} - {4}\frac{2}{10} = \)</h4>
+                              </td>
+                              <td>
+                                <input id="jwb5" placeholder="..." type="text" size="1" class="jwbpecahan" />
+                              </td>
+                              <td>
+                                <input id="jwb51" placeholder="..." type="text" size="1" class="jawabpecahan" />
+                                <br />
+                                <input id="jwb52" placeholder="..." type="text" size="1" class="jawabpecahan1" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil5"></div>
+                        <center>
+                          <div id="btnCek5" class="btn btn-outline-success">Cek Jawaban</div>
+                          <div id="btnLanjut5" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                        </center>
+                        <br />
+                      </div>
+                    </div>
+                    <div id="soal6" style="display: none" class="card mt-3">
+                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
+                        <table class="table table-borderless text-black text-center">
+                          <tbody style="vertical-align: middle">
+                            <tr>
+                              <td>
+                                <h4>\( {2} \frac {1}{2} - {1}\frac{1}{6} = \)</h4>
+                              </td>
+                              <td>
+                                <input id="jwb6" placeholder="..." type="text" size="1" class="jwbpecahan" />
+                              </td>
+                              <td>
+                                <input id="jwb61" placeholder="..." type="text" size="1" class="jawabpecahan" />
+                                <br />
+                                <input id="jwb62" placeholder="..." type="text" size="1" class="jawabpecahan1" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil6"></div>
+                        <center>
+                          <div id="btnCek6" class="btn btn-outline-success">Cek Jawaban</div>
+                          <div id="btnLanjut6" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                        </center>
+                        <br />
+                      </div>
+                    </div>
+                    <div id="soal7" style="display: none" class="card mt-3">
+                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
+                        <table class="table table-borderless text-black text-center">
+                          <tbody style="vertical-align: middle">
+                            <tr>
+                              <td>
+                                <h4>\( {5} \frac {9}{10} - {3}\frac{32}{40} = \)</h4>
+                              </td>
+                              <td>
+                                <input id="jwb7" placeholder="..." type="text" size="1" class="jwbpecahan" />
+                              </td>
+                              <td>
+                                <input id="jwb71" placeholder="..." type="text" size="1" class="jawabpecahan" />
+                                <br />
+                                <input id="jwb72" placeholder="..." type="text" size="1" class="jawabpecahan1" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil7"></div>
+                        <center>
+                          <div id="btnCek7" class="btn btn-outline-success">Cek Jawaban</div>
+                          <div id="btnLanjut7" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                        </center>
+                        <br />
+                      </div>
+                    </div>
+                    <div id="soal8" style="display: none" class="card mt-3">
+                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
+                        <table class="table table-borderless text-black text-center">
+                          <tbody style="vertical-align: middle">
+                            <tr>
+                              <td>
+                                <h4>\( {6} \frac {5}{7} - {2}\frac{2}{5} = \)</h4>
+                              </td>
+                              <td>
+                                <input id="jwb8" placeholder="..." type="text" size="1" class="jwbpecahan" />
+                              </td>
+                              <td>
+                                <input id="jwb81" placeholder="..." type="text" size="1" class="jawabpecahan" />
+                                <br />
+                                <input id="jwb82" placeholder="..." type="text" size="1" class="jawabpecahan1" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil8"></div>
+                        <center>
+                          <div id="btnCek8" class="btn btn-outline-success">Cek Jawaban</div>
+                          <div id="btnLanjut8" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                        </center>
+                        <br />
+                      </div>
+                    </div>
+                    <div id="soal9" style="display: none" class="card mt-3">
+                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
+                        <table class="table table-borderless text-black text-center">
+                          <tbody style="vertical-align: middle">
+                            <tr>
+                              <td>
+                                <h4>\( {4} \frac {4}{5} - {3}\frac{1}{3} = \)</h4>
+                              </td>
+                              <td>
+                                <input id="jwb9" placeholder="..." type="text" size="1" class="jwbpecahan" />
+                              </td>
+                              <td>
+                                <input id="jwb91" placeholder="..." type="text" size="1" class="jawabpecahan" />
+                                <br />
+                                <input id="jwb92" placeholder="..." type="text" size="1" class="jawabpecahan1" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil9"></div>
+                        <center>
+                          <div id="btnCek9" class="btn btn-outline-success">Cek Jawaban</div>
+                          <div id="btnLanjut9" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                        </center>
+                        <br />
+                      </div>
+                    </div>
+                    <div id="soal10" style="display: none" class="card mt-3">
+                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                        <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
+                        <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
+                        <table class="table table-borderless text-black text-center">
+                          <tbody style="vertical-align: middle">
+                            <tr>
+                              <td>
+                                <h4>\( {6} \frac {4}{5} - {3}\frac{1}{3} = \)</h4>
+                              </td>
+                              <td>
+                                <input id="jwb10" placeholder="..." type="text" size="1" class="jwbpecahan" />
+                              </td>
+                              <td>
+                                <input id="jwb101" placeholder="..." type="text" size="1" class="jawabpecahan" />
+                                <br />
+                                <input id="jwb102" placeholder="..." type="text" size="1" class="jawabpecahan1" />
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil10"></div>
+                        <center>
+                          <div id="btnCek10" class="btn btn-outline-success">Cek Jawaban</div>
+                          <div id="btnLanjut10" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                        </center>
+                        <br />
                       </div>
                     </div>
                   </div>
+                  <br />
                 </div>
               </div>
             </div>
@@ -402,10 +454,10 @@
         </div>
         <nav aria-label="Page navigation example ">
           <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
-            <li class="page-item"><a class="page-link" href="../8. pengurangancampuran/materi4.1.html">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="../8. pengurangancampuran/materi4.1.html">1</a></li>
+            <li class="page-item"><a class="page-link" href="../4. pecahancampuran/materi2.2.html">Previous</a></li>
+            <li class="page-item"><a class="page-link" href="../5. penjumlahancampuran/materi2.3.html">1</a></li>
             <li class="page-item active"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="../kuis/kuis2.html">Kuis</a></li>
+            <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.1.html">Materi Selanjutnya</a></li>
           </ul>
         </nav>
       </div>
@@ -430,7 +482,7 @@
     <!-- Javascript -->
     <!-- <link rel="stylesheet" href="../javascript/penjumlahanberlatih.js" -->
   </body>
-  <script>
+  <!-- <script>
     let userlink = document.getElementById("userlink");
     let nisnlink = document.getElementById("nisnlink");
     let signoutlink = document.getElementById("signoutlink");
@@ -463,5 +515,6 @@
 
       window.location = "/index.html";
     }
-  </script>
+  </script> -->
+  <script src="../../javascript/materi42.js"></script>
 </html>
