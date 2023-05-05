@@ -290,6 +290,8 @@ dat.onreadystatechange = function () {
         }
 
         // simpan kedatabase----------
+        console.log();
+        // hasilakhir = 90;
         console.log(nama);
         console.log(nisn);
         console.log(kelas);
@@ -351,7 +353,7 @@ dat.onreadystatechange = function () {
       sessionStorage.setItem("skkuis1", hasilakhir);
       // console.log(localStorage);
     });
-    if (hassilakhir > 60) {
+    if (hasilakhir > 60) {
       localStorage.setItem("skkuis1", 1);
     }
   }

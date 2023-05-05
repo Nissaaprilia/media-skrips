@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
+
 </head>
 
 <body>
@@ -119,8 +120,8 @@
       </li>
 
       <li>
-       <div class="profile-details">
-            <div class="profile-content">
+        <div class="profile-details">
+          <div class="profile-content">
             <div id="signoutlink">
               <a href="#" onclick="LogOut()"> <img src="../../img/user.png" /></a>
             </div>
@@ -134,11 +135,11 @@
                 <div id="nisnlink">
                   <a href="#"></a>
                 </div>
-                 <!-- <i class="bx bx-log-out"></i> -->
+                <!-- <i class="bx bx-log-out"></i> -->
               </div>
             </div>
           </div>
-           </div> 
+        </div>
       </li>
     </ul>
   </div>
@@ -175,52 +176,29 @@
           </div>
         </div>
         <div class="card-body border border-primary ms-3 me-3">
-           <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
-              <p class="text-start ms-2">Ayo amati cerita di bawah ini, kemudian perhatikan cara penjumlahan bilangan pecahan dari cerita tersebut !</p>
-
-              <div class="card-body border border-primary ms-3 me-3">
-                <table class="table table-bordered">
-                  <tbody style="vertical-align: middle; text-align: justify">
-                    <tr>
-                      <td colspan="3"><img src="../../img/pendahuluan/apresepsi.png" class="rounded mx-auto d-block" width="40%" alt="" /></td>
-                      <!-- <td><img src="../../img/penjumlahan/bingka/bingka.png" class="rounded mx-auto d-block" width="150px" alt="" /></td> -->
-                    </tr>
-                    <tr>
-                      <td colspan="3">Apa kamu ingat apa yang dimaksud dengan pecahan? di kelas IV, kamu sudah mempelajari pecahan, untuk lebih
-          mengingat simaklah penjelasan berikut !</td>
-                     
-                    </tr>
-                    <tr>
-                      <td colspan="2">Setelah itu tri juga memakan bingka bakar ibu \( \frac{3}{6}\) bagian.</td>
-                      <td><img src="../../img/penjumlahan/bingka/bingka3.png" class="rounded mx-auto d-block" width="150px" alt="" /></td>
-                    </tr>
-                    <tr>
-                      <td colspan="3">Jadi berapa jumlah bingka bakar yang di makan oleh kedua nya?<br /></td>
-                    </tr>
-                  </tbody>
-                </table>
-
+          <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
+          <p class="text-start ms-2">Ayo amati penjelasan di bawah ini !</p>
+          <div class="card-body border border-primary ms-3 me-3">
+            <h4 class="card-title"><img src="../../img/pendahuluan/apresepsi.png" class="rounded mx-auto d-block"
+                width="20%" alt="" /></h4>
+            <p class="fs-5 fw-semibold text-center"> Apa kamu ingat apa yang dimaksud dengan pecahan? di kelas IV, kamu
+              sudah mempelajari pecahan, untuk lebih
+              mengingat silahkan klik tombol penjelasan berikut !<br /></p>
                 <center>
-                  <button id="btnselesai" class="btn btn-success" style="background-color: #3e54ac">Lanjut</button>
+                  <button id="btnpenjelasan" class="btn btn-success" style="background-color: #3e54ac">Penjelasan</button>
                 </center>
-              </div>
-         <h4 class="card-title">Pecahan</h4>
-          <p class="card-text">
-
-
-          Apa kamu ingat apa yang dimaksud dengan pecahan? di kelas IV, kamu sudah mempelajari pecahan, untuk lebih
-          mengingat simaklah penjelasan berikut !<br />
-          Pecahan adalah bagian dari keseluruhan, terdiri dari pembilang dan penyebut : <br />
-          <br />
-          Secara umum, ditulis dalam bentuk :
-          <img src="../../img/pendahuluan/pecahan.png" class="img-fluid" alt="..." style="width: 200px" />
-          <br />
-          \( \frac{1}{2}\) Sebagai contoh pada bilangan \( \frac{1}{2}\). Angka 1 disebut <b> pembilang </b> , dan angka
-          2 disebut <b> penyebut.</b>
-          </p>
-        </div>
+          </div>
+<div class="card-body border border-primary ms-3 me-3">
+                <div id="card2lanjut" class="card-body" style="display: none">
+           
+              <img src="../../img/pendahuluan/apresepsi2.gif" class="rounded mx-auto d-block" alt="..." style="width: 60%" />
+             
+            </p>
+          </div>
+        
       </div>
-    </div>
+      </div>
+    </div></div></div>
     <nav aria-label="Page navigation example ">
       <ul class="navigasi bawah pagination justify-content-center fixed-bottom">
         <li class="page-item"><a class="page-link" href="../index.html">Previous</a></li>
@@ -233,6 +211,10 @@
     </div>
   </section>
   <script>
+     document.getElementById("btnpenjelasan").addEventListener("click", function () {
+        document.getElementById("card2lanjut").style.display = "block";
+        document.getElementById("btnpenjelasan").style.display = "none";
+      });
 
     let arrow = document.querySelectorAll(".arrow");
     for (var i = 0; i < arrow.length; i++) {
@@ -248,42 +230,43 @@
       sidebar.classList.toggle("close");
     });
   </script>
- 
+
   <!-- <script type="module" src="../../javascript/userlink.js"></script> -->
 </body>
- <script>
-   let userlink = document.getElementById("userlink");
-let nisnlink = document.getElementById("nisnlink");
-let signoutlink = document.getElementById("signoutlink");
-let nama = sessionStorage.getItem("nama");
-let nisn = sessionStorage.getItem("nisn");
-var currentUser = null;
+<script>
+  let userlink = document.getElementById("userlink");
+  let nisnlink = document.getElementById("nisnlink");
+  let signoutlink = document.getElementById("signoutlink");
+  let nama = sessionStorage.getItem("nama");
+  let nisn = sessionStorage.getItem("nisn");
+  var currentUser = null;
 
-// Function;
-function getNama() {
-  if (nama == null) {
-    window.location = "/index.html";
-  } else {
-    userlink.innerText = nama;
+  // Function;
+  function getNama() {
+    if (nama == null) {
+      window.location = "/index.html";
+    } else {
+      userlink.innerText = nama;
+    }
   }
-}
 
-function getNisn() {
-  if (nisn == null) {
-    window.location = "/index.html";
-  } else {
-    nisnlink.innerText = nisn;
+  function getNisn() {
+    if (nisn == null) {
+      window.location = "/index.html";
+    } else {
+      nisnlink.innerText = nisn;
+    }
   }
-}
 
-getNama();
-getNisn();
+  getNama();
+  getNisn();
 
-function LogOut() {
-  sessionStorage.removeItem("nama");
+  function LogOut() {
+    sessionStorage.removeItem("nama");
 
-  window.location = "/index.html";
-}
+    window.location = "/index.html";
+  }
 
-  </script>
+</script>
+
 </html>
