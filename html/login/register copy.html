@@ -5,7 +5,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Register</title>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
 
   <!-- AOS -->
   <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
@@ -23,49 +22,46 @@
     crossorigin="anonymous"></script>
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
   <!-- My CSS -->
-  <link rel="stylesheet" href="../../css/register.css" />
+  <link rel="stylesheet" href="../../css/login.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
 <body>
   <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
-    <div class="row gx-lg-1 align-items-center mb-1">
+    <div class="row gx-lg-5 align-items-center mb-5">
       <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
-        <h2 class="display-5 fw-bold ls-tight" style="color: hsl(220, 75%, 52%)">
-            Penjumlahan dan Pengurangan <br />
-            <span style="color: hsl(218, 75%, 28%)">Bilangan Pecahan</span>
-          
-          </h2>
+        <!-- <img src="./img/bg-2.gif" /> -->
+        <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(220, 47%, 71%)">
+          Operasi Pecahan <br />
+          <span style="color: hsl(218, 81%, 75%)">Penjumlahan dan Pengurangan</span>
+        </h1>
+        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, expedita iusto veniam atque, magni
+          tempora mollitia dolorum consequatur nulla, neque debitis eos reprehenderit quasi ab ipsum nisi dolorem modi.
+          Quos?
+        </p>
       </div>
+
       <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+        <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+        <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
         <center>
-              <h2 class="title"><i class="fas fa-user"></i><br>Register Siswa</h2>
-              <div class="input-field">
-            <i class="fas fa-user"></i>
-              <input type="text" placeholder="Nama Lengkap" id="namaInp" />
-              </div>
-                <div class="input-field">
-            <i class="fas fa-pencil"></i>
-              <input type="text" placeholder="Nisn" id="nisnInp"/>
-                </div>
-                  <div class="input-field">
-            <i class="fa-solid fa-house"></i>
-              <select class="form-select" id="kelasInp" >
+          <div class="card bg-glass mb-5">
+            <div class="card-body px-4 py-5 px-md-5">
+              <h3 class=" text-center">Register Siswa</h3>
+              <input type="text" placeholder="Nama Lengkap" id="namaInp" class="form-control mb-3 w-50" />
+              <input type="text" placeholder="Nisn" id="nisnInp" class="form-control mb-3 w-50" />
+
+              <select class="form-select w-50" id="kelasInp" >
                 <option selected>Kelas</option>
                 <option value="V (A)">V (A)</option>
                 <option value="V (B)">V (B)</option>
               </select>
-              </div>
               <!-- <input type="text" placeholder="sekolah" id="sekolahInp" class="form-control mb-3" /> -->
-            
-                <div class="input-field">
-            <i class="fas fa-lock"></i>
-            <input type="password" placeholder="Password" id="passInp" />
-                </div>
-              
+              <br />
+              <input type="password" placeholder="Password" id="passInp" class="form-control mb-3 w-50" />
               <!-- <button id="toggle-password" type="button" class="d-none" aria-label="Show password as plain text. Warning: this will display your password on the screen."></button> -->
               <div class="d-grid gap-2 col-3 mx-auto">
                 <button type="text" id="sub_btn" class="btn btn-outline-primary ">Register</button>
@@ -115,31 +111,18 @@
             let nisnregex = /^[0-9\s]{10,}$/;
 
             if (isEmptyOrSpaces(nama.value) || isEmptyOrSpaces(nisn.value) || isEmptyOrSpaces(kelas.value) || isEmptyOrSpaces(pass.value)) {
-              Swal.fire({
-              icon: "warning",
-              title: "Register gagal",
-              text: "Isi semua data !",
-            });
+              alert("Isi Semua Data");
               return false;
             }
 
             if (!namaregex.test(nama.value)) {
-             Swal.fire({
-              icon: "warning",
-              title: "Register gagal",
-              text: "Nama hanya boleh alfabet!",
-            });
+              alert("Nama hanya boleh huruf alphabet!");
               return false;
             }
 
             if (!nisnregex.test(nisn.value)) {
-                Swal.fire({
-              icon: "warning",
-              title: "Register gagal",
-              text: "NIS terdiri 10 Angka!",
-               });
+              alert("NIS terdiri 10 Angka");
               return false;
-             
             }
 
             return true;
@@ -155,11 +138,7 @@
 
             get(child(dbRef, "DataSiswa/" + nisn.value)).then((snapshot) => {
               if (snapshot.exists()) {
-                Swal.fire({
-              icon: "warning",
-              title: "Register gagal",
-              text: "Akun sudah terdaftar",
-            });
+                alert("Akun sudah terdaftar!");
               } else {
                 set(ref(db, "DataSiswa/" + nisn.value), {
                   fullname: nama.value,
@@ -168,15 +147,10 @@
                   kelas: kelas.value,
                   pass: encPass(),
                 })
-
-                 Swal.fire({
-              icon: "success",
-              title: "Register berhasil !",
-              text: "Akun siswa berhasil di buat",
-            }).then(() => {
-              window.location = "../../index.html";
-            })
-                
+                  .then(() => {
+                    alert("Akun Berhasil Dibuat");
+                    window.location = "../../index.html";
+                  })
 
                   .catch((error) => {
                     alert("Gagal" + error);
