@@ -42,8 +42,8 @@ body {
 
   overflow-x: hidden;
   overflow-y: auto;
-}
-/* .container::before {
+  /* }
+.container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -54,9 +54,8 @@ body {
   z-index: 6;
   transform: translateX(100%);
   transition: 1s ease-in-out;
-  background-image: url(../img/pendahuluan/apresepsi2.gif);
-} */
-
+   background-image: url(../img/pendahuluan/apresepsi2.gif); */
+}
 .input-field {
   width: 100%;
   height: 50px;

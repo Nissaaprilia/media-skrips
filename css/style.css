@@ -7,7 +7,7 @@
 /* ---------------------------------------------------
     style untuk halaman depan (index)
 ----------------------------------------------------- */
-.jumbotron {
+/* .jumbotron {
   padding: 2rem;
   background-color: #1e11b5;
   background-image: url(../img/pendahuluan/cover2.png);
@@ -18,7 +18,7 @@
   position: relative;
   padding-top: 90px;
   padding-bottom: 90px;
-}
+} */
 
 #jumbotron h1 {
   margin-left: 4rem;
