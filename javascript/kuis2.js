@@ -347,12 +347,12 @@ dat.onreadystatechange = function () {
       }
 
       //nilai disimpan ke local storage
-      localStorage.setItem("skkuis1", hasilakhir);
-      sessionStorage.setItem("skkuis1", hasilakhir);
+      localStorage.setItem("skkuis2", hasilakhir);
+      sessionStorage.setItem("skkuis2", hasilakhir);
       // console.log(localStorage);
     });
     if (hassilakhir > 60) {
-      localStorage.setItem("skkuis1", 1);
+      localStorage.setItem("skkuis2", 1);
     }
   }
 };
@@ -404,7 +404,7 @@ function hari() {
 function createTask(nama, nisn, kelas, nilai, waktunya, hari, jwb) {
   counter += 1;
   const db = getDatabase();
-  set(ref(db, "kuis1/" + counter), {
+  set(ref(db, "kuis2/" + counter), {
     id: counter,
     nama: nama,
     nisn: nisn,
