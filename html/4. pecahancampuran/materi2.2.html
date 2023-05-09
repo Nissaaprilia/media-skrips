@@ -29,23 +29,55 @@
 </head>
 
 <body>
-  <header>
+   <header>
     <nav class="navbar navbar-expand-lg text-white">
       <div class="container-fluid ms-5 me-5">
-        <!-- <a class="navbar-brand text-white" href="../index.html">Bilangan Pecahan</a> -->
-        <!-- <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
         <div class="collapse navbar-collapse ms-10" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto me-2">
             <li class="nav-item">
-              <a class="nav-link text-white" aria-current="page" href="../home.html">Home</a>
+              <a class="nav-link text-white" aria-current="page" href="../home.html">Beranda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="../petunjuk.html">Petunjuk</a>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn text-white" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                style="background-color: #3e54ac;">
+                Petunjuk
+              </button>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">Petunjuk Penggunaan</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-black">
+                      <!-- <p class="fs-5 fw-bold">1. Halaman Beranda</p>
+                      <img src="../../img/petunjuk/petunjukpengerjaan.png" class="img-fluid" alt="..."> <br>
+                      <p class="fw-semibold text-start">Nomor (1) : Menampilkan nama pengguna, dan tombol untuk keluar
+                        dari media </p>
+                      <p class="fw-semibold text-start">Nomor (2) : Tombol untuk memulai pembelajaran</p>
+                      <p class="fw-semibold text-start">Nomor (3) : Menampilkan beranda petunjuk aplikasi dan informasi
+                        pengembang </p> -->
+                      <p class="fs-5 fw-bold">Halaman Materi</p>
+                      <img src="../../img/petunjuk/petunjukpengerjaan2.png" class="img-fluid" alt="..."> <br>
+                      <p class="fw-semibold text-start">Nomor (1) : Tombol yang berfungsi untuk memperkecil dan memperbesar tampilan daftar isi materi.</p>
+                      <p class="fw-semibold text-start">Nomor (2) : Menampilkan daftar isi materi.</p>
+                      <p class="fw-semibold text-start">Nomor (3) : Tombol untuk ke halaman selanjutnya dan sebelumnya. </p>
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Keluar</button>
+                      <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="../about.html">About</a>
+              <a class="nav-link text-white" href="../about.html">Tentang</a>
             </li>
           </ul>
         </div>
