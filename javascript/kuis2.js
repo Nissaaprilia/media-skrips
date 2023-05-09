@@ -25,17 +25,17 @@ const db = getDatabase();
 let userlink = document.getElementById("userlink");
 let nislink = document.getElementById("nislink");
 let kelaslink = document.getElementById("kelaslink");
-let sekolahlink = document.getElementById("sekolahlink");
+// let sekolahlink = document.getElementById("sekolahlink");
 
 let nama = sessionStorage.getItem("nama");
 let nisn = sessionStorage.getItem("nisn");
 let kelas = sessionStorage.getItem("kelas");
-let sekolah = sessionStorage.getItem("sekolah");
+// let sekolah = sessionStorage.getItem("sekolah");
 
 userlink.innerText = nama;
 nislink.innerText = nisn;
 kelaslink.innerText = kelas;
-sekolahlink.innerText = sekolah;
+// sekolahlink.innerText = sekolah;
 
 // Mulai Kuis
 let selanjutnya = document.querySelector("#masuk");
@@ -45,7 +45,7 @@ selanjutnya.addEventListener("click", function () {
   let nama = sessionStorage.getItem("nama");
   let nisn = sessionStorage.getItem("nisn");
   let kelas = sessionStorage.getItem("kelas");
-  let sekolah = sessionStorage.getItem("sekolah");
+  // let sekolah = sessionStorage.getItem("sekolah");
 
   if (nama == null) {
     Swal.fire({
@@ -293,7 +293,7 @@ dat.onreadystatechange = function () {
         console.log(nama);
         console.log(nisn);
         console.log(kelas);
-        console.log(sekolah);
+        // console.log(sekolah);
         console.log(hasilakhir);
         let waktunya = waktu();
         let harinya = hari();
@@ -309,8 +309,8 @@ dat.onreadystatechange = function () {
         let kelasget = document.querySelector(".kelas");
         kelasget.innerText = kelas;
 
-        let sekolahget = document.querySelector(".sekolah");
-        sekolahget.innerText = sekolah;
+        // let sekolahget = document.querySelector(".sekolah");
+        // sekolahget.innerText = sekolah;
 
         let hariget = document.querySelector(".hari");
         hariget.innerText = harinya;
