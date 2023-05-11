@@ -94,6 +94,7 @@ a {
   background-color: #2c266b;
   color: black !important;
   cursor: pointer;
+  border-radius: 20px;
 }
 
 .disabel {

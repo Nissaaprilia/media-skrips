@@ -65,6 +65,7 @@
 }
 .sidebar .nav-links li:hover {
   background: #655dbb;
+  border-radius: 20px;
 }
 .sidebar .nav-links li .iocn-link {
   display: flex;
@@ -223,7 +224,7 @@
   width: calc(100% - 78px);
 }
 .home-section .home-content {
-  height: 60px;
+  height: 90px;
   display: flex;
   align-items: center;
 }
@@ -414,6 +415,7 @@ header nav.navbar {
 .ke_aktif {
   background-color: #3e54ac;
   padding-top: 10px;
+  border-radius: 20px;
 }
 
 .ke:hover {
