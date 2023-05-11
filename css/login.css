@@ -28,19 +28,24 @@
 }
 
 body {
-  /* background-color: #655dbb; */
   background-image: url(../img/pendahuluan/cover2.png);
 }
 
 .container {
   position: relative;
-  width: 70vw;
-  height: 80vh;
-  background: #8899de;
+  width: 85vw;
+  height: 85vh;
+
+  background: #a8a3f2;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
 
   overflow-x: hidden;
   overflow-y: auto;
+  /* max-width: 400px; */
+  /* margin: 0 auto; */
+  /* padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px; */
   /* }
 .container::before {
   content: "";
@@ -60,7 +65,7 @@ body {
   height: 50px;
   background: #f0f0f0;
   margin: 10px 0;
-  border: 2px solid #3e54ac;
+  border: 2px solid #eff2fb;
   border-radius: 50px;
   display: flex;
   align-items: center;

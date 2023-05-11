@@ -26,7 +26,7 @@
       "b": "$\\frac{7}{18}$",
       "c": "$\\frac{5}{15}$",
       "d": " $\\frac{13}{18}$",
-      "benar": "a"
+      "benar": "d"
     }
   },
   {
@@ -71,7 +71,7 @@
   },
   {
     "soal7": {
-      "soal": "Berapakah hasil pecahan campuran $\\8\\frac{2}{7}$ jika diubah menjadi pecahan biasa?",
+      "soal": "Berapakah hasil pecahan campuran $8\\frac{2}{7}$ jika diubah menjadi pecahan biasa?",
       "a": "$\\frac{58}{7}$",
       "b": "$\\frac{35}{5}$",
       "c": "$\\frac{15}{4}$",
@@ -91,10 +91,10 @@
   },
   {
     "soal9": {
-      "soal": "Hasil dari $2\\frac{1}{2}$ + $\\frac{2}{5}$ = …",
-      "a": "$2\\frac{1}{14}$",
+      "soal": "Hasil dari $\\frac{7}{10}$ + $3\\frac{1}{4}$ = …",
+      "a": "$3\\frac{19}{20}$",
       "b": "$4\\frac{1}{14}$",
-      "c": "$2\\frac{1}{14}$",
+      "c": "$3\\frac{10}{14}$",
       "d": "$2\\frac{1}{14}$",
       "benar": "a"
     }
@@ -102,11 +102,11 @@
   {
     "soal10": {
       "soal": "Pengurangan berikut yang hasilnya $\\frac{6}{15}$ adalah …",
-      "a": "$\\frac{8}{15}$ - $\\frac{5}{15}$",
-      "b": "$\\frac{10}{15}$ - $\\frac{5}{15}$",
-      "c": "$\\frac{10}{15}$ - $\\frac{4}{15}$",
-      "d": "$\\frac{8}{15}$ - $\\frac{4}{15}$",
-      "benar": "c"
+      "a": "$\\frac{7}{15}$ - $\\frac{2}{15}$",
+      "b": "$\\frac{10}{12}$ - $\\frac{5}{12}$",
+      "c": "$\\frac{10}{15}$ - $\\frac{7}{15}$",
+      "d": "$\\frac{8}{12}$ - $\\frac{4}{12}$",
+      "benar": "a"
     }
   },
   {
@@ -122,10 +122,10 @@
   {
     "soal12": {
       "soal": "Hasil pengurangan dari $\\frac{3}{4}$ - $\\frac{3}{6}$ adalah …",
-      "a": "$\\frac{5}{12}$",
-      "b": "$\\frac{3}{10}$",
-      "c": "$\\frac{1}{12}$",
-      "d": "$\\frac{2}{12}$",
+      "a": "$\\frac{1}{4}$",
+      "b": "$\\frac{3}{7}$",
+      "c": "$\\frac{4}{12}$",
+      "d": "$\\frac{1}{12}$",
       "benar": "a"
     }
   },
@@ -141,10 +141,10 @@
   },
   {
     "soal14": {
-      "soal": "Ibu membeli minyak goreng $2\\frac{1}{4}$ Kemudian digunakan ibu untuk menggoreng ikan $\\frac{1}{4}$ Berapa liter minyak goreng yang sekarang ibu miliki ?",
+      "soal": "Ibu membeli minyak goreng $2\\frac{3}{4}$ Kemudian digunakan ibu untuk menggoreng ikan $\\frac{1}{4}$ Berapa liter minyak goreng yang sekarang ibu miliki ?",
       "a": "$2\\frac{1}{4}$",
-      "b": "$2\\frac{3}{4}$",
-      "c": "$3\\frac{1}{4}$",
+      "b": "$2\\frac{1}{2}$",
+      "c": "$3\\frac{1}{3}$",
       "d": "$3\\frac{3}{4}$",
       "benar": "b"
     }
@@ -161,10 +161,10 @@
   },
   {
     "soal16": {
-      "soal": "Pak Yanto mempunyai kayu $9\\frac{3}{4}$ m.kayu tersebut digunakan untuk membuat kurs $7\\frac{5}{5}$ kg. Sisa kayu yang dimiliki Pak Yanto adalah…",
+      "soal": "Pak Yanto mempunyai kayu $5\\frac{3}{4}$ m.kayu tersebut digunakan untuk membuat kurs $2\\frac{5}{6}$ kg. Sisa kayu yang dimiliki Pak Yanto adalah…",
       "a": "$2\\frac{3}{15}$",
-      "b": "$1\\frac{1}{15}$",
-      "c": "$2\\frac{3}{20}$",
+      "b": "$1\\frac{12}{15}$",
+      "c": "$2\\frac{11}{12}$",
       "d": "$1\\frac{1}{20}$",
       "benar": "c"
     }
