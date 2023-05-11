@@ -89,7 +89,8 @@
   </header> -->
   <div class="sidebar open">
     <div class="logo-details">
-      <i class="bx bx-menu"></i>
+      
+      <a href="../home.html"><i class="bx bx-home"></a></i>
       <span class="logo_name">Bilangan Pecahan</span>
     </div>
     <ul class="nav-links">
@@ -152,7 +153,7 @@
         <div class="profile-details">
           <div class="profile-content">
             <div id="signoutlink">
-              <a href="#" onclick="LogOut()"> <img src="../../img/user.png" /></a>
+              <a href="#" onclick="LogOut()"><i class="bi bi-person-circle"></i></a></i>
             </div>
             <div class="name-job">
               <div class="profile_name">
@@ -174,13 +175,18 @@
   </div>
 
   <section class="home-section">
-
-       <div class=" text-wrap p-2 mb-2 fw-bold fs-5 text-white text-center" style="background-color: #655dbb;" ;>Pendahuluan
+  
+    <div class="home-content">
+  
+      <i class="bx bx-menu"></i>
+      <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Pendahuluan
       </div>
-     
-    </div> 
-    <div class="konten shadow-lg col-9-5 ms-2">
-         <div class="card-body">
+ 
+    </div>
+    <div class="konten col-9-5 ms-2">
+      <div class="card lg p-3 mb-5 bg-white rounded">
+      
+        <div class="card-body">
           <div class="shadow-sm mt-1 collapse show" id="tujuan">
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
@@ -232,18 +238,17 @@
     </div>
     </div>
     </div>
-  </section> 
-  <<footer>
-       <nav aria-label="Page navigation example ">
+  </section>
+  <nav aria-label="Page navigation example ">
       <ul class="navigasi bawah pagination justify-content-center fixed-bottom">
         <li class="page-item"><a class="page-link" href="../index.html">Previous</a></li>
         <li class="page-item active"><a class="page-link" href="#">1</a></li>
         <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">2</a></li>
         <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">Next</a></li>
-        <li class="page-item"><a class="page-link" href="../../index.html">Previous</a></li> 
+        
       </ul>
     </nav>
-  </footer> -->
+
   <script>
     document.getElementById("btnpenjelasan").addEventListener("click", function () {
       document.getElementById("card2lanjut").style.display = "block";

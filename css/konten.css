@@ -386,7 +386,7 @@ header nav.navbar {
   /* height: 10%; */
   width: 100%;
   min-height: 400px;
-  max-height: 700px;
+  max-height: 520px;
   overflow-x: hidden;
   overflow-y: auto;
 }
