@@ -101,3 +101,31 @@ a {
   pointer-events: none;
   cursor: not-allowed;
 }
+/* 
+#content {
+  background-color: #ffffff;
+  height: 84vh;
+  overflow: scroll;
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+}
+
+section {
+  background-color: #655dbb;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all 0.5s;
+  margin-left: 0px;
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    transition: all 0.5s ease;
+    left: -285px;
+  }
+  section {
+    margin-left: 0px;
+  }
+} */
