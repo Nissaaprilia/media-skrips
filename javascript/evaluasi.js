@@ -24,17 +24,17 @@ const db = getDatabase();
 //reference
 let userlink = document.getElementById("userlink");
 let nislink = document.getElementById("nislink");
-let kelaslink = document.getElementById("kelaslink");
+// let kelaslink = document.getElementById("kelaslink");
 // let sekolahlink = document.getElementById("sekolahlink");
 
 let nama = sessionStorage.getItem("nama");
 let nisn = sessionStorage.getItem("nisn");
-let kelas = sessionStorage.getItem("kelas");
+// let kelas = sessionStorage.getItem("kelas");
 // let sekolah = sessionStorage.getItem("sekolah");
 
 userlink.innerText = nama;
 nislink.innerText = nisn;
-kelaslink.innerText = kelas;
+// kelaslink.innerText = kelas;
 // sekolahlink.innerText = sekolah;
 
 // Mulai Evaluasi
@@ -44,7 +44,7 @@ let datasiswa = document.querySelector("#k1");
 selanjutnya.addEventListener("click", function () {
   let nama = sessionStorage.getItem("nama");
   let nisn = sessionStorage.getItem("nisn");
-  let kelas = sessionStorage.getItem("kelas");
+  // let kelas = sessionStorage.getItem("kelas");
   // let sekolah = sessionStorage.getItem("sekolah");
 
   if (nama == null) {
@@ -292,13 +292,13 @@ dat.onreadystatechange = function () {
         // simpan kedatabase----------
         console.log(nama);
         console.log(nisn);
-        console.log(kelas);
+        // console.log(kelas);
         // console.log(sekolah);
         console.log(hasilakhir);
         let waktunya = waktu();
         let harinya = hari();
 
-        createTask(nama, nisn, kelas, hasilakhir, waktunya, harinya, new_jwb_urut);
+        createTask(nama, nisn, hasilakhir, waktunya, harinya, new_jwb_urut);
 
         let namaget = document.querySelector(".nama");
         namaget.innerText = nama;
@@ -306,8 +306,8 @@ dat.onreadystatechange = function () {
         let nisnget = document.querySelector(".nis");
         nisnget.innerText = nisn;
 
-        let kelasget = document.querySelector(".kelas");
-        kelasget.innerText = kelas;
+        // let kelasget = document.querySelector(".kelas");
+        // kelasget.innerText = kelas;
 
         // let sekolahget = document.querySelector(".sekolah");
         // sekolahget.innerText = sekolah;
@@ -401,14 +401,14 @@ function hari() {
 }
 
 // Firebase
-function createTask(nama, nisn, kelas, nilai, waktunya, hari, jwb) {
+function createTask(nama, nisn, nilai, waktunya, hari, jwb) {
   counter += 1;
   const db = getDatabase();
   set(ref(db, "evaluasi/" + counter), {
     id: counter,
     nama: nama,
     nisn: nisn,
-    kelas: kelas,
+    // kelas: kelas,
 
     nilai: nilai,
     waktu: waktunya,
