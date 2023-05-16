@@ -76,7 +76,8 @@
       </div>
     </nav>
     <!-- Akhir Sidebar -->
-       <section>
+      <!-- ======= About Section ======= -->
+    <section>
       <!-- Header -->
       <div id="header">
         <div class="username">
@@ -87,11 +88,11 @@
         </div>
       </div>
 
-    <!--  Container isi  -->
+      <!--  Container isi  -->
       <div class="container-fluid">
         <div class="isi">
           <div>
-            <center><h2>Hasil Kuis </h2></center>
+            <center><h2>Hasil Kuis dan Evaluasi</h2></center>
           </div>
           <center>
             <div class="card-title-md">
@@ -101,9 +102,9 @@
                   <label class="input-group-text" for="kelas">Kelas :</label>
                   <select id="kelas" class="form-select" name="kelas" aria-placeholder="-PILIH KELAS-">
                     <option value="0" selected="selected">Pilih Kelas</option>
-                    <option value="1">V A</option>
-                    <option value="2">V B</option>
-                    
+                    <option value="1">VIII A</option>
+                    <option value="2">VIII B</option>
+                    <option value="3">VIII C</option>
                   </select>
                 </div>
 
@@ -115,20 +116,27 @@
                     <option value="0" selected="selected">Pilih Hasil</option>
                     <option value="kuis1/">Kuis 1</option>
                     <option value="kuis2/">Kuis 2</option>
-                
+                    <option value="kuis3/">Kuis 3</option>
+                    <option value="kuis4/">Kuis 4</option>
+                    <option value="evaluasi/">Evaluasi</option>
                   </select>
                 </div>
                 &emsp;&emsp;
                 <div class="input-group-end mb-3">
                   <button type="button" class="btn btn-success" id="cari">Cari&nbsp;<i class="fas fa-search"></i></button>
                 </div>
+                &emsp;&emsp;
+                <div class="input-group-end mb-3">
+                  <!-- <button type="button" class="btn btn-success download" id="downloadData"><i class="fas fa-download"></i>Download</button> -->
+                  <!-- <a type="button" class="cari btn btn-primary download" onclick="downloadfile()"><i class="fas fa-download"></i>&nbsp;&nbsp;Download</a> -->
+                </div>
               </div>
             </div>
           </center>
 
           <div class="container">
-            <table class="table">
-              <thead class="tabel-success text-white" style="background-color: #3e54ac; font-size: 1.2em">
+            <table class="table" id="table_wrapper">
+              <thead class="tabel-success" style="background-color: #e2bc7e; font-size: 1.2em">
                 <tr>
                   <th>NAMA</th>
                   <th>NISN</th>
@@ -144,5 +152,7 @@
         </div>
       </div>
     </section>
+  </body>
+
   </body>
 </html>

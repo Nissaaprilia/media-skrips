@@ -58,8 +58,8 @@ getDataSiswa.then((users) => {
           <td>${users[user].kelas}</td>
           <td>${users[user].pass}</td>
           <td>
-          <button class="edit btn" data-bs-toggle="modal" data-bs-target="#edituser" title="Edit"><img src="/gambar/pencil.png" width="25px" alt="" /></button>
-          <button class="delete btn" title="Hapus"><img src="/gambar/bin.png" width="25px" alt="" /></button>
+          <button class="edit btn" data-bs-toggle="modal" data-bs-target="#edituser" title="Edit"><img src="/img/guruimg/pensil.png" width="25px" alt="" /></button>
+          <button class="delete btn" title="Hapus"><img src="/img/guruimg/sampah.png" width="25px" alt="" /></button>
           
           </td>
         </tr>
@@ -70,6 +70,7 @@ getDataSiswa.then((users) => {
 
   //Edit
   let editButtons = document.querySelectorAll(".edit");
+  let keluarButtons = document.querySelector(".keluar");
   editButtons.forEach((edit) => {
     edit.addEventListener("click", () => {
       document.querySelector(".update").classList.add("active");
@@ -98,7 +99,13 @@ getDataSiswa.then((users) => {
             });
             // alert('Data diperbarui');
             document.querySelector(".update").classList.remove("active");
-            updateform.reset();
+            updateform.fullname.value = snapshot.val().fullname;
+            updateform.nis.value = snapshot.val().nis;
+            updateform.kelas.value = snapshot.val().kelas;
+            // updateform.sekolah.value = snapshot.val().sekolah;
+            updateform.pass.value = snapshot.val().pass;
+
+            // updateform.reset();
             // window.location.reload();
           },
           (onRejected) => {
@@ -110,6 +117,9 @@ getDataSiswa.then((users) => {
           }
         );
       });
+    });
+    keluarButtons.addEventListener("click", () => {
+      window.location.reload();
     });
   });
 
