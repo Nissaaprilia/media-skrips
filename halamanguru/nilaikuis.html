@@ -21,8 +21,9 @@
     <link rel="stylesheet" href="../css/halguruisi.css" />
 
     <!-- Javascript -->
-    <!-- <script type="module" src="../halamanguru/jsguru/guru.js"></script> -->
-    <!-- <script type="module" src="../halamanguru/jsguru/kelolasiswa.js"></script> -->
+
+    <script type="module" src="../halamanguru/jsguru/akunguru.js"></script>
+    <script type="module" src="../halamanguru/jsguru/datasiswa.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -69,7 +70,7 @@
             </li>
 
             <li>
-              <a href="../html/login/loginguru.html"><i class="fa-solid fa-house"></i>&nbsp;Logout</a>
+              <a href="./loginguru.html"><i class="fa-solid fa-house"></i>&nbsp;Logout</a>
             </li>
           </ul>
         </div>
@@ -82,7 +83,7 @@
       <div id="header">
         <div class="username">
           <span>
-            <img src="/gambar/id-card.png" width="50px" alt="" />
+            <img src="/img/guruimg/idcard.png" width="50px" alt="" />
           </span>
           <span><div id="userguru"></div></span>
         </div>
@@ -92,7 +93,7 @@
       <div class="container-fluid">
         <div class="isi">
           <div>
-            <center><h2>Hasil Kuis dan Evaluasi</h2></center>
+            <center><h2>Hasil Kuis </h2></center>
           </div>
           <center>
             <div class="card-title-md">
@@ -102,9 +103,9 @@
                   <label class="input-group-text" for="kelas">Kelas :</label>
                   <select id="kelas" class="form-select" name="kelas" aria-placeholder="-PILIH KELAS-">
                     <option value="0" selected="selected">Pilih Kelas</option>
-                    <option value="1">VIII A</option>
-                    <option value="2">VIII B</option>
-                    <option value="3">VIII C</option>
+                    <option value="1">V (A)</option>
+                    <option value="2">V (B)</option>
+                    <!-- <option value="3">VIII C</option> -->
                   </select>
                 </div>
 
@@ -116,9 +117,7 @@
                     <option value="0" selected="selected">Pilih Hasil</option>
                     <option value="kuis1/">Kuis 1</option>
                     <option value="kuis2/">Kuis 2</option>
-                    <option value="kuis3/">Kuis 3</option>
-                    <option value="kuis4/">Kuis 4</option>
-                    <option value="evaluasi/">Evaluasi</option>
+                   
                   </select>
                 </div>
                 &emsp;&emsp;
@@ -136,7 +135,7 @@
 
           <div class="container">
             <table class="table" id="table_wrapper">
-              <thead class="tabel-success" style="background-color: #e2bc7e; font-size: 1.2em">
+              <thead class="tabel-success text-white" style="background-color: #3e54ac; font-size: 1.2em">
                 <tr>
                   <th>NAMA</th>
                   <th>NISN</th>
@@ -148,6 +147,7 @@
               </thead>
               <tbody id="tbody1"></tbody>
             </table>
+            
           </div>
         </div>
       </div>

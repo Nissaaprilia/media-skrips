@@ -40,13 +40,9 @@ cari.addEventListener("click", function () {
   var task = ref(db, datahasil);
   tmp.innerHTML = "";
   if (kelas.value == "1") {
-    kelasfix = "VIII A";
+    kelasfix = "V (A)";
   }
-  // if (sekolah.value == '3') {
-  //   sekolahfix = 'SMPN 1';
-  // } else if (sekolah.value == '4') {
-  //   sekolahfix = 'SMPN 2';
-  // }
+
   if (kelasfix != "") {
     //&& sekolahfix != ''
     onChildAdded(task, (data) => {

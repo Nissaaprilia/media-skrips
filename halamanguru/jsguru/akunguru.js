@@ -2,7 +2,7 @@ let userguru = document.getElementById("userguru");
 let logoutguru = document.getElementById("logoutguru");
 let nama = sessionStorage.getItem("nama");
 var currentUser = null;
-
+let nip = sessionStorage.getItem("nip");
 // Function;
 function getName() {
   if (nama == null) {
