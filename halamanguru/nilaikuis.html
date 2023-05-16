@@ -18,10 +18,10 @@
 
     <!-- My CSS -->
     <link rel="stylesheet" href="../css/halguru.css" />
-    <!-- <link rel="stylesheet" href="../css/konten.css" /> -->
+    <link rel="stylesheet" href="../css/halguruisi.css" />
 
     <!-- Javascript -->
-    <script type="module" src="../halamanguru/jsguru/guru.js"></script>
+    <!-- <script type="module" src="../halamanguru/jsguru/guru.js"></script> -->
     <!-- <script type="module" src="../halamanguru/jsguru/kelolasiswa.js"></script> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
@@ -57,7 +57,7 @@
         <div class="scrollbox-inner">
           <ul style="padding: 0">
             <li>
-              <a  href="#"><i class="fa-solid fa-book-bookmark"></i>&nbsp;Data Siswa</a>
+              <a  href="../halamanguru/datasiswa.html"><i class="fa-solid fa-book-bookmark"></i>&nbsp;Data Siswa</a>
             </li>
 
             <li>
@@ -76,8 +76,7 @@
       </div>
     </nav>
     <!-- Akhir Sidebar -->
-
-    <section>
+       <section>
       <!-- Header -->
       <div id="header">
         <div class="username">
@@ -88,160 +87,59 @@
         </div>
       </div>
 
-      <!--  Container isi  -->
-      <div class="content container-fluid">
-        <!-- <div class="section-title">
-          <h2>Data Siswa</h2>
-        </div>
-        <h4>Silahkan pilih kelas untuk menampilkan data kelas yang ingin Anda lihat!</h4> -->
+    <!--  Container isi  -->
+      <div class="container-fluid">
         <div class="isi">
-          <div class="isitabel">
-            <div class="table-wrapper">
-              <div class="table-title">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <h2>Data Siswa</h2>
-                  </div>
-                  <div class="col-sm-6">
-                    <a href="#adduser" class="btn btn-success text-white" data-bs-toggle="modal"><i class="fa-solid fa-user-plus"></i> <span>Tambah Akun</span></a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12">
-                    <div class="form-group"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="table-responsive">
-                <table id="example" class="table table-striped" style="width: 100%">
-                  <thead>
-                    <tr>
-                      <!-- kda tepakai
-                      <th>
-                        <span class="custom-checkbox">
-                          <input type="checkbox" id="selectAll" />
-                          <label for="selectAll"></label>
-                        </span>
-                      </th> -->
-                      <th>Nama</th>
-                      <th>NIS</th>
-                      <th>Kelas</th>
-                      <!-- <th>Sekolah</th> -->
-                      <th>Password</th>
-                      <th>Aksi</th>
-                    </tr>
-                  </thead>
-                  <tbody id="tbody">
-                    <tr id="data-id"></tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-
-            <!-- Jumlah List -->
-            <div class="clearfix">
-              <div class="hint-text">Total of <b class="count">0</b> entries</div>
-              <!-- <ul class="pagination">
-              <li class="page-item"><a href="#" id="js-previous" class="page-link">Previous</a></li>
-              <li class="page-item"><a href="#" id="js-next" class="page-link">Next</a></li>
-            </ul> -->
-            </div>
+          <div>
+            <center><h2>Hasil Kuis </h2></center>
           </div>
-
-          <!-- Add Modal HTML -->
-          <div class="modal fade" id="adduser" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title fw-bold" id="exampleModalLabel">TAMBAH DATA SISWA</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <center>
+            <div class="card-title-md">
+              <div class="input-group py-3">
+                &emsp;
+                <div class="input-group mb-3 w-25">
+                  <label class="input-group-text" for="kelas">Kelas :</label>
+                  <select id="kelas" class="form-select" name="kelas" aria-placeholder="-PILIH KELAS-">
+                    <option value="0" selected="selected">Pilih Kelas</option>
+                    <option value="1">V A</option>
+                    <option value="2">V B</option>
+                    
+                  </select>
                 </div>
-                <div class="modal-body">
-                  <div class="popup add">
-                    <form action="">
-                      <input type="text" placeholder="Nama Siswa" name="fullname" class="form-control mb-3" />
-                      <input type="text" placeholder="NISN" name="nis" class="form-control mb-3" />
-                      <select id="kelas" class="form-select mb-3" name="kelas" aria-placeholder="Pilih Kelas">
-                        <option selected>Pilih Kelas</option>
-                        <option value="VIII A">VIII A</option>
-                        <option value="VIII B">VIII B</option>
-                        <option value="VIII C">VIII C</option>
-                      </select>
-                      <!-- <select id="sekolah" class="form-select mb-3" name="sekolah" aria-placeholder="Pilih Sekolah">
-                        <option selected>Pilih Sekolah</option>
-                        <option value="SMPN 1">SMPN 1</option>
-                        <option value="SMPN 2">SMPN 2</option>
-                      </select> -->
-                      <input type="password" placeholder="Password" name="pass" class="form-control mb-3" />
 
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                      </div>
-                    </form>
-                  </div>
+                &emsp;&emsp;
+
+                <div class="input-group mb-3 w-25">
+                  <label class="input-group-text" for="hasil">Hasil :</label>
+                  <select id="kuis" class="form-select" name="kuis" aria-placeholder="-PILIH HASIL-">
+                    <option value="0" selected="selected">Pilih Hasil</option>
+                    <option value="kuis1/">Kuis 1</option>
+                    <option value="kuis2/">Kuis 2</option>
+                
+                  </select>
+                </div>
+                &emsp;&emsp;
+                <div class="input-group-end mb-3">
+                  <button type="button" class="btn btn-success" id="cari">Cari&nbsp;<i class="fas fa-search"></i></button>
                 </div>
               </div>
             </div>
-          </div>
+          </center>
 
-          <!-- Edit Modal HTML -->
-          <div id="edituser" class="modal fade" data-backdrop="static" data-keyboard="false">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title">Add Employee</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="popup update">
-                    <form action="">
-                      <input type="text" placeholder="Nama Siswa" name="fullname" class="form-control mb-3" />
-                      <input type="text" placeholder="NISN" name="nis" class="form-control mb-3" disabled aria-label="Close" />
-                      <select id="kelas" class="form-select mb-3" name="kelas" aria-placeholder="Pilih Kelas">
-                        <option selected>Pilih Kelas</option>
-                        <option value="VIII A">VIII A</option>
-                        <option value="VIII B">VIII B</option>
-                        <option value="VIII C">VIII C</option>
-                      </select>
-                      <!-- <select id="sekolah" class="form-select mb-3" name="sekolah" aria-placeholder="Pilih Sekolah">
-                        <option selected>Pilih Sekolah</option>
-                        <option value="SMPN 1">SMPN 1</option>
-                        <option value="SMPN 2">SMPN 2</option>
-                      </select> -->
-                      <input type="password" placeholder="Password" name="pass" class="form-control mb-3" />
-
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="submit" id="submit2" class="btn btn-primary">Submit</button>
-                      </div>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Delete Modal HTML -->
-          <div class="modal fade" id="deleteuser" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <form id="delete-employee-form">
-                  <div class="modal-header">
-                    <h4 class="modal-title">Delete Employee</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    <p>Are you sure you want to delete ?</p>
-                    <p class="text-warning"><small>This action cannot be undone.</small></p>
-                  </div>
-                  <div class="modal-footer">
-                    <input type="button" class="btn btn-default" data-bs-dismiss="modal" value="Cancel" />
-                    <input type="submit" class="btn btn-danger" value="Delete" />
-                  </div>
-                </form>
-              </div>
-            </div>
+          <div class="container">
+            <table class="table">
+              <thead class="tabel-success text-white" style="background-color: #3e54ac; font-size: 1.2em">
+                <tr>
+                  <th>NAMA</th>
+                  <th>NISN</th>
+                  <th>KELAS</th>
+                  <th>SKOR</th>
+                  <th>WAKTU SELESAI</th>
+                  <th>HARI/TANGGAL</th>
+                </tr>
+              </thead>
+              <tbody id="tbody1"></tbody>
+            </table>
           </div>
         </div>
       </div>

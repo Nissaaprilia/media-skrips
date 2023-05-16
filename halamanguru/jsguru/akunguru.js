@@ -1,11 +1,11 @@
 let userguru = document.getElementById("userguru");
 let logoutguru = document.getElementById("logoutguru");
-let nameg = sessionStorage.getItem("nameg");
+let nama = sessionStorage.getItem("nama");
 var currentUser = null;
 
 // Function;
 function getName() {
-  if (nameg == null) {
+  if (nama == null) {
     Swal.fire({
       icon: "info",
       title: "Silahkan Login Terlebih Dahulu",
@@ -16,7 +16,7 @@ function getName() {
     // alert('Silahkan Login Terlebih Dahulu');
     // window.location = './loginguru.html';
   } else {
-    userguru.innerText = nameg;
+    userguru.innerText = nama;
   }
 }
 
@@ -24,7 +24,7 @@ getName();
 
 function Signout() {
   // logoutguru.href = '../index.html';
-  sessionStorage.removeItem("nameg");
+  sessionStorage.removeItem("nama");
   window.location = "../../loginguru.html";
 }
 
@@ -35,7 +35,7 @@ window.onload = function () {
   if (currentUser == null) {
     logoutguru.href = "../../loginguru.html";
   } else {
-    userguru.innerText = currentUser.nameg;
+    userguru.innerText = currentUser.nama;
     logoutguru.innerText = "Logout";
   }
 };
