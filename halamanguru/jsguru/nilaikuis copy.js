@@ -41,9 +41,6 @@ cari.addEventListener("click", function () {
   if (kelas.value == "1") {
     kelasfix = "V (A)";
   }
-  // if (kelas.value == "2") {
-  //   kelasfix = "V (B)";
-  // }
   // if (sekolah.value == '3') {
   //   sekolahfix = 'SMPN 1';
   // } else if (sekolah.value == '4') {

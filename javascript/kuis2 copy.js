@@ -17,10 +17,10 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-import { getDatabase, ref, set, child, get, onValue } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+import { getDatabase, ref, set, child, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
 const db = getDatabase();
-const kkmRef = ref(db, "kkm/1");
+const kkmRef = ref(db, "kkm/2");
 
 //reference
 let userlink = document.getElementById("userlink");
@@ -291,8 +291,6 @@ dat.onreadystatechange = function () {
         }
 
         // simpan kedatabase----------
-        console.log();
-        // hasilakhir = 90;
         console.log(nama);
         console.log(nisn);
         console.log(kelas);
@@ -322,10 +320,9 @@ dat.onreadystatechange = function () {
         waktuget.innerText = waktunya;
 
         let hasillget = document.querySelector(".hasill");
-        // hasillget.innerText = hasilakhir;
         hasillget.textContent = hasilakhir;
         const db = getDatabase();
-        onValue(ref(db, "kkm/1"), (snapshot) => {
+        onValue(ref(db, "kkm/2"), (snapshot) => {
           const kkm = snapshot.val().kkm;
 
           let keterangan = "Tidak lulus";
@@ -351,7 +348,11 @@ dat.onreadystatechange = function () {
         datanya.className = datanya.className.replace("hilang", "");
 
         // if (hasilakhir < 60) {
+        //   let ulang = document.getElementById("ulang");
+        //   ulang.className = ulang.className.replace("hilang", "");
         // } else {
+        //   let materi = document.getElementById("materi");
+        //   materi.className = materi.className.replace("hilang", "");
         // }
       } else {
         Swal.fire({
@@ -363,17 +364,17 @@ dat.onreadystatechange = function () {
       }
 
       //nilai disimpan ke local storage
-      localStorage.setItem("skkuis1", hasilakhir);
-      sessionStorage.setItem("skkuis1", hasilakhir);
+      localStorage.setItem("skkuis2", hasilakhir);
+      sessionStorage.setItem("skkuis2", hasilakhir);
       // console.log(localStorage);
     });
-    //   if (hasilakhir > 60) {
-    //     localStorage.setItem("skkuis1", 1);
-    //   }
+    // if (hassilakhir > 60) {
+    //   localStorage.setItem("skkuis2", 1);
+    // }
   }
 };
 //pemanggilan soal json
-dat.open("GET", "kuis1.json", true);
+dat.open("GET", "kuis2.json", true);
 dat.send();
 
 // $(document).ready(function () {
@@ -420,7 +421,7 @@ function hari() {
 function createTask(nama, nisn, kelas, nilai, waktunya, hari, jwb) {
   counter += 1;
   const db = getDatabase();
-  set(ref(db, "kuis1/" + counter), {
+  set(ref(db, "kuis2/" + counter), {
     id: counter,
     nama: nama,
     nisn: nisn,
