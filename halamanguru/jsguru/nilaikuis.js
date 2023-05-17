@@ -77,51 +77,51 @@ cari.addEventListener("click", function () {
 });
 
 // download data
-// downloadData.addEventListener("click", function () {
-//   if (kelas.value == "1") {
-//     kelasfix = "V (A) ";
-//   } else if (kelas.value == "2") {
-//     kelasfix = "V (B)";
-//   }
+downloadData.addEventListener("click", function () {
+  if (kelas.value == "1") {
+    kelasfix = "V (A) ";
+  } else if (kelas.value == "2") {
+    kelasfix = "V (B)";
+  }
 
-//   document.querySelector(".download");
-//   // download.addEventListener('click', function () {
-//   var data_type = "data:application/vnd.ms-excel";
-//   var table_div = document.getElementById("table_wrapper");
+  //   document.querySelector(".download");
+  //   // download.addEventListener('click', function () {
+  //   var data_type = "data:application/vnd.ms-excel";
+  //   var table_div = document.getElementById("table_wrapper");
 
-//   if (table_div.rows.length == 0) {
-//     $("#ModalDownload").modal("show");
-//   } else {
-//     var table_html = table_div.outerHTML.replace(/ /g, "%20");
+  //   if (table_div.rows.length == 0) {
+  //     $("#ModalDownload").modal("show");
+  //   } else {
+  //     var table_html = table_div.outerHTML.replace(/ /g, "%20");
 
-//     var a = document.createElement("a");
-//     a.href = data_type + ", " + table_html;
-//     a.download = `Nilai_${kelasfix}.xls`;
-//     a.click();
-//   }
-// });
-// function downloadfile() {
-//   if (kelas.value == '1') {
-//     kelasfix = 'VIII A';
-//   } else if (kelas.value == '2') {
-//     kelasfix = 'VIII B';
-//   } else if (kelas.value == '3') {
-//     kelasfix = 'VIII C';
-//   }
+  //     var a = document.createElement("a");
+  //     a.href = data_type + ", " + table_html;
+  //     a.download = `Nilai_${kelasfix}.xls`;
+  //     a.click();
+  //   }
+  // });
+  // function downloadfile() {
+  //   if (kelas.value == '1') {
+  //     kelasfix = 'VIII A';
+  //   } else if (kelas.value == '2') {
+  //     kelasfix = 'VIII B';
+  //   } else if (kelas.value == '3') {
+  //     kelasfix = 'VIII C';
+  //   }
 
-//   document.querySelector('.download');
-//   // download.addEventListener('click', function () {
-//   var data_type = 'data:application/vnd.ms-excel';
-//   var table_div = document.getElementById('table_wrapper');
+  //   document.querySelector('.download');
+  //   // download.addEventListener('click', function () {
+  //   var data_type = 'data:application/vnd.ms-excel';
+  //   var table_div = document.getElementById('table_wrapper');
 
-//   if (table_div.rows.length <= 1) {
-//     $('#ModalDownload').modal('show');
-//   } else {
-//     var table_html = table_div.outerHTML.replace(/ /g, '%20');
+  //   if (table_div.rows.length <= 1) {
+  //     $('#ModalDownload').modal('show');
+  //   } else {
+  //     var table_html = table_div.outerHTML.replace(/ /g, '%20');
 
-//     var a = document.createElement('a');
-//     a.href = data_type + ', ' + table_html;
-//     a.download = `Nilai_${kelasfix}.xls`;
-//     a.click();
-//   }
-// }
+  //     var a = document.createElement('a');
+  //     a.href = data_type + ', ' + table_html;
+  //     a.download = `Nilai_${kelasfix}.xls`;
+  //     a.click();
+  // }
+});

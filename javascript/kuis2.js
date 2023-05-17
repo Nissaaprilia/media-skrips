@@ -20,7 +20,7 @@ const app = initializeApp(firebaseConfig);
 import { getDatabase, ref, set, child, get, onValue } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
 const db = getDatabase();
-const kkmRef = ref(db, "kkm/1");
+const kkmRef = ref(db, "kkm/2");
 
 //reference
 let userlink = document.getElementById("userlink");
