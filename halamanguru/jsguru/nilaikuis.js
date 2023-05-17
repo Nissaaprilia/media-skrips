@@ -13,11 +13,10 @@ const firebaseConfig = {
   messagingSenderId: "823212877497",
   appId: "1:823212877497:web:676370d0e7d17ba7489d68",
 };
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-import { getDatabase, ref, set, child, get } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
+import { getDatabase, ref, set, child, get, onValue, remove, update, onChildAdded } from "https://www.gstatic.com/firebasejs/9.19.1/firebase-database.js";
 
 const db = getDatabase();
 
@@ -42,7 +41,11 @@ cari.addEventListener("click", function () {
   if (kelas.value == "1") {
     kelasfix = "V (A)";
   }
-
+  // if (sekolah.value == '3') {
+  //   sekolahfix = 'SMPN 1';
+  // } else if (sekolah.value == '4') {
+  //   sekolahfix = 'SMPN 2';
+  // }
   if (kelasfix != "") {
     //&& sekolahfix != ''
     onChildAdded(task, (data) => {
@@ -54,7 +57,7 @@ cari.addEventListener("click", function () {
         //&& sekolahfix == taskvalue.sekolah
         tmp.innerHTML += `<tr>
               <td>${taskvalue.nama}</td>
-              <td>${taskvalue.nis}</td>
+              <td>${taskvalue.nisn}</td>
               <td>${taskvalue.kelas}</td>
               
               <td>${taskvalue.nilai}</td>
@@ -70,70 +73,52 @@ cari.addEventListener("click", function () {
   }
 });
 
-// window.onload = function () {
-// kelas = document.getElementById('kelas');
-// // sekolah = document.getElementById('sekolah');
-// kuis = document.getElementById('kuis');
-// kelas.value = value = "0";
-// // sekolah.value = value = "0";
-// // kuis.value = value = "kuis1/";
+// download data
+// downloadData.addEventListener("click", function () {
+//   if (kelas.value == "1") {
+//     kelasfix = "V (A) ";
+//   } else if (kelas.value == "2") {
+//     kelasfix = "V (B)";
+//   }
+
+//   document.querySelector(".download");
+//   // download.addEventListener('click', function () {
+//   var data_type = "data:application/vnd.ms-excel";
+//   var table_div = document.getElementById("table_wrapper");
+
+//   if (table_div.rows.length == 0) {
+//     $("#ModalDownload").modal("show");
+//   } else {
+//     var table_html = table_div.outerHTML.replace(/ /g, "%20");
+
+//     var a = document.createElement("a");
+//     a.href = data_type + ", " + table_html;
+//     a.download = `Nilai_${kelasfix}.xls`;
+//     a.click();
+//   }
+// });
+// function downloadfile() {
+//   if (kelas.value == '1') {
+//     kelasfix = 'VIII A';
+//   } else if (kelas.value == '2') {
+//     kelasfix = 'VIII B';
+//   } else if (kelas.value == '3') {
+//     kelasfix = 'VIII C';
+//   }
+
+//   document.querySelector('.download');
+//   // download.addEventListener('click', function () {
+//   var data_type = 'data:application/vnd.ms-excel';
+//   var table_div = document.getElementById('table_wrapper');
+
+//   if (table_div.rows.length <= 1) {
+//     $('#ModalDownload').modal('show');
+//   } else {
+//     var table_html = table_div.outerHTML.replace(/ /g, '%20');
+
+//     var a = document.createElement('a');
+//     a.href = data_type + ', ' + table_html;
+//     a.download = `Nilai_${kelasfix}.xls`;
+//     a.click();
+//   }
 // }
-
-// //FILLING THE TABLE
-// var Nosis = 0;
-// var tbody = document.getElementById('tbody1');
-
-// function AddItemToTable(nama,nis,kelas,sekolah,nilai,waktu,hari){
-//     var tr = document.createElement("tr");
-//     var td1 = document.createElement('td');
-//     var td2 = document.createElement('td');
-//     var td3 = document.createElement('td');
-//     var td4 = document.createElement('td');
-//     var td5 = document.createElement('td');
-//     var td6 = document.createElement('td');
-//     var td7 = document.createElement('td');
-//     var td8 = document.createElement('td');
-
-//     td1.innerHTML= ++Nosis;
-//     td2.innerHTML= nama;
-//     td3.innerHTML= nis;
-//     td4.innerHTML= kelas;
-//     td5.innerHTML= sekolah;
-//     td6.innerHTML= nilai;
-//     td7.innerHTML= waktu;
-//     td8.innerHTML= hari;
-
-//     tr.appendChild(td1);
-//     tr.appendChild(td2);
-//     tr.appendChild(td3);
-//     tr.appendChild(td4);
-//     tr.appendChild(td5);
-//     tr.appendChild(td6);
-//     tr.appendChild(td7);
-//     tr.appendChild(td8);
-
-//     tbody.appendChild(tr);
-// }
-
-// function AddAllItemsToTable(hasil){
-//     Nosis = 0;
-//     tbody.innerHTML = "";
-//     hasil.forEach(element =>{
-//         AddItemToTable(element.nama, element.nis, element.kelas, element.sekolah, element.nilai, element.waktu, element.hari)
-//     });
-// }
-
-// function GetAllDataRealtime(){
-//     const dbRef = ref(db, "kuis1");
-
-//     onValue(dbRef,(snapshot)=>{
-//         var hasil = [];
-
-//         snapshot.forEach(childSnapshot =>{
-//             hasil.push(childSnapshot.val());
-//         });
-//         AddAllItemsToTable(hasil);
-//     });
-// }
-
-// window.onload = GetAllDataRealtime;

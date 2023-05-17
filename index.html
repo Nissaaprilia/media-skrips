@@ -38,7 +38,7 @@
     <div class="row align-items-center gx-lg-5  mb-5">
       <div class="col-lg-6 mb-5 mb-lg-0 " style="z-index: 10">
           <center>
-            <img src="./img/pendahuluan/animasi.png" width="80%" />
+            <img src="./img/pendahuluan/logsis.png" width="80%" />
           </center>
         <!-- <h2 class="display-5 fw-bold ls-tight" style="color: hsl(0, 0%, 93%)">
           Penjumlahan dan Pengurangan <br />
@@ -108,12 +108,14 @@
         if (snapshot.exists()) {
           let dbnama = snapshot.val().fullname;
           let dbnisn = snapshot.val().nisn;
+          let dbkelas = snapshot.val().kelas;
 
           let dbpass = snapshot.val().pass;
 
           if (dbnisn == nisn.value && dbpass == pass.value) {
             sessionStorage.setItem("nama", dbnama);
             sessionStorage.setItem("nisn", dbnisn);
+            sessionStorage.setItem("kelas", dbkelas);
 
             Swal.fire({
               icon: "success",

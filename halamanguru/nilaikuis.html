@@ -1,95 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Penjumlahan dan Pengurangan Bilangan Pecahan</title>
 
-    <!-- Boxiocns CDN Link -->
-    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-    <!-- Matjax -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Penjumlahan dan Pengurangan Bilangan Pecahan</title>
 
-    <!-- Bootstrap Icon-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- Boxiocns CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Matjax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="../css/halguru.css" />
-    <link rel="stylesheet" href="../css/halguruisi.css" />
+  <!-- Bootstrap Icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
-    <!-- Javascript -->
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../css/halguru.css" />
+  <link rel="stylesheet" href="../css/halguruisi.css" />
 
-    <script type="module" src="../halamanguru/jsguru/akunguru.js"></script>
-    <script type="module" src="../halamanguru/jsguru/datasiswa.js"></script>
+  <!-- Javascript -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- <script type="module" src="../halamanguru/jsguru/akunguru.js"></script> -->
+  <!-- <script type="module" src="../halamanguru/jsguru/datasiswa.js"></script> -->
+ 
+  <!-- <script type="module" src="../halamanguru/jsguru/print.js"></script>
+    <script type="module" src="../halamanguru/jsguru/filterkelas.js"></script> -->
 
-      <!-- ALert -->
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!-- ALert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
 
 
-  <!-- JS Tables -->
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+<!-- JS Tables -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
 
-  <!-- CSS Tables -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
+<!-- CSS Tables -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" />
 
-  </head>
+</head>
 
-  <body style="display: flex; flex-direction: column">
-    <input type="checkbox" id="check" />
-    <label for="check">
-      <i class="fas fa-bars" id="btn"></i>
-      <i class="fas fa-times" id="cancel"></i>
-    </label>
+<body style="display: flex; flex-direction: column">
+  <input type="checkbox" id="check" />
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
 
-    <!-- Sidebar-->
-    <nav class="sidebar">
-      <header><b>ADMIN GURU</b></header>
-      <div class="scrollbox">
-        <div class="scrollbox-inner">
-          <ul style="padding: 0">
-            <li>
-              <a  href="../halamanguru/datasiswa.html"><i class="fa-solid fa-book-bookmark"></i>&nbsp;Data Siswa</a>
-            </li>
+  <!-- Sidebar-->
+  <nav class="sidebar">
+    <header><b>ADMIN GURU</b></header>
+    <div class="scrollbox">
+      <div class="scrollbox-inner">
+        <ul style="padding: 0">
+          <li>
+            <a href="../halamanguru/datasiswa.html"><i class="fa-solid fa-book-bookmark"></i>&nbsp;Data Siswa</a>
+          </li>
 
-            <li>
-              <a class="active" href="#"><i class="bi bi-clipboard2-check-fill"></i>&nbsp;Nilai Kuis</a>
-            </li>
+          <li>
+            <a class="active" href="#"><i class="bi bi-clipboard2-check-fill"></i>&nbsp;Nilai Kuis</a>
+          </li>
 
-            <li>
-              <a  href="../halamanguru/nilaievaluasi.html"><i class="bi bi-clipboard2-check-fill"></i>&nbsp;Nilai Evaluasi</a>
-            </li>
+          <li>
+            <a href="../halamanguru/nilaievaluasi.html"><i class="bi bi-clipboard2-check-fill"></i>&nbsp;Nilai
+              Evaluasi</a>
+          </li>
 
-            <li>
-              <a href="./loginguru.html"><i class="fa-solid fa-house"></i>&nbsp;Logout</a>
-            </li>
-          </ul>
-        </div>
+          <li>
+            <a href="./loginguru.html"><i class="fa-solid fa-house"></i>&nbsp;Logout</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- Akhir Sidebar -->
-      <!-- ======= About Section ======= -->
-    <section>
-      <!-- Header -->
-      <div id="header">
-        <div class="username">
-          <span>
-            <img src="/img/guruimg/idcard.png" width="50px" alt="" />
-          </span>
-          <span><div id="userguru"></div></span>
-        </div>
+    </div>
+  </nav>
+  <!-- Akhir Sidebar -->
+  <!-- ======= About Section ======= -->
+  <section>
+    <!-- Header -->
+    <div id="header">
+      <div class="username">
+        <span>
+          <img src="/img/guruimg/idcard.png" width="50px" alt="" />
+        </span>
+        <span>
+          <div id="userguru"></div>
+        </span>
       </div>
+    </div>
 
-      <!--  Container isi  -->
+       <!--  Container isi  -->
       <div class="container-fluid">
         <div class="isi">
           <div>
@@ -118,11 +128,12 @@
                     <option value="kuis1/">Kuis 1</option>
                     <option value="kuis2/">Kuis 2</option>
                    
+                   
                   </select>
                 </div>
                 &emsp;&emsp;
                 <div class="input-group-end mb-3">
-                  <button type="button" class="btn btn-success" id="cari">Cari&nbsp;<i class="fas fa-search"></i></button>
+                  <button type="button" class="btn btn-success cari" id="cari">Cari&nbsp;<i class="fas fa-search"></i></button>
                 </div>
                 &emsp;&emsp;
                 <div class="input-group-end mb-3">
@@ -151,8 +162,10 @@
           </div>
         </div>
       </div>
-    </section>
-  </body>
 
-  </body>
+  </section>
+
+
+</body>
+ <script type="module" src="../halamanguru/jsguru/nilaikuis.js"></script>
 </html>
