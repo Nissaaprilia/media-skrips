@@ -34,12 +34,17 @@ let cek11 = 0;
 let cari = document.querySelector("#cari");
 // datahasil = soalnya.value;
 cari.addEventListener("click", function () {
-  let datahasil = soal.value;
+  let datahasil = evaluasi.value;
   // console.log(datahasil);
   var task = ref(db, datahasil);
   tmp.innerHTML = "";
+
   if (kelas.value == "1") {
     kelasfix = "V (A)";
+  } else if (kelas.value == "2") {
+    kelasfix = "V (B)";
+  } else {
+    // Jika nilai kelas tidak sama dengan "1" atau "2", tambahkan logika lainnya di sini.
   }
   // if (kelas.value == "2") {
   //   kelasfix = "V (B)";
