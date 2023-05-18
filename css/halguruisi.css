@@ -5,3 +5,17 @@
   height: 500px;
   padding: 20px;
 }
+
+#table_container {
+  height: 300px; /* Atur tinggi container tabel sesuai kebutuhan */
+  overflow-y: scroll; /* Aktifkan overflow-y untuk menampilkan scrollbar jika konten melebihi tinggi container */
+}
+
+#table_wrapper {
+  width: 100%; /* Atur lebar tabel sesuai kebutuhan */
+  table-layout: fixed; /* Tetapkan lebar kolom tabel agar tidak bergeser */
+}
+
+#table_wrapper thead th {
+  white-space: nowrap; /* Hindari pemisahan teks dalam header kolom */
+}

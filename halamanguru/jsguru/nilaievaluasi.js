@@ -61,7 +61,7 @@ cari.addEventListener("click", function () {
         tmp.innerHTML += `<tr>
               <td>${taskvalue.nama}</td>
               <td>${taskvalue.nisn}</td>
-              <td>${taskvalue.kelas}</td>8
+              <td>${taskvalue.kelas}</td>
               
               <td>${taskvalue.nilai}</td>
               <td>${taskvalue.waktu}</td>

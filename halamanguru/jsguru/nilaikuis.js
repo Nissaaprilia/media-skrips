@@ -38,9 +38,15 @@ cari.addEventListener("click", function () {
   // console.log(datahasil);
   var task = ref(db, datahasil);
   tmp.innerHTML = "";
+
   if (kelas.value == "1") {
     kelasfix = "V (A)";
+  } else if (kelas.value == "2") {
+    kelasfix = "V (B)";
+  } else {
+    // Jika nilai kelas tidak sama dengan "1" atau "2", tambahkan logika lainnya di sini.
   }
+
   // if (kelas.value == "2") {
   //   kelasfix = "V (B)";
   // }
@@ -61,7 +67,7 @@ cari.addEventListener("click", function () {
         tmp.innerHTML += `<tr>
               <td>${taskvalue.nama}</td>
               <td>${taskvalue.nisn}</td>
-              <td>${taskvalue.kelas}</td>8
+              <td>${taskvalue.kelas}</td>
               
               <td>${taskvalue.nilai}</td>
               <td>${taskvalue.waktu}</td>
