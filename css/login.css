@@ -8,8 +8,9 @@ body {
   height: 85vh;
   background: #ffffff;
   box-shadow: 0 40px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: auto;
+  /* overflow-x: hidden;
+  overflow-y: hidden; */
 }
 
 .input-field {
