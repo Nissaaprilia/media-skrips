@@ -261,6 +261,12 @@
     width: 100%;
     left: 0;
   }
+
+  .sidebar .profile-details .profile-content {
+    left: 78px;
+    width: calc(100% - 78px);
+    z-index: 100;
+  }
 }
 
 header nav.navbar {
