@@ -1,104 +1,88 @@
+body {
+  background-image: url(../img/pendahuluan/cover2.png);
+}
+
 .container {
+  position: relative;
   width: 85vw;
   height: 85vh;
-  /* ... */
 
-  /* Tambahkan properti berikut untuk responsif */
-  max-width: 100%;
-  margin: 0 auto;
+  background: #ffffff;
+  box-shadow: 0 40px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+
+  overflow-x: hidden;
+  overflow-y: auto;
 }
-
-#radius-shape-1 {
-  height: 220px;
-  width: 220px;
-  /* ... */
-
-  /* Tambahkan properti berikut untuk responsif */
-  position: absolute;
-  top: -60px;
-  left: -130px;
-  transform: translate(-50%, -50%);
-
-  /* Ganti background dengan gradient */
-  background: radial-gradient(#44006b, #ad1fff);
-  overflow: hidden;
-}
-
-#radius-shape-2 {
-  /* ... */
-
-  /* Tambahkan properti berikut untuk responsif */
-  position: absolute;
-  bottom: -60px;
-  right: -110px;
-  width: 300px;
-  height: 300px;
-  transform: translate(50%, 50%);
-
-  /* Ganti background dengan gradient */
-  background: radial-gradient(#44006b, #be78e7);
-  overflow: hidden;
-}
-
 .input-field {
   width: 100%;
   height: 50px;
-  /* ... */
+  background: #f0f0f0;
+  margin: 10px 0;
+  border: 2px solid #eff2fb;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
 }
 
 .input-field i {
-  /* ... */
+  flex: 1;
+  text-align: center;
+  color: #666;
+  font-size: 18px;
 }
 
 .input-field input {
-  /* ... */
+  flex: 5;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
 }
 
 .btn {
   width: 150px;
   height: 50px;
-  /* ... */
+  border: none;
+  border-radius: 50px;
+  /* background: #798ee3; */
+  color: #ffffff;
+  font-weight: 600;
+  margin: 10px 0;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .title {
   font-size: 35px;
-  /* ... */
+  color: #3e54ac;
+  margin-bottom: 30px;
+  padding-top: 90px;
+  /* padding-bottom: 100px; */
 }
 
 select {
-  /* ... */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  border: none;
 }
 
 option {
-  /* ... */
+  font-size: 16px;
+  color: #333;
 }
 
 .input-field select {
-  /* ... */
-}
-
-/* Media queries untuk tampilan layar dengan lebar maksimum 600px */
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 100%;
-    height: 100vh;
-  }
-
-  #radius-shape-1 {
-    height: 150px;
-    width: 150px;
-    top: -40px;
-    left: -80px;
-  }
-
-  #radius-shape-2 {
-    bottom: -40px;
-    right: -60px;
-    width: 200px;
-    height: 200px;
-  }
-
-  .title {
-    font-size: 28px;
-  }
+  flex: 5;
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
 }
