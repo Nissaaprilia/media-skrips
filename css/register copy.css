@@ -1,0 +1,104 @@
+.container {
+  width: 85vw;
+  height: 85vh;
+  /* ... */
+
+  /* Tambahkan properti berikut untuk responsif */
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#radius-shape-1 {
+  height: 220px;
+  width: 220px;
+  /* ... */
+
+  /* Tambahkan properti berikut untuk responsif */
+  position: absolute;
+  top: -60px;
+  left: -130px;
+  transform: translate(-50%, -50%);
+
+  /* Ganti background dengan gradient */
+  background: radial-gradient(#44006b, #ad1fff);
+  overflow: hidden;
+}
+
+#radius-shape-2 {
+  /* ... */
+
+  /* Tambahkan properti berikut untuk responsif */
+  position: absolute;
+  bottom: -60px;
+  right: -110px;
+  width: 300px;
+  height: 300px;
+  transform: translate(50%, 50%);
+
+  /* Ganti background dengan gradient */
+  background: radial-gradient(#44006b, #be78e7);
+  overflow: hidden;
+}
+
+.input-field {
+  width: 100%;
+  height: 50px;
+  /* ... */
+}
+
+.input-field i {
+  /* ... */
+}
+
+.input-field input {
+  /* ... */
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  /* ... */
+}
+
+.title {
+  font-size: 35px;
+  /* ... */
+}
+
+select {
+  /* ... */
+}
+
+option {
+  /* ... */
+}
+
+.input-field select {
+  /* ... */
+}
+
+/* Media queries untuk tampilan layar dengan lebar maksimum 600px */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+    height: 100vh;
+  }
+
+  #radius-shape-1 {
+    height: 150px;
+    width: 150px;
+    top: -40px;
+    left: -80px;
+  }
+
+  #radius-shape-2 {
+    bottom: -40px;
+    right: -60px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
