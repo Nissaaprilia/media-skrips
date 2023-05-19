@@ -488,49 +488,6 @@ header nav.navbar {
   box-sizing: border-box;
 }
 
-/* .sebelumnya,
-.cek_jawaban,
-.selanjutnya {
-  display: inline-block;
-  padding: 2px 10px;
-  border-radius: 5px;
-  background-color: pink;
-  border: 1px solid wheat;
-  margin-top: 10px;
-  font-size: 12px;
-  cursor: pointer;
-}
-
-.sebelumnya:hover,
-.cek_jawaban:hover,
-.selanjutnya:hover {
-  background-color: red;
-  color: yellow;
-} */
-/* 
-.disable {
-  background-color: gray !important;
-  border: 2px solid var(--color-3) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-}
-
-.disable:hover {
-  background-color: gray !important;
-  border: 2px solid var(--color-3) !important;
-  color: rgba(255, 255, 255, 0.8) !important;
-  cursor: default;
-}
-
-.button {
-  font-size: 13px;
-  margin-bottom: 10px;
-  margin-left: 2px;
-  padding: 2px 6px;
-  background-color: blueviolet;
-  cursor: pointer;
-  display: inline-block;
-  border: 2px solid wheat;
-} */
 .jawabpecahan {
   border: none;
   border-bottom: solid 1px black;
