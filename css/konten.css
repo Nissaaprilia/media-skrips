@@ -430,7 +430,7 @@
     overflow: auto;
   }
 }
-@media screen and (max-width: 400px) {
+/* @media screen and (max-width: 400px) {
   .gambar_modal {
     overflow: auto;
   }
@@ -457,7 +457,7 @@
   .sidebarr.close ~ .home-section .home-content i {
     font-size: 12px;
   }
-}
+} */
 
 header nav.navbar {
   background-color: #3e54ac !important;
