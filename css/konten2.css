@@ -1,0 +1,25 @@
+@media screen and (max-width: 768px) {
+  .navigasi {
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .page-item {
+    margin-bottom: 5px;
+  }
+
+  .page-item:first-child {
+    margin-right: auto;
+  }
+
+  .page-item:last-child {
+    margin-left: auto;
+  }
+}

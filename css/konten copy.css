@@ -267,6 +267,7 @@ header nav.navbar {
   background-color: #3e54ac !important;
   font-family: "Rubik", sans-serif;
 }
+
 .tabb {
   margin-left: 18%;
 }
@@ -281,7 +282,6 @@ header nav.navbar {
   text-align: center;
   height: 380px;
 }
-
 .kotak2 {
   background-color: #adbdff;
   border: 1px solid #cecece;
@@ -303,6 +303,7 @@ header nav.navbar {
   cursor: move;
   border: 1px dashed black;
   width: 150px;
+  /* height: 150px; */
 }
 
 .draggable:hover {
@@ -313,6 +314,7 @@ header nav.navbar {
   background-color: #f4f4f4;
   border: 1px solid #cecece;
   border-radius: 3px;
+  /* padding: 20px; */
   margin: 5px 0;
   box-shadow: 2px 2px 6px black;
   color: black;
@@ -321,11 +323,11 @@ header nav.navbar {
   text-align: center;
   height: 70px;
 }
-
 .droppable2 {
   background-color: #f4f4f4;
   border: 1px solid #cecece;
   border-radius: 3px;
+  /* padding: 20px; */
   margin: 5px 0;
   box-shadow: 2px 2px 6px black;
   color: black;
@@ -334,7 +336,6 @@ header nav.navbar {
   text-align: center;
   height: 70px;
 }
-
 .cekjwb {
   background-color: #3e54ac;
   border: 1px solid #cecece;
@@ -346,16 +347,6 @@ header nav.navbar {
   margin-left: 55%;
 }
 
-@media only screen and (max-width: 600px) {
-  .kotak,
-  .kotak2 {
-    width: 100%;
-  }
-
-  .cekjwb {
-    margin-left: 0;
-  }
-}
 .infocontoh {
   text-align: center;
   width: 400px;
@@ -370,6 +361,7 @@ header nav.navbar {
 
 .konten .card {
   background-color: white;
+  /* height: 10%; */
   width: 100%;
   min-height: 400px;
   max-height: 520px;
@@ -377,6 +369,7 @@ header nav.navbar {
   overflow-y: auto;
 }
 
+/* konten contoh */
 .langkah {
   display: inline-block;
   background-color: #3e54ac;
@@ -412,6 +405,10 @@ header nav.navbar {
 .langkahnya {
   width: 100%;
   background-color: white;
+
+  /* margin-top: -2px;
+  padding: 5px; */
+  box-sizing: border-box;
 }
 
 .masuk {
@@ -434,11 +431,11 @@ header nav.navbar {
   height: 60px;
   margin-left: 20px;
 }
-
 .next_pensil {
   background-color: #3e54ac;
   padding: 10px;
   display: inline-block;
+  /* margin-top: 5px; */
   border: 1px solid #3e54ac;
   border-radius: 5px;
   cursor: pointer;
@@ -467,29 +464,6 @@ header nav.navbar {
   margin-top: -5px;
   position: relative;
   box-sizing: border-box;
-}
-
-@media only screen and (max-width: 600px) {
-  .infocontoh {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .konten .card {
-    min-height: 200px;
-    max-height: 320px;
-  }
-
-  .borderhasil {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .jarak_atas {
-    margin-top: 5px;
-  }
 }
 
 /* jawaban pecahan  */
@@ -530,6 +504,8 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
+
+  border-radius: 5px;
   width: fit-content;
 }
 
@@ -557,6 +533,8 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
+
+  border-radius: 5px;
   width: fit-content;
 }
 
@@ -584,6 +562,8 @@ header nav.navbar {
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
+
+  border-radius: 5px;
   width: fit-content;
 }
 
@@ -616,7 +596,6 @@ header nav.navbar {
   height: fit-content;
   color: white;
 }
-
 .jarak2 {
   margin-left: 330px;
   padding: 10px;
@@ -640,7 +619,6 @@ header nav.navbar {
   height: fit-content;
   color: white;
 }
-
 .pjarak0 {
   margin-top: -100px;
 }
@@ -656,34 +634,13 @@ header nav.navbar {
   height: fit-content;
   color: white;
 }
-
 .pjarak {
   margin-top: -100px;
 }
-
 .tab {
   padding-top: 10px;
   margin-left: 10px;
   width: 50%;
-}
-
-@media screen and (max-width: 600px) {
-  .diketahui,
-  .ditanya,
-  .rumus {
-    display: block !important;
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .jarak,
-  .jarak2,
-  .jarak0,
-  .jarak3 {
-    margin-left: 0;
-    width: 100%;
-  }
 }
 
 /* rumus 2  */
