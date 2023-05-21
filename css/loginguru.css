@@ -33,14 +33,14 @@ body {
 
 .container {
   position: relative;
+
   width: 85vw;
   height: 85vh;
-
-  background: #353293;
+  background: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  max-width: 100%;
 
-  overflow-x: hidden;
-  overflow-y: auto;
+  overflow: auto;
   /* max-width: 400px; */
   /* margin: 0 auto; */
   /* padding: 20px;
@@ -65,7 +65,7 @@ body {
   height: 50px;
   background: #f0f0f0;
   margin: 10px 0;
-  border: 2px solid #eff2fb;
+  border: 2px solid #3e54ac;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -94,8 +94,8 @@ body {
   height: 50px;
   border: none;
   border-radius: 50px;
-  background: #ffffff;
-  color: #000000;
+  background: #3e54ac;
+  color: #fff;
   font-weight: 600;
   margin: 10px 0;
   text-transform: uppercase;
@@ -104,9 +104,9 @@ body {
 
 .title {
   font-size: 35px;
-  color: #f4f6ff;
+  color: #3e54ac;
   margin-bottom: 30px;
-  padding-top: 90px;
+  padding-top: 0px;
   /* padding-bottom: 100px; */
 }
 

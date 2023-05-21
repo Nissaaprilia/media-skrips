@@ -36,12 +36,11 @@ body {
   position: relative;
   width: 85vw;
   height: 85vh;
-  background: #a8a3f2;
+  background: #ffffff;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   max-width: 100%;
   margin: 0 auto;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow: auto;
   /* }
 .container::before {
   content: "";
@@ -137,21 +136,8 @@ option {
     height: 100vh;
   }
 
-  #radius-shape-1 {
-    height: 150px;
-    width: 150px;
-    top: -40px;
-    left: -80px;
-  }
-
-  #radius-shape-2 {
-    bottom: -40px;
-    right: -60px;
-    width: 200px;
-    height: 200px;
-  }
-
   .title {
     font-size: 28px;
+    padding-top: 60px;
   }
 }

@@ -57,13 +57,13 @@ body {
 }
 
 #jumbotron {
-  padding-top: 180px;
+  padding-top: 250px;
   padding-bottom: 200px;
   background-image: url(../img/pendahuluan/animasi.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right button;
   background-size: 40%;
-  background-position-x: 50em;
+  background-position-x: 55em;
   position: relative;
 }
 
