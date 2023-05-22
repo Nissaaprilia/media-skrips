@@ -14,6 +14,7 @@
 #table_wrapper {
   width: 100%; /* Atur lebar tabel sesuai kebutuhan */
   table-layout: fixed; /* Tetapkan lebar kolom tabel agar tidak bergeser */
+  /* margin-left: -100px; */
 }
 
 #table_wrapper thead th {

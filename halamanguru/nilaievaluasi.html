@@ -27,6 +27,7 @@
   <!-- My CSS -->
   <link rel="stylesheet" href="../css/halguru.css" />
   <link rel="stylesheet" href="../css/halguruisi.css" />
+  
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -144,8 +145,8 @@
 
         <div class="container">
           <div id="table_container">
-            <table class="table" id="table_wrapper">
-              <thead class="tabel-success text-white" style="background-color: #3e54ac; font-size: 1.2em">
+            <table id="hasilEvaluasi" class="table table-striped" style="width: 100%">
+              <thead class="tabel-success text-white" style="background-color: #3e54ac">
                 <tr>
                   <th>NAMA</th>
                   <th>NISN</th>
@@ -154,13 +155,13 @@
                   <th>WAKTU SELESAI</th>
                   <th>HARI/TANGGAL</th>
                 </tr>
-              </thead>
-              <tbody id="tbody1"></tbody>
-            </table>
+                </thead>
+                <tbody id="tbody1"></tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -168,12 +169,12 @@
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.min.css">
 
 <script>
-$(document).ready(function() {
-  $('#table_wrapper').DataTable({
-    "pageLength": 10,
-    "lengthMenu": [10, 25, 50, 100] // Menampilkan pilihan 10, 25, 50, 100 entri
+  $(document).ready(function () {
+    $('#table_wrapper').DataTable({
+      "pageLength": 10,
+      "lengthMenu": [10, 25, 50, 100] // Menampilkan pilihan 10, 25, 50, 100 entri
+    });
   });
-});
 </script>
 
 </html>

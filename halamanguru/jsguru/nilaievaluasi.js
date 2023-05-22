@@ -80,7 +80,56 @@ cari.addEventListener("click", function () {
     $("#ModalFilter").modal("show");
   }
 });
+$("#hasilEvaluasi")
+  .DataTable({
+    lengthMenu: [
+      [5, 10, 30, -1],
+      [5, 10, 30, "all"],
+    ],
+  })
+  .destroy();
 
+let userguru = document.getElementById("userguru");
+let logoutguru = document.getElementById("logoutguru");
+let nama = sessionStorage.getItem("nama");
+var currentUser = null;
+let nip = sessionStorage.getItem("nip");
+// Function;
+function getName() {
+  if (nama == null) {
+    Swal.fire({
+      icon: "info",
+      title: "Silahkan Login Terlebih Dahulu",
+    }).then(() => {
+      window.location = "./loginguru.html";
+    });
+
+    // alert('Silahkan Login Terlebih Dahulu');
+    // window.location = './loginguru.html';
+  } else {
+    userguru.innerText = nama;
+  }
+}
+
+getName();
+
+function Signout() {
+  // logoutguru.href = '../index.html';
+  sessionStorage.removeItem("nama");
+  window.location = "../../loginguru.html";
+}
+
+// window Load
+
+window.onload = function () {
+  getName();
+  if (currentUser == null) {
+    logoutguru.href = "../../loginguru.html";
+  } else {
+    userguru.innerText = currentUser.nama;
+    logoutguru.innerText = "Logout";
+  }
+};
 // download data
 // downloadData.addEventListener("click", function () {
 //   if (kelas.value == "1") {
