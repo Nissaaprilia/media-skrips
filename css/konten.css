@@ -295,15 +295,15 @@
     margin: 0 5px 0 0px;
   }
 }
-/* .sidebarr.close .profile-details img{
-    height: 42px;
-    width: 42px;
-    object-fit: cover;
-    border-radius: 9px;
-    margin: 0 12px 0 5px;
-    background-color: #F3EAD8;
-    transition: all 0.5s ease;
-/* } */
+.sidebarr.close .profile-details img {
+  height: 42px;
+  width: 42px;
+  object-fit: cover;
+  border-radius: 9px;
+  margin: 0 12px 0 5px;
+  background-color: #f3ead8;
+  transition: all 0.5s ease;
+}
 header nav.navbar {
   background-color: #3e54ac !important;
   font-family: "Rubik", sans-serif;
@@ -412,8 +412,8 @@ header nav.navbar {
 .konten .card {
   background-color: white;
   width: 100%;
-  min-height: 400px;
-  max-height: 520px;
+  min-height: 600px;
+  max-height: 700px;
   overflow-x: hidden;
   overflow-y: auto;
 }
@@ -532,6 +532,7 @@ header nav.navbar {
     margin-top: 5px;
   }
 }
+*/
 
 /* jawaban pecahan  */
 .jawabpecahan {
