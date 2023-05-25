@@ -8,11 +8,15 @@
 
   <!-- Boxiocns CDN Link -->
   <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-  <!-- Matjax -->
-   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
+  <!-- Matjax -->
+  <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+  <!-- 
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   <!-- Bootstrap Icon-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,8 +26,8 @@
     crossorigin="anonymous"></script>
 
   <!-- My CSS -->
-  <link rel="stylesheet" href="../../css/style.css" />
-  <link rel="stylesheet" href="../../css/konten.css" />
+  <!-- <link rel="stylesheet" href="../../css/style.css" /> -->
+  <!-- <link rel="stylesheet" href="../../css/konten.css" /> -->
 
   <link rel="stylesheet" href="../../css/content.css" />
 
@@ -155,85 +159,83 @@
       </div>
       <br />
       <!-- Isi -->
-      <div class="isipendahuluan bg-white">
-        <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
-        <p class="text-start ms-2">Ayo amati cerita di bawah ini, kemudian perhatikan cara penjumlahan bilangan pecahan
-          dari cerita tersebut !</p>
+      <div class="materi shadow">
+        <div class="isipendahuluan bg-white">
+          <div class="card-body">
+            <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
+            <p class="text-start ms-2">Ayo amati cerita di bawah ini, kemudian perhatikan cara penjumlahan bilangan
+              pecahan
+              dari cerita tersebut !</p>
 
-
-        <table class="table table-bordered">
-          <tbody style="vertical-align: middle; text-align: justify">
-            <tr>
-              <td colspan="2">Sore ini ibu pergi ke pasar wadai yang terletak di siring menara pandang Banjarmasin. Ibu
-                membeli wadai bingka bakar, kemudian di potong menjadi 6 bagian.</td>
-              <td><img src="../../img/penjumlahan/bingka/bingka.png" class="rounded mx-auto d-block" width="150px"
-                  alt="" /></td>
-            </tr>
-          
-            <tr>
-              <td colspan="2">Kemudian nissa memakan bingka bakar ibu \(\frac{2}{6}\) bagian.</td>
-              <td><img src="../../img/penjumlahan/bingka/bingka2.png" class="rounded mx-auto d-block" width="150px"
-                  alt="" /></td>
-            </tr>
-            <tr>
-              <td colspan="2">Setelah itu tri juga memakan bingka bakar ibu \( \frac{3}{6}\) bagian.</td>
-              <td><img src="../../img/penjumlahan/bingka/bingka3.png" class="rounded mx-auto d-block" width="150px"
-                  alt="" /></td>
-            </tr>
-            <tr>
-              <td colspan="3">Jadi berapa jumlah bingka bakar yang di makan oleh kedua nya?<br /></td>
-            </tr>
-          </tbody>
-        </table>
-
-        <center>
-          <button id="btnselesai" class="btn btn-success" style="background-color: #3e54ac">Lanjut</button>
-        </center>
-      </div>
-
-      <div id="card2lanjut" class="card-body bg-white" style="display: none">
-        <div class="container text-start">
-          <div class="row align-items-center">
-            <div class="col">
-              <table>
+            <table class="table table-bordered">
+              <tbody style="vertical-align: middle; text-align: justify">
                 <tr>
-                  <th scope="row"><img src="../../img/penjumlahan/bingka/bingka2.png" class="rounded mx-auto d-block"
-                      width="110px" /> bingka bakar di makan nissa</th>
-                  <th scope="row"><img src="../../img/penjumlahan/bingka/bingka3.png" class="rounded mx-auto d-block"
-                      width="110px" /> bingka bakar di makan tri</th>
-                  <td>
-                    Bagian yang dimakan nissa \( \frac{2}{6} \) dan tri \( \frac{3}{6} \) <br />
-                    <br />
-                    <!-- \( \frac{2}{6} + \frac{3}{6} = ... \) -->
-                  </td>
+                  <td colspan="2">Sore ini ibu pergi ke pasar wadai yang terletak di siring menara pandang Banjarmasin.
+                    Ibu
+                    membeli wadai bingka bakar, kemudian di potong menjadi 6 bagian.</td>
+                  <td><img src="../../img/penjumlahan/bingka/bingka.png" class="rounded mx-auto d-block" width="150px"
+                      alt="" /></td>
                 </tr>
-              </table>
-            </div>
-            <div class="col bg-light">
-              <div class="p-1 mb-2 text-white text-center fw-bold" style="background-color: #3e54ac">Penyelesaian</div>
-              \( \frac{2}{6} + \frac{3}{6} = ... \)
-              
-              <br />
-              <br />
-              Jawab :<br />
-              <br />
-              <div class="p-3 bg-info bg-opacity-10 border border-info border-start-opacity-10 rounded-end">
-                Karena pecahan berpenyebut sama, maka langsung dijumlahkan pembilangnya
+
+                <tr>
+                  <td colspan="2">Kemudian nissa memakan bingka bakar ibu \(\frac{2}{6}\) bagian.</td>
+                  <td><img src="../../img/penjumlahan/bingka/bingka2.png" class="rounded mx-auto d-block" width="150px"
+                      alt="" /></td>
+                </tr>
+                <tr>
+                  <td colspan="2">Setelah itu tri juga memakan bingka bakar ibu \( \frac{3}{6}\) bagian.</td>
+                  <td><img src="../../img/penjumlahan/bingka/bingka3.png" class="rounded mx-auto d-block" width="150px"
+                      alt="" /></td>
+                </tr>
+                <tr>
+                  <td colspan="3">Jadi berapa jumlah bingka bakar yang di makan oleh kedua nya?<br /></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <center>
+              <button id="btnselesai" class="btn btn-success" style="background-color: #3e54ac">Lanjut</button>
+            </center>
+          </div>
+        </div>
+        <div id="card2lanjut" class="card-body bg-white" style="display: none">
+          <div class="container text-start">
+            <div class="row align-items-center">
+              <div class="col">
+                <table class="border border-primary">
+                  <tr>
+                    <th scope="row"><img src="../../img/penjumlahan/bingka/bingka2.png" class="rounded mx-auto d-block"
+                        width="110px" /> bingka bakar di makan nissa</th>
+                    <th scope="row"><img src="../../img/penjumlahan/bingka/bingka3.png" class="rounded mx-auto d-block"
+                        width="110px" /> bingka bakar di makan tri</th>
+                    <td>
+                      Bagian yang dimakan nissa \( \frac{2}{6} \) dan tri \( \frac{3}{6} \) <br />
+                    </td>
+                  </tr>
+                </table>
               </div>
-              <br />
-              <p>= \( \frac{2 + 3} 6 = \frac{5}{6}\)</p>
-              <br />
-              <div class="p-3 bg-info bg-opacity-10 border border-info border-start-opacity-10 rounded-end">
-                Jadi, \( \frac{2}{6} + \frac{3}{6} = \frac{5}{6} \)
+              <div class="col bg-light">
+                <div class="p-1 mb-2 text-white text-center fw-bold" style="background-color: #3e54ac">Penyelesaian
+                </div>
+                \( \frac{2}{6} + \frac{3}{6} = ... \)
+                <br /><br />
+                <div class="alert alert-success" role="alert">
+                  Karena pecahan berpenyebut sama, maka langsung dijumlahkan pembilangnya
+                </div>
+                Jawab :<br />
+                <br />
+                <p>= \( \frac{2 + 3} 6 = \frac{5}{6}\)</p>
+                <div class="alert alert-primary" role="alert">
+                  Jadi, \( \frac{2}{6} + \frac{3}{6} = \frac{5}{6} \)
+                </div>
+                <br>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Akhir pendahuluan -->
     </div>
-
     <!-- Pindah Halaman -->
     <footer>
       <nav aria-label="Page navigation example">
