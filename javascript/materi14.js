@@ -40,6 +40,7 @@ document.getElementById("cardBtn2").addEventListener("click", function () {
   document.getElementById("card2").style.display = "block";
   document.getElementById("cardBtn2").style.display = "none";
 });
+
 //Contoh Soal
 let kenya = document.querySelectorAll(".ke");
 let langkahnya = document.querySelectorAll(".langkahnya");
@@ -58,110 +59,28 @@ for (let i = 0; i < kenya.length; i++) {
   });
 }
 
-// // tahapan contoh soal
-// let bgnya = document.querySelectorAll(".pjm");
-// let bgnya1 = document.querySelectorAll(".krng");
-// let jadi = document.querySelectorAll(".aau");
-// let tmblnya = document.querySelector(".tmb_pnjumlahan");
-// let tmblnya1 = document.querySelector(".tmb_pngrangan");
-// let kondisi1 = 0;
-// let kondisi2 = 0;
-// tmblnya.addEventListener("click", function () {
-//   if (kondisi1 == 0) {
-//     kondisi1 += 1;
-//     bgnya[0].className = bgnya[0].className.replace("hilang1", "");
-//     tmblnya.innerText = "Mengubah kedua pecahan menjadi pecahan senilai";
-//   } else if (kondisi1 == 1) {
-//     kondisi1 += 1;
-//     bgnya[1].className = bgnya[1].className.replace("hilang1", "");
-//     tmblnya.innerText = "hasil";
-//   } else if (kondisi1 == 2) {
-//     bgnya[2].className = bgnya[2].className.replace("hilang1", "");
-//     tmblnya.className += " hilang1";
-//     jadi[1].className = jadi[1].className.replace("hilang1", "");
-//   }
-// });
+function toggleText(displayTextId, buttonId) {
+  var displayText = document.getElementById(displayTextId);
+  var button = document.getElementById("button" + buttonId);
 
-// tmblnya1.addEventListener("click", function () {
-//   if (kondisi2 == 0) {
-//     kondisi2 += 1;
-//     bgnya1[0].className = bgnya1[0].className.replace("hilang1", "");
-//     tmblnya1.innerText = "Mengubah kedua pecahan menjadi pecahan senilai";
-//   } else if (kondisi2 == 1) {
-//     kondisi2 += 1;
-//     bgnya1[1].className = bgnya1[1].className.replace("hilang1", "");
-//     tmblnya1.innerText = "Menyederhanakan pecahan";
-//   } else if (kondisi2 == 2) {
-//     bgnya1[2].className = bgnya1[2].className.replace("hilang1", "");
-//     bgnya1[3].className = bgnya1[3].className.replace("hilang1", "");
-//     tmblnya1.className += " hilang1";
-//     jadi[3].className = jadi[3].className.replace("hilang1", "");
-//   }
-// });
-
-function diketahui(diketahui) {
-  var x = document.getElementById(diketahui);
-
-  if (x.className.indexOf("lost") == -1) {
-    x.className += " lost";
+  if (displayText.classList.contains("hidden")) {
+    displayText.classList.remove("hidden");
+    // button.textContent = "";
   } else {
-    x.className = x.className.replace("lost", "");
+    displayText.classList.add("hidden");
+    // button.textContent = "" + buttonId;
   }
 }
 
-function ditanya(ditanya) {
-  var x = document.getElementById(ditanya);
+function toggleText2(displayTextId, buttonId) {
+  var displayText = document.getElementById(displayTextId);
+  var button = document.getElementById("button" + buttonId);
 
-  if (x.className.indexOf("lost") == -1) {
-    x.className += " lost";
+  if (displayText.classList.contains("hidden")) {
+    displayText.classList.remove("hidden");
+    // button.textContent = "";
   } else {
-    x.className = x.className.replace("lost", "");
-  }
-}
-function rumus(rumus) {
-  var x = document.getElementById(rumus);
-
-  if (x.className.indexOf("lost") == -1) {
-    x.className += " lost";
-  } else {
-    x.className = x.className.replace("lost", "");
-  }
-}
-
-function diketahui2(diketahui2) {
-  var x = document.getElementById(diketahui2);
-
-  if (x.className.indexOf("lost") == -1) {
-    x.className += " lost";
-  } else {
-    x.className = x.className.replace("lost", "");
-  }
-}
-
-function ditanya2(ditanya2) {
-  var x = document.getElementById(ditanya2);
-
-  if (x.className.indexOf("lost") == -1) {
-    x.className += " lost";
-  } else {
-    x.className = x.className.replace("lost", "");
-  }
-}
-function rumus2(rumus2) {
-  var x = document.getElementById(rumus2);
-
-  if (x.className.indexOf("lost") == -1) {
-    x.className += " lost";
-  } else {
-    x.className = x.className.replace("lost", "");
-  }
-}
-function rumus22(rumus22) {
-  var x = document.getElementById(rumus22);
-
-  if (x.className.indexOf("lost") == -1) {
-    x.className += " lost";
-  } else {
-    x.className = x.className.replace("lost", "");
+    displayText.classList.add("hidden");
+    // button.textContent = "" + buttonId;
   }
 }

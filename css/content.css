@@ -369,7 +369,7 @@ figcaption {
 .tombol a {
   text-decoration: none;
   color: black;
-  background-color: #eadca6;
+  background-color: #ece7d5;
 }
 
 .lost {
@@ -377,7 +377,7 @@ figcaption {
 }
 
 .tombol {
-  background-color: #d8cca3;
+  background-color: #ffffff;
   text-decoration: none;
   border-radius: 5px;
   color: black;
@@ -385,7 +385,7 @@ figcaption {
 }
 
 .card-header {
-  background: #eadca6;
+  background: #ffffff;
 }
 
 /* Responsive */
@@ -421,7 +421,7 @@ figcaption {
     padding: 4px 9px;
     pointer-events: none;
     opacity: 0;
-    background-color: #658864;
+    background-color: #ffffff;
     transition: all 0.5s ease;
   }
 

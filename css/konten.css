@@ -429,24 +429,24 @@ header nav.navbar {
 
 .ke {
   display: inline-block;
-  background-color: #3e54ac;
+  background-color: #ffffff;
   font-weight: bold;
   padding: 10px;
   padding-right: 10px;
   border-radius: 10px;
   text-align: center;
   border: 2px solid #3e54ac;
-  color: white;
+  color: #3e54ac;
 }
 
 .ke_aktif {
-  background-color: #3e54ac;
+  background-color: #ff7f00;
   padding-top: 10px;
 }
 
 .ke:hover {
   cursor: pointer;
-  background-color: #2a3e90;
+  background-color: #ff7f00;
   padding-top: 10px;
 }
 
@@ -1190,4 +1190,24 @@ header nav.navbar {
 }
 .pjarak4 {
   margin-top: -100px;
+}
+
+.hidden {
+  display: none;
+}
+#displayText1 {
+  border: 2px solid #33b2ed;
+  padding: 10px;
+  border-radius: 10px;
+}
+#displayText2 {
+  border: 2px solid #33b2ed;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#displayText3 {
+  border: 2px solid #33b2ed;
+  padding: 10px;
+  border-radius: 10px;
 }
