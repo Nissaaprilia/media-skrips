@@ -23,7 +23,8 @@
 
   <!-- My CSS -->
   <link rel="stylesheet" href="../../css/style.css" />
-  <link rel="stylesheet" href="../../css/konten.css" />
+  <!-- <link rel="stylesheet" href="../../css/konten.css" /> -->
+  <link rel="stylesheet" href="../../css/content.css" />
   <!-- <link rel="stylesheet" href="../../css/konten2.css" /> -->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
@@ -32,11 +33,21 @@
 
 </head>
 
-<body>
+<body style="display: flex; flex-direction: column">
+  <input type="checkbox" id="check" />
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <!-- 
+      <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label> -->
 
+  <!-- Sidebar-->
   <div class="sidebar open">
     <div class="logo-details">
-
       <a href="../home.html"><i class="bx bx-home"></a></i>
       <span class="logo_name">Bilangan Pecahan</span>
     </div>
@@ -97,7 +108,7 @@
       </li>
 
       <li>
-        <div class="profile-details">
+        <div class="profile-details text-white">
           <div class="profile-content">
             <div id="signoutlink">
               <a href="#" onclick="LogOut()"><i class="bi bi-person-circle"></a></i>
@@ -121,20 +132,17 @@
     </ul>
   </div>
 
-  <section class="home-section">
-  <div class="home-content">
+  <!-- Akhir Sidebar -->
 
-      <i class="bx bx-menu"></i>
-      <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Pendahuluan
-      </div>
-
-
+  <section>
+    <div class="header container-fluid text-center text-white">
+      <p style="margin: 10px 0 5px 0; font-weight: bold; font-size: 24px;  ">PENDAHULUAN</p>
     </div>
-    <div class="konten col-9-5 ms-2">
-      <div class="card lg p-3 mb-5 bg-white rounded">
 
-        <div class="card-body">
-          <div class="shadow-sm mt-1 collapse show" id="tujuan">
+    <div id="content">
+      <div class="materi shadow">
+        <div class="isipendahuluan">
+          <div class="card-body">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -155,106 +163,118 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="card-body border border-primary ms-3 me-3">
-          <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
-          <p class="text-start ms-2">Ayo amati penjelasan di bawah ini !</p>
-          <div class="card-body border border-primary ms-3 me-3">
-            <h4 class="card-title"><img src="../../img/pendahuluan/apresepsi.png" class="rounded mx-auto d-block"
-                width="20%" alt="" /></h4>
-            <p class="fs-5 fw-semibold text-center"> Apa kamu ingat apa yang dimaksud dengan pecahan? di kelas IV, kamu
-              sudah mempelajari pecahan, untuk lebih
-              mengingat silahkan klik tombol penjelasan berikut !<br /></p>
-            <center>
-              <button id="btnpenjelasan" class="btn btn-success" style="background-color: #3e54ac">Penjelasan</button>
-            </center>
-          </div>
-          <div class="card-body border border-primary ms-3 me-3">
-            <div id="card2lanjut" class="card-body" style="display: none">
-
-              <img src="../../img/pendahuluan/apresepsi2.gif" class="rounded mx-auto d-block" alt="..."
-                style="width: 60%" />
-
-              </p>
-            </div>
 
           </div>
         </div>
       </div>
+      <br />
+      <!-- Isi -->
+      <div class="isipendahuluan bg-white">
+
+        <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
+        <p class="text-start ms-2">Ayo amati penjelasan di bawah ini !</p>
+
+        <h4 class="card-title"><img src="../../img/pendahuluan/apresepsi.png" class="rounded mx-auto d-block"
+            width="20%" alt="" /></h4>
+        <p class="fs-5 fw-semibold text-center"> Apa kamu ingat apa yang dimaksud dengan pecahan? di kelas IV, kamu
+          sudah mempelajari pecahan, untuk lebih
+          mengingat silahkan klik tombol penjelasan berikut !<br /></p>
+        <center>
+          <button id="btnpenjelasan" class="btn btn-success" style="background-color: #3e54ac">Penjelasan</button>
+        </center>
+      </div>
+
+      <div id="card2lanjut" class="card-body bg-white" style="display: none">
+
+        <img src="../../img/pendahuluan/apresepsi2.gif" class="rounded mx-auto d-block" alt="..." style="width: 60%" />
+
+        </p>
+      </div>
+
     </div>
     </div>
-    
     </div>
+    <!-- Akhir pendahuluan -->
+    </div>
+
+    <!-- Pindah Halaman -->
+    <footer>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center pt-2 me-2">
+          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">Next</a></li>
+        </ul>
+
+      </nav>
+    </footer>
+    <!-- Akhir Pindah Halaman -->
+    <!-- </div> -->
   </section>
-
-</div>
-  <nav aria-label="Page navigation example ">
-    <ul class="navigasi bawah pagination justify-content-center fixed-bottom">
-      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-      <li class="page-item active"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">2</a></li>
-      <li class="page-item"><a class="page-link" href="./mulaibelajar2.html">Next</a></li>
-    </ul>
-  </nav>
-
   <script>
-    document.getElementById("btnpenjelasan").addEventListener("click", function () {
-      document.getElementById("card2lanjut").style.display = "block";
-      document.getElementById("btnpenjelasan").style.display = "none";
-    });
 
-    let arrow = document.querySelectorAll(".arrow");
-    for (var i = 0; i < arrow.length; i++) {
-      arrow[i].addEventListener("click", (e) => {
-        let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
-        arrowParent.classList.toggle("showMenu");
-      });
+    let userlink = document.getElementById("userlink");
+    let nisnlink = document.getElementById("nisnlink");
+    let signoutlink = document.getElementById("signoutlink");
+    let nama = sessionStorage.getItem("nama");
+    let nisn = sessionStorage.getItem("nisn");
+    var currentUser = null;
+
+    // Function;
+    function getNama() {
+      if (nama == null) {
+        window.location = "/index.html";
+      } else {
+        userlink.innerText = nama;
+      }
     }
-    let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".bx-menu");
-    console.log(sidebarBtn);
-    sidebarBtn.addEventListener("click", () => {
-      sidebar.classList.toggle("close");
-    });
+
+    function getNisn() {
+      if (nisn == null) {
+        window.location = "/index.html";
+      } else {
+        nisnlink.innerText = nisn;
+      }
+    }
+
+    getNama();
+    getNisn();
+
+    function LogOut() {
+      sessionStorage.removeItem("nama");
+
+      window.location = "/index.html";
+    }
   </script>
-
-  <!-- <script type="module" src="../../javascript/userlink.js"></script> -->
 </body>
+
+
 <script>
-  let userlink = document.getElementById("userlink");
-  let nisnlink = document.getElementById("nisnlink");
-  let signoutlink = document.getElementById("signoutlink");
-  let nama = sessionStorage.getItem("nama");
-  let nisn = sessionStorage.getItem("nisn");
-  var currentUser = null;
+  document.getElementById("btnpenjelasan").addEventListener("click", function () {
+    document.getElementById("card2lanjut").style.display = "block";
+    document.getElementById("btnpenjelasan").style.display = "none";
+  });
 
-  // Function;
-  function getNama() {
-    if (nama == null) {
-      window.location = "/index.html";
-    } else {
-      userlink.innerText = nama;
-    }
-  }
 
-  function getNisn() {
-    if (nisn == null) {
-      window.location = "/index.html";
-    } else {
-      nisnlink.innerText = nisn;
-    }
-  }
+</script>
 
-  getNama();
-  getNisn();
+<!-- <script type="module" src="../../javascript/userlink.js"></script> -->
 
-  function LogOut() {
-    sessionStorage.removeItem("nama");
-
-    window.location = "/index.html";
-  }
-
+<script>
+   let arrow = document.querySelectorAll(".arrow");
+      for (var i = 0; i < arrow.length; i++) {
+        arrow[i].addEventListener("click", (e) => {
+          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+          arrowParent.classList.toggle("showMenu");
+        });
+      }
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".bx-menu");
+      console.log(sidebarBtn);
+      sidebarBtn.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
 </script>
 
 </html>
