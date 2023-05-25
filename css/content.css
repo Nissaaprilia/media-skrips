@@ -278,7 +278,7 @@ label #btn {
   left: 285px;
   top: 10px;
   font-size: 30px;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 4px 9px;
   opacity: 0;
   pointer-events: none;
@@ -289,7 +289,7 @@ label #cancel {
   left: 300px;
   top: 10px;
   font-size: 30px;
-  color: black;
+  color: rgb(255, 255, 255);
   padding: 4px 9px;
   transition: all 0.5s ease;
 }

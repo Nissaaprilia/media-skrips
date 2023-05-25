@@ -19,12 +19,19 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/konten.css" />
+    
+     <link rel="stylesheet" href="../../css/content.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
-  <body>
+ <body style="display: flex; flex-direction: column">
+  <input type="checkbox" id="check" />
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
     <div class="sidebar open">
       <div class="logo-details">
         <a href="../home.html"><i class="bx bx-home"></a></i>
@@ -108,14 +115,15 @@
         </li>
       </ul>
     </div>
-    <section class="home-section">
-      <div class="home-content">
-        <i class="bx bx-menu"></i>
-        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Penjumlahan Pecahan Senilai</div>
-      </div>
-      <div class="konten col-9-5 ms-2">
-        <div class="card lg p-3 mb-5 bg-white rounded">
-          <div class="card-body border border-primary ms-3 me-3">
+  <section>
+    <div class="header container-fluid text-center text-white">
+      <p style="margin: 10px 0 5px 0; font-weight: bold; font-size: 24px;  ">Penjumlahan Pecahan Senilai</p>
+    </div>
+
+    <div id="content">
+      <div class="materi shadow">
+        <div class="isipendahuluan">
+          <div class="card-body">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -132,11 +140,18 @@
                   </div>
                 </div>
               </div>
+            </div>
 
-              <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- Isi -->
+      <div class="isipendahuluan bg-white">
+<h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
               <p class="text-start ms-2">Ayo amati cerita di bawah ini, kemudian perhatikan cara penjumlahan bilangan pecahan dari cerita tersebut !</p>
 
-              <div class="card-body border border-primary ms-3 me-3">
+              
                 <table class="table table-bordered">
                   <tbody style="vertical-align: middle; text-align: justify">
                     <tr>
@@ -161,8 +176,8 @@
                   <button id="btnselesai" class="btn btn-success" style="background-color: #3e54ac">Lanjut</button>
                 </center>
               </div>
-              <div class="card-body border border-primary ms-3 me-3">
-                <div id="card2lanjut" class="card-body" style="display: none">
+              
+                <div id="card2lanjut" class="card-body bg-white" style="display: none">
                   <div class="container text-start">
                     <div class="row align-items-center">
                       <div class="col">
@@ -185,33 +200,43 @@
                         <br />
                         Jawab :<br />
                         <br />
-                        <p class="borderhasil">
-                          <i> Karena pecahan berpenyebut sama, maka langsung dijumlahkan pembilangnya</i>
-                        </p>
+                        <div class="p-3 bg-info bg-opacity-10 border border-info border-start-opacity-10 rounded-end">
+Karena pecahan berpenyebut sama, maka langsung dijumlahkan pembilangnya
+</div>
+                        
 
                         <br />
                         <p>= \( \frac{2 + 3} 6 = \frac{5}{6}\)</p>
                         <br />
-                        <p class="borderhasil">Jadi, \( \frac{2}{6} + \frac{3}{6} = \frac{5}{6} \)</p>
+                                               <div class="p-3 bg-info bg-opacity-10 border border-info border-start-opacity-10 rounded-end">
+Jadi, \( \frac{2}{6} + \frac{3}{6} = \frac{5}{6} \)
+</div>
+                    
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <nav aria-label="Page navigation example ">
-              <ul class="navigasi bawah pagination justify-content-center fixed-bottom">
-                <li class="page-item"><a class="page-link" href="../1. pendahuluan/mulaibelajar2.html">Materi Sebelumnya</a></li>
+    <!-- Akhir pendahuluan -->
+    </div>
+
+    <!-- Pindah Halaman -->
+    <footer>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center pt-2 me-2">
+            <li class="page-item"><a class="page-link" href="../1. pendahuluan/mulaibelajar2.html">Materi Sebelumnya</a></li>
                 <li class="page-item active"><a class="page-link" href="./materi1.1.html">1</a></li>
                 <li class="page-item"><a class="page-link" href="./materi1.2.html">2</a></li>
                 <li class="page-item"><a class="page-link" href="./materi1.3.html">3</a></li>
                 <li class="page-item"><a class="page-link" href="./materi1.2.html">Next</a></li>
               </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-    </section>
+
+      </nav>
+    </footer>
+    <!-- Akhir Pindah Halaman -->
+    <!-- </div> -->
+  </section>
+   
 
     <script>
       document.getElementById("btnselesai").addEventListener("click", function () {
