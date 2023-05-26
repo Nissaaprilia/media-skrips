@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Penyederhanaan Pecahan</title>
+    <style>
+      .fraction {
+        display: inline-block;
+        text-align: center;
+        border-top: 1px solid black;
+        padding-top: 5px;
+      }
+      .fraction .numerator {
+        font-weight: bold;
+      }
+      .fraction .denominator {
+        border-top: 1px solid black;
+      }
+      .simplified-fraction {
+        font-weight: bold;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Penyederhanaan Pecahan</h1>
+
+    <div class="fraction">
+      <div class="numerator" id="numerator">8</div>
+      <div class="denominator" id="denominator">12</div>
+    </div>
+
+    <button onclick="simplifyFraction()">Penyederhanaan</button>
+
+    <p>Pecahan yang disederhanakan:</p>
+    <div id="result" class="fraction simplified-fraction">
+      <div class="numerator"></div>
+      <div class="denominator"></div>
+    </div>
+
+    <script>
+      function simplifyFraction() {
+        var numerator = parseInt(document.getElementById("numerator").innerHTML);
+        var denominator = parseInt(document.getElementById("denominator").innerHTML);
+
+        // Cari faktor persekutuan terbesar (FPB)
+        var gcd = findGCD(numerator, denominator);
+
+        // Bagi pembilang dan penyebut dengan FPB
+        var simplifiedNumerator = numerator / gcd;
+        var simplifiedDenominator = denominator / gcd;
+
+        // Perbarui tampilan pecahan yang disederhanakan
+        var resultElement = document.getElementById("result");
+        resultElement.querySelector(".numerator").textContent = simplifiedNumerator;
+        resultElement.querySelector(".denominator").textContent = simplifiedDenominator;
+      }
+
+      function findGCD(a, b) {
+        // Implementasikan algoritma Euclidean untuk mencari FPB
+        while (b !== 0) {
+          var temp = b;
+          b = a % b;
+          a = temp;
+        }
+        return a;
+      }
+    </script>
+  </body>
+</html>

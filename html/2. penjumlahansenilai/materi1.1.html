@@ -26,8 +26,8 @@
     crossorigin="anonymous"></script>
 
   <!-- My CSS -->
-  <!-- <link rel="stylesheet" href="../../css/style.css" /> -->
-  <!-- <link rel="stylesheet" href="../../css/konten.css" /> -->
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/konten.css" />
 
   <link rel="stylesheet" href="../../css/content.css" />
 
@@ -229,8 +229,135 @@
                 <br>
               </div>
             </div>
+          </div><br>
+           <center>
+              <button id="cardBtn2" class="btn btn-success" style="background-color: #3e54ac">Contoh Soal
+              </button>
+            </center>
+            <div id="card2" class="card-body me-3 ms-3" style="display: none">
+               <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="kpkpecahan">
+                  <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#kpk" aria-expanded="true" aria-controls="kpk" style="background-color: #3e54ac">
+                    Cara menyamakan penyebut pecahan
+                  </button>
+                </h2>
+                <div id="kpk" class="accordion-collapse collapse show" aria-labelledby="kpkpecahan"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      1. Tentukan kelipatan persekutuan terkecil (KPK) untuk penyebut<br />
+                      Contoh pada pecahan \( \frac{1}{3} + \frac{1}{2} = ... \)
+                    <div class="alert alert-warning me-3 ms-3" role="alert">
+                      Tuliskan kelipatan dari penyebut pertama (3) dan penyebut kedua (2):<br>
+                      Kelipatan 3: 3, <span class="bulatan">6</span>, 9, 12, 15, ... <br>
+                      Kelipatan 2: 2, 4, <span class="bulatan">6</span>, 8, 10, ... <br>
+                    </div>
+                    2. Cari kelipatan bersama terkecil (KPK) dari kedua penyebut: <br>
+                    kelipatan persekutuan terkecil adalah 6.
+                    Jadi, KPK dari \( \frac{1}{3} \) dan \( \frac{1}{2} \) adalah <span class="bulatan">6</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+             <div class="col-sm-6 border-primary" style="border: 2px solid black; padding: 20px;">
+              <div class="content" onclick="return false;">
+                <!-- Konten kolom kiri -->
+                <div class="langkahnya vv">
+                  <br>
+                  <p class="text-start ms-3 me-3">1. Hasil penjumlahan dari \( \frac {1}{2} + \frac{4}{3} = ...\)</p>
+                  <div class="alert alert-success ms-3 me-3" role="alert">
+                    Karena pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut
+                    nya sama
+                  </div>
+                  <p class="fst-italic fw-semibold ms-3 me-3">Untuk melihat penyelesaian, silahkan klik tombol di bawah
+                    secara
+                    berurutan
+                    !</p>
+                  <button id="button1" class="btn btn-primary ms-2 me-2" onclick="toggleText('displayText1', 1)">1. Ubah
+                    menjadi pecahan senilai </button> <br>
+                  <p id="displayText1" class="hidden ms-3 me-5">
+                    \( = \frac{1 \times 3 } {2 \times 3} + \frac{4 \times 2 } {3 \times 2} \)
+                  </p><br>
+                  <button id="button2" class="btn btn-primary ms-2 me-2" onclick="toggleText('displayText2', 2)">2.
+                    Jumlahkan kedua pecahan</button><br>
+                  <p id="displayText2" class="hidden ms-3 me-5">
+                    \( = \frac {3}{6} + \frac {8}{6} \)
+                  </p><br>
+                  <button id="button3" class="btn btn-primary ms-2 me-2" onclick="toggleText('displayText3', 3)">3.
+                    Hasil Penjumlahan</button><br>
+                  <p id="displayText3" class="hidden ms-3 me-5">
+                    \( = \frac {11}{6} \) <br />
+                    Jadi hasil penjumlahan dari \( \frac {1}{2} + \frac{4}{3} = \) adalah \( \frac{11}{6}\).
+                  </p>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 border-primary" style="border: 2px solid black; padding: 20px;">
+              <div class="content" onclick="return false;">
+                <!-- Konten kolom kanan -->
+                <div class="langkahnya vv">
+                  <br>
+                  <p class="text-start ms-3 me-3"> 2. Hasil penjumlahan dari \( \frac {3}{10} + \frac{1}{6} = ...\)</p>
+                  <div class="alert alert-success ms-3 me-3" role="alert">
+                    Karena pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut
+                    nya sama
+                  </div>
+                  <p class="fst-italic fw-semibold ms-3 me-3">Untuk melihat penyelesaian, silahkan klik tombol di bawah
+                    secara
+                    berurutan !</p>
+
+                  <!-- Tombol button 1 -->
+                  <button id="button11" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText11', 11)">1.
+                    Ubah
+                    menjadi pecahan senilai </button> <br>
+                  <p id="displayText11" class="hidden ms-3 me-5">
+                    \( = \frac{3 \times 6 } {10 \times 3} + \frac{1 \times 10 } {6 \times 10} \)
+                  </p><br>
+                  <!-- Selesai Tombol button 1 -->
+
+                  <!-- Tombol button 2 -->
+                  <button id="button22" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText22', 22)">2.
+                    Jumlahkan kedua pecahan</button><br>
+                  <p id="displayText22" class="hidden ms-3 me-5">
+                    \( = \frac {18}{60} + \frac {10}{60} = \frac{28}{60} \)
+                  </p><br>
+                  <!-- Selesai Tombol button 2 -->
+
+                  <!-- Tombol button 3 -->
+                  <button id="button33" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText33', 33)">3.
+                    Sederhanakan pecahan</button><br>
+
+                  <p id="displayText33" class="hidden ms-3 me-5">
+                    \( = \frac{28}{60} : \frac{4}{4} \)
+                  </p>
+                  <br>
+                  <!-- Selesai Tombol button 3 -->
+
+                  <!-- Tombol button 4 -->
+                  <button id="button44" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText44', 44)">4.
+                    Hasil Penjumlahan</button>
+                  <br>
+                  <p id="displayText44" class="hidden ms-3 me-5">
+                    \( = \frac{7}{15}\) <br />
+                    Jadi hasil penjumlahan dari \( \frac {3}{10} + \frac{1}{6} = \) adalah \( = \frac{7}{15}\).
+                  </p>
+                  <br>
+                  <!-- Selesai Tombol button 4 -->
+
+                </div>
+            
+              </div>
+            </div>
           </div>
+            </div>
         </div>
+          
       </div>
     </div>
     </div>
@@ -248,11 +375,7 @@
     </footer>
   </section>
   <script>
-    document.getElementById("btnselesai").addEventListener("click", function () {
-      document.getElementById("card2lanjut").style.display = "block";
-      document.getElementById("btnselesai").style.display = "none";
-    });
-
+   
     let arrow = document.querySelectorAll(".arrow");
     for (var i = 0; i < arrow.length; i++) {
       arrow[i].addEventListener("click", (e) => {
@@ -268,39 +391,6 @@
     });
   </script>
 </body>
-<script>
-  let userlink = document.getElementById("userlink");
-  let nisnlink = document.getElementById("nisnlink");
-  let signoutlink = document.getElementById("signoutlink");
-  let nama = sessionStorage.getItem("nama");
-  let nisn = sessionStorage.getItem("nisn");
-  var currentUser = null;
-
-  // Function;
-  function getNama() {
-    if (nama == null) {
-      window.location = "/index.html";
-    } else {
-      userlink.innerText = nama;
-    }
-  }
-
-  function getNisn() {
-    if (nisn == null) {
-      window.location = "/index.html";
-    } else {
-      nisnlink.innerText = nisn;
-    }
-  }
-
-  getNama();
-  getNisn();
-
-  function LogOut() {
-    sessionStorage.removeItem("nama");
-
-    window.location = "/index.html";
-  }
-</script>
+<script src="../../javascript/materi11.js"></script>
 
 </html>

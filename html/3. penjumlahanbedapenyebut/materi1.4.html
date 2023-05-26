@@ -120,7 +120,7 @@
   </div>
   <section>
     <div class="header container-fluid text-center text-white">
-      <p style="margin: 10px 0 5px 0; font-weight: bold; font-size: 24px;  ">Penjumlahan Pecahan Senilai</p>
+      <p style="margin: 10px 0 5px 0; font-weight: bold; font-size: 24px;  ">Penjumlahan Beda Penyebut</p>
     </div>
     <div id="content">
       <div class="materi shadow">
@@ -188,14 +188,43 @@
           </div>
         </div>
         <div id="card2lanjut" class="card-body bg-white me-3 ms-3" style="display: none">
-          <div class="container text-start">
+          <br>
+          <div class="container">
+            <br>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="kpkpecahan">
+                  <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#kpk" aria-expanded="true" aria-controls="kpk" style="background-color: #3e54ac">
+                    Cara menyamakan penyebut pecahan
+                  </button>
+                </h2>
+                <div id="kpk" class="accordion-collapse collapse show" aria-labelledby="kpkpecahan"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      1. Tentukan kelipatan persekutuan terkecil (KPK) untuk penyebut<br />
+                      Contoh pada pecahan \( \frac{1}{3} + \frac{1}{2} = ... \)
+                    <div class="alert alert-warning me-3 ms-3" role="alert">
+                      Tuliskan kelipatan dari penyebut pertama (3) dan penyebut kedua (2):<br>
+                      Kelipatan 3: 3, <span class="bulatan">6</span>, 9, 12, 15, ... <br>
+                      Kelipatan 2: 2, 4, <span class="bulatan">6</span>, 8, 10, ... <br>
+                    </div>
+                    2. Cari kelipatan bersama terkecil (KPK) dari kedua penyebut: <br>
+                    kelipatan persekutuan terkecil adalah 6.
+                    Jadi, KPK dari \( \frac{1}{3} \) dan \( \frac{1}{2} \) adalah <span class="bulatan">6</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br>
             <div class="row align-items-center">
-              <div class="col">
-                <p><img src="../../img/ic/how.png" width="60%" /></p>
-                <br />
+              <div class="col  ">
                 <p><img src="../../img/penjumbed/sas13.png" width="120px" /> + <img src="../../img/penjumbed/sas12.png"
                     width="120px" /> = <img src="../../img/penjumbed/sas56.png" width="120px" /></p>
-                <p><img src="../../img/ic/bu.gif" class="rounded float-end" width="70%" /></p>
+
               </div>
               <div class="col bg-light">
                 <div class="p-1 mb-2 text-white text-center fw-bold" style="background-color: #3e54ac">Penyelesaian
@@ -209,21 +238,18 @@
                   Karena pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut nya
                   sama
                 </div>
-                <br />
                 <p>\( = \frac{1 \times 2 } {3 \times 2} + \frac{1 \times 3 } {2 \times 3} \)</p>
                 <p>\( = \frac {2}{6} + \frac {3}{6} \)</p>
                 <p>\( = \frac {5}{6} \)</p>
-                <br />
                 <div class="alert alert-primary" role="alert">
                   Jadi, \( \frac{1}{3} + \frac{1}{2} = \frac{5}{6} \)
                 </div>
-
               </div>
-
             </div>
             <br />
             <center>
-              <button id="cardBtn2" class="btn btn-success" style="background-color: #3e54ac">Contoh Lain</button>
+              <button id="cardBtn2" class="btn btn-success" style="background-color: #3e54ac">Contoh Soal
+              </button>
             </center>
           </div>
           <br>
@@ -231,24 +257,19 @@
         </div>
         <br>
         <div id="card2" class="card-body me-3 ms-3" style="display: none">
-          <div class="ke ke_aktif vv">Contoh 1 (Klik disini)</div>
-          <div class="ke vv">Contoh 2 (Klik disini)</div>
           <div class="row">
             <div class="col-sm-6">
               <div class="content" onclick="return false;">
                 <!-- Konten kolom kiri -->
                 <div class="langkahnya vv">
                   <br>
-                  <ol type="1" class="jarak_atas ckck">
-                    <li>
-                      <p class="text-start ms-2">Hasil penjumlahan dari \( \frac {1}{2} + \frac{4}{3} = ...\)</p>
-                    </li>
-                  </ol>
+                  <p class="text-start ms-3 me-3">1. Hasil penjumlahan dari \( \frac {1}{2} + \frac{4}{3} = ...\)</p>
                   <div class="alert alert-success ms-3 me-3" role="alert">
                     Karena pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut
                     nya sama
                   </div>
-                  <p class="fst-italic ms-3 me-3">Untuk melihat penyelesaian, silahkan klik tombol di bawah secara
+                  <p class="fst-italic fw-semibold ms-3 me-3">Untuk melihat penyelesaian, silahkan klik tombol di bawah
+                    secara
                     berurutan
                     !</p>
                   <button id="button1" class="btn btn-primary ms-2 me-2" onclick="toggleText('displayText1', 1)">1. Ubah
@@ -263,114 +284,72 @@
                   </p><br>
                   <button id="button3" class="btn btn-primary ms-2 me-2" onclick="toggleText('displayText3', 3)">3.
                     Hasil Penjumlahan</button><br>
-
                   <p id="displayText3" class="hidden ms-3 me-5">
                     \( = \frac {11}{6} \) <br />
                     Jadi hasil penjumlahan dari \( \frac {1}{2} + \frac{4}{3} = \) adalah \( \frac{11}{6}\).
                   </p>
-
-                  <br>
-                  <br>
                   <br>
                 </div>
               </div>
             </div>
-
             <div class="col-sm-6">
               <div class="content" onclick="return false;">
                 <!-- Konten kolom kanan -->
                 <div class="langkahnya vv">
                   <br>
-                  <ol type="1" class="jarak_atas ckck">
-                    <li>
-                      <p>Hasil penjumlahan dari \( \frac {1}{2} + \frac{4}{3} = ...\)</p>
-                    </li>
-                  </ol>
+                  <p class="text-start ms-3 me-3"> 2. Hasil penjumlahan dari \( \frac {3}{10} + \frac{1}{6} = ...\)</p>
                   <div class="alert alert-success ms-3 me-3" role="alert">
                     Karena pecahan mempunyai penyebut berbeda, maka ubah lah menjadi pecahan senilai sehingga penyebut
                     nya sama
                   </div>
-
-                  <br />
-                  <p class="fst-italic ms-3 me-3">Untuk melihat penyelesaian, silahkan klik tombol di bawah secara
+                  <p class="fst-italic fw-semibold ms-3 me-3">Untuk melihat penyelesaian, silahkan klik tombol di bawah
+                    secara
                     berurutan !</p>
 
-                  <br />
-                  <button id="button11" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText11', 11)">1. Ubah
+                  <!-- Tombol button 1 -->
+                  <button id="button11" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText11', 11)">1.
+                    Ubah
                     menjadi pecahan senilai </button> <br>
                   <p id="displayText11" class="hidden ms-3 me-5">
-                    \( = \frac{1 \times 3 } {2 \times 3} + \frac{4 \times 2 } {3 \times 2} \)
+                    \( = \frac{3 \times 6 } {10 \times 3} + \frac{1 \times 10 } {6 \times 10} \)
                   </p><br>
+                  <!-- Selesai Tombol button 1 -->
+
+                  <!-- Tombol button 2 -->
                   <button id="button22" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText22', 22)">2.
                     Jumlahkan kedua pecahan</button><br>
                   <p id="displayText22" class="hidden ms-3 me-5">
-                    \( = \frac {3}{6} + \frac {8}{6} \)
+                    \( = \frac {18}{60} + \frac {10}{60} = \frac{28}{60} \)
                   </p><br>
+                  <!-- Selesai Tombol button 2 -->
+
+                  <!-- Tombol button 3 -->
                   <button id="button33" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText33', 33)">3.
-                    Hasil Penjumlahan</button><br>
+                    Sederhanakan pecahan</button><br>
 
                   <p id="displayText33" class="hidden ms-3 me-5">
-                    \( = \frac {11}{6} \) <br />
-                    Jadi hasil penjumlahan dari \( \frac {1}{2} + \frac{4}{3} = \) adalah \( \frac{11}{6}\).
+                    \( = \frac{28}{60} : \frac{4}{4} \)
                   </p>
-                  <button id="button44" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText44', 44)">3.
-                    Hasil Penjumlahan</button><br>
+                  <br>
+                  <!-- Selesai Tombol button 3 -->
 
+                  <!-- Tombol button 4 -->
+                  <button id="button44" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText44', 44)">4.
+                    Hasil Penjumlahan</button>
+                  <br>
                   <p id="displayText44" class="hidden ms-3 me-5">
-                    \( = \frac {11}{6} \) <br />
-                    Jadi hasil penjumlahan dari \( \frac {1}{2} + \frac{4}{3} = \) adalah \( \frac{11}{6}\).
+                    \( = \frac{7}{15}\) <br />
+                    Jadi hasil penjumlahan dari \( \frac {3}{10} + \frac{1}{6} = \) adalah \( = \frac{7}{15}\).
                   </p>
                   <br>
-                  <br>
-                  <br>
+                  <!-- Selesai Tombol button 4 -->
+
                 </div>
               </div>
             </div>
-            <!-- <button id="myButton" class="btn btn-primary" onclick="toggleText()">Ubah menjadi pecahan
-                    senilai</button>
-                  <p id="displayText" class="hidden">
-                    Tulisan ditampilkan setelah tombol diklik.</p>
-
-                  <div class="klikdiketahui">
-                    <a href="#diketahui" onclick="diketahui('diketahui')">
-                      <h6 style="color: #fff">Ubah menjadi pecahan senilai</h6>
-                    </a>
-                  </div>
-                  <div class="diketahui" id="diketahui">
-                    <p class="pjarak"></p>
-                    <p class="jarak">\( = \frac{1 \times 3 } {2 \times 3} + \frac{4 \times 2 } {3 \times 2} \)</p>
-                  </div>
-
-                  <div class="klikditanya">
-                    <a href="#ditanya" onclick="ditanya('ditanya')">
-                      <h6 style="color: #fff">Jumlahkan kedua pecahan</h6>
-                    </a>
-                  </div>
-                  <div class="ditanya" id="ditanya">
-                    <p class="jarak2">\( = \frac {3}{6} + \frac {8}{6} \)</p>
-                  </div>
-
-                  <div class="klikrumus">
-                    <a href="#rumus" onclick="rumus('rumus')">
-                      <h6 style="color: #fff">Hasil Penjumlahan</h6>
-                    </a>
-                  </div>
-                  <div class="rumus" id="rumus">
-                    <p class="jarak3">
-                      \( = \frac {11}{6} \) <br />
-                      Jadi hasil penjumlahan dari \( \frac {1}{2} + \frac{4}{3} = \) adalah \( \frac{11}{6}\).
-                    </p>
-                    <br /><br />
-
-                    <br /> -->
           </div>
         </div>
-
       </div>
-    </div>
-    </div>
-
-    </div>
     </div>
     </div>
     <footer>
