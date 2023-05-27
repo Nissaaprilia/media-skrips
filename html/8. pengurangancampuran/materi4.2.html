@@ -19,12 +19,18 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/konten.css" />
+    <link rel="stylesheet" href="../../css/content.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
-  <body>
+<body style="display: flex; flex-direction: column">
+  <input type="checkbox" id="check" />
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
     <div class="sidebar open">
       <div class="logo-details">
       <a href="../home.html"><i class="bx bx-home"></a></i>
@@ -108,14 +114,14 @@
         </li>
       </ul>
     </div>
-    <section class="home-section">
-      <div class="home-content">
-        <i class="bx bx-menu"></i>
-        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Pengurangan Pecahan Campuran</div>
-      </div>
-      <div class="konten col-9-5 ms-2">
-        <div class="card lg p-3 mb-5 bg-white rounded">
-          <div class="card-body border border-primary ms-3 me-3">
+     <section>
+    <div class="header container-fluid text-center text-white">
+      <p style="margin: 10px 0 5px 0; font-weight: bold; font-size: 24px;  ">Pengurangan Pecahan Campuran</p>
+    </div>
+    <div id="content">
+      <div class="materi shadow">
+        <div class="isipendahuluan bg-white">
+            <!-- <div class="card-body border border-primary ms-3 me-3"> -->
             <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
             <p>Jawablah pertanyaan-pertanyaan berikut!</p>
             <div class="card-body border border-primary ms-3 me-3">
@@ -126,7 +132,7 @@
                   </div>
                   <div class="col bg-light">
                     <div id="berlatih" class="card mt-3">
-                      <div class="card-body bg-white" style="height: 330px; overflow-y: auto">
+                      <div class="card-body bg-white" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -154,7 +160,7 @@
                       </div>
                     </div>
                     <div id="soal2" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -183,7 +189,7 @@
                       </div>
                     </div>
                     <div id="soal3" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -212,7 +218,7 @@
                       </div>
                     </div>
                     <div id="soal4" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -241,7 +247,7 @@
                       </div>
                     </div>
                     <div id="soal5" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -270,7 +276,7 @@
                       </div>
                     </div>
                     <div id="soal6" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -299,7 +305,7 @@
                       </div>
                     </div>
                     <div id="soal7" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -328,7 +334,7 @@
                       </div>
                     </div>
                     <div id="soal8" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -357,7 +363,7 @@
                       </div>
                     </div>
                     <div id="soal9" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -386,7 +392,7 @@
                       </div>
                     </div>
                     <div id="soal10" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Kerjakan pengurangan pecahan campuran di bawah ini dengan bentuk paling sederhana !</p>
                         <table class="table table-borderless text-black text-center">
@@ -409,7 +415,7 @@
                         <div id="alertHasil10"></div>
                         <center>
                           <div id="btnCek10" class="btn btn-outline-success">Cek Jawaban</div>
-                          <div id="btnLanjut10" class="btn btn-danger mt-2" style="display: none">Soal Berikutnya</div>
+                          <div id="btnLanjut10" class="btn btn-danger mt-2" style="display: none">Kuis 2</div>
                         </center>
                         <br />
                       </div>
@@ -420,18 +426,19 @@
               </div>
             </div>
           </div>
-        </div>
-        <nav aria-label="Page navigation example ">
-          <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
-            <li class="page-item"><a class="page-link" href="../4. pecahancampuran/materi2.2.html">Previous</a></li>
+      </div>
+    </div>
+    <footer>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center pt-2 me-2">
+          <li class="page-item"><a class="page-link" href="../4. pecahancampuran/materi2.2.html">Previous</a></li>
             <li class="page-item"><a class="page-link" href="../5. penjumlahancampuran/materi2.3.html">1</a></li>
             <li class="page-item active"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="../../html/kuis/kuis2.html">Kuis 2</a></li>
           </ul>
-        </nav>
-      </div>
-    </section>
-
+      </nav>
+    </footer>
+  </section>
     <script>
       let arrow = document.querySelectorAll(".arrow");
       for (var i = 0; i < arrow.length; i++) {
