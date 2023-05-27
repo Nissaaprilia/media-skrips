@@ -1212,6 +1212,29 @@ header nav.navbar {
   border-radius: 10px;
 }
 
+#displayText10 {
+  border: 2px solid #33b2ed;
+  padding: 10px;
+  border-radius: 10px;
+}
+#displayText20 {
+  border: 2px solid #33b2ed;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#displayText30 {
+  border: 2px solid #33b2ed;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#displayText40 {
+  border: 2px solid #33b2ed;
+  padding: 10px;
+  border-radius: 10px;
+}
+
 #displayText11 {
   border: 2px solid #33ed5e;
   padding: 10px;

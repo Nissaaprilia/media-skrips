@@ -19,11 +19,17 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/konten.css" />
+    <link rel="stylesheet" href="../../css/content.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
-  <body>
+<body style="display: flex; flex-direction: column">
+  <input type="checkbox" id="check" />
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
     <div class="sidebar open">
       <div class="logo-details">
         <a href="../home.html"><i class="bx bx-home"></a></i>
@@ -107,14 +113,15 @@
         </li>
       </ul>
     </div>
-    <section class="home-section">
-      <div class="home-content">
-        <i class="bx bx-menu"></i>
-        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Pengurangan Pecahan Senilai</div>
-      </div>
-      <div class="konten col-9-5 ms-2">
-        <div class="card lg p-3 mb-5 bg-white rounded">
-          <div class="card-body border border-primary ms-3 me-3">
+   <section>
+    <div class="header container-fluid text-center text-white">
+      <p style="margin: 10px 0 5px 0; font-weight: bold; font-size: 24px;  ">Penjumlahan Pecahan Beda Penyebut</p>
+    </div>
+
+    <div id="content">
+      <div class="materi shadow">
+        <div class="isipendahuluan bg-white">
+         <div class="card-body border border-primary ms-3 me-3">
             <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
 
             <p>Jawablah pertanyaan-pertanyaan berikut!</p>
@@ -126,7 +133,7 @@
                   </div>
                   <div class="col bg-light">
                     <div id="berlatih" class="card mt-3">
-                      <div class="card-body bg-white" style="height: 330px; overflow-y: auto">
+                      <div class="card-body bg-white" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -156,7 +163,7 @@
                       </div>
                     </div>
                     <div id="soal2" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -184,7 +191,7 @@
                       </div>
                     </div>
                     <div id="soal3" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -213,7 +220,7 @@
                     </div>
 
                     <div id="soal4" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -242,7 +249,7 @@
                     </div>
 
                     <div id="soal5" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -271,7 +278,7 @@
                     </div>
 
                     <div id="soal6" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -300,7 +307,7 @@
                     </div>
 
                     <div id="soal7" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -329,7 +336,7 @@
                     </div>
 
                     <div id="soal8" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -358,7 +365,7 @@
                     </div>
 
                     <div id="soal9" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -387,7 +394,7 @@
                     </div>
 
                     <div id="soal10" style="display: none" class="card mt-3">
-                      <div class="card-body" style="height: 330px; overflow-y: auto">
+                      <div class="card-body" style="height: 500px; overflow-y: auto">
                         <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
                         <p>Tentukan hasil pecahan senilai di bawah ini !</p>
                         <table class="table table-borderless text-black text-center">
@@ -419,18 +426,23 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <nav aria-label="Page navigation example ">
-        <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
-          <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.2.html">Previous</a></li>
+                    </div>
+                  </div>
+                </div>
+           
+   
+        <footer>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center pt-2 me-2">
+               <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.2.html">Previous</a></li>
           <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.1.html">1</a></li>
           <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.2.html">2</a></li>
           <li class="page-item active"><a class="page-link" href="../6. pengurangansenilai/materi3.3.html">3</a></li>
           <li class="page-item"><a class="page-link" href="../7. penguranganbedapenyebut/materi3.4.html">Materi Selanjutnya</a></li>
         </ul>
-      </nav>
-    </section>
+          </nav>
+        </footer>
+  </section>
     <script>
       let arrow = document.querySelectorAll(".arrow");
       for (var i = 0; i < arrow.length; i++) {

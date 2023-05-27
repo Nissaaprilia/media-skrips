@@ -19,18 +19,12 @@
     <!-- My CSS -->
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/konten.css" />
-    <link rel="stylesheet" href="../../css/content.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
 
-<body style="display: flex; flex-direction: column">
-  <input type="checkbox" id="check" />
-  <label for="check">
-    <i class="fas fa-bars" id="btn"></i>
-    <i class="fas fa-times" id="cancel"></i>
-  </label>
+  <body>
     <div class="sidebar open">
       <div class="logo-details">
         <a href="../home.html"><i class="bx bx-home"></a></i>
@@ -114,18 +108,14 @@
         </li>
       </ul>
     </div>
-   
- <section>
-    <div class="header container-fluid text-center text-white">
-      <p style="margin: 10px 0 5px 0; font-weight: bold; font-size: 24px;  ">Penjumlahan Pecahan Beda Penyebut</p>
-    </div>
-
-    <div id="content">
-      <div class="materi shadow">
-        <div class="isipendahuluan bg-white">
-          <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
-          <p>Jawablah pertanyaan-pertanyaan berikut!</p>
-            <div class="card-body border border-primary ms-3 me-3">
+    <section class="home-section">
+      <div class="home-content">
+        <i class="bx bx-menu"></i>
+        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Penjumlahan Pecahan Campuran</div>
+      </div>
+      <div class="konten col-9-5 ms-2">
+        <div class="card lg p-3 mb-5 bg-white rounded">
+          <div class="card-body border border-primary ms-3 me-3">
             <h4 class="card-title"><img src="../../img/berlatih.png" alt="" style="width: 220px" /></h4>
             <p>Jawablah pertanyaan-pertanyaan berikut!</p>
             <div class="card-body border border-primary ms-3 me-3">
@@ -430,22 +420,18 @@
               </div>
             </div>
           </div>
-          </div>
-          <br />
-          <br />
         </div>
-        </div></div>
-        <footer>
-          <nav aria-label="Page navigation example">
-            <ul class="pagination justify-content-center pt-2 me-2">
-                <li class="page-item"><a class="page-link" href="../4. pecahancampuran/materi2.2.html">Previous</a></li>
+        <nav aria-label="Page navigation example ">
+          <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
+            <li class="page-item"><a class="page-link" href="../4. pecahancampuran/materi2.2.html">Previous</a></li>
             <li class="page-item"><a class="page-link" href="../5. penjumlahancampuran/materi2.3.html">1</a></li>
             <li class="page-item active"><a class="page-link" href="#">2</a></li>
             <li class="page-item"><a class="page-link" href="../../html/kuis/kuis1.html">Kuis 1</a></li>
           </ul>
-          </nav>
-        </footer>
-  </section>
+        </nav>
+      </div>
+    </section>
+
     <script>
       let arrow = document.querySelectorAll(".arrow");
       for (var i = 0; i < arrow.length; i++) {
