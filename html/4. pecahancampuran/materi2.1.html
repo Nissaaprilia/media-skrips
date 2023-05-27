@@ -23,12 +23,17 @@
   <!-- My CSS -->
   <link rel="stylesheet" href="../../css/style.css" />
   <link rel="stylesheet" href="../../css/konten.css" />
+  <link rel="stylesheet" href="../../css/content.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 </head>
 
-<body>
-   
+<body style="display: flex; flex-direction: column">
+  <input type="checkbox" id="check" />
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
   <div class="sidebar open">
     <div class="logo-details">
       <a href="../home.html"><i class="bx bx-home"></a></i>
@@ -77,7 +82,7 @@
           <li><a href="./kuis2.html">Kuis 2</a></li>
         </ul>
       </li>
- 
+
       <li>
         <a href="../evaluasi.html">
           <i class="bx bx-line-chart"></i>
@@ -89,245 +94,285 @@
       </li>
 
       <li>
-           <div class="profile-details">
-            <div class="profile-content">
-              <div id="signoutlink">
-                <a href="#" onclick="LogOut()"> <i class="bi bi-person-circle"></a></i>
+        <div class="profile-details">
+          <div class="profile-content">
+            <div id="signoutlink">
+              <a href="#" onclick="LogOut()"> <i class="bi bi-person-circle"></a></i>
+            </div>
+            <div class="name-job">
+              <div class="profile_name">
+                <div id="userlink">
+                  <a href="#"></a>
+                </div>
               </div>
-              <div class="name-job">
-                <div class="profile_name">
-                  <div id="userlink">
-                    <a href="#"></a>
-                  </div>
+              <div class="job">
+                <div id="nisnlink">
+                  <a href="#"></a>
                 </div>
-                <div class="job">
-                  <div id="nisnlink">
-                    <a href="#"></a>
-                  </div>
-                  <!-- <i class="bx bx-log-out"></i> -->
-                </div>
+                <!-- <i class="bx bx-log-out"></i> -->
               </div>
             </div>
           </div>
+        </div>
       </li>
     </ul>
   </div>
-  <section class="home-section">
-    <div class="home-content">
-      <i class="bx bx-menu"></i>
-      <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Pecahan
-        Campuran</div>
+  <section>
+    <div class="header container-fluid text-center text-white">
+      <p style="margin: 10px 0 5px 0; font-weight: bold; font-size: 24px;  ">Pecahan Campuran</p>
     </div>
-    <div class="konten col-9-5 ms-2">
-      <div class="card lg p-3 mb-5 bg-white rounded">
-        <div class="card-body border border-primary ms-3 me-3">
-          <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-                  style="background-color: #3e54ac">
-                  Tujuan Pembelajaran
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <p>
-                    1. Peserta didik dapat memahami pecahan campuran. <br />
-                    2. Peserta didik dapat mengubah pecahan campuran menjadi pecahan senilai.
-                  </p>
+
+    <div id="content">
+      <div class="materi shadow">
+        <div class="isipendahuluan">
+          <div class="card-body">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="tujuan">
+                  <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                    style="background-color: #3e54ac">
+                    Tujuan Pembelajaran
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="tujuan"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>
+                      1. Peserta didik dapat memahami pecahan campuran. <br />
+                      2. Peserta didik dapat mengubah pecahan campuran menjadi pecahan senilai.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
-          <p class="text-start ms-2">Ayo amati penjelasan di bawah ini, kemudian perhatikan cara mengubah pecahan
-            campuran menjadi pecahan senilai !</p>
-          <div class="card-body border border-primary ms-3 me-3">
-            <p>Pecahan campuran merupakan pecahan yang terdiri atas bilangan bulat dan pecahan biasa. Pecahan biasa yang
-              pembilang nya lebih besar dari penyebutnya dapat diubah menjadi pecahan campuran dalam bentuk : 
-              <div class="border border-primary text-center fw-bold rounded-2 p-2 ms-4 me-4"> \( {a} \frac {b}{c} \) dengan (a) bilangan bulat dan  \( \frac
+
+            <!-- Isi -->
+            <div class="isipendahuluan bg-white">
+              <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
+              <p class="text-start ms-3 me-3">Ayo amati penjelasan di bawah ini, kemudian perhatikan cara mengubah
+                pecahan
+                campuran menjadi pecahan senilai !</p>
+              <!-- <div class="card-body border border-primary ms-3 me-3"> -->
+              <div class="alert alert-info me-3 ms-3" role="alert">
+                Pecahan campuran merupakan pecahan yang terdiri atas bilangan bulat dan pecahan biasa. Pecahan biasa
+                yang
+                pembilang nya lebih besar dari penyebutnya dapat diubah menjadi pecahan campuran dalam bentuk : <br>
+                \( {a} \frac {b}{c} \)
+                dengan (a) bilangan bulat dan \( \frac
                 {b}{c} \) bilangan pecahan.</div>
-            </p>
-            <div class="accordion" id="accordionExample">
+           
+
+
+            <div class="accordion " id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                   <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                    data-bs-target="#idtujuan" aria-expanded="true" aria-controls="idtujuan"
                     style="background-color: #3e54ac">
                     Mengubah pecahan campuran menjadi pecahan biasa
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                <div id="idtujuan" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample">
                   <div class="accordion-body bg-light">
-                    <!-- <p>
-                      Pecahan campuran \( {2} \frac {3}{5} \) bisa kita sederhanakan menjadi pecahan biasa.
-                      Langkah-langkah mengubah atau menyederhanakan pecahan campuran menjadi pecahan biasa sebagai
-                      berikut: <br /> <br>
-                      1. Pisahkan bilangan bulat dengan bilangan pecahan. <br>
-                      \( {2} \frac {3}{5} \) 
-                    </p> -->
+
                     <table class="table table-borderless">
-  
-  <tbody style="vertical-align: middle;">
-    <tr>
-      <th>1.</th>
-      <td>Pisahkan bilangan bulat dengan bilangan pecahan.</td>
-    </tr>
-    <tr>
-      <th colspan="2"> <h5>\( {2} \frac {3}{5} = {2} + \frac {3}{5} \) </h5></th>
-    </tr>
-       <tr>
-      <th>2.</th>
-      <td>Kali kan bilangan bulat dengan penyebut.</td>
-    </tr>
-    <tr>
-      <th colspan="2"> <h5>\( {2} \frac {3}{5} = \frac {( 2 \times 5 )+ 3}{5}  \)  </h5></th>
-    </tr>
-     <tr>
-      <th>3. </th>
-      <td> Perkalian tersebut, tambahkan dengan pembilang. </td>
-    </tr>
-    <tr>
-      <th colspan="2"> <h5>\( {2} \frac {3}{5} = \frac { 10  + 3}{5} \)  </h5></th>
-    </tr>
-     <tr>
-      <th>4. </th>
-      <td> Hasil pecahan campuran \( {2} \frac {3}{5} \)  di ubah menjadi pecahan biasa adalah \( \frac{13}{5}\) </td>
-    </tr>
-    <tr>
-      <th colspan="2"> <h5> </h5></th>
-    </tr>
-  </tbody>
-</table>
+
+                      <tbody style="vertical-align: middle;">
+                        <tr>
+                          <th>1.</th>
+                          <td>Pisahkan bilangan bulat dengan bilangan pecahan.</td>
+                        </tr>
+                        <tr>
+                          <th colspan="2">
+                            <div class="alert alert-danger fs-5 ms-5 " role="alert">
+                              \( {2} \frac {3}{5} = {2} + \frac {3}{5} \)
+                            </div>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>2.</th>
+                          <td>Kali kan bilangan bulat dengan penyebut.</td>
+                        </tr>
+                        <tr>
+                          <th colspan="2">
+                            <div class="alert alert-danger fs-5 ms-5 " role="alert">
+                              \( {2} \frac {3}{5} = \frac {( 2 \times 5 )+ 3}{5} \)
+                            </div>
+                           
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>3. </th>
+                          <td> Perkalian tersebut, tambahkan dengan pembilang. </td>
+                        </tr>
+                        <tr>
+                          <th colspan="2">
+                            <div class="alert alert-danger fs-5 ms-5 " role="alert">
+                             \( {2} \frac {3}{5} = \frac { 10 + 3}{5} \)
+                            </div>
+                         
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>4. </th>
+                          
+                          <td> Hasil pecahan campuran \( {2} \frac {3}{5} \) di ubah menjadi pecahan biasa adalah \(
+                            \frac{13}{5}\) 
+                         </td>
+                        </tr>
+                        <tr>
+                          <th colspan="2">
+                          
+                          </th>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
             </div>
             <br />
-          
+
             <center>
-              <button id="cardBtn1" class="btn btn-success" style="background-color: #3e54ac">Selesai Membaca</button>
+              <button id="cardBtn1" class="btn btn-success" style="background-color: #3e54ac">Selesai
+                Membaca</button>
             </center>
-          </div>
-
-          <br />
-
           <div id="card2" class="card-body" style="display: none">
             <h4 class="card-title"><img src="../../img/mencoba.png" alt="" style="width: 220px" /></h4>
             <p class="text-start ms-2">Cobalah mengubah pecahan campuran menjadi pecahan senilai !</p>
-            <div class="card-body border border-primary ms-3 me-3">
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
-                      style="background-color: #3e54ac">
-                      Petunjuk Pengerjaan
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body" style="background-color: #adbdff">
-                      <p>
-                        1. Pasangkan pecahan campuran dan pecahan biasa yang hasilnya senilai <br />
-                        2. Jawab pada kolom yang sudah disediakan <br />
-                        3. Untuk memeriksa jawaban bisa klik tombol "cek jawaban"<br />
-                        4. Jika jawaban benar maka kolom akan berwarna "hijau"<br />
-                        5. Jika jawaban salah maka kolom akan berwarna "merah" <br />
-                      </p>
-                    </div>
+            <!-- <div class="card-body border border-primary ms-3 me-3"> -->
+            <div class="accordion" id="petunjuk">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="pp">
+                  <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#petunjuko" aria-expanded="true" aria-controls="petunjuko"
+                    style="background-color: #3e54ac">
+                    Petunjuk Pengerjaan
+                  </button>
+                </h2>
+                <div id="petunjuko" class="accordion-collapse collapse show" aria-labelledby="pp"
+                  data-bs-parent="#petunjuk">
+                  <div class="accordion-body" style="background-color: #adbdff">
+                    <p>
+                      1. Pasangkan pecahan campuran dan pecahan biasa yang hasilnya senilai <br />
+                      2. Jawab pada kolom yang sudah disediakan <br />
+                      3. Untuk memeriksa jawaban bisa klik tombol "cek jawaban"<br />
+                      4. Jika jawaban benar maka kolom akan berwarna "hijau"<br />
+                      5. Jika jawaban salah maka kolom akan berwarna "merah" <br />
+                    </p>
                   </div>
                 </div>
               </div>
-              <br />
-              <div class="container text-start">
-                <div class="row align-items-center">
-                  <div class="col bg-light">
-                    <table class="tabb">
-                      <thead>
-                        <tr style="text-align: center">
-                          <th scope="col">Soal</th>
-                          <th scope="col">Jawaban</th>
-                        </tr>
-                        <tr>
-                          <td>1). \( {1} \frac{1}{8} =\)</td>
-                          <td>
-                            <div class="droppable" id="drop1" value="kosong" ondrop="drop(event)"
-                              ondragover="allowDrop(event)"></div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>2). \( {3} \frac{1}{5} =\)</td>
-                          <td>
-                            <div class="droppable" id="drop2" value="kosong" ondrop="drop(event)"
-                              ondragover="allowDrop(event)"></div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>3). \( {4} \frac{1}{2} =\)</td>
-                          <td>
-                            <div class="droppable" id="drop3" value="kosong" ondrop="drop(event)"
-                              ondragover="allowDrop(event)"></div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>4). \( {4} \frac{1}{3} =\)</td>
-                          <td>
-                            <div class="droppable" id="drop4" value="kosong" ondrop="drop(event)"
-                              ondragover="allowDrop(event)"></div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>5). \( {4} \frac{2}{5} =\)</td>
-                          <td>
-                            <div class="droppable" id="drop5" value="kosong" ondrop="drop(event)"
-                              ondragover="allowDrop(event)"></div>
-                          </td>
-                        </tr>
-                      </thead>
-                    </table>
+            </div>
+            <br />
+            <div class="container text-start">
+              <div class="row align-items-center">
+                <div class="col bg-light">
+                  <table class="tabb">
+                    <thead>
+                      <tr style="text-align: center">
+                        <th scope="col">Soal</th>
+                        <th scope="col">Jawaban</th>
+                      </tr>
+                      <tr>
+                        <td>1). \( {1} \frac{1}{8} =\)</td>
+                        <td>
+                          <div class="droppable" id="drop1" value="kosong" ondrop="drop(event)"
+                            ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2). \( {3} \frac{1}{5} =\)</td>
+                        <td>
+                          <div class="droppable" id="drop2" value="kosong" ondrop="drop(event)"
+                            ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>3). \( {4} \frac{1}{2} =\)</td>
+                        <td>
+                          <div class="droppable" id="drop3" value="kosong" ondrop="drop(event)"
+                            ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>4). \( {4} \frac{1}{3} =\)</td>
+                        <td>
+                          <div class="droppable" id="drop4" value="kosong" ondrop="drop(event)"
+                            ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>5). \( {4} \frac{2}{5} =\)</td>
+                        <td>
+                          <div class="droppable" id="drop5" value="kosong" ondrop="drop(event)"
+                            ondragover="allowDrop(event)"></div>
+                        </td>
+                      </tr>
+                    </thead>
+                  </table>
+                  <br />
+                  <button type="button" onclick="cekJawabandropkesimpulan()" class="btn btn-primary">Cek
+                    Jawaban</button>
+                </div>
+                <div class="col">
+                  <p>Pasangkan hasil pengurangan pada kotak jawaban di samping</p>
+                  <div class="kotak">
+                    <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
+                      ondragstart="drag(event)" id="drag1">A.<img src="../../img/pasangkancamp/g.soal.png"
+                        width="15%" /></div>
+                    <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
+                      ondragstart="drag(event)" id="drag2">B.<img src=" ../../img/pasangkancamp/d.soal.png"
+                        width="20%" /></div>
+                    <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
+                      ondragstart="drag(event)" id="drag3">C.<img src=" ../../img/pasangkancamp/d.soal.png"
+                        width="20%" /></div>
+                    <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
+                      ondragstart="drag(event)" id="drag4">D.<img src="../../img/pasangkancamp/a.soal.png"
+                        width="25%" /></div>
+                    <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
+                      ondragstart="drag(event)" id="drag5">E.<img src="../../img/pasangkancamp/j.soal.png"
+                        width="20%" /></div>
                     <br />
-                    <button onclick="cekJawabandropkesimpulan()" class="cekjwb">Cek Jawaban</button>
-                  </div>
-                  <div class="col">
-                    <p>Pasangkan hasil pengurangan pada kotak jawaban di samping</p>
-                    <div class="kotak">
-                      <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
-                        ondragstart="drag(event)" id="drag1">A.<img src="../../img/pasangkancamp/g.soal.png"
-                          width="15%" /></div>
-                      <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
-                        ondragstart="drag(event)" id="drag2">B.<img src=" ../../img/pasangkancamp/d.soal.png"
-                          width="20%" /></div>
-                      <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
-                        ondragstart="drag(event)" id="drag3">C.<img src=" ../../img/pasangkancamp/d.soal.png"
-                          width="20%" /></div>
-                      <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
-                        ondragstart="drag(event)" id="drag4">D.<img src="../../img/pasangkancamp/a.soal.png"
-                          width="25%" /></div>
-                      <div ondrop="drop(event)" ondragover="allowDrop(event)" class="draggable" draggable="true"
-                        ondragstart="drag(event)" id="drag5">E.<img src="../../img/pasangkancamp/j.soal.png"
-                          width="20%" /></div>
-                      <br />
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          </div>
+
+          <br />
+
+          
         </div>
       </div>
-      <nav aria-label="Page navigation example ">
-        <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
-          <li class="page-item"><a class="page-link" href="../3. penjumlahanbedapenyebut/materi1.6.html">Materi Sebelumnya</a></li>
+    </div>
+    </div>
+    </div>
+    </div>
+     </div>
+
+
+    <!-- Akhir pendahuluan -->
+    </div>
+
+    <!-- Pindah Halaman -->
+    <footer>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center pt-2 me-2">
+          <li class="page-item"><a class="page-link" href="../3. penjumlahanbedapenyebut/materi1.6.html">Materi
+              Sebelumnya</a></li>
           <li class="page-item active"><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="../4. pecahancampuran/materi2.2.html">2</a></li>
           <li class="page-item"><a class="page-link" href="../4. pecahancampuran/materi2.2.html">Next</a></li>
         </ul>
+
       </nav>
-    </div>
+    </footer>
+    <!-- Akhir Pindah Halaman -->
+    <!-- </div> -->
   </section>
   <script>
     document.getElementById("cardBtn1").addEventListener("click", function () {
