@@ -1,128 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Penjumlahan dan Pengurangan Bilangan Pecahan</title>
 
-    <!-- Boxiocns CDN Link -->
-    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
-    <!-- Matjax -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Penjumlahan dan Pengurangan Bilangan Pecahan</title>
 
-    <!-- Bootstrap Icon-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- Boxiocns CDN Link -->
+  <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Matjax -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="../../css/konten.css" />
+  <!-- Bootstrap Icon-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div class="sidebar open">
-      <div class="logo-details">
-        <a href="../home.html"><i class="bx bx-home"></a></i>
-        <span class="logo_name">Bilangan Pecahan</span>
-      </div>
-      <ul class="nav-links">
-        <li>
-          <a href="../1. pendahuluan/mulaibelajar.html">
-            <i class="bx bx-grid-alt"></i>
-            <span class="link_name">Pendahuluan</span>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/konten.css" />
+  <link rel="stylesheet" href="../../css/content.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body style="display: flex; flex-direction: column">
+  <input type="checkbox" id="check" />
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar open">
+    <div class="logo-details">
+      <a href="../home.html"><i class="bx bx-home"></a></i>
+      <span class="logo_name">Bilangan Pecahan</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="../1. pendahuluan/mulaibelajar.html">
+          <i class="bx bx-grid-alt"></i>
+          <span class="link_name">Pendahuluan</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="../1. pendahuluan/mulaibelajar.html">Pendahuluan</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="bx bxs-plus-circle"></i>
+            <span class="link_name">Penjumlahan Pecahan</span>
           </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="../1. pendahuluan/mulaibelajar.html">Pendahuluan</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bxs-plus-circle"></i>
-              <span class="link_name">Penjumlahan Pecahan</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Penjumlahan Pecahan</a></li>
-            <li><a href="../2. penjumlahansenilai/materi1.1.html">Penjumlahan Senilai</a></li>
-            <li><a href="../3. penjumlahanbedapenyebut/materi1.4.html">Penjumlahan Beda Penyebut</a></li>
-            <li><a href="../4. pecahancampuran/materi2.1.html">Pecahan Campuran</a></li>
-            <li><a href="../5. penjumlahancampuran/materi2.3.html">Penjumlahan Campuran</a></li>
-            <li><a href="../kuis/kuis1.html">Kuis 1</a></li>
-          </ul>
-        </li>
-        <li class="aktif">
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bxs-minus-circle"></i>
-              <span class="link_name">Pengurangan Pecahan</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
-          </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Pengurangan Pecahan</a></li>
-            <li class="aktif"><a href="../6. pengurangansenilai/materi3.1.html">Pengurangan Senilai</a></li>
-            <li><a href="../7. penguranganbedapenyebut/materi3.4.html">Pengurangan Beda Penyebut</a></li>
-            <li><a href="../8. pengurangancampuran/materi4.1.html">Pengurangan Campuran</a></li>
-            <li><a href="../kuis/kuis2.html">Kuis 2</a></li>
-          </ul>
-        </li>
-
-        <li>
-          <a href="../evaluasi.html">
-            <i class="bx bx-line-chart"></i>
-            <span class="link_name">Evaluasi</span>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Penjumlahan Pecahan</a></li>
+          <li><a href="../2. penjumlahansenilai/materi1.1.html">Penjumlahan Senilai</a></li>
+          <li><a href="../3. penjumlahanbedapenyebut/materi1.4.html">Penjumlahan Beda Penyebut</a></li>
+          <li><a href="../4. pecahancampuran/materi2.1.html">Pecahan Campuran</a></li>
+          <li><a href="../5. penjumlahancampuran/materi2.3.html">Penjumlahan Campuran</a></li>
+          <li><a href="../kuis/kuis1.html">Kuis 1</a></li>
+        </ul>
+      </li>
+      <li class="aktif">
+        <div class="iocn-link">
+          <a href="#">
+            <i class="bx bxs-minus-circle"></i>
+            <span class="link_name">Pengurangan Pecahan</span>
           </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="../evaluasi.html">Evaluasi</a></li>
-          </ul>
-        </li>
+          <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Pengurangan Pecahan</a></li>
+          <li class="aktif"><a href="../6. pengurangansenilai/materi3.1.html">Pengurangan Senilai</a></li>
+          <li><a href="../7. penguranganbedapenyebut/materi3.4.html">Pengurangan Beda Penyebut</a></li>
+          <li><a href="../8. pengurangancampuran/materi4.1.html">Pengurangan Campuran</a></li>
+          <li><a href="../kuis/kuis2.html">Kuis 2</a></li>
+        </ul>
+      </li>
 
-        <li>
-          <div class="profile-details">
-            <div class="profile-content">
-              <div id="signoutlink">
-                <a href="#" onclick="LogOut()"><i class="bi bi-person-circle"></a></i>
+      <li>
+        <a href="../evaluasi.html">
+          <i class="bx bx-line-chart"></i>
+          <span class="link_name">Evaluasi</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="../evaluasi.html">Evaluasi</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <div id="signoutlink">
+              <a href="#" onclick="LogOut()"><i class="bi bi-person-circle"></a></i>
+            </div>
+            <div class="name-job">
+              <div class="profile_name">
+                <div id="userlink">
+                  <a href="#"></a>
+                </div>
               </div>
-              <div class="name-job">
-                <div class="profile_name">
-                  <div id="userlink">
-                    <a href="#"></a>
-                  </div>
+              <div class="job">
+                <div id="nisnlink">
+                  <a href="#"></a>
                 </div>
-                <div class="job">
-                  <div id="nisnlink">
-                    <a href="#"></a>
-                  </div>
-                  <!-- <i class="bx bx-log-out"></i> -->
-                </div>
+                <!-- <i class="bx bx-log-out"></i> -->
               </div>
             </div>
           </div>
-        </li>
-      </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <section>
+    <div class="header container-fluid text-center text-white">
+      <p style="margin: 10px 0 5px 0; font-weight: bold; font-size: 24px;  ">Penjumlahan Pecahan Senilai</p>
     </div>
-    <section class="home-section">
-      <div class="home-content">
-        <i class="bx bx-menu"></i>
-        <div class="badge text-wrap p-2 mb-2 fw-bold fs-5" style="background-color: #655dbb; width: 86rem" ;>Pengurangan Pecahan Senilai</div>
-      </div>
-      <div class="konten col-9-5 ms-2">
-        <div class="card lg p-3 mb-5 bg-white rounded">
-          <div class="card-body border border-primary ms-3 me-3">
+    <div id="content">
+      <div class="materi shadow">
+        <div class="isipendahuluan">
+          <div class="card-body">
             <div class="accordion" id="accordionExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
-                  <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background-color: #3e54ac">
+                  <button class="accordion-button text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                    style="background-color: #3e54ac">
                     Tujuan Pembelajaran
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     <p>
                       1. Peserta didik dapat menghitung pengurangan pecahan yang penyebutnya sama. <br />
@@ -132,22 +146,35 @@
                 </div>
               </div>
             </div>
+
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="materi shadow">
+        <div class="isipendahuluan bg-white">
+          <div class="card-body">
             <h4 class="card-title"><img src="../../img/mengamati.png" alt="" style="width: 220px" /></h4>
-            <p class="text-start ms-2">Ayo amati cerita di bawah ini, kemudian perhatikan cara pengurangan bilangan pecahan dari cerita tersebut !</p>
-            <div class="card-body border border-primary ms-3 me-3">
+            <p class="text-start ms-2">Ayo amati cerita di bawah ini, kemudian perhatikan cara pengurangan bilangan
+              pecahan dari cerita tersebut !</p>
+            <!-- <div class="card-body border border-primary ms-3 me-3"> -->
               <table class="table table-bordered">
                 <tbody style="vertical-align: middle; text-align: justify">
                   <tr>
                     <td colspan="2">Pada hari minggu nissa membuat wadai lempeng di potong menjadi 8 bagian .</td>
-                    <td><img src="../../img/pengurangan/lem8.png" class="rounded mx-auto d-block" width="150px" alt="" /></td>
+                    <td><img src="../../img/pengurangan/lem8.png" class="rounded mx-auto d-block" width="150px"
+                        alt="" /></td>
                   </tr>
                   <tr>
                     <td colspan="2">Wadai lempeng tersebut di berikan kepada lia \( \frac{6}{8}\) bagian.</td>
-                    <td><img src="../../img/pengurangan/lem86.png" class="rounded mx-auto d-block" width="150px" alt="" /></td>
+                    <td><img src="../../img/pengurangan/lem86.png" class="rounded mx-auto d-block" width="150px"
+                        alt="" /></td>
                   </tr>
                   <tr>
-                    <td colspan="2">Kemudian wadai lempeng tersebut juga di berikan kepada yanti\( \frac{4}{8}\)bagian.</td>
-                    <td><img src="../../img/pengurangan/lem84.png" class="rounded mx-auto d-block" width="150px" alt="" /></td>
+                    <td colspan="2">Kemudian wadai lempeng tersebut juga di berikan kepada yanti\( \frac{4}{8}\)bagian.
+                    </td>
+                    <td><img src="../../img/pengurangan/lem84.png" class="rounded mx-auto d-block" width="150px"
+                        alt="" /></td>
                   </tr>
                   <tr>
                     <td colspan="2">Berapa bagian sisa wadai lempeng tersebut?</td>
@@ -161,112 +188,286 @@
               <center>
                 <button id="btnselesai" class="btn btn-success" style="background-color: #3e54ac">Lanjut</button>
               </center>
-              <!-- <p>April mempunyai tali sepanjang \( \frac{9}{10}\)m. kemudian tali digunakan \( \frac{2}{10}\)m. Berapa meter tali yang di miliki april sekarang?</p>
-              <img src="../img/semangka.webp" class="rounded mx-auto d-block" style="width: 250px" />
-              \( \frac{9}{10} - \frac{2}{10} = \) -->
             </div>
-            <div class="card-body border border-primary ms-3 me-3">
-              <div id="card2lanjut" class="card-body" style="display: none">
-                <div class="container text-start">
-                  <div class="row align-items-center">
-                    <div class="col">
-                      <table>
-                        <tr>
-                          <th scope="row"><img src="../../img/pengurangan/lem86.png" class="rounded mx-auto d-block" width="110px" /> lempeng lia</th>
-                          <th scope="row"><img src="../../img/pengurangan/lem84.png" class="rounded mx-auto d-block" width="110px" /> lempeng yanti</th>
-                          <td>
-                            Bagian yang diberikan kepada lia \( \frac{6}{8} \) dan yanti \( \frac{4}{8} \) <br />
-                            <br />
-                            <!-- \( \frac{2}{6} + \frac{3}{6} = ... \) -->
-                          </td>
-                        </tr>
-                      </table>
-                    </div>
-                    <div class="col bg-light">
-                      <div class="p-1 mb-2 text-white text-center fw-bold" style="background-color: #3e54ac">Penyelesaian</div>
-                      \( \frac {6}{8} - \frac{4}{8} = ..\)
+       
+        <div id="card2lanjut" class="card-body bg-white" style="display: none">
+          <div class="container text-start">
+            <div class="row align-items-center">
+              <div class="col">
+                <table class="border border-primary">
+                  <tr>
+                    <th scope="row"><img src="../../img/pengurangan/lem86.png" class="rounded mx-auto d-block"
+                        width="110px" /> lempeng lia</th>
+                    <th scope="row"><img src="../../img/pengurangan/lem84.png" class="rounded mx-auto d-block"
+                        width="110px" /> lempeng yanti</th>
+                    <td>
+                      Bagian yang diberikan kepada lia \( \frac{6}{8} \) dan yanti \( \frac{4}{8} \) <br />
                       <br />
-                      <br />
-                      Jawab :<br />
-                      <br />
-                      <p class="borderhasil">
-                        <i> Karena pecahan berpenyebut sama, maka langsung dikurangkan pembilangnya</i>
-                      </p>
-
-                      <br />
-                      <p>= \( \frac{6 - 4} 8 = \frac{2}{8}\)</p>
-                      <br />
-                      <p class="borderhasil">Jadi, \( \frac {6}{8} - \frac{4}{8} = \frac{2}{8} \)</p>
-                    </div>
-                  </div>
+                      <!-- \( \frac{2}{6} + \frac{3}{6} = ... \) -->
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div class="col bg-light">
+                <div class="p-1 mb-2 text-white text-center fw-bold" style="background-color: #3e54ac">Penyelesaian
                 </div>
+                \( \frac {6}{8} - \frac{4}{8} = ...\)
+                <br />
+                <br />
+                Jawab :<br />
+                <br />
+                  <div class="alert alert-success" role="alert">
+                  Karena pecahan berpenyebut sama, maka langsung dikurangkan pembilangnya
+                </div>
+            
+              
+                <p>= \( \frac{6 - 4} 8 = \frac{2}{8}\)</p>
+                <div class="alert alert-primary" role="alert">
+                  Jadi, \( \frac {6}{8} - \frac{4}{8} = \frac{2}{8} \) <br> 
+                  dapat disederhanakan menjadi \( \frac{1}{4} \)
+                </div>
+            
+                
+              </div>
+            </div>
+          </div>
+          <br>
+            <center>
+          <button id="cardBtn2" class="btn btn-success" style="background-color: #3e54ac">Contoh Soal
+          </button>
+        </center>
+        </div><br>
+      
+        
+      <div id="card2" class="card-body me-3 ms-3" style="display: none">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="kpkpecahan">
+              <button class="accordion-button text-white" type="button" data-bs-toggle="collapse" data-bs-target="#kpk"
+                aria-expanded="true" aria-controls="kpk" style="background-color: #3e54ac">
+                Cara menyederhanakan pecahan
+              </button>
+            </h2>
+            <div id="kpk" class="accordion-collapse collapse show" aria-labelledby="kpkpecahan"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>
+                  1. Tentukan Faktor Persekutuan Terbesar (FPB) pada contoh pecahan \( \frac{4}{8} \)
+                <div class="alert alert-warning me-3 ms-3" role="alert">
+                  tuliskan faktor-faktor dari pembilang (8) dan penyebut (12): <br>
+                  Faktor-faktor 8: 1, 2, <span class="bulatan">4</span>, 8 <br>
+                  Faktor-faktor 12: 1, 2, 3, <span class="bulatan">4</span>, 12
+                  <br>
+                  Cari faktor persekutuan terbesar (FPB), yaitu angka terbesar yang dapat membagi habis pembilang dan
+                  penyebut, yaitu <span class="bulatan">4</span>.
+                </div>
+                2. Bagi Pembilang dan Penyebut dengan FPB <br>
+                <div class="alert alert-warning me-3 ms-3" role="alert">
+                  Bagi pembilang (8) dengan FPB (4): 8 ÷ 4 = 1 <br>
+                  Bagi penyebut (12) dengan FPB (4): 12 ÷ 4 = 2 <br>
+
+                </div>
+                3. Jadi, hasil penyederhanaan pecahan dari \( \frac{4}{8} \)
+                <div class="alert alert-primary me-3 ms-3" role="alert">
+                  \( \frac{4}{8} : \frac {4}{4}\) = \( \frac{1}{2} \)
+
+                </div>
+                </p>
               </div>
             </div>
           </div>
         </div>
-        <nav aria-label="Page navigation example ">
-          <ul class="navigasi bawah pagination justify-content-center fixed-buttom">
-            <li class="page-item"><a class="page-link" href="../5. penjumlahancampuran/materi2.4.html">Materi Sebelumnya</a></li>
-            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.2.html">2</a></li>
-            <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.3.html">3</a></li>
-            <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.2.html">Next</a></li>
-          </ul>
-        </nav>
+        <br>
+        <div class="row">
+          <div class="col-sm-6 border-primary" style="border: 2px solid black; padding: 20px;">
+            <div class="content" onclick="return false;">
+              <!-- Konten kolom kiri -->
+              <div class="langkahnya vv">
+                <br>
+                <p class="text-start ms-3 me-3">1. Hasil pengurangan  dari \( \frac {14}{20} - \frac{2}{20} = ...\)</p>
+                <div class="alert alert-success ms-3 me-3" role="alert">
+                  Karena pecahan berpenyebut sama, maka langsung dikurangkan pembilangnya, dan tentukan hasil yang
+                  paling sederhana
+                </div>
+                <p class="fst-italic fw-semibold ms-3 me-3">Untuk melihat penyelesaian, silahkan klik tombol di
+                  bawah
+                  secara
+                  berurutan
+                  !</p>
+                <button id="button1" class="btn btn-primary ms-2 me-2" onclick="toggleText('displayText1', 1)">1.
+                  kurangkan kedua pecahan </button> <br>
+                <p id="displayText1" class="hidden ms-3 me-5">
+                  \( = \frac{14}{20} - \frac{2} {20} = \frac{12} {20}\)
+                </p><br>
+                <button id="button2" class="btn btn-primary ms-2 me-2" onclick="toggleText('displayText2', 2)">2.
+                  Sederhanakan pecahan</button><br>
+                <p id="displayText2" class="hidden ms-3 me-5">
+                  menyederhanakan dengan mencari FPB dari \( \frac {12}{20} \) yaitu 4.<br>
+                  \( = \frac {12}{20} : \frac {4}{4} \)
+                </p><br>
+                <button id="button3" class="btn btn-primary ms-2 me-2" onclick="toggleText('displayText3', 3)">3.
+                  Hasil pengurangan </button><br>
+                <p id="displayText3" class="hidden ms-3 me-5">
+                  \( = \frac {3}{5} \) <br />
+                  Jadi hasil pengurangan  dari \( \frac {14}{20} - \frac{2}{20} = \) \( \frac{3}{5}\).
+                </p>
+                <br>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 border-primary" style="border: 2px solid black; padding: 20px;">
+            <div class="content" onclick="return false;">
+              <!-- Konten kolom kanan -->
+              <div class="langkahnya vv">
+                <br>
+                <p class="text-start ms-3 me-3"> 2. Hasil pengurangan  dari \( \frac {14}{15} - \frac{9}{15} = ...\)
+                </p>
+                <div class="alert alert-success ms-3 me-3" role="alert">
+                  Karena pecahan berpenyebut sama, maka langsung dikurangkan pembilangnya, dan tentukan hasil yang
+                  paling sederhana
+                </div>
+                <p class="fst-italic fw-semibold ms-3 me-3">Untuk melihat penyelesaian, silahkan klik tombol di
+                  bawah
+                  secara
+                  berurutan !</p>
+
+                <!-- Tombol button 1 -->
+                <button id="button11" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText11', 11)">1.
+                  kurangkan kedua pecahan </button> <br>
+                <p id="displayText11" class="hidden ms-3 me-5">
+                  = \( \frac {14}{15} - \frac{9}{15} = \frac{5} {15}\)
+                </p><br>
+                <!-- Selesai Tombol button 1 -->
+
+                <!-- Tombol button 2 -->
+                <button id="button22" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText22', 22)">2.
+                  Sederhanakan pecahan</button><br>
+                <p id="displayText22" class="hidden ms-3 me-5">
+                  menyederhanakan dengan mencari FPB dari \( \frac {5}{15} \) yaitu 5. <br>
+                  = \( \frac {5}{15} : \frac{5}{5}  \)
+                </p><br>
+                <!-- Selesai Tombol button 2 -->
+
+                <!-- Tombol button 3 -->
+                <button id="button33" class="btn btn-primary ms-2 me-2" onclick="toggleText2('displayText33', 33)">3.
+                  Hasil pengurangan </button><br>
+
+                <p id="displayText33" class="hidden ms-3 me-5">
+                  = \( \frac{1}{3}\) <br>
+                  Jadi hasil pengurangan  dari \( \frac {14}{15} - \frac{9}{14} = \frac{1} {3}\)
+                </p>
+                <br>
+                <!-- Selesai Tombol button 3 -->
+
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-    <script>
-      document.getElementById("btnselesai").addEventListener("click", function () {
-        document.getElementById("card2lanjut").style.display = "block";
-        document.getElementById("btnselesai").style.display = "none";
-      });
-      let arrow = document.querySelectorAll(".arrow");
-      for (var i = 0; i < arrow.length; i++) {
-        arrow[i].addEventListener("click", (e) => {
-          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
-          arrowParent.classList.toggle("showMenu");
-        });
-      }
-      let sidebar = document.querySelector(".sidebar");
-      let sidebarBtn = document.querySelector(".bx-menu");
-      console.log(sidebarBtn);
-      sidebarBtn.addEventListener("click", () => {
-        sidebar.classList.toggle("close");
-      });
-    </script>
-  </body>
+    </div>
+</div>
+    </div>
+    </div>
+    </div>
+    <footer>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center pt-2 me-2">
+          <li class="page-item"><a class="page-link" href="../5. penjumlahancampuran/materi2.4.html">Materi
+              Sebelumnya</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.3.html">3</a></li>
+          <li class="page-item"><a class="page-link" href="../6. pengurangansenilai/materi3.2.html">Next</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </section>
   <script>
-    let userlink = document.getElementById("userlink");
-    let nisnlink = document.getElementById("nisnlink");
-    let signoutlink = document.getElementById("signoutlink");
-    let nama = sessionStorage.getItem("nama");
-    let nisn = sessionStorage.getItem("nisn");
-    var currentUser = null;
+    document.getElementById("btnselesai").addEventListener("click", function () {
+      document.getElementById("card2lanjut").style.display = "block";
+      document.getElementById("btnselesai").style.display = "none";
+    });
+    document.getElementById("cardBtn2").addEventListener("click", function () {
+      document.getElementById("card2").style.display = "block";
+      document.getElementById("cardBtn2").style.display = "none";
+    });
+    function toggleText(displayTextId, buttonId) {
+  var displayText = document.getElementById(displayTextId);
+  var button = document.getElementById("button" + buttonId);
 
-    // Function;
-    function getNama() {
-      if (nama == null) {
-        window.location = "/index.html";
-      } else {
-        userlink.innerText = nama;
-      }
+  if (displayText.classList.contains("hidden")) {
+    displayText.classList.remove("hidden");
+    // button.textContent = "";
+  } else {
+    displayText.classList.add("hidden");
+    // button.textContent = "" + buttonId;
+  }
+}
+
+function toggleText2(displayTextId, buttonId) {
+  var displayText = document.getElementById(displayTextId);
+  var button = document.getElementById("button" + buttonId);
+
+  if (displayText.classList.contains("hidden")) {
+    displayText.classList.remove("hidden");
+    // button.textContent = "";
+  } else {
+    displayText.classList.add("hidden");
+    // button.textContent = "" + buttonId;
+  }
+}
+
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+        arrowParent.classList.toggle("showMenu");
+      });
     }
-
-    function getNisn() {
-      if (nisn == null) {
-        window.location = "/index.html";
-      } else {
-        nisnlink.innerText = nisn;
-      }
-    }
-
-    getNama();
-    getNisn();
-
-    function LogOut() {
-      sessionStorage.removeItem("nama");
-
-      window.location = "/index.html";
-    }
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
   </script>
+</body>
+<script>
+  let userlink = document.getElementById("userlink");
+  let nisnlink = document.getElementById("nisnlink");
+  let signoutlink = document.getElementById("signoutlink");
+  let nama = sessionStorage.getItem("nama");
+  let nisn = sessionStorage.getItem("nisn");
+  var currentUser = null;
+
+  // Function;
+  function getNama() {
+    if (nama == null) {
+      window.location = "/index.html";
+    } else {
+      userlink.innerText = nama;
+    }
+  }
+
+  function getNisn() {
+    if (nisn == null) {
+      window.location = "/index.html";
+    } else {
+      nisnlink.innerText = nisn;
+    }
+  }
+
+  getNama();
+  getNisn();
+
+  function LogOut() {
+    sessionStorage.removeItem("nama");
+
+    window.location = "/index.html";
+  }
+</script>
+
 </html>

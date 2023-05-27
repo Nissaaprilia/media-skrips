@@ -39,6 +39,7 @@ document.getElementById("cardBtn2").addEventListener("click", function () {
   document.getElementById("card2").style.display = "block";
   document.getElementById("cardBtn2").style.display = "none";
 });
+
 function toggleText(displayTextId, buttonId) {
   var displayText = document.getElementById(displayTextId);
   var button = document.getElementById("button" + buttonId);
