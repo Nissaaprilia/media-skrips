@@ -25,14 +25,13 @@ let kuis = document.getElementById("kuis");
 let tmp = document.querySelector("#tbody1");
 tmp.innerHTML = "";
 let kelas = document.getElementById("kelas");
-// let sekolah = document.getElementById('sekolah');
-// sekolah = document.getElementById('sekolah');
+
 let kelasfix = "";
 let sekolahfix = "";
 let cek11 = 0;
 
 let cari = document.querySelector("#cari");
-// datahasil = kuisnya.value;
+
 cari.addEventListener("click", function () {
   let datahasil = kuis.value;
   // console.log(datahasil);
@@ -44,17 +43,9 @@ cari.addEventListener("click", function () {
   } else if (kelas.value == "2") {
     kelasfix = "V (B)";
   } else {
-    // Jika nilai kelas tidak sama dengan "1" atau "2", tambahkan logika lainnya di sini.
+    // Jika nilai kelas tidak sama dengan "1" atau "2",
   }
 
-  // if (kelas.value == "2") {
-  //   kelasfix = "V (B)";
-  // }
-  // if (sekolah.value == '3') {
-  //   sekolahfix = 'SMPN 1';
-  // } else if (sekolah.value == '4') {
-  //   sekolahfix = 'SMPN 2';
-  // }
   if (kelasfix != "") {
     //&& sekolahfix != ''
     onChildAdded(task, (data) => {
@@ -68,10 +59,11 @@ cari.addEventListener("click", function () {
               <td>${taskvalue.nama}</td>
               <td>${taskvalue.nisn}</td>
               <td>${taskvalue.kelas}</td>
-              
+
               <td>${taskvalue.nilai}</td>
               <td>${taskvalue.waktu}</td>
               <td>${taskvalue.hari}</td>
+
           </tr>`;
         idnya.push(taskvalue.id);
         // <td>${taskvalue.sekolah}</td>
@@ -81,6 +73,16 @@ cari.addEventListener("click", function () {
     $("#ModalFilter").modal("show");
   }
 });
+$("#hasilKuis")
+  .DataTable({
+    lengthMenu: [
+      [5, 10, 30, -1],
+      [5, 10, 30, "all"],
+    ],
+  })
+  .destroy();
+
+// Inisialisasi DataTable
 $("#hasilKuis")
   .DataTable({
     lengthMenu: [
@@ -132,52 +134,30 @@ window.onload = function () {
   }
 };
 
-// download data
-// downloadData.addEventListener("click", function () {
-//   if (kelas.value == "1") {
-//     kelasfix = "V (A) ";
-//   } else if (kelas.value == "2") {
-//     kelasfix = "V (B)";
-//   }
+// download data Excel
+let downloadDataExcel = document.querySelector("#downloadDataExcel");
+downloadDataExcel.addEventListener("click", function () {
+  let kelas = document.querySelector("#kelas");
+  let kelasfix = "";
 
-//   document.querySelector(".download");
-//   // download.addEventListener('click', function () {
-//   var data_type = "data:application/vnd.ms-excel";
-//   var table_div = document.getElementById("table_wrapper");
+  if (kelas.value == "1") {
+    kelasfix = "V (A)";
+  } else if (kelas.value == "2") {
+    kelasfix = "V (B)";
+  }
 
-//   if (table_div.rows.length == 0) {
-//     $("#ModalDownload").modal("show");
-//   } else {
-//     var table_html = table_div.outerHTML.replace(/ /g, "%20");
+  let table_div = document.getElementById("hasilKuis");
 
-//     var a = document.createElement("a");
-//     a.href = data_type + ", " + table_html;
-//     a.download = `Nilai_${kelasfix}.xls`;
-//     a.click();
-//   }
-// });
-// function downloadfile() {
-//   if (kelas.value == '1') {
-//     kelasfix = 'VIII A';
-//   } else if (kelas.value == '2') {
-//     kelasfix = 'VIII B';
-//   } else if (kelas.value == '3') {
-//     kelasfix = 'VIII C';
-//   }
+  if (table_div.rows.length == 0) {
+    $("#ModalDownload").modal("show");
+  } else {
+    let table_html = table_div.outerHTML;
+    let data_type = "data:application/vnd.ms-excel";
+    let encodedUri = encodeURIComponent(table_html);
 
-//   document.querySelector('.download');
-//   // download.addEventListener('click', function () {
-//   var data_type = 'data:application/vnd.ms-excel';
-//   var table_div = document.getElementById('table_wrapper');
-
-//   if (table_div.rows.length <= 1) {
-//     $('#ModalDownload').modal('show');
-//   } else {
-//     var table_html = table_div.outerHTML.replace(/ /g, '%20');
-
-//     var a = document.createElement('a');
-//     a.href = data_type + ', ' + table_html;
-//     a.download = `Nilai_${kelasfix}.xls`;
-//     a.click();
-// }
-// });
+    let a = document.createElement("a");
+    a.href = data_type + ", " + encodedUri;
+    a.download = `Nilai_${kelasfix}.xls`;
+    a.click();
+  }
+});
