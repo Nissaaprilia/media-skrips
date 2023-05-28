@@ -130,52 +130,30 @@ window.onload = function () {
     logoutguru.innerText = "Logout";
   }
 };
-// download data
-// downloadData.addEventListener("click", function () {
-//   if (kelas.value == "1") {
-//     kelasfix = "V (A) ";
-//   } else if (kelas.value == "2") {
-//     kelasfix = "V (B)";
-//   }
+// download data Excel
+let downloadDataExcel = document.querySelector("#downloadDataExcel");
+downloadDataExcel.addEventListener("click", function () {
+  let kelas = document.querySelector("#kelas");
+  let kelasfix = "";
 
-//   document.querySelector(".download");
-//   // download.addEventListener('click', function () {
-//   var data_type = "data:application/vnd.ms-excel";
-//   var table_div = document.getElementById("table_wrapper");
+  if (kelas.value == "1") {
+    kelasfix = "V (A)";
+  } else if (kelas.value == "2") {
+    kelasfix = "V (B)";
+  }
 
-//   if (table_div.rows.length == 0) {
-//     $("#ModalDownload").modal("show");
-//   } else {
-//     var table_html = table_div.outerHTML.replace(/ /g, "%20");
+  let table_div = document.getElementById("hasilEvaluasi");
 
-//     var a = document.createElement("a");
-//     a.href = data_type + ", " + table_html;
-//     a.download = `Nilai_${kelasfix}.xls`;
-//     a.click();
-//   }
-// });
-// function downloadfile() {
-//   if (kelas.value == '1') {
-//     kelasfix = 'VIII A';
-//   } else if (kelas.value == '2') {
-//     kelasfix = 'VIII B';
-//   } else if (kelas.value == '3') {
-//     kelasfix = 'VIII C';
-//   }
+  if (table_div.rows.length == 0) {
+    $("#ModalDownload").modal("show");
+  } else {
+    let table_html = table_div.outerHTML;
+    let data_type = "data:application/vnd.ms-excel";
+    let encodedUri = encodeURIComponent(table_html);
 
-//   document.querySelector('.download');
-//   // download.addEventListener('click', function () {
-//   var data_type = 'data:application/vnd.ms-excel';
-//   var table_div = document.getElementById('table_wrapper');
-
-//   if (table_div.rows.length <= 1) {
-//     $('#ModalDownload').modal('show');
-//   } else {
-//     var table_html = table_div.outerHTML.replace(/ /g, '%20');
-
-//     var a = document.createElement('a');
-//     a.href = data_type + ', ' + table_html;
-//     a.download = `Nilai_${kelasfix}.xls`;
-//     a.click();
-// }
-// });
+    let a = document.createElement("a");
+    a.href = data_type + ", " + encodedUri;
+    a.download = `NilaiEvaluasi_${kelasfix}.xls`;
+    a.click();
+  }
+});

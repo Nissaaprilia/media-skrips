@@ -157,7 +157,7 @@ downloadDataExcel.addEventListener("click", function () {
 
     let a = document.createElement("a");
     a.href = data_type + ", " + encodedUri;
-    a.download = `Nilai_${kelasfix}.xls`;
+    a.download = `NilaiKuis_${kelasfix}.xls`;
     a.click();
   }
 });
