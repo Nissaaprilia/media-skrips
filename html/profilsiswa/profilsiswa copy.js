@@ -76,26 +76,26 @@ editButtons.forEach((edit) => {
     document.querySelector(".update").classList.add("active");
 
     //Mengambil data kelas di db
-    // getKelas.then(
-    //   (kelas) => {
-    //     // Hapus opsi-opsi sebelumnya dari elemen select
-    //     $("#kelasEdit").empty();
-    //     // Tambahkan opsi-opsi baru dari data Firebase
-    //     for (var key in kelas) {
-    //       if (kelas.hasOwnProperty(key)) {
-    //         //untuk memeriksa apakah objek memiliki properti dengan nama tertentu
-    //         var option = $("<option>").val(kelas[key].kelas).text(kelas[key].kelas);
-    //         $("#kelasEdit").append(option);
-    //       }
-    //     }
-    //   },
-    //   function (error) {
-    //     console.log("Error:", error);
-    //   }
-    // );
+    getKelas.then(
+      (kelas) => {
+        // Hapus opsi-opsi sebelumnya dari elemen select
+        $("#kelasEdit").empty();
+        // Tambahkan opsi-opsi baru dari data Firebase
+        for (var key in kelas) {
+          if (kelas.hasOwnProperty(key)) {
+            //untuk memeriksa apakah objek memiliki properti dengan nama tertentu
+            var option = $("<option>").val(kelas[key].kelas).text(kelas[key].kelas);
+            $("#kelasEdit").append(option);
+          }
+        }
+      },
+      function (error) {
+        console.log("Error:", error);
+      }
+    );
 
     get(child(ref(db), `DataSiswa/` + nisn)).then((snapshot) => {
-      updateform.fullname.value = snapshot.val().fullname;
+      updateform.namaEdit.value = snapshot.val().fullname;
       updateform.nisnEdit.value = snapshot.val().nisn;
       updateform.kelasEdit.value = snapshot.val().kelas;
       // updateform.absenEdit.value = snapshot.val().absen;
@@ -116,14 +116,14 @@ editButtons.forEach((edit) => {
     updateform.addEventListener("submit", (e) => {
       e.preventDefault();
       console.log(updateform.kelasEdit.value);
-      console.log(updateform.fullname.value);
+      console.log(updateform.namaEdit.value);
       console.log(updateform.nisnEdit.value);
-      update(ref(db, `DataSiswa/` + updateform.nisnEdit.value), {
-        fullname: updateform.fullname.value,
+      update(ref(db, `DataSiswas/` + updateform.nisnEdit.value), {
+        nama: updateform.namaEdit.value,
         nisn: updateform.nisnEdit.value,
         kelas: updateform.kelasEdit.value,
-        // absen: updateform.absenEdit.value,
-        pass: updateform.pass.value,
+        absen: updateform.absenEdit.value,
+        password: enchPass1(),
       }).then(
         () => {
           Swal.fire({
@@ -145,17 +145,17 @@ editButtons.forEach((edit) => {
 
   keluarButtons.addEventListener("click", () => {
     window.location.reload();
-    // $("#kelasEdit").empty();
+    $("#kelasEdit").empty();
   });
+
+  // function decPass(dbpass) {
+  //   var decryptedText = CryptoJS.AES.decrypt(dbpass, nisn).toString(CryptoJS.enc.Utf8);
+  //   return decryptedText;
+  // }
+
+  // // mengubah Password ke enckripsi password
+  // function enchPass1() {
+  //   var pass122 = CryptoJS.AES.encrypt(updateform.passEdit.value, nisn);
+  //   return pass122.toString();
+  // }
 });
-
-// function decPass(dbpass) {
-//   var decryptedText = CryptoJS.AES.decrypt(dbpass, nisn).toString(CryptoJS.enc.Utf8);
-//   return decryptedText;
-// }
-
-// // mengubah Password ke enckripsi password
-// function enchPass1() {
-//   var pass122 = CryptoJS.AES.encrypt(updateform.passEdit.value, nisn);
-//   return pass122.toString();
-// }

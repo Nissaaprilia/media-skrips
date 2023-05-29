@@ -29,6 +29,8 @@
 
     <script type="module" src="./profilsiswa.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-- Poppins font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -42,66 +44,20 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-
-<style>
-    #userlink {
-        margin-left: 0px;
-        font-family: "Berkshire Swash", cursive;
-        font-weight: bold;
-        font-size: 1.2rem;
-    }
-
-    #signoutlink {
-        margin-left: 1%;
-    }
-
-    #signoutlink a {
-        text-decoration: none;
-        color: #9da993;
-        font-weight: bold;
-        font-family: "Berkshire Swash", cursive;
-        font-size: 1.2rem;
-    }
-
-    #signoutlink a:hover {
-        color: red;
-    }
-</style>
 </head>
 
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow-sm">
         <div class="container">
-
-            <a class="navbar-brand" href="#">
-                <div id="userlink">
-                    <a href=""></a>
-                </div>
-
-                <div id="signoutlink">
-                    <a href="" onclick="LogOut()"><i class="bi bi-box-arrow-left"></i></a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto me-2">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" onclick="goBack()">
+                <ul class="navbar-nav ms-2 me-2">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"> Kembali ke materi</a>
+                        <a class="nav-link" aria-current="page" href="#"> <i class="bi bi-backspace-fill"></i> Kembali
+                            ke materi</a>
                     </li>
-                    <!-- <li class="nav-item">
-            <a class="nav-link" href="../html/petunjuk.html"> Petunjuk </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/about.html">Tentang</a>
-          </li> -->
                 </ul>
             </div>
-        </div>
     </nav>
 
 
@@ -179,6 +135,58 @@
 
     </section>
 
+    <!-- Modal -->
+    <div id="editData" class="modal fade" data-backdrop="static" data-keyboard="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Data Siswa</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="popup update">
+                        <form action="">
+
+                            <input type="text" placeholder="Nama Siswa" name="fullname" class="form-control mb-3" />
+                            <input type="text" placeholder="NISN" name="nisnEdit" class="form-control mb-3" disabled
+                                aria-label="Close" />
+                            <select id="kelasEdit" class="form-select mb-3" name="kelasEdit"
+                                aria-placeholder="Pilih Kelas">
+                                <!-- <option selected hidden>Pilih Kelas</option> -->
+                                <option selected>Pilih Kelas</option>
+                                <option value="V (A)">V (A)</option>
+                                <option value="V (B)">V (B)</option>
+                            </select>
+                            <!-- <input type="text" placeholder="No Absen" name="absenEdit" class="form-control mb-3" /> -->
+
+                            <!-- Tambahkan ikon mata (eye) dari Font Awesome pada elemen input -->
+                            <div class="form-group">
+                                <label for="password">Kata Sandi</label>
+                                <div class="input-group">
+                                    <input type="password" placeholder="Password" name="pass" class="form-control mb-3"
+                                        id="passwordSiswa" />
+
+                                    <div class="input-group-append " id="showPasswordBtn">
+                                        <button class="btn btn-outline-secondary" type="button">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button id="keluar" type="button" class="keluar btn btn-secondary"
+                                    data-bs-dismiss="modal">Tutup</button>
+                                <button type="submit" id="submit2" class="btn btn-primary">Kirim</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Footer-->
     <footer class="footer-custom text-light py-5">
         <div class="container">
@@ -220,7 +228,14 @@
 
         window.location = "/index.html";
     }
+
+    function goBack() {
+        window.history.back();
+    }
 </script>
 </body>
+<script>
+
+</script>
 
 </html>

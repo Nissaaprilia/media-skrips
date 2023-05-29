@@ -97,7 +97,7 @@ getDataSiswa.then((users) => {
       const dbRef = ref(db);
       get(child(dbRef, `DataSiswa/${userId}`)).then((snapshot) => {
         updateform.fullname.value = snapshot.val().fullname;
-        updateform.nis.value = snapshot.val().nis;
+        updateform.nis.value = snapshot.val().nisn;
         updateform.kelas.value = snapshot.val().kelas;
         // updateform.sekolah.value = snapshot.val().sekolah;
         updateform.pass.value = snapshot.val().pass;
@@ -106,7 +106,7 @@ getDataSiswa.then((users) => {
         e.preventDefault();
         update(ref(db, `DataSiswa/${userId}`), {
           fullname: updateform.fullname.value,
-          nis: updateform.nis.value,
+          nisn: updateform.nis.value,
           kelas: updateform.kelas.value,
           // sekolah: updateform.sekolah.value,
           pass: updateform.pass.value,
@@ -119,7 +119,7 @@ getDataSiswa.then((users) => {
             // alert('Data diperbarui');
             document.querySelector(".update").classList.remove("active");
             updateform.fullname.value = snapshot.val().fullname;
-            updateform.nis.value = snapshot.val().nis;
+            updateform.nis.value = snapshot.val().nisn;
             updateform.kelas.value = snapshot.val().kelas;
             // updateform.sekolah.value = snapshot.val().sekolah;
             updateform.pass.value = snapshot.val().pass;

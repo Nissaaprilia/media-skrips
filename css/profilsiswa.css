@@ -20,7 +20,7 @@ body {
 
 .navbar-brand span {
   font-family: "Rubik", sans-serif;
-  font-weight: 600;
+  font-weight: 60;
 }
 
 .footer-custom {
@@ -41,4 +41,25 @@ body {
 
 section {
   padding-top: 5rem;
+}
+
+#userlink {
+  margin-left: 0px;
+  font-family: "Poppins", cursive;
+  font-weight: bold;
+}
+
+#signoutlink {
+  margin-left: 1%;
+}
+
+#signoutlink a {
+  text-decoration: none;
+  color: #9da993;
+  font-weight: bold;
+  font-family: "Poppins", cursive;
+}
+
+#signoutlink a:hover {
+  color: red;
 }
