@@ -418,10 +418,10 @@ function hari() {
 
 // Firebase
 function createTask(nama, nisn, kelas, nilai, waktunya, hari, jwb) {
-  counter += 1;
+  // counter += 1;
   const db = getDatabase();
-  set(ref(db, "kuis2/" + counter), {
-    id: counter,
+  set(ref(db, "kuis2/" + nisn), {
+    // id: counter,
     nama: nama,
     nisn: nisn,
     kelas: kelas,

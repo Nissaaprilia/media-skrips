@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: #3e54ac;
+  color: white; */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.navbar-custom {
+  background-color: #655dbb;
+}
+
+.navbar-brand span {
+  font-family: "Rubik", sans-serif;
+  font-weight: 600;
+}
+
+.footer-custom {
+  background-color: #655dbb;
+}
+
+.title {
+  font-family: "Rubik", sans-serif;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.title-about {
+  font-family: "Rubik", sans-serif;
+  font-size: 2em;
+  font-weight: 400;
+}
+
+section {
+  padding-top: 5rem;
+}
