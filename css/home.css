@@ -59,11 +59,12 @@ body {
 #jumbotron {
   padding-top: 250px;
   /* padding-bottom: 200px; */
-  background-image: url(../img/pendahuluan/animasi.png);
+  background-image: url(../img/pendahuluan/animasi4.png);
   background-repeat: no-repeat;
   background-position: right button;
   background-size: 40%;
-  background-position-x: 55em;
+  background-position-x: 50em;
+  background-position-y: 3em;
   position: relative;
 }
 
