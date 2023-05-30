@@ -64,10 +64,10 @@
   list-style: none;
   transition: all 0.4s ease;
 }
-.sidebar .nav-links li:hover {
+/* .sidebar .nav-links li:hover {
   background: #655dbb;
   border-radius: 20px;
-}
+} */
 .sidebar .nav-links li .iocn-link {
   display: flex;
   align-items: center;

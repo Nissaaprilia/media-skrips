@@ -91,10 +91,10 @@ a {
 }
 
 .aktif {
-  background-color: #2c266b;
+  background-color: #121218;
   color: black !important;
   cursor: pointer;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 .disabel {
