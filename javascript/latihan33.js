@@ -158,7 +158,7 @@ document.getElementById("btnCek2")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek3")?.addEventListener("click", function () {
-  if (jwb31.value == 1 && jwb32.value == 2) {
+  if (jwb31.value == 6 && jwb32.value == 12) {
     jwb31.classList.add("jawabpecahanbenar");
     jwb31.classList.remove("jawabpecahansalah");
     jwb32.classList.add("jawabpecahanbenar");
