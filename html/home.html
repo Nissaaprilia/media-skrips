@@ -10,6 +10,8 @@
   <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
   <!-- Matjax -->
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
@@ -38,28 +40,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
 <style>
-  #userlink {
-    margin-left: 0px;
-    font-family: "Berkshire Swash", cursive;
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
 
-  #signoutlink {
-    margin-left: 1%;
-  }
-
-  #signoutlink a {
-    text-decoration: none;
-    color: #9da993;
-    font-weight: bold;
-    font-family: "Berkshire Swash", cursive;
-    font-size: 1.2rem;
-  }
-
-  #signoutlink a:hover {
-    color: red;
-  }
 </style>
 </head>
 
@@ -67,29 +48,54 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top shadow-sm">
     <div class="container">
-      <a class="navbar-brand" href="#">
-       <div id="userlink">
+      <a class="navbar-brand ms-5" href="#">
+          
+        <img src="../img/logo.png" alt="Logo" style="width: 35px;height: 35px;">
+      </a>
+        <!-- <p> Penjumlahan dan pengurangan bilangan pecahan</p> -->
+      </div>
+
+       <!-- <div id="userlink">
             <a href=""></a>
+          </div>
+             <div id="">
+              <link rel="icon" href="../img/logo.png">
           </div>
 
           <div id="signoutlink">
             <a href="" onclick="LogOut()"><i class="bi bi-box-arrow-left"></i></a>
-          </div>
+          </div> -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto me-2">
+        <ul class="navbar-nav ms-auto me-5">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#"> Beranda</a>
           </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="#pecahan"> Pecahan </a>
+          </li> -->
           <li class="nav-item">
-            <a class="nav-link" href="../html/petunjuk.html"> Petunjuk </a>
+            <a class="nav-link" href="../html/about.html">Informasi</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../html/about.html">Tentang</a>
+            <li class="nav-item">
+            <a class="nav-link" id="userlink">
+            <a href=""></a>
           </li>
+           </li>
+            <li class="nav-item">
+            <a class="nav-link" id="signoutlink" onclick="LogOut()"><i class="bi bi-arrow-left-circle-fill"></i>
+            <a href=""></a>
+          </li>
+         
+         
+<!-- 
+          <div id="signoutlink">
+            <a href="" onclick="LogOut()"><i class="bi bi-box-arrow-left"></i></a>
+          </div> -->
+        
         </ul>
       </div>
     </div>
@@ -149,6 +155,23 @@
     </div>
   </section>
 
+  <div class="modal pecahan" tabindex="-1">
+  <div class="modal-dialog pecahan">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- Footer-->
   <footer class="footer-custom text-light py-5">
     <div class="container">
