@@ -41,11 +41,11 @@ body {
 }
 
 .btn-mulai {
-  background-color: #08ffff;
+  background-color: #655dbb;
 }
 
 .btn-mulai:hover {
-  background-color: #036360;
+  background-color: #b7b5d1;
 }
 
 .btn-mulai-belajar {
@@ -58,7 +58,7 @@ body {
 
 #jumbotron {
   padding-top: 250px;
-  padding-bottom: 200px;
+  /* padding-bottom: 200px; */
   background-image: url(../img/pendahuluan/animasi.png);
   background-repeat: no-repeat;
   background-position: right button;
@@ -89,7 +89,7 @@ body {
 }
 
 section {
-  padding-top: 5rem;
+  padding-top: 8rem;
 }
 
 .card {
