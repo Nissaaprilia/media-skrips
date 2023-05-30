@@ -127,6 +127,15 @@
   /* width: 50px; */
   text-decoration: none;
 }
+
+.sidebar .nav-links li .sub-menu .sub_menu_active {
+  color: #ffffff;
+  font-size: 15px;
+  padding: 5px 0;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
 .sidebar .nav-links li .sub-menu a:hover {
   opacity: 1;
 }

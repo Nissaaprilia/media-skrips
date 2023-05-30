@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/img/logo.png" />
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./coba.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <!-- Icon CDN Link -->
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+    <title>Perkalian Pecahan</title>
+  </head>
+
+  <body>
+    <div class="sidebar bg-primary">
+      <div class="logo-details justify-content-center">
+        <img src="/img/logo.png" alt="Logo" width="50" height="50" />
+        <span class="logo_name">MENU</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="/beranda.html">
+            <i class="uil uil-estate"></i>
+            <span class="nama_menu">Beranda</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="nama_menu" href="/beranda.html">Beranda</a></li>
+          </ul>
+        </li>
+        <li class="showMenu">
+          <div class="menu-active">
+            <a href="perkalian1_1.html">
+              <i class="uil uil-abacus"></i>
+              <span class="nama_menu">Perkalian</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="nama_menu" href="../Subbab1/perkalian1_1.html">Perkalian</a></li>
+            <li>
+              <a class="sub_menu_active" href="perkalian1_1.html"
+                >Bilangan Asli dengan <br />
+                Pecahan Biasa</a
+              >
+            </li>
+            <li><a href="../Subbab2/perkalian2_1.html">Dua Pecahan Biasa</a></li>
+            <li>
+              <a href="../Subbab3/perkalian3_1.html"
+                >Pecahan Campuran <br />
+                dengan Pecahan Biasa</a
+              >
+            </li>
+            <li><a href="../Kuis1/kuis1.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="menu">
+            <a href="../Subbab4/pembagian4_1.html">
+              <i class="uil uil-calculator"></i>
+              <span class="nama_menu">Pembagian</span>
+            </a>
+            <i class="bx bxs-chevron-down arrow"></i>
+          </div>
+          <ul class="sub-menu">
+            <li><a class="nama_menu" href="../Subbab4/pembagian4_1.html">Pembagian</a></li>
+            <li>
+              <a href="../Subbab4/pembagian4_1.html"
+                >Bilangan Asli dengan <br />
+                Pecahan Biasa</a
+              >
+            </li>
+            <li>
+              <a href="../Subbab5/pembagian5_1.html"
+                >Pecahan Biasa dengan <br />
+                Bilangan Asli</a
+              >
+            </li>
+            <li><a href="../Subbab6/pembagian6_1.html">Dua Pecahan Biasa</a></li>
+            <li>
+              <a href="../Subbab7/pembagian7_1.html"
+                >Pecahan Campuran <br />
+                dengan Bilangan Asli</a
+              >
+            </li>
+            <li><a href="../Kuis2/kuis2.html">Kuis</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="../Evaluasi/evaluasi.html">
+            <i class="uil uil-comments"></i>
+            <span class="nama_menu">Evaluasi</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="nama_menu" href="../Evaluasi/evaluasi.html">Evaluasi</a></li>
+          </ul>
+        </li>
+        <li>
+          <div class="profile-details">
+            <div class="name-job">
+              <div class="profile_name" id="userlink"></div>
+            </div>
+            <i class="bx bx-log-out" id="btn-logout"></i>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section position-fixed">
+      <nav class="navbar fixed-top bg-body">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <div class="home-content">
+              <i class="bx bx-menu"></i>
+              <span class="text">Perkalian Bilangan Asli dengan Pecahan Biasa</span>
+            </div>
+          </a>
+        </div>
+      </nav>
+
+      <!--Awal Konten -->
+      <div class="konten ms-3 me-3">
+        <!-- Awal Inti Materi -->
+        <div class="inti-materi">
+          <!-- Awal Inti Konten -->
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item mb-0">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Tujuan Pembelajaran</button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Memahami arti dari (bilangan asli) dikali (pecahan biasa)</li>
+                    <li>Mengetahui cara menghitung (bilangan asli) dikali (pecahan biasa)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <img src="/img/AyoMengamati.png" alt="Ayo Mengamati" />
+          <!-- Awal Contoh Accordion-->
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button fw-bold bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Contoh 1</button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>
+                    Kamu mempunyai dua alat penyiraman tanaman untuk menyiram kebun bunga. Saat kamu menggunakan alat penyiraman yang besar,1 kali siraman kamu dapat menyiram kebun seluas 2 m<sup>2</sup>. Ketika menggunakan alat penyiraman
+                    yang kecil, 1 kali siraman luas kebun yang dapat di siram seluas \(\frac {2}{5}\) m<sup>2</sup>.
+                  </p>
+                  <em>*isilah bagian yang kosong</em>
+                  <br />
+                  <em>*jika berwarna <span style="color: green">hijau</span> berarti benar, jika <span style="color: red">merah</span> berarti salah</em>
+
+                  <div class="card border-dark mb-3 mx-4" id="card-contoh">
+                    <div class="card-header">1. Berapa luas kebun yang tersiram menggunakan alat penyiraman besar jika disiram sebanyak 3 kali?</div>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table table-primary table-hover table-bordered mt-xxl-0 text-center">
+                          <tbody>
+                            <tr>
+                              <th>Banyak Penyiraman (kali)</th>
+                              <th>1</th>
+                              <th>3</th>
+                            </tr>
+                          </tbody>
+                          <tbody>
+                            <tr>
+                              <th>Luas m<sup>2</sup></th>
+                              <th>2</th>
+                              <th><input id="jawaban" class="text-center" placeholder="..." type="text" size="1" /></th>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div id="alertHasil1"></div>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                          <button id="cekJawaban" class="btn btn-primary" type="button">Cek Jawaban</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card border-dark mb-3 mx-4" id="card-contoh">
+                    <div class="card-header">2. Berapa luas kebun yang tersiram menggunakan alat penyiraman kecil jika disiram sebanyak 3 kali?</div>
+                    <div class="card-body">
+                      <div class="container">
+                        <table class="fs-3">
+                          <tr>
+                            <p>Berapa bagian gambar dibawah ini!</p>
+                            <td><img src="img/Contoh1.png" alt="Contoh 1" width="150px" /></td>
+                            <td>=</td>
+                            <td>
+                              <input id="pembilang1" class="pembilang text-center" placeholder="..." type="text" size="1" />
+                              <br />
+                              <input id="penyebut1" class="penyebut text-center" placeholder="..." type="text" size="1" />
+                            </td>
+                          </tr>
+                        </table>
+                        <div id="alertHasil2"></div>
+                        <button id="btn1" type="button" class="btn btn-primary mt-1">Cek Jawaban</button>
+
+                        <p>Kemudian, bagian ini akan di kalikan sebanyak 3 kali</p>
+                        <em>*klik tombol secara berurutan</em>
+
+                        <div class="tombol-contoh">
+                          <p>
+                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#contoh1" role="button" aria-expanded="false" aria-controls="contoh1">Dikalikan 1</a>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#contoh2" aria-expanded="false" aria-controls="contoh2">Dikalikan 2</button>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#contoh3" aria-expanded="false" aria-controls="contoh3">Dikalikan 3</button>
+                          </p>
+                          <div class="row">
+                            <div class="col-3">
+                              <div class="collapse multi-collapse" id="contoh1">
+                                <div class="card card-body">
+                                  <img src="img/dikali1.png" alt="Contoh 1" />
+                                  <p class="fs-5">\(1 \times \frac{2}{5}\) =\(\frac{1 \times 2}{5} = \frac{2}{5} \)</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-4">
+                              <div class="collapse multi-collapse" id="contoh2">
+                                <div class="card card-body">
+                                  <img src="img/dikali2.png" alt="Contoh 2" />
+                                  <p>
+                                    Dari gambar di atas dapat dilihat bahwa ada 2 bagian yang digabungkan dari \(\frac{2}{5}\) sehingga ada 4 kotak yang berwarna biru dari 5 masing-masing kotak, maka dalam perkalian dapat di tuliskan
+                                    sebagai berikut :
+                                  </p>
+                                  <p class="fs-5">\(2 \times \frac{2}{5} = \frac{2 \times 2}{5} = \frac{4}{5} \)</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-5">
+                              <div class="collapse multi-collapse" id="contoh3">
+                                <div class="card card-body">
+                                  <img src="img/dikali3.png" alt="Contoh 3" />
+                                  <p>
+                                    Dari gambar di atas dapat dilihat bahwa ada 3 bagian yang digabungkan dari \(\frac{2}{5}\) sehingga ada 6 kotak yang berwarna biru dari 5 masing-masing kotak, maka dalam perkalian dapat di tuliskan
+                                    sebagai berikut :
+                                  </p>
+                                  <p class="fs-5">\(3 \times \frac{2}{5} = \frac{3 \times 2}{5} = \frac{6}{5} \)</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed fw-bold bg-primary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Contoh 2</button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Kita akan membuat 4 potongan pita yang masing-masing panjangnya \(\frac {2}{3}\) bagian. Berapa panjang total semua pita yang kita butuhkan?</p>
+                  <div class="card border-dark mb-3 mx-4" id="card-contoh">
+                    <div class="card-header">1. Diagram di bawah menunjukkan situasi dari permasalahan di atas.</div>
+                    <div class="card-body">
+                      <img src="img/Contoh3.png" alt="Contoh 3" class="img-fluid mb-2" width="650" />
+                      <p class="fs-5">Gambar di atas menggambarkan jika 1 potongan sama dengan \(\frac {2}{3}\). Berapa jika 4 potongan?</p>
+                      <div class="tombol-contoh">
+                        <p>
+                          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">1 Potongan</a>
+                          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">2 Potongan</button>
+                          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="#multiCollapseExample3">3 Potongan</button>
+                          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample4" aria-expanded="false" aria-controls="#multiCollapseExample4">4 Potongan</button>
+                        </p>
+                        <div class="row">
+                          <div class="col-3">
+                            <div class="collapse multi-collapse" id="multiCollapseExample1">
+                              <div class="card card-body">
+                                <img src="img/satu.png" alt="Contoh 1" />
+                                <p class="text-start fs-5">1 potongan sama dengan \(\frac{2}{3}\)</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="collapse multi-collapse" id="multiCollapseExample2">
+                              <div class="card card-body">
+                                <img src="img/dua.png" alt="Contoh 2" />
+                                <p class="text-start fs-5">2 potongan berarti ada \(\frac{2}{3}\) bagian sebanyak 2 kali. Atau dapat dituliskan dengan penjumlahan sebagai berikut</p>
+                                <p class="text-start fs-5">\(\frac{2}{3}+\frac{2}{3}\)</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="collapse multi-collapse" id="multiCollapseExample3">
+                              <div class="card card-body">
+                                <img src="img/tiga.png" alt="Contoh 3" />
+                                <p class="text-start fs-5">3 potongan berarti ada \(\frac{2}{3}\) bagian sebanyak 3 kali. Atau dapat dituliskan dengan penjumlahan sebagai berikut</p>
+                                <p class="text-start fs-5">\(\frac{2}{3}+\frac{2}{3}+\frac{2}{3}\)</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-3">
+                            <div class="collapse multi-collapse" id="multiCollapseExample4">
+                              <div class="card card-body">
+                                <img src="img/empat.png" alt="Contoh 4" />
+                                <p class="text-start fs-5">4 potongan berarti ada \(\frac{2}{3}\) bagian sebanyak 4 kali. Atau dapat dituliskan dengan penjumlahan sebagai berikut</p>
+                                <p class="text-start fs-5">\(\frac{2}{3}+\frac{2}{3}+\frac{2}{3}+\frac{2}{3}\)</p>
+                                <p class="text-start fs-5">Atau dalam perkalian menjadi seperti ini :</p>
+                                <p class="text-start fs-5">\(4 \times \frac{2}{3}\)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card border-dark mb-3 mx-4" id="card-contoh">
+                    <div class="card-header">2. Ayo. Hitunglah panjang pita!</div>
+                    <div class="card-body">
+                      <div class="container">
+                        <table class="fs-4 mb-4">
+                          <tr>
+                            <td rowspan="2">\(4 \times \frac{2}{3} =\)</td>
+                            <td><input id="pembilang2" class="pembilang" type="text" placeholder="..." size="1" /></td>
+                          </tr>
+                          <tr>
+                            <td><input id="penyebut2" class="penyebut" type="text" placeholder="..." size="1" /></td>
+                          </tr>
+                        </table>
+                        <div id="alertHasil3"></div>
+                        <button id="btn2" type="button" class="btn btn-primary mt-1">Cek Jawaban</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Akhir Contoh Accordion -->
+        </div>
+        <!-- Akhir inti materi -->
+      </div>
+      <!-- Akhir Konten -->
+
+      <!-- Awal pagination -->
+      <nav aria-label="...">
+        <ul class="pagination justify-content-center mt-3 mb-0">
+          <li class="page-item disabled">
+            <a class="page-link disabled" href="perkalian1_1.html">Sebelumnya</a>
+          </li>
+          <li class="page-item active"><a class="page-link" href="perkalian1_1.html">1</a></li>
+          <li class="page-item" aria-current="page">
+            <a class="page-link" href="perkalian1_2.html">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="kesimpulan1.html">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="perkalian1_2.html">Selanjutnya</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Akhir pagination -->
+    </section>
+
+    <!-- MathJax -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- My JS -->
+    <script src="coba.js"></script>
+    <script src="js/perkalian1_1.js"></script>
+    <script src="/js/database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+
+    <script src=" https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+
+    <!-- Tombol Bootstrap -->
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
+    </script>
+  </body>
+</html>

@@ -91,12 +91,15 @@ a {
 }
 
 .aktif {
+  display: block;
   background-color: #121218;
   color: black !important;
   cursor: pointer;
   /* border-radius: 20px; */
 }
-
+.anakAktif {
+  display: inline-block !important;
+}
 .disabel {
   pointer-events: none;
   cursor: not-allowed;
