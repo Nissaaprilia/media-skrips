@@ -551,6 +551,13 @@ header nav.navbar {
   width: 28px;
 }
 
+.jawabpecahan {
+  border: none;
+  border-bottom: solid 4px rgb(193, 82, 82) !important;
+  text-align: center;
+  width: 28px;
+}
+
 .jawabpecahan1 {
   border: none;
   text-align: center;
