@@ -535,9 +535,9 @@ header nav.navbar {
 */
 
 /* jawaban pecahan  */
-.jawabpecahan {
+#tablepecahan .jawabpecahan {
   border: none;
-  border-bottom: solid 1px black;
+  border-bottom: solid 4px rgb(193, 82, 82) !important;
   text-align: center;
   width: 28px;
 }
@@ -551,7 +551,8 @@ header nav.navbar {
 .jwbpecahan {
   border: none;
   text-align: center;
-  width: 35px;
+  width: 28px;
+  /* width: 35px; */
 }
 
 .jawabpecahanbenar {
@@ -564,6 +565,10 @@ header nav.navbar {
   border: solid 2px red;
   text-align: center;
   width: 28px;
+}
+input {
+  text-align: center;
+  border: none;
 }
 
 /* rumus 1  */
