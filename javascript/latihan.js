@@ -333,7 +333,7 @@ document.getElementById("btnCek9")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek10")?.addEventListener("click", function () {
-  if (jwb101.value == 13 && jwb102.value == 17) {
+  if (jwb101.value == 15 && jwb102.value == 17) {
     jwb101.classList.add("jawabpecahanbenar");
     jwb101.classList.remove("jawabpecahansalah");
     jwb102.classList.add("jawabpecahanbenar");
