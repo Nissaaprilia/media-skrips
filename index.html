@@ -114,9 +114,9 @@
           let dbpass = snapshot.val().pass;
 
           if (dbnisn == nisn.value && dbpass == pass.value) {
-            sessionStorage.setItem("nama", dbnama);
-            sessionStorage.setItem("nisn", dbnisn);
-            sessionStorage.setItem("kelas", dbkelas);
+            localStorage.setItem("nama", dbnama);
+            localStorage.setItem("nisn", dbnisn);
+            localStorage.setItem("kelas", dbkelas);
 
             Swal.fire({
               icon: "success",

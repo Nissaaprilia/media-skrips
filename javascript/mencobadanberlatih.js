@@ -1,8 +1,8 @@
 let userlink = document.getElementById("userlink");
 let nisnlink = document.getElementById("nisnlink");
 let signoutlink = document.getElementById("signoutlink");
-let nama = sessionStorage.getItem("nama");
-let nisn = sessionStorage.getItem("nisn");
+let nama = localStorage.getItem("nama");
+let nisn = localStorage.getItem("nisn");
 
 var currentUser = null;
 
@@ -27,7 +27,7 @@ getNama();
 getNisn();
 
 function LogOut() {
-  sessionStorage.removeItem("nama");
+  localStorage.removeItem("nama");
 
   window.location = "/index.html";
 }

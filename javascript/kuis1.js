@@ -28,10 +28,10 @@ let nislink = document.getElementById("nislink");
 let kelaslink = document.getElementById("kelaslink");
 // let sekolahlink = document.getElementById("sekolahlink");
 
-let nama = sessionStorage.getItem("nama");
-let nisn = sessionStorage.getItem("nisn");
-let kelas = sessionStorage.getItem("kelas");
-// let sekolah = sessionStorage.getItem("sekolah");
+let nama = localStorage.getItem("nama");
+let nisn = localStorage.getItem("nisn");
+let kelas = localStorage.getItem("kelas");
+// let sekolah = localStorage.getItem("sekolah");
 
 userlink.innerText = nama;
 nislink.innerText = nisn;
@@ -43,10 +43,10 @@ let selanjutnya = document.querySelector("#masuk");
 let datasiswa = document.querySelector("#k1");
 
 selanjutnya.addEventListener("click", function () {
-  let nama = sessionStorage.getItem("nama");
-  let nisn = sessionStorage.getItem("nisn");
-  let kelas = sessionStorage.getItem("kelas");
-  // let sekolah = sessionStorage.getItem("sekolah");
+  let nama = localStorage.getItem("nama");
+  let nisn = localStorage.getItem("nisn");
+  let kelas = localStorage.getItem("kelas");
+  // let sekolah = localStorage.getItem("sekolah");
 
   if (nama == null) {
     Swal.fire({
@@ -365,7 +365,7 @@ dat.onreadystatechange = function () {
 
       //nilai disimpan ke local storage
       localStorage.setItem("skkuis1", hasilakhir);
-      sessionStorage.setItem("skkuis1", hasilakhir);
+      localStorage.setItem("skkuis1", hasilakhir);
       // console.log(localStorage);
     });
     //   if (hasilakhir > 60) {
