@@ -1,101 +1,101 @@
 [
   {
     "soal0": {
-      "soal": "Hasil dari $\\frac{8}{10}$ - $\\frac{3}{10}$ adalah …",
-      "a": "$\\frac{3}{20}$",
-      "b": "$\\frac{5}{5}$",
-      "c": "$\\frac{5}{10}$",
-      "d": "$\\frac{11}{10}$",
+      "soal": "Hasil dari <img src='../../html/kuis/kuis2img/soal1/1.PNG' width= '60px' > adalah …",
+      "a": "<img src='../../html/kuis/kuis2img/soal1/a.PNG' width= '30px' >",
+      "b": "<img src='../../html/kuis/kuis2img/soal1/b.PNG' width= '20px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal1/c.PNG' width= '20px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal1/d.PNG' width= '20px' >",
       "benar": "c"
     }
   },
   {
     "soal1": {
-      "soal": "Hasil dari $\\frac{10}{15}$ - $\\frac{5}{15}$ adalah …",
-      "a": "$\\frac{15}{15}$",
-      "b": "$\\frac{10}{15}$",
-      "c": "$\\frac{20}{30}$",
-      "d": "$\\frac{5}{15}$",
+      "soal": "Hasil dari <img src='../../html/kuis/kuis2img/soal2/2.PNG' width= '70px' >  adalah …",
+      "a": "<img src='../../html/kuis/kuis2img/soal2/a.PNG' width= '30px' >",
+      "b": "<img src='../../html/kuis/kuis2img/soal2/b.PNG' width= '30px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal2/c.PNG' width= '30px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal2/d.PNG' width= '30px' >",
       "benar": "d"
     }
   },
   {
     "soal2": {
-      "soal": "Pengurangan berikut yang hasilnya $\\frac{2}{21}$ adalah …",
-      "a": "$\\frac{5}{12}$ - $\\frac{5}{15}$",
-      "b": "$\\frac{1}{21}$ - $\\frac{5}{21}$",
-      "c": "$\\frac{4}{21}$ - $\\frac{2}{21}$",
-      "d": "$\\frac{2}{21}$ - $\\frac{4}{21}$",
+      "soal": "Pengurangan berikut yang hasilnya <img src='../../html/kuis/kuis2img/soal3/3.PNG' width= '25px' > adalah …",
+      "a": "<img src='../../html/kuis/kuis2img/soal3/a.PNG' width= '60px' >",
+      "b": "<img src='../../html/kuis/kuis2img/soal3/b.PNG' width= '60px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal3/c.PNG' width= '60px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal3/d.PNG' width= '60px' >",
       "benar": "d"
     }
   },
   {
     "soal3": {
-      "soal": "Hasil dari $\\frac{3}{4}$ - $\\frac{1}{2}$ adalah…",
-      "a": "$\\frac{2}{4}$",
-      "b": "$\\frac{1}{8}$",
-      "c": "$\\frac{2}{8}$",
-      "d": "$\\frac{3}{8}$",
+      "soal": "Hasil dari <img src='../../html/kuis/kuis2img/soal4/4.PNG' width= '50px' > adalah…",
+      "a": "<img src='../../html/kuis/kuis2img/soal4/a.PNG' width= '30px' >",
+      "b": "<img src='../../html/kuis/kuis2img/soal4/b.PNG' width= '20px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal4/c.PNG' width= '20px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal4/d.PNG' width= '20px' >",
       "benar": "c"
     }
   },
   {
     "soal4": {
-      "soal": "Hasil dari $\\frac{5}{8}$ - $\\frac{1}{6}$ adalah…",
-      "a": "$\\frac{11}{24}$",
-      "b": "$\\frac{22}{35}$",
-      "c": "$\\frac{12}{28}$",
-      "d": "$\\frac{15}{24}$",
+      "soal": "Hasil dari <img src='../../html/kuis/kuis2img/soal5/5.PNG' width= '50px' > adalah…",
+      "a": "<img src='../../html/kuis/kuis2img/soal5/a.PNG' width= '30px' >",
+      "b": "<img src='../../html/kuis/kuis2img/soal5/b.PNG' width= '30px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal5/c.PNG' width= '30px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal5/d.PNG' width= '30px' >",
       "benar": "a"
     }
   },
   {
     "soal5": {
-      "soal": "Hasil dari  $4\\frac{3}{4}$ - $1\\frac{1}{2}$ = ..",
-      "a": "$2\\frac{1}{3}$",
-      "b": "$2\\frac{1}{6}$",
-      "c": "$3\\frac{1}{4}$",
-      "d": "$3\\frac{1}{2}$",
+      "soal": "Hasil dari <img src='../../html/kuis/kuis2img/soal6/6.PNG' width= '70px' >  adalah..",
+      "a": "<img src='../../html/kuis/kuis2img/soal6/a.PNG' width= '30px' >",
+      "b": "<img src='../../html/kuis/kuis2img/soal6/b.PNG' width= '30px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal6/c.PNG' width= '30px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal6/d.PNG' width= '30px' >",
       "benar": "c"
     }
   },
   {
     "soal6": {
-      "soal": "Persediaan gula ibu $2\\frac{1}{4}$ kg. Gula tersebut digunakan untuk membuat kue $1\\frac{1}{5}$ kg. Sisa gula yang dimiliki ibu adalah…",
-      "a": "$2\\frac{1}{24}$",
-      "b": "$1\\frac{1}{16}$",
-      "c": "$2\\frac{1}{18}$",
-      "d": "$1\\frac{1}{20}$",
+      "soal": "Persediaan gula ibu <img src='../../html/kuis/kuis2img/soal7/7.PNG' width= '30px' > kg. Gula tersebut digunakan untuk membuat kue <img src='../../html/kuis/kuis2img/soal7/77.PNG' width= '30px' > kg. Sisa gula yang dimiliki ibu adalah…",
+      "a": "<img src='../../html/kuis/kuis2img/soal7/a.PNG' width= '40px' >",
+      "b": "<img src='../../html/kuis/kuis2img/soal7/b.PNG' width= '40px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal7/c.PNG' width= '40px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal7/d.PNG' width= '40px' >",
       "benar": "d"
     }
   },
   {
     "soal7": {
-      "soal": "Hasil dari  $2\\frac{2}{3}$ - $1\\frac{1}{6}$",
-      "a": "$1\\frac{1}{4}$",
-      "b": "$1\\frac{3}{6}$",
-      "c": "$1\\frac{7}{9}$",
-      "d": "$1\\frac{2}{3}$",
+      "soal": "Hasil dari  <img src='../../html/kuis/kuis2img/soal8/8.PNG' width= '70px' > adalah …",
+      "a": "<img src='../../html/kuis/kuis2img/soal8/a.PNG' width= '30px' >",
+      "b": "<img src='../../html/kuis/kuis2img/soal8/b.PNG' width= '40px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal8/c.PNG' width= '30px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal8/d.PNG' width= '30px' >",
       "benar": "b"
     }
   },
   {
     "soal8": {
-      "soal": "Hasil dari $3\\frac{4}{6}$ - $1\\frac{3}{4}$ = …",
-      "a": " $2\\frac{5}{12}$",
-      "b": " $2\\frac{2}{12}$",
-      "c": " $1\\frac{11}{15}$",
-      "d": "$1\\frac{11}{12}$",
+      "soal": "Hasil dari <img src='../../html/kuis/kuis2img/soal9/9.PNG' width= '70px' >  adalah …",
+      "a": "<img src='../../html/kuis/kuis2img/soal9/a.PNG' width= '35px' >",
+      "b": " <img src='../../html/kuis/kuis2img/soal9/b.PNG' width= '35px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal9/c.PNG' width= '35px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal9/d.PNG' width= '35px' >",
       "benar": "d"
     }
   },
   {
     "soal9": {
-      "soal": "Ibu membawa $6\\frac{3}{4}$ kg cabe yang dipetik dari kebun. Ada $4\\frac{1}{2}$ kg cabe yang diberikan ke tetangga. Berapa kg sisa cabe tersebut?",
-      "a": "$1\\frac{1}{4}$",
-      "b": "$1\\frac{2}{2}$",
-      "c": "$2\\frac{1}{4}$",
-      "d": "$2\\frac{5}{2}$",
+      "soal": "Ibu membawa <img src='../../html/kuis/kuis2img/soal10/10.PNG' width= '30px' > kg cabe yang dipetik dari kebun. Ada <img src='../../html/kuis/kuis2img/soal10/101.PNG' width= '30px' > kg cabe yang diberikan ke tetangga. Berapa kg sisa cabe tersebut?",
+      "a": "<img src='../../html/kuis/kuis2img/soal10/a.PNG' width= '30px' >",
+      "b": "<img src='../../html/kuis/kuis2img/soal10/b.PNG' width= '25px' >",
+      "c": "<img src='../../html/kuis/kuis2img/soal10/c.PNG' width= '30px' >",
+      "d": "<img src='../../html/kuis/kuis2img/soal10/d.PNG' width= '35px' >",
       "benar": "c"
     }
   }
