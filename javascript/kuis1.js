@@ -155,6 +155,7 @@ dat.onreadystatechange = function () {
       nomor[i].innerHTML = i + 1;
 
       //soal
+
       let soal = document.querySelectorAll(".bg_soal #soalnya");
       soal[i].innerHTML = soaldata;
 
