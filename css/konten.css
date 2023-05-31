@@ -250,7 +250,7 @@ header nav.navbar {
 
 .jawabpecahan {
   border: none;
-  border-bottom: solid 4px rgb(193, 82, 82) !important;
+  border-bottom: solid 4px rgb(0, 0, 0) !important;
   text-align: center;
   width: 28px;
 }
