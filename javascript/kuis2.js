@@ -46,7 +46,7 @@ selanjutnya.addEventListener("click", function () {
   let nama = localStorage.getItem("nama");
   let nisn = localStorage.getItem("nisn");
   let kelas = localStorage.getItem("kelas");
-  // let sekolah = sessionStorage.getItem("sekolah");
+  // let sekolah = localStorage.getItem("sekolah");
 
   if (nama == null) {
     Swal.fire({
@@ -364,7 +364,7 @@ dat.onreadystatechange = function () {
 
       //nilai disimpan ke local storage
       localStorage.setItem("skkuis1", hasilakhir);
-      sessionStorage.setItem("skkuis1", hasilakhir);
+      localStorage.setItem("skkuis1", hasilakhir);
       // console.log(localStorage);
     });
     //   if (hasilakhir > 60) {
