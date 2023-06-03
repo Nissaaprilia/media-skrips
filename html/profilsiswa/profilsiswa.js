@@ -24,10 +24,10 @@ const db = getDatabase();
 // let userlink = document.getElementById("userlink");
 // let nisnlink = document.getElementById("nisnlink");
 // let signoutlink = document.getElementById("signoutlink");
-// let nama = sessionStorage.getItem("nama");
-// let kelas = sessionStorage.getItem("kelas");
+// let nama = localStorage.getItem("nama");
+// let kelas = localStorage.getItem("kelas");
 
-let nisn = sessionStorage.getItem("nisn");
+let nisn = localStorage.getItem("nisn");
 
 const getKelas = new Promise((resolve, reject) => {
   const antri = query(ref(db, "kelas/"));

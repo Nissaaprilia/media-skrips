@@ -209,7 +209,7 @@
 
     let userlink = document.getElementById("userlink");
     let signoutlink = document.getElementById("signoutlink");
-    let nama = sessionStorage.getItem("nama");
+    let nama = localStorage.getItem("nama");
     var currentUser = null;
 
     // Function;
@@ -224,7 +224,7 @@
     getName();
 
     function LogOut() {
-        sessionStorage.removeItem("nama");
+        localStorage.removeItem("nama");
 
         window.location = "/index.html";
     }
