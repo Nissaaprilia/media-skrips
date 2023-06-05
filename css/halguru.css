@@ -111,13 +111,13 @@
 
 .sidebar ul li a:hover {
   color: white;
-  background-color: #655dbb;
+  background-color: #227eff;
   border-radius: 20px;
 }
 
 .sidebar ul li a.active {
   color: white;
-  background-color: #655dbb;
+  background-color: #227eff;
   display: inline-block;
   border-radius: 20px;
 }

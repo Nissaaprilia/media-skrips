@@ -80,9 +80,11 @@
             <a href="../halamanguru/nilaievaluasi.html"><i class="bi bi-clipboard2-check-fill"></i>&nbsp;Nilai
               Evaluasi</a>
           </li>
-
-          <li>
-            <a href="./loginguru.html"><i class="fa-solid fa-house"></i>&nbsp;Logout</a>
+ <li>
+              <a href="./aturkkm.html"><i class="bi bi-pencil-square"></i>&nbsp;Atur KKM</a>
+            </li>
+         <li>
+            <a href="#" type="button" onclick="Signout()"><i class="fa-solid fa-house"></i>&nbsp;Logout</a>
           </li>
         </ul>
       </div>
@@ -190,5 +192,30 @@ $(document).ready(function() {
 
 <script type="module" src="../halamanguru/jsguru/nilaikuis.js"></script>
  <!-- <script type="module" src="../halamanguru/jsguru/akunguru.js"></script>s -->
+ <script>
+    function Signout() {
+      Swal.fire({
+        title: "Apakah Anda yakin ingin keluar?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Ya, Keluar Akun!",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          Swal.fire({
+            icon: "success",
+            title: "Berhasil Keluar",
+            showConfirButton: false,
+            Timer: 1500,
+          }).then(function () {
+            localStorage.removeItem("name");
+            localStorage.removeItem("nip");
 
+            window.location = "./loginguru.html";
+          });
+        }
+      });
+    }
+  </script>
 </html>
