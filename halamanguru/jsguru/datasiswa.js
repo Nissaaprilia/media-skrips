@@ -56,7 +56,7 @@ getDataSiswa.then((users) => {
         <td class="text-capitalize">${users[user].fullname}</td>
         <td>${users[user].nisn}</td>
           <td>${users[user].kelas}</td>
-          <td>${users[user].pass}</td>
+          <td><input type="password" style="border: none" value="${users[user].pass}" readonly disabled/></td>
           <td>
           <button class="edit btn" data-bs-toggle="modal" data-bs-target="#edituser" title="Edit"><img src="/img/guruimg/pensil.png" width="25px" alt="" /></button>
           <button class="delete btn" title="Hapus"><img src="/img/guruimg/sampah.png" width="25px" alt="" /></button>
