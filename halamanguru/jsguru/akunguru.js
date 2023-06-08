@@ -1,8 +1,8 @@
 let userguru = document.getElementById("userguru");
 let logoutguru = document.getElementById("logoutguru");
-let nama = sessionStorage.getItem("nama");
+let nama = localStorage.getItem("nama");
 var currentUser = null;
-let nip = sessionStorage.getItem("nip");
+let nip = localStorage.getItem("nip");
 // Function;
 function getName() {
   if (nama == null) {
@@ -24,7 +24,7 @@ getName();
 
 function Signout() {
   // logoutguru.href = '../index.html';
-  sessionStorage.removeItem("nama");
+  localStorage.removeItem("nama");
   window.location = "../../loginguru.html";
 }
 
