@@ -54,7 +54,6 @@ cari.addEventListener("click", function () {
       var i = 0;
 
       if (kelasfix == taskvalue.kelas) {
-        //&& sekolahfix == taskvalue.sekolah
         tmp.innerHTML += `<tr>
               <td>${taskvalue.nama}</td>
               <td>${taskvalue.nisn}</td>
@@ -66,7 +65,6 @@ cari.addEventListener("click", function () {
 
           </tr>`;
         idnya.push(taskvalue.id);
-        // <td>${taskvalue.sekolah}</td>
       }
     });
   } else {

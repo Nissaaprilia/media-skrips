@@ -34,8 +34,6 @@ function handleSuccess(items) {
   let kkm1 = getKKM[1]["kkm"];
   let kkm2 = getKKM[2]["kkm"];
   let kkm3 = getKKM[3]["kkm"];
-  //     let kkm4 = getKKM[4]["kkm"];
-  //   let kkm5 = getKKM[5]["kkm"];
 
   var kkm1html = document.querySelector(".kkm1");
   kkm1html.innerHTML = kkm1;

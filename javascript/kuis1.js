@@ -26,17 +26,13 @@ const kkmRef = ref(db, "kkm/1");
 let userlink = document.getElementById("userlink");
 let nislink = document.getElementById("nislink");
 let kelaslink = document.getElementById("kelaslink");
-// let sekolahlink = document.getElementById("sekolahlink");
-
 let nama = localStorage.getItem("nama");
 let nisn = localStorage.getItem("nisn");
 let kelas = localStorage.getItem("kelas");
-// let sekolah = localStorage.getItem("sekolah");
 
 userlink.innerText = nama;
 nislink.innerText = nisn;
 kelaslink.innerText = kelas;
-// sekolahlink.innerText = sekolah;
 
 // Mulai Kuis
 let selanjutnya = document.querySelector("#masuk");
@@ -116,12 +112,15 @@ dat.onreadystatechange = function () {
 
     // ---------------------------------
     // acak urutan soal
+
     //RANDOM URUTAN SOAL
+
     for (let x = 0; x < 100; x++) {
       // acak angka dengan batas length.data dan minimum 0
       let angka = Math.floor(Math.random() * data.length) + 0;
       cek.push(angka);
     }
+
     // membuang angka yang sama
     cek = Array.from(new Set(cek));
     console.log(cek);
