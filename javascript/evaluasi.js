@@ -70,18 +70,48 @@ window.onload = () => {
 };
 
 // WAKTUUUU
+// let wktu = document.querySelector("time");
+// let nilaiwktu = 0;
+// // countDown();
+
+// let countDownDate = new Date().getTime();
+// //waktu 30 menit
+// // countDownDate += 1801000;
+// // //waktu 45 menit
+// countDownDate += 2700000;
+// // countDownDate += 12000;
+// //15 detik
+// // countDownDate += 17000;
+// var x = setInterval(function () {
+//   var now = new Date().getTime();
+//   var distance = countDownDate - now;
+
+//   // Perhitungan waktu untuk menit dan detik
+//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+//   document.getElementById("time").innerHTML = minutes + ":" + seconds;
+
+//   if (distance < 0) {
+//     clearInterval(x);
+//     document.getElementById("time").innerHTML = "Waktu Selesai";
+//     nilaiwktu = 1;
+//   }
+// }, 1000);
+
+////////////////////// Waktu Habis Tersimpan
 let wktu = document.querySelector("time");
-let nilaiwktu = 0;
+
 // countDown();
 
 let countDownDate = new Date().getTime();
 //waktu 30 menit
 // countDownDate += 1801000;
-// //waktu 45 menit
+//waktu 45 menit
 countDownDate += 2700000;
 // countDownDate += 12000;
-//15 detik
-// countDownDate += 17000;
+//10 detik
+// countDownDate += 10000;
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -92,12 +122,139 @@ var x = setInterval(function () {
 
   document.getElementById("time").innerHTML = minutes + ":" + seconds;
 
-  if (distance < 0) {
+  if (minutes == 0 && seconds == 0) {
     clearInterval(x);
-    document.getElementById("time").innerHTML = "Waktu Selesai";
-    nilaiwktu = 1;
+    let cek = [];
+    let jwbs = [];
+    let hasilakhir = 0;
+    let benarr = 0;
+    let salahh = 0;
+    let pil_user = [];
+    let new_jwb_urut = [];
+    let new_jwb_urut_no = [];
+
+    let waktunya = waktu();
+    let harinya = hari();
+    let sarat = 0;
+
+    for (let t = 0; t < jwbs.length; t++) {
+      if (no_soal[t].className.indexOf("belum") == -1) {
+        sarat = sarat + 1;
+      }
+    }
+
+    // console.log(sarat);
+
+    if (sarat == jwbs.length) {
+      // array kunci
+      // console.log(jwbs);
+      hasilakhir = 0;
+      benarr = 0;
+      salahh = jwbs.length;
+
+      for (let i = 0; i < jwbs.length; i++) {
+        let a = i + 1;
+        let namaradio = document.getElementsByName("radio" + a);
+        let checked = false;
+        for (let j = 0; j < namaradio.length; j++) {
+          if (namaradio[j].checked) {
+            checked = true;
+            pil_user.push(namaradio[j].value);
+            if (namaradio[j].value == jwbs[i]) {
+              hasilakhir = hasilakhir + 10;
+              benarr = benarr + 1;
+            } else {
+              hasilakhir = hasilakhir;
+            }
+          }
+        }
+      }
+
+      for (let i = 0; i < cek.length; i++) {
+        for (let j = 0; j < cek.length; j++) {
+          if (i == cek[j]) {
+            new_jwb_urut.push(pil_user[j]);
+            new_jwb_urut_no.push(cek[j]);
+          }
+        }
+      }
+
+      console.log();
+      // hasilakhir = 90;
+      console.log(nama);
+      console.log(nisn);
+      console.log(kelas);
+      // console.log(sekolah);
+      console.log(hasilakhir);
+      let waktunya = waktu();
+      let harinya = hari();
+
+      createTask(nama, nisn, kelas, hasilakhir, waktunya, harinya, new_jwb_urut);
+
+      let namaget = document.querySelector(".nama");
+      namaget.innerText = nama;
+
+      let nisnget = document.querySelector(".nis");
+      nisnget.innerText = nisn;
+
+      let kelasget = document.querySelector(".kelas");
+      kelasget.innerText = kelas;
+
+      // let sekolahget = document.querySelector(".sekolah");
+      // sekolahget.innerText = sekolah;
+
+      let hariget = document.querySelector(".hari");
+      hariget.innerText = harinya;
+
+      let waktuget = document.querySelector(".waktu");
+      waktuget.innerText = waktunya;
+
+      let hasillget = document.querySelector(".hasill");
+      // hasillget.innerText = hasilakhir;
+      hasillget.textContent = hasilakhir;
+      const db = getDatabase();
+      onValue(ref(db, "kkm/3"), (snapshot) => {
+        const kkm = snapshot.val().kkm;
+
+        let keterangan = "Tidak lulus";
+        if (hasilakhir >= kkm) {
+          keterangan = "Lulus";
+          let materi = document.getElementById("materi");
+          materi.className = materi.className.replace("hilang", "");
+        } else {
+          let ulang = document.getElementById("ulang");
+          ulang.className = ulang.className.replace("hilang", "");
+        }
+
+        hasillget.innerHTML = `${hasilakhir} ( ${keterangan})`;
+      });
+
+      let k2hilang = document.querySelector(".k2");
+      k2hilang.className += " hilang";
+
+      // let kananhilang = document.querySelector('.kanan');
+      // kananhilang.className += ' hilang';
+
+      let datanya = document.querySelector(".dataaa");
+      datanya.className = datanya.className.replace("hilang", "");
+
+      // if (hasilakhir < 60) {
+      // } else {
+
+      //nilai disimpan ke local storage
+      localStorage.setItem("skevaluasi", hasilakhir);
+      localStorage.setItem("skevaluasi", hasilakhir);
+      // console.log(localStorage);
+
+      //   if (hasilakhir > 60) {
+      //     localStorage.setItem("skkuis1", 1);
+      //   }
+      // let kananhilang = document.querySelector('.kanan');
+      // kananhilang.className += ' hilang';
+    }
   }
 }, 1000);
+////////////// Waktu habis tersimpan
 
 // DATA dan tampil data
 let dat = new XMLHttpRequest();
