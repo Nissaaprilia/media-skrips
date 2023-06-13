@@ -300,7 +300,7 @@ document.getElementById("btnCek8")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek9")?.addEventListener("click", function () {
-  if (jwb91.value == 93 && jwb92.value == 8) {
+  if (jwb91.value == 93 && jwb92.value == 3) {
     jwb91.classList.add("jawabpecahanbenar");
     jwb91.classList.remove("jawabpecahansalah");
     jwb92.classList.add("jawabpecahanbenar");
@@ -334,7 +334,7 @@ document.getElementById("btnCek10")?.addEventListener("click", function () {
     document.getElementById("btnCek10").style.display = "none";
     document.getElementById("alertHasil10").innerHTML = `
         <div class="alert alert-info" role="alert">
-            Jawaban benar. Klik soal berikutnya!
+            Jawaban benar. kamu telah menguasai materi ini, silahkan lanjut ke materi berikutnya!
         </div>
       `;
   } else {

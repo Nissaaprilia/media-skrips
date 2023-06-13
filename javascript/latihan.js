@@ -342,7 +342,7 @@ document.getElementById("btnCek10")?.addEventListener("click", function () {
     document.getElementById("btnCek10").style.display = "none";
     document.getElementById("alertHasil10").innerHTML = `
         <div class="alert alert-info" role="alert">
-            Jawaban benar. Klik soal berikutnya!
+            Jawaban benar. kamu telah menguasai materi ini, silahkan lanjut ke materi berikutnya!
         </div>
       `;
   } else {

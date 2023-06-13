@@ -139,7 +139,7 @@ document.getElementById("btnCek1")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek2")?.addEventListener("click", function () {
-  if (jwb2.value == 3 && jwb21.value == 5 && jwb22.value == 6) {
+  if (jwb2.value == 4 && jwb21.value == 1 && jwb22.value == 12) {
     jwb2.classList.add("jawabpecahanbenar");
     jwb2.classList.remove("jawabpecahansalah");
     jwb21.classList.add("jawabpecahanbenar");
@@ -390,7 +390,7 @@ document.getElementById("btnCek10")?.addEventListener("click", function () {
     document.getElementById("btnCek10").style.display = "none";
     document.getElementById("alertHasil10").innerHTML = `
         <div class="alert alert-info" role="alert">
-            Jawaban benar. Kamu bisa lanjut ke materi berikutnya!
+              Jawaban benar. kamu telah menguasai materi ini, silahkan lanjut ke materi berikutnya!
         </div>
       `;
   } else {
