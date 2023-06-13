@@ -183,7 +183,7 @@ document.getElementById("btnCek3")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek4")?.addEventListener("click", function () {
-  if (jwb41.value == 1 && jwb42.value == 3) {
+  if (jwb41.value == 5 && jwb42.value == 15) {
     jwb41.classList.add("jawabpecahanbenar");
     jwb41.classList.remove("jawabpecahansalah");
     jwb42.classList.add("jawabpecahanbenar");
@@ -233,7 +233,7 @@ document.getElementById("btnCek5")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek6")?.addEventListener("click", function () {
-  if (jwb61.value == 1 && jwb62.value == 4) {
+  if (jwb61.value == 2 && jwb62.value == 8) {
     jwb61.classList.add("jawabpecahanbenar");
     jwb61.classList.remove("jawabpecahansalah");
     jwb62.classList.add("jawabpecahanbenar");
@@ -258,7 +258,7 @@ document.getElementById("btnCek6")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek7")?.addEventListener("click", function () {
-  if (jwb71.value == 1 && jwb72.value == 6) {
+  if (jwb71.value == 2 && jwb72.value == 12) {
     jwb71.classList.add("jawabpecahanbenar");
     jwb71.classList.remove("jawabpecahansalah");
     jwb72.classList.add("jawabpecahanbenar");
@@ -333,7 +333,7 @@ document.getElementById("btnCek9")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek10")?.addEventListener("click", function () {
-  if (jwb101.value == 3 && jwb102.value == 5) {
+  if (jwb101.value == 12 && jwb102.value == 20) {
     jwb101.classList.add("jawabpecahanbenar");
     jwb101.classList.remove("jawabpecahansalah");
     jwb102.classList.add("jawabpecahanbenar");
@@ -342,7 +342,7 @@ document.getElementById("btnCek10")?.addEventListener("click", function () {
     document.getElementById("btnCek10").style.display = "none";
     document.getElementById("alertHasil10").innerHTML = `
         <div class="alert alert-info" role="alert">
-            Jawaban benar. Klik soal berikutnya!
+            Jawaban benar. kamu telah menguasai materi ini, silahkan lanjut ke materi berikutnya!
         </div>
       `;
   } else {

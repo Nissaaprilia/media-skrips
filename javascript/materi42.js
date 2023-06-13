@@ -253,7 +253,7 @@ document.getElementById("btnCek5")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek6")?.addEventListener("click", function () {
-  if (jwb6.value == 1 && jwb61.value == 1 && jwb62.value == 3) {
+  if (jwb6.value == 1 && jwb61.value == 2 && jwb62.value == 3) {
     jwb6.classList.add("jawabpecahanbenar");
     jwb6.classList.remove("jawabpecahansalah");
     jwb61.classList.add("jawabpecahanbenar");
@@ -343,7 +343,7 @@ document.getElementById("btnCek8")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek9")?.addEventListener("click", function () {
-  if (jwb9.value == 1 && jwb91.value == 7 && jwb92.value == 15) {
+  if (jwb9.value == 2 && jwb91.value == 7 && jwb92.value == 15) {
     jwb9.classList.add("jawabpecahanbenar");
     jwb9.classList.remove("jawabpecahansalah");
     jwb91.classList.add("jawabpecahanbenar");
@@ -373,7 +373,7 @@ document.getElementById("btnCek9")?.addEventListener("click", function () {
 });
 
 document.getElementById("btnCek10")?.addEventListener("click", function () {
-  if (jwb10.value == 3 && jwb101.value == 7 && jwb102.value == 15) {
+  if (jwb10.value == 3 && jwb101.value == 3 && jwb102.value == 20) {
     jwb10.classList.add("jawabpecahanbenar");
     jwb10.classList.remove("jawabpecahansalah");
     jwb101.classList.add("jawabpecahanbenar");
@@ -384,7 +384,7 @@ document.getElementById("btnCek10")?.addEventListener("click", function () {
     document.getElementById("btnCek10").style.display = "none";
     document.getElementById("alertHasil10").innerHTML = `
         <div class="alert alert-info" role="alert">
-            Jawaban benar. Kamu bisa lanjut ke materi berikutnya!
+            Jawaban benar. kamu telah menguasai materi ini, silahkan lanjut kuis 2!
         </div>
       `;
   } else {
